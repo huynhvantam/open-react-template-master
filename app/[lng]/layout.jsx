@@ -1,8 +1,22 @@
 import '../css/style.css'
-
+import { Inter, Architects_Daughter } from 'next/font/google'
 import { dir } from 'i18next'
 import { languages, fallbackLng } from '../i18n/settings'
 import { useTranslation } from '../i18n'
+import { Header } from './components/Header/index'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap'
+})
+const architects_daughter = Architects_Daughter({
+  subsets: ['latin'],
+  variable: '--font-architects-daughter',
+  weight: '400',
+  display: 'swap'
+})
+
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
@@ -26,9 +40,18 @@ export default function RootLayout({
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      <body>
-        {children}
+      <body className={`${inter.variable} ${architects_daughter.variable}
+       font-inter antialiased text-black tracking-tight`}>
+        <div className="flex flex-col min-h-screen overflow-hidden">
+          <Header lng={lng} />
+          {children}
+          {/* <Banner /> */}
+          {/* <Footer /> */}
+        </div>
       </body>
+      {/* <body>
+        {children}
+      </body> */}
     </html>
   )
 }

@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { FooterBase } from './FooterBase'
-import { useTranslation } from '../../../i18n/client'
+import { HeaderBase } from "./HeaderBase";
+import { useTranslation } from "../../../i18n/client";
 // import { useParams } from 'next/navigation'
 
-export const Footer = ({ lng, path }) => {
-  const { t } = useTranslation(lng, 'footer')
-  return <FooterBase t={t} lng={lng} path={path} />
-}
+export const Header = ({ lng, path }) => {
+  const { t } = useTranslation(lng, "header");
+  return <HeaderBase t={t} lng={lng} path={path} />;
+};
 
 // if you like to avoid prop drilling, you can do so with useParams()
 // export const Footer = ({ path }) => {
