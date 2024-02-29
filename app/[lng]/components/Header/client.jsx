@@ -6,7 +6,8 @@ import { useTranslation } from "../../../i18n/client";
 
 export const Header = ({ lng, path }) => {
   const { t } = useTranslation(lng, "header");
-  return <HeaderBase t={t} lng={lng} path={path} />;
+  return <HeaderBase t={t} lng={lng} path={path} />
+
 };
 
 // if you like to avoid prop drilling, you can do so with useParams()

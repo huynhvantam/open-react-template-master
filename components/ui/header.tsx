@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import MobileMenu from './mobile-menu'
+import MobileMenu from '../../app/[lng]/components/Header/mobile-menu'
 
 export default function Header() {
   return (

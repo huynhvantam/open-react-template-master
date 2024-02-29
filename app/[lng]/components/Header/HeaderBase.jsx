@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { languages } from "../../../i18n/settings";
-import MobileMenu from '../../../../components/ui/mobile-menu'
+import MobileMenu from './mobile-menu'
 export const HeaderBase = ({ t, lng, path = "" }) => {
-  console.log(languages)
-  console.log(1)
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -40,9 +38,9 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
             <ul className='flex gap-x-5  flex-1 justify-end'>
               <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/">{t('home')}</Link></li>
               <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/about">{t('about')}</Link></li>
-              <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/hero">HERO</Link></li>
-              <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/zero">ZERO</Link></li>
-              <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/first">FIRST</Link></li>
+              <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/hero">{t('home')}</Link></li>
+              <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/zero">{t('home')}</Link></li>
+              <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/first">{t('home')}</Link></li>
 
 
               {/* đổi ngôn ngữ */}
