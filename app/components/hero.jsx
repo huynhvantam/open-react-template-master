@@ -1,11 +1,12 @@
 import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo from '@/components/modal-video'
-
-export default function Hero() {
+import ModalVideo from './modal-video'
+import { useTranslation } from '../i18n'
+export default async function Hero({ lng }) {
+  const { t } = await useTranslation(lng, "header");
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-
+        {t('home')}
         {/* Illustration behind hero content */}
         <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
           <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">

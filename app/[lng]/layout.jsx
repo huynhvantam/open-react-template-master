@@ -4,7 +4,7 @@ import { dir } from 'i18next'
 import { languages, fallbackLng } from '../i18n/settings'
 import { useTranslation } from '../i18n'
 import { Header } from './components/Header/index'
-
+import Footer from '../components/ui/footer'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -45,8 +45,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header lng={lng} />
           {children}
-          {/* <Banner /> */}
-          {/* <Footer /> */}
+
         </div>
       </body>
       {/* <body>

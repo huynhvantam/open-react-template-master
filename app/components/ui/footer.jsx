@@ -1,9 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import { useTranslation } from '../../i18n'
 
-export default function Footer() {
+
+
+
+
+export default async function Footer({ lng }) {
+  const { t } = await useTranslation(lng, "header");
   return (
     <footer>
+      {t('home')}
       <div className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
