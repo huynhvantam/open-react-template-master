@@ -8,7 +8,7 @@
 }
 
 .h3 {
-  @apply text-3xl font-bold leading-tight;
+  @apply text-4xl leading-[60px] font-playfair  font-semibold;
 }
 
 .h4 {
@@ -16,6 +16,14 @@
 }
 .hh4 {
   @apply text-sm leading-[22px] text-[#808080] font-medium;
+}
+
+.p {
+  @apply text-[#49505e] leading-[26px];
+}
+
+.numberbig {
+  @apply font-semibold text-[60px] leading-[72px] font-playfair text-[#d22c2c] pb-3 border-b border-[#d22c2c] mb-2 w-fit;
 }
 /* 
 @screen md {
