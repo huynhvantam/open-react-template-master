@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-export default function Banner() {
+export default function Iconhelp() {
   const [bannerOpen, setBannerOpen] = useState<boolean>(true)
 
   return (

@@ -1,6 +1,6 @@
 /* Typography */
 .h1 {
-  @apply text-4xl font-extrabold leading-tight tracking-tighter;
+  @apply text-6xl font-semibold leading-[72px] font-playfair text-[#404040];
 }
 
 .h2 {
@@ -14,7 +14,10 @@
 .h4 {
   @apply text-2xl font-bold leading-snug tracking-tight;
 }
-
+.hh4 {
+  @apply text-sm leading-[22px] text-[#808080] font-medium;
+}
+/* 
 @screen md {
   .h1 {
     @apply text-5xl;
@@ -23,7 +26,7 @@
   .h2 {
     @apply text-4xl;
   }
-}
+} */
 
 /* Buttons */
 .btn,
