@@ -14,6 +14,7 @@ import Testimonials from '../components/testimonials'
 import PageIllustration from '../components/page-illustration'
 // import Footer from '../components/ui/footer'
 import Footer from '../components/ui/footer'
+import { Header } from './components/Header/index'
 
 export default function DefaultLayout({
   children, t, lng
@@ -31,7 +32,7 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">
-
+        <Header lng={lng} />
         <PageIllustration />
 
         {children}

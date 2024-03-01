@@ -3,7 +3,6 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 import { dir } from 'i18next'
 import { languages, fallbackLng } from '../i18n/settings'
 import { useTranslation } from '../i18n'
-import { Header } from './components/Header/index'
 import Footer from '../components/ui/footer'
 const inter = Inter({
   subsets: ['latin'],
@@ -43,9 +42,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${architects_daughter.variable}
        font-inter antialiased text-black tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header lng={lng} />
           {children}
-
         </div>
       </body>
       {/* <body>

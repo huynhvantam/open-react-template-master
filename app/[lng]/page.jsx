@@ -15,6 +15,7 @@ export default function Page({ params: { lng } }) {
 
   return (
     <>
+
       <DefaultLayout lng={lng} />
 
     </>
