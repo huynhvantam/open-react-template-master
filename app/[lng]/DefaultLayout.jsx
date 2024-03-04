@@ -16,6 +16,7 @@ import Footer from '../components/ui/footer'
 import { Header } from './components/Header/index'
 import BannerImage from './components/banner'
 import Content1 from './components/content1';
+import Content2 from './components/content2';
 import Iconhelp from '../components/iconhelp';
 export default function DefaultLayout({
   children, t, lng
@@ -39,6 +40,7 @@ export default function DefaultLayout({
           text2="Tuyển sinh năm học"
           text3=" 2024 - 2025" />
         <Content1 />
+        <Content2 />
         <PageIllustration />
         {children}
         <Hero lng={lng} />

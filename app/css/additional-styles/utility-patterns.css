@@ -21,7 +21,9 @@
 .p {
   @apply text-[#49505e] leading-[26px];
 }
-
+.pp {
+  @apply text-xs leading-4 text-[#818282];
+}
 .numberbig {
   @apply font-semibold text-[60px] leading-[72px] font-playfair text-[#d22c2c] pb-3 border-b border-[#d22c2c] mb-2 w-fit;
 }
@@ -43,11 +45,11 @@
 }
 
 .btn {
-  @apply px-8 py-3;
+  @apply px-8 py-3 bg-rose-500 text-white;
 }
 
 .btn-sm {
-  @apply px-4 py-2;
+  @apply px-4 py-2 bg-rose-500 text-white;
 }
 
 /* Forms */
