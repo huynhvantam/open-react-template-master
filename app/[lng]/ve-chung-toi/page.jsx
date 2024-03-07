@@ -13,7 +13,7 @@ export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "second-page");
   return (
     <>
-      <Header lng={lng} path="/about" />
+      <Header lng={lng} path="/ve-chung-toi" />
       <BannerImage src={bannerabout}
         text1="Trang chủ / Về chúng tôi"
         text2="Giới thiệu chung" />

@@ -4,23 +4,23 @@ import Link from "next/link";
 
 const Navv = ({ items, buttonText }) => (
   <Space direction="vertical">
-    <Space wrap className=''>
+    <Space wrap >
       <Dropdown
         overlay={
-          <Menu>
+          <Menu >
             {items.map(item => (
-              <Menu.Item key={item.key}>
-                <Link href={item.href} className='block px-4 py-2 text-blue-500 hover:text-blue-700'>
-                  {item.label}
+              <Menu.Item key={item.key} >
+                <Link href={item.href} >
+                  <span className='block px-2 py-1 text-lg text-[#49505e] font-medium'>{item.label}</span>
                 </Link>
               </Menu.Item>
             ))}
           </Menu>
         }
         placement="bottomLeft"
-        className='border-none shadow-none font-inter font-medium text-rose-600 hover:bg-rose-100  flex items-center transition duration-150 ease-in-out'
+        className='border-none shadow-none font-inter font-medium text-[#49505e] flex items-center transition duration-150 ease-in-out'
       >
-        <Button className='text-xl'>{buttonText}</Button>
+        <Button className='text-lg'>{buttonText}</Button>
       </Dropdown>
     </Space>
   </Space>

@@ -7,16 +7,31 @@ import Navv from "./navbar";
 
 export const HeaderBase = ({ t, lng, path = "" }) => {
   const items = [
-    { key: '1', href: 'https://www.luohanacademy.com', label: 'Tổng quan' },
-    { key: '2', href: 'https://www.luohanacademy.com', label: 'Tầm nhìn - Sứ mệnh' },
-    { key: '3', href: 'https://www.luohanacademy.com', label: 'Đội ngũ giáo viên' },
-    { key: '4', href: 'https://www.luohanacademy.com', label: 'Đội ngũ lãnh đạo' },
+    { key: '1', href: '/ve-chung-toi', label: 'Giới thiệu chung' },
+    { key: '2', href: '/ve-chung-toi/tam-nhin-su-menh', label: 'Tầm nhìn - Sứ mệnh' },
+    { key: '3', href: '/', label: 'Đội ngũ giáo viên' },
+    { key: '4', href: '/', label: 'Đội ngũ lãnh đạo' },
+    { key: '5', href: '/', label: 'Thành tích của chúng tôi' },
   ];
   const items2 = [
-    { key: '1', href: 'https://www.luohanacademy.com', label: 'Tổng quan' },
-    { key: '2', href: 'https://www.luohanacademy.com', label: 'Tầm nhìn - Sứ mệnh' },
-    { key: '3', href: 'https://www.luohanacademy.com', label: 'Đội ngũ giáo viên' },
-    { key: '4', href: 'https://www.luohanacademy.com', label: 'Đội ngũ lãnh đạo' },
+    { key: '1', href: '/', label: 'Tổng quan chương trình' },
+    { key: '2', href: '/', label: 'Mầm non' },
+    { key: '3', href: '/', label: 'Tiểu học' },
+    { key: '4', href: '/', label: 'Trung học' },
+    { key: '5', href: '/', label: 'Anh ngữ Phượng Hoàng' },
+  ];
+  const items3 = [
+    { key: '1', href: '/', label: 'Thành tích học sinh' },
+    { key: '2', href: '/', label: 'Dịch vụ đưa đón' },
+    { key: '3', href: '/', label: 'Thư viện' },
+    { key: '4', href: '/', label: 'Chăm sóc y tế' },
+    { key: '5', href: '/', label: 'Nhà ăn' },
+  ];
+  const items4 = [
+    { key: '1', href: '/', label: 'Đăng ký tuyển sinh' },
+    { key: '2', href: '/', label: 'Quy định va chính sách' },
+    { key: '3', href: '/', label: 'Học phí' },
+    { key: '4', href: '/', label: 'Chương trình ưu đãi' },
   ];
 
 
@@ -55,14 +70,14 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
             </div>
             <nav className="hidden md:flex md:grow ">
               {/* Desktop sign in links */}
-              <ul className='flex gap-x-10  flex-1 justify-end items-center text-lg'>
+              <ul className='flex   flex-1 justify-end items-center text-lg'>
                 <Navv items={items} buttonText={t('about')} />
-                <Navv items={items} buttonText={t('about')} />
-                {/* <li><Link className=" font-medium text-rose-600 hover:bg-rose-100  flex items-center transition duration-150 ease-in-out" href="/about">{t('about')}</Link></li>
-                <li><Link className=" font-medium text-rose-600 hover:bg-rose-100  flex items-center transition duration-150 ease-in-out" href="/hero">{t('program')}</Link></li>
-                <li><Link className=" font-medium text-rose-600 hover:bg-rose-100  flex items-center transition duration-150 ease-in-out" href="/zero">{t('doi-song')}</Link></li>
-                <li><Link className=" font-medium text-rose-600 hover:bg-rose-100  flex items-center transition duration-150 ease-in-out" href="/first">{t('tuyen-sinh')}</Link></li>
-                <li><Link className="px-1.5 py-2 rounded-sm text-white round bg-rose-600 hover:bg-rose-700 " href="/first">{t('lien-he')}</Link></li> */}
+                <Navv items={items2} buttonText={t('program')} />
+                <Navv items={items3} buttonText={t('doi-song')} />
+                <Navv items={items4} buttonText={t('tuyen-sinh')} />
+
+                <Link className="px-1.5 py-2 rounded-sm text-white round bg-rose-600 hover:bg-rose-700 " href="/lien-he">{t('lien-he')}</Link>
+
               </ul>
             </nav>
           </div>
@@ -73,42 +88,4 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     </header>
   );
 };
-const items = [
-  {
-    key: '1',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        1st menu item
-      </a>
-    ),
-  },
-  {
-    key: '2',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        2nd menu item
-      </a>
-    ),
-  },
-  {
-    key: '3',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        3rd menu item
-      </a>
-    ),
-  },
-];
 
