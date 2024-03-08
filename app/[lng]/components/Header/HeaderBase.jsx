@@ -72,7 +72,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
               {/* Desktop sign in links */}
               <ul className='flex   flex-1 justify-end items-center text-lg'>
                 <Navv items={items} buttonText={t('about')} />
-                <Navv items={items2} buttonText={t('program')} />
+                <Navv items={items2} buttonText={t('chuong-trinh')} />
                 <Navv items={items3} buttonText={t('doi-song')} />
                 <Navv items={items4} buttonText={t('tuyen-sinh')} />
 
