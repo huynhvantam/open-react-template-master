@@ -17,6 +17,7 @@ import { Header } from './components/Header/index'
 import BannerImage from './components/banner'
 import Content1 from './components/content1';
 import Content2 from './components/content2';
+import Content3 from './components/content3';
 import Iconhelp from '../components/iconhelp';
 export default function DefaultLayout({
   children, t, lng
@@ -41,6 +42,7 @@ export default function DefaultLayout({
           text3=" 2024 - 2025" />
         <Content1 />
         <Content2 />
+        <Content3 />
         <PageIllustration />
         {children}
         <Hero lng={lng} />
