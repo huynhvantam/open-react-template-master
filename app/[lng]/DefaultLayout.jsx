@@ -18,6 +18,7 @@ import BannerImage from './components/banner'
 import Content1 from './components/content1';
 import Content2 from './components/content2';
 import Content3 from './components/content3';
+import Chiasecongdong from './components/chiasecongdong';
 import Iconhelp from '../components/iconhelp';
 export default function DefaultLayout({
   children, t, lng
@@ -41,16 +42,18 @@ export default function DefaultLayout({
           text2="Tuyển sinh năm học"
           text3=" 2024 - 2025" />
         <Content1 />
+        <Hero lng={lng} />
         <Content2 />
         <Content3 />
         <PageIllustration />
         {children}
-        <Hero lng={lng} />
+
         <Features />
         <Zigzag />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Newsletter />
         <Iconhelp />
+        <Chiasecongdong />
         <Footer lng={lng} />
       </main>
 
