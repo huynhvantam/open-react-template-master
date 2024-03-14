@@ -6,7 +6,7 @@ export default function Content1() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className='grid grid-cols-2 gap-x-20'>
           <div>
-            <div className='hh4' data-aos="fade-up" >/VỀ CHÚNG TÔI</div>
+            <h4 className='hh4' data-aos="fade-up" >/VỀ CHÚNG TÔI</h4>
             <div className='h3 mt-6 mb-14' data-aos="fade-up" data-aos-delay="200">Trường song ngữ <br /> đầu tiên  tại Hà Nội</div>
             <p className='p' data-aos="fade-up" data-aos-delay="400">Trường Song Ngữ Quốc Tế Hanoi Academy là hệ thống trường liên cấp từ Mầm Non đến Trung Học Phổ Thông tại Hà Nội, với mục tiêu giáo dục là “Kiến Tạo Công Dân Toàn Cầu”. Hanoi Academy là trường song ngữ đầu tiên trên địa bàn Hà Nội và đã đi vào hoạt động từ năm 2009.</p>
             <div className='grid grid-cols-2 pt-[60px]'>

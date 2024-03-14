@@ -20,6 +20,8 @@ import Content2 from './components/content2';
 import Content3 from './components/content3';
 import Chiasecongdong from './components/chiasecongdong';
 import Iconhelp from '../components/iconhelp';
+import Googlemap from './components/googlemap';
+import Taisaonenchon from './components/taisaonenchon';
 export default function DefaultLayout({
   children, t, lng
 }) {
@@ -51,9 +53,11 @@ export default function DefaultLayout({
         <Features />
         <Zigzag />
         {/* <Testimonials /> */}
-        <Newsletter />
+        {/* <Newsletter /> */}
         <Iconhelp />
         <Chiasecongdong />
+        <Googlemap />
+        <Taisaonenchon />
         <Footer lng={lng} />
       </main>
 
