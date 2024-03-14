@@ -22,6 +22,7 @@ import Chiasecongdong from './components/chiasecongdong';
 import Iconhelp from '../components/iconhelp';
 import Googlemap from './components/googlemap';
 import Taisaonenchon from './components/taisaonenchon';
+import Dangkytuvan from './components/dangkytuvan';
 export default function DefaultLayout({
   children, t, lng
 }) {
@@ -47,17 +48,17 @@ export default function DefaultLayout({
         <Hero lng={lng} />
         <Content2 />
         <Content3 />
+        <Taisaonenchon />
         <PageIllustration />
         {children}
 
-        <Features />
-        <Zigzag />
-        {/* <Testimonials /> */}
+        {/* <Features /> */}
+        {/* <Zigzag /> */}
         {/* <Newsletter /> */}
-        <Iconhelp />
+        {/* <Iconhelp /> */}
         <Chiasecongdong />
+        <Dangkytuvan />
         <Googlemap />
-        <Taisaonenchon />
         <Footer lng={lng} />
       </main>
 
