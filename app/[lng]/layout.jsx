@@ -3,6 +3,7 @@ import { dir } from 'i18next'
 import { languages, fallbackLng } from '../i18n/settings'
 import { useTranslation } from '../i18n'
 import { Be_Vietnam_Pro, Playfair_Display } from 'next/font/google'
+
 const inter = Be_Vietnam_Pro({
   subsets: ['latin'],
   variable: '--font-inter',

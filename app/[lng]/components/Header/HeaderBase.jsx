@@ -4,6 +4,8 @@ import { languages } from "../../../i18n/settings";
 import MobileMenu from './mobile-menu'
 import { Button, Dropdown, Space } from 'antd';
 import Navv from "./navbar";
+import Image from 'next/image'
+import logo from "@/public/images/phuonghoang/logo.png"
 
 export const HeaderBase = ({ t, lng, path = "" }) => {
   const items = [
@@ -36,16 +38,24 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
 
 
   return (
-    <header className="absolute w-full z-30 py-2 bg-white shadow-md">
+    <header className="fixed top-0 z-50 w-full pt-0.5 pb-0.5 bg-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="flex items-start justify-between h-20 ">
           {/* Site branding */}
 
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <div className='h-24 w-24 bg-red-100'></div>
+            <div className="flex items-center ">
+              {/* <div className='h-20 w-20 bg-red-100'></div> */}
+              <Image className="h-fit scale-75" src={logo} width={80} height={80} alt="logo" />
+              <div className="font-semibold text-rose-500">
+                <h4 className="text-[15.4px]">PHOENIX EDUCATION</h4>
+                <h4 className="text-xs ">GIÁO DỤC PHƯỢNG HOÀNG</h4>
+              </div>
+
+            </div>
           </div>
-          <div className="space-y-3">
+          <div className="">
             {/* Desktop navigation */}
             <div className="flex gap-x-6 justify-end items-center">
               <div className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 hover:bg-rose-700 ">Đăng ký tư vấn</div>
@@ -68,15 +78,15 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 </span>
               </div>
             </div>
-            <nav className="hidden md:flex md:grow ">
+            <nav className="hidden md:flex md:grow mt-2">
               {/* Desktop sign in links */}
-              <ul className='flex   flex-1 justify-end items-center text-lg'>
+              <ul className='flex flex-1 justify-end items-center text-lg'>
                 <Navv items={items} buttonText={t('about')} />
                 <Navv items={items2} buttonText={t('chuong-trinh')} />
                 <Navv items={items3} buttonText={t('doi-song')} />
                 <Navv items={items4} buttonText={t('tuyen-sinh')} />
 
-                <Link className="px-1.5 py-2 rounded-sm text-white round bg-rose-600 hover:bg-rose-700 " href="/lien-he">{t('lien-he')}</Link>
+                <Link className="px-1.5 py-1 rounded-sm text-white round bg-rose-600 hover:bg-rose-700 " href="/lien-he">{t('lien-he')}</Link>
 
               </ul>
             </nav>
