@@ -42,7 +42,7 @@ export default function Chiasecongdong() {
     return content;
   };
   return (
-    <section className='bg-rose-100'>
+    <section className='bg-gradient-to-b from-rose-300 from-10% via-rose-200 via-30% to-rose-100 to-90%'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-gray-800">
 

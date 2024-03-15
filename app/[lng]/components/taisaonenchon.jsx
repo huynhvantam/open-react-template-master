@@ -10,34 +10,34 @@ export default function Taisaonenchon() {
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-4 py-20">
         <div className="grid grid-cols-8 gap-4 ">
-          <div className="col-start-1 col-end-3 h3 bg-gradient-to-r from-rose-200  to-rose-300 w-full h-full rounded-lg p-5 relative">
-            {/* <p className="text-rose-500">Tại sao chọn Phoenix Education?</p>
-            <Image src={logophuonghoang} alt="Logo Phương Hoàng" width={70} height={70} className="absolute bottom-2 right-2 z-0" /> */}
+          <div className="col-start-1 col-end-3 h3 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg p-5 relative">
+            <p className="text-rose-500">Tại sao chọn Phoenix Education?</p>
+            <Image src={logophuonghoang} alt="Logo Phương Hoàng" width={70} height={70} className="absolute bottom-2 right-2 z-0" />
           </div>
           <div className="col-start-3 col-end-7">
             <div className="grid grid-cols-2 gap-4 rounded-lg">
-              <div className="bg-rose-200 h-32 rounded-lg flex items-center pl-5">
+              <div className="bg-gradient-to-b from-rose-100  to-rose-200 h-32 rounded-lg flex items-center pl-5">
                 <Image className="h-fit " src={monhoc} width={56} height={56} alt="Môn học" />
                 <div className="pl-4">
                   <p className="p">GIÁO TRÌNH</p>
                   <h4 className="h4 text-rose-500">SONG NGỮ</h4>
                 </div>
               </div>
-              <div className="bg-rose-200 h-32 rounded-lg flex items-center pl-5">
+              <div className="bg-gradient-to-b from-rose-100  to-rose-200 h-32 rounded-lg flex items-center pl-5">
                 <Image className="h-fit " src={monhoc} width={56} height={56} alt="Môn học" />
                 <div className="pl-4">
                   <p className="p">HỌC SINH / LỚP</p>
                   <h4 className="h4 text-rose-500">20</h4>
                 </div>
               </div>
-              <div className="bg-rose-200 h-32 rounded-lg flex items-center pl-5">
+              <div className="bg-gradient-to-b from-rose-100  to-rose-200 h-32 rounded-lg flex items-center pl-5">
                 <Image className="h-fit " src={monhoc} width={56} height={56} alt="Môn học" />
                 <div className="pl-4">
                   <p className="p">TỈ LỆ <br />HỌC SINH/GIÁO VIÊN</p>
                   <h4 className="h4 text-rose-500">1 : 12</h4>
                 </div>
               </div>
-              <div className="bg-rose-200 h-32 rounded-lg flex items-center pl-5">
+              <div className="bg-gradient-to-b from-rose-100  to-rose-200 h-32 rounded-lg flex items-center pl-5">
                 <Image className="h-fit " src={monhoc} width={56} height={56} alt="Môn học" />
                 <div className="pl-4">
                   <p className="p">TIẾNG ANH/ TUẦN</p>
@@ -54,8 +54,8 @@ export default function Taisaonenchon() {
           </div>
         </div>
         <div className="grid grid-cols-8 gap-4 ">
-          <div className="col-start-1 col-end-3 bg-rose-200 w-full h-full rounded-lg">
-            <div className="bg-rose-100 h-32 rounded-lg flex items-center px-3">
+          <div className="col-start-1 col-end-3 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg">
+            <div className="bg-gradient-to-b from-rose-100  to-rose-50 h-32 rounded-lg flex items-center px-3">
               <Image className="h-fit" src={monhoc} width={40} height={40} alt="Môn học" />
               <div className="pl-4">
                 <span className="p text-rose-500">Cá nhân hóa</span>
@@ -70,8 +70,8 @@ export default function Taisaonenchon() {
               </div>
             </div>
           </div>
-          <div className="col-start-7 col-end-9 bg-rose-200 w-full h-full rounded-lg">
-            <div className="bg-rose-100 h-32 rounded-lg flex items-center px-3">
+          <div className="col-start-7 col-end-9 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg">
+            <div className="bg-gradient-to-b from-rose-100  to-rose-50 h-32 rounded-lg flex items-center px-3">
               <Image className="h-fit" src={monhoc} width={40} height={40} alt="Môn học" />
               <div className="pl-4">
                 <span className="p text-rose-500">Cơ hội du học </span>
@@ -81,8 +81,8 @@ export default function Taisaonenchon() {
           </div>
         </div>
         <div className="grid grid-cols-8 gap-4 ">
-          <div className="col-start-1 col-end-3 bg-rose-200 w-full h-full rounded-lg">
-            <div className="bg-rose-100 h-32 rounded-lg flex items-center px-3">
+          <div className="col-start-1 col-end-3 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg">
+            <div className="bg-gradient-to-b from-rose-100  to-rose-50 h-32 rounded-lg flex items-center px-3">
               <Image className="h-fit" src={monhoc} width={40} height={40} alt="Môn học" />
               <div className="pl-4">
                 <span className="p text-rose-500">Môi trường quốc tế</span>
@@ -90,8 +90,8 @@ export default function Taisaonenchon() {
               </div>
             </div>
           </div>
-          <div className="col-start-3 col-end-5 bg-rose-200 w-full h-32 rounded-lg">
-            <div className="bg-rose-100 h-32 rounded-lg flex items-center px-3">
+          <div className="col-start-3 col-end-5 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-32 rounded-lg">
+            <div className="bg-gradient-to-b from-rose-100  to-rose-50 h-32 rounded-lg flex items-center px-3">
               <Image className="h-fit" src={monhoc} width={40} height={40} alt="Môn học" />
               <div className="pl-4">
                 <span className="p text-rose-500">Rèn luyện khả năng</span>
@@ -99,8 +99,8 @@ export default function Taisaonenchon() {
               </div>
             </div>
           </div>
-          <div className="col-start-5 col-end-7 bg-rose-200 w-full h-32 rounded-lg">
-            <div className="bg-rose-100 h-32 rounded-lg flex items-center px-3">
+          <div className="col-start-5 col-end-7 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-32 rounded-lg">
+            <div className="bg-gradient-to-b from-rose-100  to-rose-50 h-32 rounded-lg flex items-center px-3">
               <Image className="h-fit" src={monhoc} width={40} height={40} alt="Môn học" />
               <div className="pl-4">
                 <span className="p text-rose-500">Phát triển năng khiếu</span>
@@ -108,8 +108,8 @@ export default function Taisaonenchon() {
               </div>
             </div>
           </div>
-          <div className="col-start-7 col-end-9 bg-rose-200 w-full h-full rounded-lg">
-            <div className="bg-rose-100 h-32 rounded-lg flex items-center px-3">
+          <div className="col-start-7 col-end-9 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg">
+            <div className="bg-gradient-to-b from-rose-100  to-rose-50 h-32 rounded-lg flex items-center px-3">
               <Image className="h-fit" src={monhoc} width={40} height={40} alt="Môn học" />
               <div className="pl-4">
                 <span className="p text-rose-500">Hội đồng Khoa học & Sư phạm</span>
