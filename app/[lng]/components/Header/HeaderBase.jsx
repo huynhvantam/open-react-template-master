@@ -37,6 +37,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
   ];
 
 
+
   return (
     <header className="fixed top-0 z-50 w-full pt-0.5 pb-0.5 bg-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -45,25 +46,25 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
 
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <div className="flex items-center ">
-              {/* <div className='h-20 w-20 bg-red-100'></div> */}
+            {/* <div className='h-20 w-20 bg-red-100'></div> */}
+            <Link className="flex items-center " href="/">
               <Image className="h-fit scale-75" src={logo} width={80} height={80} alt="logo" />
               <div className="font-semibold text-rose-500">
                 <h4 className="text-[15.4px]">PHOENIX EDUCATION</h4>
                 <h4 className="text-xs ">GIÁO DỤC PHƯỢNG HOÀNG</h4>
               </div>
-
-            </div>
+            </Link>
           </div>
           <div className="">
             {/* Desktop navigation */}
             <div className="flex gap-x-6 justify-end items-center">
-              <div className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 hover:bg-rose-700 ">Đăng ký tư vấn</div>
-              <div className="pp">Tin tức - Sự kiện</div>
-              <div className="pp">Tuyển dụng</div>
+              <div className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 ">Đăng ký tư vấn</div>
+              <Link className="pp" href="/tin-tuc">{t('tin-tuc')}</Link>
+              <Link className="pp" href="/tuyen-dung">{t('tuyen-dung')}</Link>
+
               {/* đổi ngôn ngữ */}
-              <div className="uppercase  text-rose-600  hover:font-normal">
-                <span className="font-bold">{lng}</span>  {" "} | {" "}
+              <div className="uppercase  text-rose-500  hover:font-normal">
+                <span className="font-semibold">{lng}</span>  {" "} | {" "}
                 <span className="hover:font-bold">
                   {languages
                     .filter((l) => lng !== l)
@@ -85,8 +86,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 <Navv items={items2} buttonText={t('chuong-trinh')} />
                 <Navv items={items3} buttonText={t('doi-song')} />
                 <Navv items={items4} buttonText={t('tuyen-sinh')} />
-
-                <Link className="px-1.5 py-1 rounded-sm text-white round bg-rose-600 hover:bg-rose-700 " href="/lien-he">{t('lien-he')}</Link>
+                <Link className="px-3 py-1 rounded-sm text-white round bg-rose-500" href="#footer">{t('lien-he')}</Link>
 
               </ul>
             </nav>

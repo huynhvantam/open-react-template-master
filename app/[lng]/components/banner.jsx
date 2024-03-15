@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const BannerImage = ({ src, text1, text2, text3 }) => {
   return (
-    <div className="relative overflow-hidden">
+    <section className="relative overflow-hidden pt-[84px]">
       <div className="relative">
         <Image src={src} alt="picture" layout="responsive" data-aos="fade-up" />
         <div className="absolute top-0 -left-1/4 w-full h-full bg-gradient-to-l from-transparent to-white transition-opacity  " />
@@ -15,7 +15,7 @@ const BannerImage = ({ src, text1, text2, text3 }) => {
           {/* <button className='button'>Đăng ký ngay</button> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
