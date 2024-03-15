@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import FeatImage01 from '@/public/images/banner/banner-home.png';
+import FeatImage01 from '@/public/images/banner/banner-home.jpg';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 // import Footer from '../components/ui/footer'
@@ -41,9 +41,12 @@ export default function DefaultLayout({
       <main className="grow">
         <Header lng={lng} />
         <BannerImage src={FeatImage01}
-          text1="Trang chủ / Chương Trình Mầm Non"
+          text1="GIÁO DỤC PHƯỢNG HOÀNG"
           text2="Tuyển sinh năm học"
-          text3=" 2024 - 2025" />
+          text3=" 2024 - 2025"
+          button="Đăng ký ngay"
+          href="#tuyen-sinh" />
+
         <Content1 />
         <Hero lng={lng} />
         <Content2 />

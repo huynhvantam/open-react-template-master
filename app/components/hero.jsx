@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/hero-image-01.jpg'
+import VideoThumb from '@/public/images/oneuse/thumpvideo.jpg'
 import ModalVideo from './modal-video'
 import { useTranslation } from '../i18n'
 export default async function Hero({ lng }) {

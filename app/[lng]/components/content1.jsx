@@ -1,5 +1,10 @@
 import Image from 'next/image';
-import Image1 from "@/public/images/homepage/image-home1.png"
+import Image1 from "@/public/images/phuonghoang/truonghoc.jpg"
+import Image2 from "@/public/images/phuonghoang/hocsinh3.jpg"
+import Icon1 from '@/public/images/icon/Frame-6.png'
+import Icon2 from '@/public/images/icon/Frame-5.png'
+import Icon3 from '@/public/images/icon/Frame-2.png'
+import Icon4 from '@/public/images/icon/Frame-3.png'
 export default function Content1() {
   return (
     <section>
@@ -7,35 +12,45 @@ export default function Content1() {
         <div className='grid grid-cols-2 gap-x-20'>
           <div>
             <h4 className='hh4' data-aos="fade-up" >/VỀ CHÚNG TÔI</h4>
-            <div className='h3 mt-6 mb-14' data-aos="fade-up" data-aos-delay="200">Trường song ngữ <br /> đầu tiên  tại Hà Nội</div>
-            <p className='p' data-aos="fade-up" data-aos-delay="400">Trường Song Ngữ Quốc Tế Hanoi Academy là hệ thống trường liên cấp từ Mầm Non đến Trung Học Phổ Thông tại Hà Nội, với mục tiêu giáo dục là “Kiến Tạo Công Dân Toàn Cầu”. Hanoi Academy là trường song ngữ đầu tiên trên địa bàn Hà Nội và đã đi vào hoạt động từ năm 2009.</p>
+            <div className='h3 mt-6 mb-14' data-aos="fade-up" data-aos-delay="200">Trường song ngữ <br /> tiên phong tại Huế</div>
+            <p className='p' data-aos="fade-up" data-aos-delay="400">Giáo dục Phượng Hoàng là hệ thống trường liên cấp từ Mầm Non đến Trung Học Phổ Thông tại Huế, với mục tiêu giáo dục là “Kiến Tạo Công Dân Toàn Cầu”. Giáo dục Phượng Hoàng là trường song ngữ tiên phong trên địa bàn thành phố Huế và đã đi vào hoạt động từ năm 2009.</p>
             <div className='grid grid-cols-2 pt-[60px]'>
               <div className=''>
                 <div>
-                  <p className='numberbig' data-aos="fade-up" data-aos-delay="600">150</p>
-                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="600">Giải thưởng uy tín<br /> trong và ngoài nước</p>
+                  <p className='numberbig w-32' data-aos="fade-up" data-aos-delay="600">
+                    <Image src={Icon1} alt="icon" height={38} width={38} data-aos="fade-up" className='inline mr-2' />
+                    15+</p>
+                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="600">Năm kinh nghiệm đào tạo<br /> song ngữ</p>
                 </div>
                 <div>
-                  <p className='numberbig pt-[60px]' data-aos="fade-up" data-aos-delay="800">30+</p>
-                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="800">Học sinh đạt điểm<br /> tuyệt đối 9/9 các môn <br />thi iGCSE</p>
+                  <p className='numberbig pt-[60px] w-32' data-aos="fade-up" data-aos-delay="800">
+                    <Image src={Icon2} alt="icon" height={38} width={38} data-aos="fade-up" className='inline mr-2' />
+                    23</p>
+                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="800">
+                    Sĩ số trung bình <br />trong lớp học
+                  </p>
                 </div>
-
               </div>
               <div>
                 <div>
-                  <p className='numberbig pt-[120px]' data-aos="fade-up" data-aos-delay="700">60%</p>
-                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="700">Học sinh nhận được<br /> học bổng du học</p>
+                  <p className='numberbig pt-[120px]' data-aos="fade-up" data-aos-delay="700">
+                    <Image src={Icon3} alt="icon" height={38} width={38} data-aos="fade-up" className='inline mr-2' />
+                    100%</p>
+                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="700">Học sinh tốt nghiệp THPT và ứng tuyển thành công vào các trường đh trong nước và Quốc tế</p>
                 </div>
                 <div>
-                  <p className='numberbig pt-[60px]' data-aos="fade-up" data-aos-delay="900">7.0</p>
-                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="900">Điểm IELTS trung bình <br />của học sinh lớp 12</p>
+                  <p className='numberbig pt-[60px]' data-aos="fade-up" data-aos-delay="900">
+                    <Image src={Icon4} alt="icon" height={38} width={38} data-aos="fade-up" className='inline mr-2' />
+                    99%</p>
+                  <p className='p font-bold' data-aos="fade-up" data-aos-delay="900">Phụ huynh đánh giá cao về môi trường và chất lượng dạy, học</p>
                 </div></div>
             </div>
           </div>
 
           <div>
-            <Image src={Image1} alt="picture" layout="responsive" data-aos="fade-up" className='my-14' />
-            <p className='p' data-aos="fade-up" data-aos-delay="200">Trường Song Ngữ Quốc Tế Hanoi Academy là hệ thống trường liên cấp từ Mầm Non đến Trung Học Phổ Thông tại Hà Nội, với mục tiêu giáo dục là “Kiến Tạo Công Dân Toàn Cầu”. Hanoi Academy là trường song ngữ đầu tiên trên địa bàn Hà Nội và đã đi vào hoạt động từ năm 2009.</p>
+            <Image src={Image1} alt="picture" layout="responsive" data-aos="fade-up" className='mt-14' />
+            <Image src={Image2} alt="picture" layout="responsive" data-aos="fade-up" className='mb-14' />
+            <p className='p' data-aos="fade-up" data-aos-delay="200">Đến với Giáo dục Phượng Hoàng, học sinh có cơ hội hòa mình vào một môi trường học Song Ngữ: Việt Nam và Quốc tế...</p>
           </div>
         </div>
 

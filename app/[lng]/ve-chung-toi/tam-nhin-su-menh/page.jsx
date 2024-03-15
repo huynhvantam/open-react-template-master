@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "../../../i18n";
 import { Header } from "../../components/Header/client";
-import bannerabout from '@/public/images/banner/banner-about.png';
+import bannerabout from '@/public/images/banner/banner-about.jpg';
 import BannerImage from '../../components/banner'
 import Content1 from '../../components/content1'
 import Pagedautien from '../../components/pagedautien'

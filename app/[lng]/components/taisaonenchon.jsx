@@ -2,7 +2,7 @@
 import monhoc from "@/public/images/taisaochon/monhoc.jpg"
 import logophuonghoang from "@/public/images/phuonghoang/logo.png"
 import monhoc1 from "@/public/images/features-03-image-01.png"
-import banner from "@/public/images/banner/banner-about.png"
+import banner from "@/public/images/banner/banner-about.jpg"
 import Image from "next/image"
 export default function Taisaonenchon() {
 

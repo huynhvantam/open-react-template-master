@@ -1,7 +1,7 @@
 
 
 import Image from 'next/image';
-import Image1 from "@/public/images/homepage/image-home1.png"
+import Image1 from "@/public/images/phuonghoang/hocsinh2.jpg"
 import {
   Button,
   Cascader,
@@ -24,7 +24,7 @@ export default function Dangkytuvan() {
     console.log('checked = ', checkedValues);
   };
   return (
-    <section className=''>
+    <section id='tuyen-sinh'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative py-20">
         <h3 className='h3' data-aos="fade-up" >Đăng ký nhận tư vấn</h3>
         <p className='p' data-aos="fade-up" data-aos-delay="200">Đội ngũ Tuyển sinh sẽ tư vấn tận tâm và đem lại trải nghiệm tuyệt vời nhất cho gia đình!</p>
