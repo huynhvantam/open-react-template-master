@@ -7,7 +7,7 @@ import { AiOutlineCaretRight, AiOutlineCaretDown } from "react-icons/ai";
 const items = [
   {
     caption: "Chương trình học song ngữ được thiết kế ĐẶC BIỆT",
-    description: "Học sinh Hanoi Academy được học song song 2 chương trình của bộ Giáo dục & Đào tạo và Chương trình học quốc tế có bản quyền từ Anh Quốc."
+    description: "Học sinh được học song song 2 chương trình của bộ Giáo dục & Đào tạo và Chương trình học quốc tế có bản quyền từ Anh Quốc."
   },
   {
     caption: "Chương trình phát triển năng lực cá nhân và nhận thức xã hội của học sinh",

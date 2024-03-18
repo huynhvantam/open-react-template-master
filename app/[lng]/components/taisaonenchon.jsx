@@ -1,8 +1,8 @@
 
 import monhoc from "@/public/images/taisaochon/monhoc.jpg"
 import logophuonghoang from "@/public/images/phuonghoang/logo.png"
-import monhoc1 from "@/public/images/features-03-image-01.png"
-import banner from "@/public/images/banner/banner-about.jpg"
+import monhoc1 from "@/public//images/phuonghoang/hocsinh5.jpg"
+import banner from "@/public/images/oneuse/anh1.jpg"
 import Image from "next/image"
 export default function Taisaonenchon() {
 
@@ -10,8 +10,8 @@ export default function Taisaonenchon() {
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-4 py-20">
         <div className="grid grid-cols-8 gap-4 ">
-          <div className="col-start-1 col-end-3 h3 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg p-5 relative">
-            <p className="text-rose-500">Tại sao chọn Phoenix Education?</p>
+          <div className="col-start-1 col-end-3 h3 bg-gradient-to-b from-amber-200 to-rose-100 w-full h-full rounded-lg p-5 relative">
+            <p style={{ textShadow: '2px 2px #ffffff' }} className="text-rose-500">Tại sao chọn Phoenix Education?</p>
             <Image src={logophuonghoang} alt="Logo Phương Hoàng" width={70} height={70} className="absolute bottom-2 right-2 z-0" />
           </div>
           <div className="col-start-3 col-end-7">
@@ -49,7 +49,7 @@ export default function Taisaonenchon() {
           <div className="col-start-7 col-end-9  w-full h-full rounded-lg relative">
             <Image src={monhoc1} layout="fill" alt="pictures" className="rounded-lg absolute top-0 right-0 bottom-0 left-0 -z-10" />
             <div className="bg-gradient-to-t from-rose-300 absolute bottom-0 pt-20 px-4 pb-4 rounded-lg text-gray-100">
-              <span className="text-rose-400 h4"> 5 chương trình học</span> đa dạng, hệ thống đánh giá và tiêu chuẩn đầu ra rõ ràng</div>
+              <span style={{ textShadow: '2px 2px #d20dbe' }} className="text-white h4"> 5 chương trình học</span> đa dạng, hệ thống đánh giá và tiêu chuẩn đầu ra rõ ràng</div>
 
           </div>
         </div>
