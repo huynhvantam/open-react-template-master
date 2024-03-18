@@ -23,7 +23,9 @@
 .hh4 {
   @apply text-sm leading-[22px]  font-medium;
 }
-
+.h5 {
+  @apply text-xl font-medium leading-snug tracking-tight;
+}
 .p {
   @apply text-[#49505e] leading-[26px];
 }

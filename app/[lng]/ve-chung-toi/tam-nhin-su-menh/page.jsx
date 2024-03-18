@@ -8,7 +8,9 @@ import Pagedautien from '../../components/pagedautien'
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  return { title: t("h1") };
+  const title1 = t("tam-nhin");
+  const title2 = t("giao-duc-ph");
+  return { title: `${title1} - ${title2}` };
 }
 
 export default async function Page({ params: { lng } }) {

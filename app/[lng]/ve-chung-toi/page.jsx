@@ -5,10 +5,11 @@ import bannerabout from '@/public/images/banner/banner-about.jpg';
 import BannerImage from '../components/banner'
 import Content1 from '../components/content1'
 export async function generateMetadata({ params: { lng } }) {
-  const { t } = await useTranslation(lng, "second-page");
-  return { title: t("h1") };
+  const { t } = await useTranslation(lng, "header");
+  const title1 = t("about");
+  const title2 = t("giao-duc-ph");
+  return { title: `${title1} - ${title2}` };
 }
-
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "second-page");
   return (
