@@ -7,7 +7,7 @@ import { FaSquareYoutube } from "react-icons/fa6";
 export default async function Footer({ lng }) {
   const { t } = await useTranslation(lng, "header");
   return (
-    <footer id="footer" className='bg-gradient-to-b from-rose-200 from-10% via-rose-100 via-30% to-rose-50 to-90% '>
+    <footer id="footer" className='bg-gradient-to-b from-rose-300 from-10% via-rose-200 via-30% to-rose-50 to-90% '>
       <div className="pt-12 md:pt-16 ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 

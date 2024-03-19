@@ -7,7 +7,7 @@ import Icon3 from '@/public/images/icon/Frame-2.png'
 import Icon4 from '@/public/images/icon/Frame-3.png'
 export default function Content1() {
   return (
-    <section>
+    <section className='pt-20'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className='grid grid-cols-2 gap-x-20'>
           <div>

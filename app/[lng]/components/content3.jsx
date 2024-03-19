@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
-import Image1 from "@/public/images/homepage/image-home1.png"
+import Image1 from "@/public/images/phuonghoang/hocsinh5.jpg"
 import { AiOutlineCaretRight, AiOutlineCaretDown } from "react-icons/ai";
 // Định nghĩa mảng các đối tượng chứa dữ liệu cho mỗi phần tử
 const items = [
