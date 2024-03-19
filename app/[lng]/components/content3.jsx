@@ -41,7 +41,7 @@ export default function Content3() {
     <section className='py-36'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className='grid grid-cols-2 gap-x-10 place-items-end'>
-          <Image src={Image1} alt="picture" layout="responsive" data-aos="fade-up" className=' ' />
+          <Image src={Image1} alt="picture" data-aos="fade-up" priority />
           <div>
             <div className='hh4' data-aos="fade-up" >/CHƯƠNG TRÌNH ĐÀO TẠO</div>
             <div className='h25 mt-6 mb-5' data-aos="fade-up" data-aos-delay="200">Điểm nổi bật của Chương trình <br /> Song ngữ Anh - Việt</div>

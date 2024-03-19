@@ -4,8 +4,8 @@ import { useTranslation } from '../../i18n'
 import Image from 'next/image'
 import logo from "@/public/images/phuonghoang/logo.png"
 import { FaSquareYoutube } from "react-icons/fa6";
-export default async function Footer({ lng }) {
-  const { t } = await useTranslation(lng, "header");
+export default function Footer({ lng }) {
+  const { t } = useTranslation(lng, "header");
   return (
     <footer id="footer" className='bg-gradient-to-b from-rose-300 from-10% via-rose-200 via-30% to-rose-50 to-90% '>
       <div className="pt-12 md:pt-16 ">
@@ -19,7 +19,7 @@ export default async function Footer({ lng }) {
               <div className="mb-2 text-center">
                 {/* Logo */}
                 <Link href="/" className="flex flex-col items-center gap-y-4" aria-label="Cruip">
-                  <Image className="h-fit pointer-events-none" src={logo} width={150} height={150} alt="logo" />
+                  <Image className="h-fit pointer-events-none" src={logo} width={150} height={150} priority alt="logo" />
                 </Link>
                 <div className="font-semibold text-rose-500 pt-2">
                   <h4 className="text-lg">PHOENIX EDUCATION</h4>
@@ -84,7 +84,7 @@ export default async function Footer({ lng }) {
                   </ul>
                 </ul>
               </div>
-              <iframe
+              {/* <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiaoducphuonghoang&tabs=timeline&width=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                 width="300"
                 style={{ border: 'none', overflow: 'hidden' }}
@@ -101,7 +101,7 @@ export default async function Footer({ lng }) {
                 frameBorder="0"
                 allowFullScreen={true}
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              ></iframe>
+              ></iframe> */}
 
 
             </div>

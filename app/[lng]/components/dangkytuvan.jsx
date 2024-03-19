@@ -30,7 +30,7 @@ export default function Dangkytuvan() {
         <p className='p' data-aos="fade-up" data-aos-delay="200">Đội ngũ Tuyển sinh sẽ tư vấn tận tâm và đem lại trải nghiệm tuyệt vời nhất cho gia đình!</p>
         <div className='grid grid-cols-2 gap-20 pt-10'>
           <div className="">
-            <Image className="h-fit " src={Image1} alt="Môn học" />
+            <Image className="h-fit " src={Image1} alt="Môn học" priority />
           </div>
           <div className='space-y-6'>
             <div className='border-b'>

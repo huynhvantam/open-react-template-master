@@ -1,8 +1,8 @@
 import VideoThumb from '@/public/images/oneuse/thumpvideo.jpg'
 import ModalVideo from './modal-video'
 import { useTranslation } from '../i18n'
-export default async function Hero({ lng }) {
-  const { t } = await useTranslation(lng, "header");
+export default function Hero({ lng }) {
+  const { t } = useTranslation(lng, "header");
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative pt-20">
@@ -20,12 +20,14 @@ export default async function Hero({ lng }) {
         </div>
         <ModalVideo
           thumb={VideoThumb}
-          thumbWidth={1024}
-          thumbHeight={576}
+          thumbWidth={1920}
+          thumbHeight={1080}
           thumbAlt="Modal video thumbnail"
           video="/videos/video.mp4"
           videoWidth={1920}
-          videoHeight={1080} />
+          videoHeight={1080}
+          priority="true"
+        />
       </div>
     </section>
   )

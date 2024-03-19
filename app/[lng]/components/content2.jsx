@@ -52,7 +52,7 @@ export default function Content2() {
             {items.map((item, index) => (
               <Link key={index} href={item.href} className="text-rose-400 font-semibold hover:text-0 bg-white h-fit px-2">
                 <div className='pt-4 pb-2'>
-                  <Image src={item.imageSrc} alt={item.alt} layout="responsive" data-aos="fade-up" className='' />
+                  <Image src={item.imageSrc} alt={item.alt} data-aos="fade-up" priority />
                   <div className=' pt-2' data-aos="fade-up">{item.caption}</div>
                 </div>
               </Link>

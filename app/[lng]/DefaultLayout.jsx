@@ -39,29 +39,32 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">
-        <Header lng={lng} />
-        <BannerImage src={FeatImage01}
+        {/* <Header lng={lng} /> */}
+        {/* <BannerImage src={FeatImage01}
           text1="GIÁO DỤC PHƯỢNG HOÀNG"
           text2="Tuyển sinh năm học"
           text3=" 2024 - 2025"
           button="Đăng ký ngay"
-          href="#tuyen-sinh" />
+          href="#tuyen-sinh" /> */}
 
-        <Content1 />
-        <Hero lng={lng} />
-        <Content2 />
-        <Content3 />
-        <Taisaonenchon />
-        <PageIllustration />
+        {/* <Content1 /> */}
+        {/* <Hero lng={lng} /> */}
+
+        {/* <Content2 /> */}
+        {/* <Content3 /> */}
+        {/* <Taisaonenchon /> */}
+
+
+        {/* <Iconhelp /> */}
         {children}
-
+        {/* sóng xanh */}
+        {/* <PageIllustration /> */}
         {/* <Features /> */}
         {/* <Zigzag /> */}
         {/* <Newsletter /> */}
-        {/* <Iconhelp /> */}
-        <Chiasecongdong />
-        <Dangkytuvan />
-        <Googlemap />
+        {/* <Chiasecongdong /> */}
+        {/* <Dangkytuvan /> */}
+        {/* <Googlemap /> */}
         <Footer lng={lng} />
       </main>
 
