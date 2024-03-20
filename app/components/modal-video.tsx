@@ -13,6 +13,7 @@ interface ModalVideoProps {
   video: string
   videoWidth: number
   videoHeight: number
+  className: string
 }
 
 export default function ModalVideo({
@@ -23,13 +24,14 @@ export default function ModalVideo({
   video,
   videoWidth,
   videoHeight,
+  className
 
 }: ModalVideoProps) {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   return (
-    <div>
+    <section className={className}>
 
       {/* Video thumbnail */}
       <div>
@@ -91,6 +93,6 @@ export default function ModalVideo({
         </Dialog>
       </Transition>
 
-    </div>
+    </section>
   )
 }
