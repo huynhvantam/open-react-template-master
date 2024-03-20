@@ -96,10 +96,18 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
             <nav className="hidden md:flex md:grow mt-2">
               {/* Desktop sign in links */}
               <ul className="flex flex-1 justify-end items-center text-lg">
-                <Navv items={items} buttonText={t("about")} />
-                <Navv items={items2} buttonText={t("chuong-trinh")} />
-                <Navv items={items3} buttonText={t("doi-song")} />
-                <Navv items={items4} buttonText={t("tuyen-sinh")} />
+                <Navv
+                  items={items}
+                  buttonText={t("about")}
+                  href={"ve-chung-toi"}
+                />
+                <Navv
+                  items={items2}
+                  buttonText={t("chuong-trinh")}
+                  href={"/"}
+                />
+                <Navv items={items3} buttonText={t("doi-song")} href={"/"} />
+                <Navv items={items4} buttonText={t("tuyen-sinh")} href={"/"} />
                 <Link
                   className="px-3 py-1 rounded-sm text-white round bg-rose-500"
                   href="#footer"
