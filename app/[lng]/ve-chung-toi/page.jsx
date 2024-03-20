@@ -19,11 +19,14 @@ export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const highlight = true;
   const links = [
-    { href: "/content1", content: t("gioi-thieu"), hightlight: true },
-    { href: "/content2", content: t("tam-nhin") },
-    { href: "/content3", content: t("giao-vien") },
-    { href: "/content4", content: t("lanh-dao") },
-    { href: "/content4", content: t("thanh-tich") },
+    { href: "/ve-chung-toi/", content: t("gioi-thieu"), hightlight: true },
+    { href: "/ve-chung-toi/tam-nhin-su-menh", content: t("tam-nhin") },
+    { href: "/ve-chung-toi/doi-ngu-giao-vien", content: t("giao-vien") },
+    { href: "/ve-chung-toi/doi-ngu-lanh-dao", content: t("lanh-dao") },
+    {
+      href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
+      content: t("thanh-tich"),
+    },
   ];
   return (
     <>
@@ -34,11 +37,7 @@ export default async function Page({ params: { lng } }) {
         text2="Giới thiệu chung"
       />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">
-        <PageDautien
-          className="pt-14 pb-6"
-          links={links}
-          highlight={highlight}
-        />
+        <PageDautien className="" links={links} highlight={highlight} />
 
         <h2 className="pt-20 h3  text-center border-b-[3px] border-b-rose-500 pb-6 w-fit mx-auto">
           VỀ CHÚNG TÔI

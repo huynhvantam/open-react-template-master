@@ -15,9 +15,21 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
       href: "/ve-chung-toi/tam-nhin-su-menh",
       label: "Tầm nhìn - Sứ mệnh",
     },
-    { key: "3", href: "/", label: "Đội ngũ giáo viên" },
-    { key: "4", href: "/", label: "Đội ngũ lãnh đạo" },
-    { key: "5", href: "/", label: "Thành tích của chúng tôi" },
+    {
+      key: "3",
+      href: "/ve-chung-toi/doi-ngu-giao-vien",
+      label: "Đội ngũ giáo viên",
+    },
+    {
+      key: "4",
+      href: "/ve-chung-toi/doi-ngu-lanh-dao",
+      label: "Đội ngũ lãnh đạo",
+    },
+    {
+      key: "5",
+      href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
+      label: "Thành tích của chúng tôi",
+    },
   ];
   const items2 = [
     { key: "1", href: "/", label: "Tổng quan chương trình" },
@@ -99,7 +111,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 <Navv
                   items={items}
                   buttonText={t("about")}
-                  href={"ve-chung-toi"}
+                  href={"/ve-chung-toi"}
                 />
                 <Navv
                   items={items2}
