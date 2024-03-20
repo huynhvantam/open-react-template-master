@@ -27,11 +27,6 @@ export default async function Page({ params: { lng } }) {
   ];
   return (
     <>
-      <main>
-        <Link href={`/${lng}`}>
-          <button type="button">{t("back-to-home")}</button>
-        </Link>
-      </main>
       <Header lng={lng} path="/ve-chung-toi" />
       <BannerImage
         src={bannerabout}
