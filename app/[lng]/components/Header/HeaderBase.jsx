@@ -78,9 +78,12 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           <div className="">
             {/* Desktop navigation */}
             <div className="flex gap-x-6 justify-end items-center">
-              <div className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 ">
-                Đăng ký tư vấn
-              </div>
+              <Link
+                className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 "
+                href="#tuyen-sinh"
+              >
+                {t("dang-ky-tv")}
+              </Link>
               <Link className="pp" href="/tin-tuc">
                 {t("tin-tuc")}
               </Link>
@@ -122,7 +125,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 <Navv items={items4} buttonText={t("tuyen-sinh")} href={"/"} />
                 <Link
                   className="px-3 py-1 rounded-sm text-white round bg-rose-500"
-                  href="#footer"
+                  href="#thong-tin-lien-he"
                 >
                   {t("lien-he")}
                 </Link>

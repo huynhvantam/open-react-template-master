@@ -19,7 +19,7 @@ const testimonials = [
   }, {
     image: TestimonialImage01,
     people: "Chia sẻ của giáo viên",
-    quote: "Tại Giáo dục Phượng Hoàng, học sinh không những học lý thuyết mà còn được ứng dụng lý thuyết vào trong thực hành. Không chỉ có vậy, học sinh còn được trải nghiệm và sáng tạo, đồng thời phát triển các kỹ năng mềm như làm việc nhóm.",
+    quote: "Tại Giáo Dục Phượng Hoàng, học sinh không những học lý thuyết mà còn được ứng dụng lý thuyết vào trong thực hành. Không chỉ có vậy, học sinh còn được trải nghiệm và sáng tạo, đồng thời phát triển các kỹ năng mềm như làm việc nhóm.",
     author: "- Nguyễn Văn C -",
     position: "UX Board"
   },

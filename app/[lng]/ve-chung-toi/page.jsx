@@ -43,12 +43,12 @@ export default async function Page({ params: { lng } }) {
           VỀ CHÚNG TÔI
         </h2>
         <p className="p py-8">
-          Được thành lập từ năm 2009, Hanoi Academy được xem là đơn vị tiên
-          phong trong lĩnh vực giáo dục song ngữ quốc tế tại Hà Nội. Với triết
-          lý giáo dục “Kiến tạo công dân toàn cầu", Hanoi Academy đã và đang nỗ
-          lực để trở thành một ngôi trường Việt Nam mang tầm đẳng cấp quốc tế,
-          trở thành cái nôi phát triển của học sinh, đồng thời là địa chỉ uy tín
-          để các bậc phụ huynh tin tưởng, lựa chọn.
+          Được thành lập từ năm 2009, Giáo Dục Phượng Hoàng được xem là đơn vị
+          tiên phong trong lĩnh vực giáo dục song ngữ quốc tế tại Hà Nội. Với
+          triết lý giáo dục “Kiến tạo công dân toàn cầu", Giáo Dục Phượng Hoàng
+          đã và đang nỗ lực để trở thành một ngôi trường Việt Nam mang tầm đẳng
+          cấp quốc tế, trở thành cái nôi phát triển của học sinh, đồng thời là
+          địa chỉ uy tín để các bậc phụ huynh tin tưởng, lựa chọn.
         </p>
         <ModalVideo
           className="pb-20"
@@ -95,22 +95,22 @@ export default async function Page({ params: { lng } }) {
                       <h3 className="text-2xl mb-3 font-playfair text-rose-500">
                         hình thành và phát triển…
                       </h3>
-                      <p className="mb-4 text-justify pt-4">
-                        Tính đến nay, Hanoi Academy đã có gần 15 năm hình thành
-                        và phát triển với 100+ học sinh đạt chứng chỉ IGCSE, 70+
-                        học sinh đạt chứng chỉ A-level / IFD. Tự hào hơn nữa,
-                        100% học sinh tốt nghiệp THPT Quốc Gia, 100% học sinh
-                        ứng tuyển thành công vào các trường đại học trong và
-                        ngoài nước. Để có được những kết quả đó, trong suốt 15
-                        năm qua, Hanoi Academy luôn nỗ lực duy trì và đảm bảo
-                        dịch vụ thông qua quy trình quản lý chất lượng dạy, học,
-                        vận hành nghiêm ngặt, chặt chẽ theo tiêu chuẩn Quốc tế
-                        với kinh nghiệm và sự nhiệt thành của các nhà giáo dục
-                        và quản lý Việt Nam, Quốc tế. Với tôn chỉ hoạt động:
-                        “Lấy học sinh làm trung tâm”, thầy cô và cán bộ nhà
-                        trường luôn thực hành đúng các chuẩn mực đạo đức nghề
-                        nghiệp: Tôn trọng, yêu thương, lắng nghe chia sẻ, tâm
-                        nguyện của mọi học sinh.
+                      <p className="mb-4 pt-4">
+                        Tính đến nay, Giáo Dục Phượng Hoàng đã có gần 15 năm
+                        hình thành và phát triển với 100+ học sinh đạt chứng chỉ
+                        IGCSE, 70+ học sinh đạt chứng chỉ A-level / IFD. Tự hào
+                        hơn nữa, 100% học sinh tốt nghiệp THPT Quốc Gia, 100%
+                        học sinh ứng tuyển thành công vào các trường đại học
+                        trong và ngoài nước. Để có được những kết quả đó, trong
+                        suốt 15 năm qua, Giáo Dục Phượng Hoàng luôn nỗ lực duy
+                        trì và đảm bảo dịch vụ thông qua quy trình quản lý chất
+                        lượng dạy, học, vận hành nghiêm ngặt, chặt chẽ theo tiêu
+                        chuẩn Quốc tế với kinh nghiệm và sự nhiệt thành của các
+                        nhà giáo dục và quản lý Việt Nam, Quốc tế. Với tôn chỉ
+                        hoạt động: “Lấy học sinh làm trung tâm”, thầy cô và cán
+                        bộ nhà trường luôn thực hành đúng các chuẩn mực đạo đức
+                        nghề nghiệp: Tôn trọng, yêu thương, lắng nghe chia sẻ,
+                        tâm nguyện của mọi học sinh.
                       </p>
                     </div>
                   </div>
@@ -147,17 +147,17 @@ export default async function Page({ params: { lng } }) {
                       <h5 className="text-2xl mb-3 font-playfair text-rose-500">
                         “Cái nôi” tạo ra những công dân toàn cầu
                       </h5>
-                      <p className="mb-4 text-justify pt-4">
+                      <p className="mb-4 pt-4">
                         Nếu như các trường học truyền thống chú trọng phần lớn
-                        thời gian cho kiến thức và những môn học cơ bản thì
-                        Hanoi Academy với mô hình giáo dục liên cấp từ bậc Mầm
-                        non – Tiền tiểu học – Tiểu học – THCS – THPT cùng chương
-                        trình học thuật toàn diện, kết hợp hài hoà giữa các bộ
-                        môn theo tiêu chuẩn của Bộ Giáo dục & Đào tạo Việt Nam,
-                        các bộ môn Quốc tế theo tiêu chuẩn của Vương Quốc Anh
-                        giúp trau dồi, rèn luyện & phát triển toàn diện KIẾN
-                        THỨC – KỸ NĂNG – PHẨM CHẤT, giúp các học sinh trở thành
-                        những “Công dân toàn cầu”.
+                        thời gian cho kiến thức và những môn học cơ bản thì Giáo
+                        Dục Phượng Hoàng với mô hình giáo dục liên cấp từ bậc
+                        Mầm non – Tiền tiểu học – Tiểu học – THCS – THPT cùng
+                        chương trình học thuật toàn diện, kết hợp hài hoà giữa
+                        các bộ môn theo tiêu chuẩn của Bộ Giáo dục & Đào tạo
+                        Việt Nam, các bộ môn Quốc tế theo tiêu chuẩn của Vương
+                        Quốc Anh giúp trau dồi, rèn luyện & phát triển toàn diện
+                        KIẾN THỨC – KỸ NĂNG – PHẨM CHẤT, giúp các học sinh trở
+                        thành những “Công dân toàn cầu”.
                       </p>
                     </div>
                   </div>
@@ -201,18 +201,18 @@ export default async function Page({ params: { lng } }) {
                         hạnh phúc
                       </h4>
 
-                      <p className="mb-4 text-justify pt-4">
+                      <p className="mb-4 pt-4">
                         Không chỉ được tích luỹ, tiếp cận kiến thức từ các môn
-                        học, các Acers (Học sinh Hanoi Academy) còn được định
-                        hướng bài bản giúp tăng cường kỹ năng sống, bồi dưỡng
-                        thể lực, ý thức kỷ luật, phẩm chất và tâm thế của công
-                        dân thế hệ mới, sẵn sàng dấn thân, hội nhập, thành công
-                        hơn trong thời đại số hoá và toàn cầu hoá hiện nay. Tại
-                        Hanoi Academy, sự an toàn, niềm vui tới trường hàng ngày
-                        và sự phát triển tích cực của học sinh đóng vai trò nòng
-                        cốt, là mục tiêu, đích đến là cũng là động lực để nhà
-                        trường không ngừng thay đổi, học hỏi và cải thiện các
-                        hoạt động liên quan.
+                        học, các Acers (Học sinh Giáo Dục Phượng Hoàng) còn được
+                        định hướng bài bản giúp tăng cường kỹ năng sống, bồi
+                        dưỡng thể lực, ý thức kỷ luật, phẩm chất và tâm thế của
+                        công dân thế hệ mới, sẵn sàng dấn thân, hội nhập, thành
+                        công hơn trong thời đại số hoá và toàn cầu hoá hiện nay.
+                        Tại Giáo Dục Phượng Hoàng, sự an toàn, niềm vui tới
+                        trường hàng ngày và sự phát triển tích cực của học sinh
+                        đóng vai trò nòng cốt, là mục tiêu, đích đến là cũng là
+                        động lực để nhà trường không ngừng thay đổi, học hỏi và
+                        cải thiện các hoạt động liên quan.
                       </p>
                     </div>
                   </div>
@@ -245,15 +245,15 @@ export default async function Page({ params: { lng } }) {
                       <div className="font-playfair text-[40px] text-rose-500">
                         Mục đích to lớn hơn
                       </div>
-                      <p className="mb-4 text-justify pt-4 ">
-                        Lợi nhuận không phải là mục đích cuối cùng của Hanoi
-                        Academy. Chúng tôi tin rằng, Hanoi Academy sẽ là nơi lý
-                        tưởng để mọi học sinh phát triển được tối đa tài năng
-                        của mình. Qua quá trình học tập, phát triển toàn diện về
-                        thái độ, kỹ năng, kiến thức, rèn luyện cả trí và lực,
-                        các thế hệ học sinh khi ra trường sẽ trở thành người có
-                        ích, mang lại của cải, tri thức cho xã hội và làm chủ
-                        tương lai của đất nước.
+                      <p className="mb-4 pt-4 ">
+                        Lợi nhuận không phải là mục đích cuối cùng của Giáo Dục
+                        Phượng Hoàng. Chúng tôi tin rằng, Giáo Dục Phượng Hoàng
+                        sẽ là nơi lý tưởng để mọi học sinh phát triển được tối
+                        đa tài năng của mình. Qua quá trình học tập, phát triển
+                        toàn diện về thái độ, kỹ năng, kiến thức, rèn luyện cả
+                        trí và lực, các thế hệ học sinh khi ra trường sẽ trở
+                        thành người có ích, mang lại của cải, tri thức cho xã
+                        hội và làm chủ tương lai của đất nước.
                       </p>
                     </div>
                   </div>
@@ -263,7 +263,7 @@ export default async function Page({ params: { lng } }) {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
