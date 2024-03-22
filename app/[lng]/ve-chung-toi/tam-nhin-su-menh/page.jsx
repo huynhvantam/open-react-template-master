@@ -85,17 +85,17 @@ export default async function Page({ params: { lng } }) {
       href: "/ve-chung-toi/doi-ngu-lanh-dao",
       content: t("lanh-dao"),
     },
-    {
-      href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
-      content: t("thanh-tich"),
-    },
+    // {
+    //   href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
+    //   content: t("thanh-tich"),
+    // },
   ];
   return (
     <>
       <Header lng={lng} path="/ve-chung-toi/tam-nhin-su-menh" />
       <BannerImage
         src={bannerabout}
-        text1="Về chúng tôi / Tầm nhìn - Sứ mệnh"
+        text1="Trang chủ / Về chúng tôi"
         text2="Tầm nhìn - Sứ mệnh"
       />
       <Pagedautien links={links} highlight={highlight} />

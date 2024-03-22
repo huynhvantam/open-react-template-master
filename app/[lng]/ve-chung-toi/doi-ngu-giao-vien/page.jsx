@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useTranslation } from "../../../i18n";
 import { Header } from "../../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-about.jpg";
-import BannerImage from "../../components/banner";
+import BannerImage1 from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/testimonial-01.jpg";
@@ -23,34 +23,192 @@ const buttonData = {
         text2: "Bằng cấp",
         text3: "Kinh nghiệm",
         chuyenmon: "Chuyên môn:",
-        thanhtich:
-          "Với khoảng thời gian 40 năm gắn bó với sự nghiệp giáo dục - đào tạo và hiện là Viện trưởng Viện Nghiên cứu Giáo dục – Trường Đại học Sư phạm TPHCM, PGS-TS Ngô Minh Oanh đã tham gia đào tạo hàng ngàn sinh viên Đại học, Cao đẳng Sư phạm; hướng dẫn thành công 15 tiến sĩ, 55 thạc sỹ; bồi dưỡng chuyên môn nghiệp vụ, nâng cao tay nghề cho hàng trăm giáo viên phổ thông.",
-        lienhe:
-          "PGS-TS Ngô Minh Oanh còn là một nhà giáo, nhà khoa học nhiệt thành, hăng say cống hiến vì các thế hệ học sinh, vì bộ môn Lịch sử và sự nghiệp đổi mới giáo dục – đào tạo với nhiều đóng góp hữu ích không ngừng trong suốt thời gian qua. Đó là quá trình nhiều năm thầy tham gia tập huấn, trao đổi kinh nghiệm quốc tế tại Úc, Đức, Colombia, Nga và Hàn Quốc để góp phần cải cách sách giáo khoa, cải tiến phương pháp giảng dạy và đổi mới mô hình trường học. Đó là số lượng hơn 100 bài báo nghiên cứu về lĩnh vực giáo dục và chuyên môn đăng tải trên các tạp chí, kỷ yếu hội nghị khoa học trong và ngoài nước cùng 15 đầu sách về Lịch sử và Giáo dục – Đào tạo được xuất bản.",
+        thanhtich: "Với khoảng thời gian 40 năm ",
+        lienhe: "PGS-TS Ngô Minh Oanh còn ",
         buttonText: "Xem thêm",
       },
-      // Add more list items for "mamnon" category
+      {
+        imageSrc: Image1,
+        title: "Cô Nguyễn Thị Hương",
+        description: "Giáo Viên Lớp Mẫu Giáo",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 35 năm ",
+        lienhe: "PGS-TS Nguyễn Minh Hạnh còn ",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image1,
+        title: "Cô Trần Thị Thu Hà",
+        description: "Giáo Viên Lớp Mẫu Giáo",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 30 năm ",
+        lienhe: "PGS-TS Lê Thị Hương còn ",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image1,
+        title: "Cô Phạm Thị Thu Hường",
+        description: "Giáo Viên Lớp Mẫu Giáo",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 25 năm ",
+        lienhe: "PGS-TS Phạm Thị Kim Anh còn ",
+        buttonText: "Xem thêm",
+      },
     ],
   },
   vietnam: {
     title: "Giáo Viên Việt Nam",
     listItems: [
-      // Add list items for "vietnam" category
+      {
+        imageSrc: Image1,
+        title: "Cô Nguyễn Thị Lan",
+        description: "Giáo Viên Tiểu Học",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 20 năm ",
+        lienhe: "PGS-TS Trần Thị Thanh còn ",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image1,
+        title: "Cô Trần Thị Hương",
+        description: "Giáo Viên Mầm Non",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 15 năm ",
+        lienhe: "PGS-TS Lê Thị Thu còn ",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image1,
+        title: "Thầy Nguyễn Văn Tâm",
+        description: "Giáo Viên Trung Học",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 25 năm ",
+        lienhe: "PGS-TS Nguyễn Minh Tuấn còn ",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image1,
+        title: "Cô Phạm Thị Thu Huyền",
+        description: "Giáo Viên Tiểu Học",
+        text2: "Bằng cấp",
+        text3: "Kinh nghiệm",
+        chuyenmon: "Chuyên môn:",
+        thanhtich: "Với khoảng thời gian 30 năm ",
+        lienhe: "PGS-TS Phạm Thị Hằng còn ",
+        buttonText: "Xem thêm",
+      },
     ],
   },
-  vietnam2: {
-    title: "Giáo Viên Việt Nam",
+  quocte: {
+    title: "Giáo Viên Quốc tế",
     listItems: [
-      // Add list items for "vietnam" category
+      {
+        imageSrc: Image1,
+        title: "Mr. John Smith",
+        description: "English Teacher",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 15 years of experience",
+        lienhe: "Contact Dr. Jane Doe",
+        buttonText: "Read more",
+      },
+      {
+        imageSrc: Image1,
+        title: "Mrs. Maria Gonzalez",
+        description: "Spanish Teacher",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 20 years of experience",
+        lienhe: "Contact Prof. Juan Martinez",
+        buttonText: "Read more",
+      },
+      {
+        imageSrc: Image1,
+        title: "Ms. Sakura Tanaka",
+        description: "Japanese Teacher",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 10 years of experience",
+        lienhe: "Contact Dr. Takeshi Yamamoto",
+        buttonText: "Read more",
+      },
+      {
+        imageSrc: Image1,
+        title: "Mr. Ali Khan",
+        description: "Arabic Teacher",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 25 years of experience",
+        lienhe: "Contact Prof. Fatima Ahmed",
+        buttonText: "Read more",
+      },
     ],
   },
-  vietnam3: {
-    title: "Giáo Viên Việt Nam",
+  anhngu: {
+    title: "Giáo Viên Anh Ngữ",
     listItems: [
-      // Add list items for "vietnam" category
+      {
+        imageSrc: Image1,
+        title: "Ms. Emily Johnson",
+        description: "English Language Instructor",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 10 years of experience",
+        lienhe: "Contact Dr. David Brown",
+        buttonText: "Read more",
+      },
+      {
+        imageSrc: Image1,
+        title: "Mr. Michael Clark",
+        description: "ESL Teacher",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 15 years of experience",
+        lienhe: "Contact Prof. Sarah White",
+        buttonText: "Read more",
+      },
+      {
+        imageSrc: Image1,
+        title: "Ms. Sophie Martin",
+        description: "English Language Tutor",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 5 years of experience",
+        lienhe: "Contact Dr. James Wilson",
+        buttonText: "Read more",
+      },
+      {
+        imageSrc: Image1,
+        title: "Mr. Daniel Brown",
+        description: "IELTS Instructor",
+        text2: "Certified",
+        text3: "Experience",
+        chuyenmon: "Specialization:",
+        thanhtich: "With 8 years of experience",
+        lienhe: "Contact Prof. Emma Taylor",
+        buttonText: "Read more",
+      },
     ],
   },
-  // ... other categories
 };
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -64,18 +222,18 @@ export default async function Page({ params: { lng } }) {
       hightlight: true,
     },
     { href: "/ve-chung-toi/doi-ngu-lanh-dao", content: t("lanh-dao") },
-    {
-      href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
-      content: t("thanh-tich"),
-    },
+    // {
+    //   href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
+    //   content: t("thanh-tich"),
+    // },
   ];
 
   return (
     <>
       <Header lng={lng} path="/ve-chung-toi/doi-ngu-giao-vien" />
-      <BannerImage
+      <BannerImage1
         src={bannerabout}
-        text1="Về chúng tôi / Đội ngũ giáo viên"
+        text1="Trang chủ / Về chúng tôi"
         text2="Đội ngũ giáo viên"
       />
       <Pagedautien links={links} highlight={highlight} />

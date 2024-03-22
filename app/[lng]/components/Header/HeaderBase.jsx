@@ -25,18 +25,21 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
       href: "/ve-chung-toi/doi-ngu-lanh-dao",
       label: "Đội ngũ lãnh đạo",
     },
-    {
-      key: "5",
-      href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
-      label: "Thành tích của chúng tôi",
-    },
+    // {
+    //   key: "5",
+    //   href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
+    //   label: "Thành tích của chúng tôi",
+    // },
   ];
   const items2 = [
-    { key: "1", href: "/", label: "Tổng quan chương trình" },
-    { key: "2", href: "/", label: "Mầm non" },
-    { key: "3", href: "/", label: "Tiểu học" },
-    { key: "4", href: "/", label: "Trung học" },
-    { key: "5", href: "/", label: "Anh ngữ Phượng Hoàng" },
+    {
+      key: "1",
+      href: "/chuong-trinh-dao-tao",
+      label: "Tổng quan chương trình",
+    },
+    { key: "2", href: "/chuong-trinh-dao-tao/mam-non", label: "Mầm non" },
+    { key: "3", href: "/chuong-trinh-dao-tao/tieu-hoc", label: "Tiểu học" },
+    { key: "4", href: "/chuong-trinh-dao-tao/trung-hoc", label: "Trung học" },
   ];
   const items3 = [
     { key: "1", href: "/", label: "Thành tích học sinh" },
@@ -119,7 +122,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 <Navv
                   items={items2}
                   buttonText={t("chuong-trinh")}
-                  href={"/"}
+                  href={"/chuong-trinh-dao-tao"}
                 />
                 <Navv items={items3} buttonText={t("doi-song")} href={"/"} />
                 <Navv items={items4} buttonText={t("tuyen-sinh")} href={"/"} />
