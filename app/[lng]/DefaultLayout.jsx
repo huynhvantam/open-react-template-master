@@ -23,7 +23,8 @@ import Iconhelp from "../components/iconhelp";
 import Googlemap from "./components/googlemap";
 import Taisaonenchon from "./components/taisaonenchon";
 import Dangkytuvan from "./components/dangkytuvan";
-export default function DefaultLayout({ children, t, lng }) {
+import { useTranslation } from "../i18n/client";
+export default function DefaultLayout({ children, lng }) {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -32,17 +33,17 @@ export default function DefaultLayout({ children, t, lng }) {
       easing: "ease-out-sine",
     });
   });
-
+  const { t } = useTranslation(lng, "header");
   return (
     <>
       <main className="grow">
         <Header lng={lng} />
         <BannerImage
           src={FeatImage01}
-          text1="GIÁO DỤC PHƯỢNG HOÀNG"
-          text2="Tuyển sinh năm học"
+          text1={t("giao-duc-ph")}
+          text2={t("tuyen-sinh-nh")}
           text3=" 2024 - 2025"
-          button="Đăng ký ngay"
+          button={t("dang-ky-ngay")}
           href="#tuyen-sinh"
         />
 
