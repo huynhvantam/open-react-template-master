@@ -9,50 +9,105 @@ import logo from "@/public/images/phuonghoang/logo.png";
 
 export const HeaderBase = ({ t, lng, path = "" }) => {
   const items = [
-    { key: "1", href: "/ve-chung-toi", label: "Giới thiệu chung" },
+    {
+      key: "1",
+      href: "/ve-chung-toi",
+      label: t("gioi-thieu"),
+    },
     {
       key: "2",
       href: "/ve-chung-toi/tam-nhin-su-menh",
-      label: "Tầm nhìn - Sứ mệnh",
+      label: t("tam-nhin"),
     },
     {
       key: "3",
       href: "/ve-chung-toi/doi-ngu-giao-vien",
-      label: "Đội ngũ giáo viên",
+      label: t("giao-vien"),
     },
     {
       key: "4",
       href: "/ve-chung-toi/doi-ngu-lanh-dao",
-      label: "Đội ngũ lãnh đạo",
+      label: t("lanh-dao"),
     },
-    // {
-    //   key: "5",
-    //   href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
-    //   label: "Thành tích của chúng tôi",
-    // },
   ];
+
   const items2 = [
     {
       key: "1",
       href: "/chuong-trinh-dao-tao",
-      label: "Tổng quan chương trình",
+      label: t("tong-quan-chuong-trinh"),
     },
-    { key: "2", href: "/chuong-trinh-dao-tao/mam-non", label: "Mầm non" },
-    { key: "3", href: "/chuong-trinh-dao-tao/tieu-hoc", label: "Tiểu học" },
-    { key: "4", href: "/chuong-trinh-dao-tao/trung-hoc", label: "Trung học" },
+    {
+      key: "2",
+      href: "/chuong-trinh-dao-tao/mam-non",
+      label: t("mam-non"),
+    },
+    {
+      key: "3",
+      href: "/chuong-trinh-dao-tao/tieu-hoc",
+      label: t("tieu-hoc"),
+    },
+    {
+      key: "4",
+      href: "/chuong-trinh-dao-tao/trung-hoc",
+      label: t("thcs"),
+    },
   ];
+
   const items3 = [
-    { key: "1", href: "/", label: "Thành tích học sinh" },
-    { key: "2", href: "/", label: "Dịch vụ đưa đón" },
-    { key: "3", href: "/", label: "Thư viện" },
-    { key: "4", href: "/", label: "Chăm sóc y tế" },
-    { key: "5", href: "/", label: "Nhà ăn" },
+    {
+      key: "1",
+      href: "/doi-song-hoc-duong",
+      label: t("moi-truong-ht"),
+    },
+    {
+      key: "2",
+      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
+      label: t("thanh-tich-hs"),
+    },
+    {
+      key: "3",
+      href: "/doi-song-hoc-duong/dich-vu-dua-don",
+      label: t("dich-vu-dd"),
+    },
+    {
+      key: "4",
+      href: "/doi-song-hoc-duong/cham-soc-y-te",
+      label: t("cham-soc-yt"),
+    },
+    {
+      key: "5",
+      href: "/doi-song-hoc-duong/dinh-duong-hoc-duong",
+      label: t("dinh-duong-hd"),
+    },
+    {
+      key: "6",
+      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
+      label: t("chuong-trinh-nk"),
+    },
   ];
+
   const items4 = [
-    { key: "1", href: "/", label: "Đăng ký tuyển sinh" },
-    { key: "2", href: "/", label: "Quy định va chính sách" },
-    { key: "3", href: "/", label: "Học phí" },
-    { key: "4", href: "/", label: "Chương trình ưu đãi" },
+    {
+      key: "1",
+      href: "/tuyen-sinh",
+      label: t("thong-tin-ts"),
+    },
+    {
+      key: "2",
+      href: "/tuyen-sinh/quy-dinh-chinh-sach",
+      label: t("quy-dinh-chinh-sach"),
+    },
+    {
+      key: "3",
+      href: "/tuyen-sinh/hoc-phi",
+      label: t("hoc-phi"),
+    },
+    {
+      key: "4",
+      href: "/tuyen-sinh/chuong-trinh-uu-dai",
+      label: t("chuong-trinh-ud"),
+    },
   ];
 
   return (
@@ -124,8 +179,16 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                   buttonText={t("chuong-trinh")}
                   href={"/chuong-trinh-dao-tao"}
                 />
-                <Navv items={items3} buttonText={t("doi-song")} href={"/"} />
-                <Navv items={items4} buttonText={t("tuyen-sinh")} href={"/"} />
+                <Navv
+                  items={items3}
+                  buttonText={t("doi-song")}
+                  href={"/doi-song-hoc-duong"}
+                />
+                <Navv
+                  items={items4}
+                  buttonText={t("tuyen-sinh")}
+                  href={"/tuyen-sinh"}
+                />
                 <Link
                   className="px-3 py-1 rounded-sm text-white round bg-rose-500"
                   href="#thong-tin-lien-he"

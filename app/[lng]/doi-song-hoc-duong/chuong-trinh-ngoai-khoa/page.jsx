@@ -8,7 +8,7 @@ import Pagedautien from "../../components/pagedautien";
 import Image1 from "@/public/images/testimonial-01.jpg";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  const title1 = t("thcs");
+  const title1 = t("chuong-trinh-nk");
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
@@ -18,17 +18,28 @@ export default async function Page({ params: { lng } }) {
   const highlight = true; // Đặt giá trị highlight ở đây
   const links = [
     {
-      href: "/chuong-trinh-dao-tao/",
-      content: t("chuong-trinh"),
-    },
-    { href: "/chuong-trinh-dao-tao/mam-non", content: t("mam-non") },
-    {
-      href: "/chuong-trinh-dao-tao/tieu-hoc",
-      content: t("tieu-hoc"),
+      href: "/doi-song-hoc-duong",
+      content: t("moi-truong-ht"),
     },
     {
-      href: "/chuong-trinh-dao-tao/trung-hoc",
-      content: t("thcs"),
+      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
+      content: t("thanh-tich-hs"),
+    },
+    {
+      href: "/doi-song-hoc-duong/dich-vu-dua-don",
+      content: t("dich-vu-dd"),
+    },
+    {
+      href: "/doi-song-hoc-duong/cham-soc-y-te",
+      content: t("cham-soc-yt"),
+    },
+    {
+      href: "/doi-song-hoc-duong/dinh-duong-hoc-duong",
+      content: t("dinh-duong-hd"),
+    },
+    {
+      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
+      content: t("chuong-trinh-nk"),
       hightlight: true,
     },
   ];
@@ -38,8 +49,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao/trung-hoc" />
       <BannerImage
         src={bannerabout}
-        text1={t("home") + " / " + t("chuong-trinh")}
-        text2={t("thcs")}
+        text1={t("home") + " / " + t("doi-song")}
+        text2={t("chuong-trinh-nk")}
       />
       <Pagedautien links={links} highlight={highlight} />
     </>

@@ -87,8 +87,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/tuyen-dung" />
       <BannerImage
         src={bannerabout}
-        text1="Trang chủ / Tuyển dụng"
-        text2="Tuyển dụng"
+        text1={t("home") + " / " + t("tuyen-dung")}
+        text2={t("tuyen-dung")}
       />
       <section className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div>

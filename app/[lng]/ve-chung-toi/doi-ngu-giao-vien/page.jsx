@@ -8,7 +8,7 @@ import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/testimonial-01.jpg";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  const title1 = t("tam-nhin");
+  const title1 = t("giao-vien");
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
@@ -233,8 +233,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/ve-chung-toi/doi-ngu-giao-vien" />
       <BannerImage1
         src={bannerabout}
-        text1="Trang chủ / Về chúng tôi"
-        text2="Đội ngũ giáo viên"
+        text1={t("home") + " / " + t("about")}
+        text2={t("giao-vien")}
       />
       <Pagedautien links={links} highlight={highlight} />
       <Listthongtin buttonData={buttonData} />

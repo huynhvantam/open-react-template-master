@@ -33,8 +33,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/ve-chung-toi/thanh-tich-cua-chung-toi" />
       <BannerImage
         src={bannerabout}
-        text1="Về chúng tôi / Thành tích của chúng tôi"
-        text2="Thành tích của chúng tôi"
+        text1={t("home") + " / " + t("about")}
+        text2={t("thanh-tich")}
       />
       <Pagedautien links={links} highlight={highlight} />
       {/* <main>

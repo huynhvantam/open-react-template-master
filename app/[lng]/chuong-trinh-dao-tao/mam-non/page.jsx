@@ -7,7 +7,7 @@ import Pagedautien from "../../components/pagedautien";
 import Image1 from "@/public/images/testimonial-01.jpg";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  const title1 = t("tam-nhin");
+  const title1 = t("mam-non");
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
@@ -34,8 +34,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao/mam-non" />
       <BannerImage1
         src={bannerabout}
-        text1="Trang chủ / Chương trình đào tạo"
-        text2="Chương trình học Mâm non"
+        text1={t("home") + " / " + t("chuong-trinh")}
+        text2={t("mam-non")}
       />
       <Pagedautien links={links} highlight={highlight} />
     </>

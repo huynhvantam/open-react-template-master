@@ -11,7 +11,7 @@ import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
 import Footer from "@/app/components/ui/footer";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  const title1 = t("chuong-trinh");
+  const title1 = t("tuyen-sinh");
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
@@ -20,22 +20,31 @@ export default async function Page({ params: { lng } }) {
   const highlight = true;
   const links = [
     {
-      href: "/chuong-trinh-dao-tao/",
-      content: t("chuong-trinh"),
+      href: "/tuyen-sinh",
+      content: t("thong-tin-ts"),
       hightlight: true,
     },
-    { href: "/chuong-trinh-dao-tao/mam-non", content: t("mam-non") },
-    { href: "/chuong-trinh-dao-tao/tieu-hoc", content: t("tieu-hoc") },
-    { href: "/chuong-trinh-dao-tao/trung-hoc", content: t("thcs") },
+    {
+      href: "/tuyen-sinh/quy-dinh-chinh-sach",
+      content: t("quy-dinh-chinh-sach"),
+    },
+    {
+      href: "/tuyen-sinh/hoc-phi",
+      content: t("hoc-phi"),
+    },
+    {
+      href: "/tuyen-sinh/chuong-trinh-uu-dai",
+      content: t("chuong-trinh-ud"),
+    },
   ];
   const images = [FeatImage01, FeatImage01, FeatImage01, FeatImage01];
   return (
     <>
-      <Header lng={lng} path="/chuong-trinh-dao-tao" />
+      <Header lng={lng} path="/tuyen-sinh" />
       <BannerImage
         src={bannerabout}
-        text1={t("home") + " / " + t("chuong-trinh")}
-        text2={t("tong-quan-chuong-trinh")}
+        text1={t("home") + " / " + t("tuyen-sinh")}
+        text2={t("thong-tin-ts")}
       />
       <PageDautien className="" links={links} highlight={highlight} />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">

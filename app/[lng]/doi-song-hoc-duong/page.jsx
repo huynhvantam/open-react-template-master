@@ -11,7 +11,7 @@ import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
 import Footer from "@/app/components/ui/footer";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  const title1 = t("chuong-trinh");
+  const title1 = t("doi-song");
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
@@ -20,22 +20,33 @@ export default async function Page({ params: { lng } }) {
   const highlight = true;
   const links = [
     {
-      href: "/chuong-trinh-dao-tao/",
-      content: t("chuong-trinh"),
+      href: "/doi-song-hoc-duong",
+      content: t("moi-truong-ht"),
       hightlight: true,
     },
-    { href: "/chuong-trinh-dao-tao/mam-non", content: t("mam-non") },
-    { href: "/chuong-trinh-dao-tao/tieu-hoc", content: t("tieu-hoc") },
-    { href: "/chuong-trinh-dao-tao/trung-hoc", content: t("thcs") },
+    {
+      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
+      content: t("thanh-tich-hs"),
+    },
+    { href: "/doi-song-hoc-duong/dich-vu-dua-don", content: t("dich-vu-dd") },
+    { href: "/doi-song-hoc-duong/cham-soc-y-te", content: t("cham-soc-yt") },
+    {
+      href: "/doi-song-hoc-duong/dinh-duong-hoc-duong",
+      content: t("dinh-duong-hd"),
+    },
+    {
+      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
+      content: t("chuong-trinh-nk"),
+    },
   ];
   const images = [FeatImage01, FeatImage01, FeatImage01, FeatImage01];
   return (
     <>
-      <Header lng={lng} path="/chuong-trinh-dao-tao" />
+      <Header lng={lng} path="/doi-song-hoc-duong" />
       <BannerImage
         src={bannerabout}
-        text1={t("home") + " / " + t("chuong-trinh")}
-        text2={t("tong-quan-chuong-trinh")}
+        text1={t("home") + " / " + t("doi-song")}
+        text2={t("moi-truong-ht")}
       />
       <PageDautien className="" links={links} highlight={highlight} />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -111,20 +122,20 @@ const programs = [
     color: "#39b44a",
     description:
       "Tại ROYAL SCHOOL, trẻ được tiếp thu kiến thức mới trong môi trường học tập vui chơi lành mạnh, giúp trẻ phát triển nhận thức cá nhân, nâng cao tinh thần cộng đồng và mang đến cho trẻ sự phát triển toàn diện",
-    href: "/chuong-trinh-dao-tao/mam-non",
+    href: "/doi-song-hoc-duong/mam-non",
   },
   {
     name: "TIỂU HỌC",
     color: "#ff9210",
     description:
       "ROYAL SCHOOL mang đến cho học sinh môi trường học tập, trải nghiệm lý tưởng, là nơi học sinh được phát huy năng lực bản thân, đón nhận sự khích lệ, thể hiện tình yêu thương và khai phá tiềm năng của mình",
-    href: "/chuong-trinh-dao-tao/tieu-hoc",
+    href: "/doi-song-hoc-duong/tieu-hoc",
   },
   {
     name: "TRUNG HỌC",
     color: "#0071bb",
     description:
       "ROYAL SCHOOL không chỉ trang bị cho học sinh nền tảng tri thức và ngôn ngữ vững chắc mà còn tạo điều kiện để các em phát triển năng lực tự học, tự do sáng tạo, hình thành phẩm chất của công dân toàn cầu.",
-    href: "/chuong-trinh-dao-tao/trung-hoc",
+    href: "/doi-song-hoc-duong/trung-hoc",
   },
 ];

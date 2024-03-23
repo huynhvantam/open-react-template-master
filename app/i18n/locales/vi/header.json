@@ -1,4 +1,5 @@
 {
+  "home": "Trang chủ",
   "giao-duc-ph": "Giáo Dục Phượng Hoàng",
   "about": "Về chúng tôi",
   "gioi-thieu": "Giới thiệu chung",
@@ -13,16 +14,21 @@
   "thcs": "Trung học",
   "anh-ngu": "Anh ngữ Phượng Hoàng",
   "doi-song": "Đời sống học đường",
-  "thanh-tich-hs": "Thành tích học sinh",
-  "dich-vu-hs": "Dịch vụ học sinh",
+  "thanh-tich-hs": "Thành tích học đường",
+  "dich-vu-dd": "Dịch vụ đưa đón",
   "thu-vien": "Thư viên",
+  "moi-truong-ht": "Môi trường học tập",
+  "chuong-trinh-nk": "Chương trình ngoại khóa",
+  "dinh-duong-hd": "Dinh dưỡng học đường",
   "cham-soc-yt": "Chăm sóc y tế",
   "tuyen-sinh": "Tuyển sinh",
+  "thong-tin-ts": "Thông tin tuyển sinh",
   "dang-ky-ts": "Đăng ký tuyển sinh",
-  "quy-dinh-chinh-sach": "Quy định, chính sách",
-  "hoc-phi": "Học-phí",
+  "quy-dinh-chinh-sach": "Quy định và chính sách",
+  "hoc-phi": "Học phí",
   "chuong-trinh-ud": "Chương trình ưu đãi",
   "lien-he": "Liên hệ",
   "tin-tuc": "Tin tức - Sự kiện",
-  "tuyen-dung": "Tuyển dụng"
+  "tuyen-dung": "Tuyển dụng",
+  "dang-ky-tv": "Đăng ký tư vấn"
 }

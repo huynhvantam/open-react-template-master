@@ -33,8 +33,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/ve-chung-toi" />
       <BannerImage
         src={bannerabout}
-        text1="Trang chủ / Về chúng tôi"
-        text2="Giới thiệu chung"
+        text1={t("home") + " / " + t("about")}
+        text2={t("gioi-thieu")}
       />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">
         <PageDautien className="" links={links} highlight={highlight} />

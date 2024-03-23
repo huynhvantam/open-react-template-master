@@ -95,8 +95,8 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/ve-chung-toi/tam-nhin-su-menh" />
       <BannerImage
         src={bannerabout}
-        text1="Trang chủ / Về chúng tôi"
-        text2="Tầm nhìn - Sứ mệnh"
+        text1={t("home") + " / " + t("about")}
+        text2={t("tam-nhin")}
       />
       <Pagedautien links={links} highlight={highlight} />
       <section className="max-w-6xl mx-auto px-4 sm:px-6 ">
