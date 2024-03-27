@@ -54,14 +54,14 @@ export default async function Page({ params: { lng } }) {
         <div>
           <h3 className="h3 text-center py-10">GIỚI THIỆU</h3>
           <p className="p pb-4">
-            Hệ thống Trường Song ngữ Quốc tế Hoàng Gia - ROYAL SCHOOL là thành
-            viên của Hệ thống giáo dục HUTECH (HUTECH Education), đào tạo liên
-            cấp từ Mầm non, Tiểu học, Trung học cơ sở đến Trung học phổ thông.
-            Chương trình học có sự kết hợp hài hòa giữa Chương trình Giáo dục
-            Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương trình Giáo
-            dục Quốc tế Cambridge, giúp người học dễ dàng tiếp cận kiến thức phù
-            hợp và chinh phục thành công trong môi trường học tập quốc tế năng
-            động.
+            Hệ thống Trường Song ngữ Quốc tế Hoàng Gia - Giáo Dục Phượng Hoàng
+            là thành viên của Hệ thống giáo dục HUTECH (HUTECH Education), đào
+            tạo liên cấp từ Mầm non, Tiểu học, Trung học cơ sở đến Trung học phổ
+            thông. Chương trình học có sự kết hợp hài hòa giữa Chương trình Giáo
+            dục Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương trình
+            Giáo dục Quốc tế Cambridge, giúp người học dễ dàng tiếp cận kiến
+            thức phù hợp và chinh phục thành công trong môi trường học tập quốc
+            tế năng động.
           </p>
           <p className="p">
             Với mô hình giáo dục hiện đại, ứng dụng các phương pháp giáo dục
@@ -121,21 +121,21 @@ const programs = [
     name: "MẦM NON",
     color: "#39b44a",
     description:
-      "Tại ROYAL SCHOOL, trẻ được tiếp thu kiến thức mới trong môi trường học tập vui chơi lành mạnh, giúp trẻ phát triển nhận thức cá nhân, nâng cao tinh thần cộng đồng và mang đến cho trẻ sự phát triển toàn diện",
+      "Tại Giáo Dục Phượng Hoàng, trẻ được tiếp thu kiến thức mới trong môi trường học tập vui chơi lành mạnh, giúp trẻ phát triển nhận thức cá nhân, nâng cao tinh thần cộng đồng và mang đến cho trẻ sự phát triển toàn diện",
     href: "/doi-song-hoc-duong/mam-non",
   },
   {
     name: "TIỂU HỌC",
     color: "#ff9210",
     description:
-      "ROYAL SCHOOL mang đến cho học sinh môi trường học tập, trải nghiệm lý tưởng, là nơi học sinh được phát huy năng lực bản thân, đón nhận sự khích lệ, thể hiện tình yêu thương và khai phá tiềm năng của mình",
+      "Giáo Dục Phượng Hoàng mang đến cho học sinh môi trường học tập, trải nghiệm lý tưởng, là nơi học sinh được phát huy năng lực bản thân, đón nhận sự khích lệ, thể hiện tình yêu thương và khai phá tiềm năng của mình",
     href: "/doi-song-hoc-duong/tieu-hoc",
   },
   {
     name: "TRUNG HỌC",
     color: "#0071bb",
     description:
-      "ROYAL SCHOOL không chỉ trang bị cho học sinh nền tảng tri thức và ngôn ngữ vững chắc mà còn tạo điều kiện để các em phát triển năng lực tự học, tự do sáng tạo, hình thành phẩm chất của công dân toàn cầu.",
+      "Giáo Dục Phượng Hoàng không chỉ trang bị cho học sinh nền tảng tri thức và ngôn ngữ vững chắc mà còn tạo điều kiện để các em phát triển năng lực tự học, tự do sáng tạo, hình thành phẩm chất của công dân toàn cầu.",
     href: "/doi-song-hoc-duong/trung-hoc",
   },
 ];
