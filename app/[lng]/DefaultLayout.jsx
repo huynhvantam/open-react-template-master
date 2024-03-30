@@ -24,6 +24,8 @@ import Googlemap from "./components/googlemap";
 import Taisaonenchon from "./components/taisaonenchon";
 import Dangkytuvan from "./components/dangkytuvan";
 import { useTranslation } from "../i18n/client";
+import Image from "next/image";
+import Link from "next/link";
 export default function DefaultLayout({ children, lng }) {
   useEffect(() => {
     AOS.init({
@@ -37,15 +39,7 @@ export default function DefaultLayout({ children, lng }) {
   return (
     <>
       <main className="grow">
-        <Header lng={lng} />
-        <BannerImage
-          src={FeatImage01}
-          text1={t("giao-duc-ph")}
-          text2={t("tuyen-sinh-nh")}
-          text3=" 2024 - 2025"
-          button={t("dang-ky-ngay")}
-          href="#tuyen-sinh"
-        />
+        <Header lng={lng} path="/" />
 
         <Content1 />
         <Hero lng={lng} />
