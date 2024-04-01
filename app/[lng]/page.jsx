@@ -1,25 +1,28 @@
 import Link from "next/link";
-import { Trans } from "react-i18next/TransWithoutContext";
 import { languages, fallbackLng } from "../i18n/settings";
 import { useTranslation } from "../i18n";
-import DefaultLayout from "./DefaultLayout";
-import Footer from "../components/ui/footer";
 import FeatImage01 from "@/public/images/banner/banner-home.jpg";
-// import { Header } from "./components/Header/client";
 import Image from "next/image";
+import Content1 from "./components/content1";
+import Content2 from "./components/content2";
+import Content3 from "./components/content3";
+import Taisaonenchon from "./components/taisaonenchon";
+import Chiasecongdong from "./components/chiasecongdong";
+import { Header } from "./components/Header/client";
+import Hero from "../components/hero";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng);
+
   return { title: t("h1") };
 }
 
 export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   if (languages.indexOf(lng) < 0) lng = fallbackLng;
-
   return (
     <>
-      <DefaultLayout lng={lng} />
-      {/* <Header lng={lng} path="/" /> */}
+      <Header lng={lng} path="/" />
       <section className="relative overflow-hidden pt-[84px]">
         <div className="relative h-[600px]">
           <Image
@@ -52,6 +55,12 @@ export default async function Page({ params: { lng } }) {
           </div>
         </div>
       </section>
+      <Content1 />
+      <Hero lng={lng} />
+      <Content2 />
+      <Content3 />
+      <Taisaonenchon />
+      <Chiasecongdong />
     </>
   );
 }
