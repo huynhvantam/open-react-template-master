@@ -183,7 +183,7 @@ const classInfo = [
     title: "Sĩ số lớp thấp",
     description:
       "Trung bình mỗi lớp 20-25 học sinh, giúp giáo viên có thể quan tâm tới từng em, hướng dẫn các em ôn bài và làm bài tập ngay tại lớp. Nhờ đó các em tiếp thu bài học tốt hơn và không bị căng thẳng với việc học thêm. Mỗi lớp có 2 giáo viên và bảo mẫu.",
-    icon: Icon1,
+    icon: Icon5,
   },
   {
     title: "Đảm bảo vệ sinh",
@@ -195,7 +195,7 @@ const classInfo = [
     title: "Dịch vụ đưa đón",
     description:
       "Nhà trường có dịch vụ đưa rước học sinh ở tất cả các cấp học trên địa bàn thành phố với tiêu chí an toàn và thân thiện. Học sinh được quan tâm, chăm sóc trong suốt quá trình di chuyển với đội ngũ tài xế và bảo mẫu hòa nhã, chuyên nghiệp của VAS.",
-    icon: Icon3,
+    icon: Icon6,
   },
   {
     title: "Chăm sóc thể chất",
@@ -207,12 +207,12 @@ const classInfo = [
     title: "Chăm sóc y tế",
     description:
       "Ngoài các chương trình khám sức khỏe định kỳ gồm khám tổng quát, khám nha, khám mắt, tầm soát béo phì… tất cả các cơ sở của VAS đều có đội ngũ nhân viên y tế thường trực để chăm sóc sức khỏe hằng ngày cho học sinh. Đội ngũ chuyên gia tư vấn tâm lý để cung cấp những tư vấn cơ bản nhất cho học sinh khi cần thiết.",
-    icon: Icon5,
+    icon: Icon3,
   },
   {
     title: "Liên lạc phụ huynh",
     description:
       "Mối liên lạc chặt chẽ với phụ huynh trong việc chăm sóc và giáo dục các em được đặc biệt coi trọng. Ngoài sổ báo bài hàng tuần, các cuộc gặp gỡ với phụ huynh ở mỗi học kỳ, giáo viên VAS sẽ liên tục cập nhật những thông tin mới nhất về tình trạng sức khỏe, học lực và tâm sinh lý của học sinh, đặc biệt là khi học sinh có những biểu hiện khác lạ.",
-    icon: Icon6,
+    icon: Icon1,
   },
 ];
