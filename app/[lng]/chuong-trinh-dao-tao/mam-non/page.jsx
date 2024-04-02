@@ -4,7 +4,19 @@ import { Header } from "../../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage1 from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
-import Image1 from "@/public/images/testimonial-01.jpg";
+import Image1 from "@/public/images/oneuse/thoikhoabieu/KINDER-A-4-5T.jpg";
+import Image2 from "@/public/images/oneuse/thoikhoabieu/NUR-24-36th.jpg";
+import Image3 from "@/public/images/oneuse/thoikhoabieu/PREKINDER-3-4.jpg";
+import Image4 from "@/public/images/oneuse/thoikhoabieu/PRENUR18-24th.jpg";
+import Image5 from "@/public/images/oneuse/thoikhoabieu/PREP-B.jpg";
+import Icon1 from "@/public/images/oneuse/icon-mamnon/Communication.svg";
+import Icon2 from "@/public/images/oneuse/icon-mamnon/Health.svg";
+import Icon3 from "@/public/images/oneuse/icon-mamnon/Health2.svg";
+import Icon4 from "@/public/images/oneuse/icon-mamnon/Sport.svg";
+import Icon5 from "@/public/images/oneuse/icon-mamnon/Text.svg";
+import Icon6 from "@/public/images/oneuse/icon-mamnon/Vehicles.svg";
+
+import Image from "next/image";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("mam-non");
@@ -115,6 +127,32 @@ export default async function Page({ params: { lng } }) {
             </div>
           </div>
         </div>
+        {/* 4nd */}
+        <div className="">
+          <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+            Chăm sóc học sinh
+          </h3>
+
+          <div className="grid grid-cols-2 gap-6 pb-10 ">
+            {classInfo.map((info, index) => (
+              <div
+                key={index}
+                style={{
+                  boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+                }}
+                className=" p-4 rounded-md"
+              >
+                <div className="flex justify-center items-center">
+                  <Image alt="icon" className="scale-75" src={info.icon} />
+                  <h5 className="font-semibold text-2xl leading-7">
+                    {info.title}
+                  </h5>
+                </div>
+                <p className="p">{info.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* 3rd */}
         <div>
@@ -130,8 +168,51 @@ export default async function Page({ params: { lng } }) {
             bởi Bộ Giáo dục và Kĩ năng, Vương quốc Anh. Trẻ còn được tiếp xúc
             với môn ICT để bước đầu hình thành nên tư duy công nghệ.
           </p>
+          <Image className="" alt="picture" src={Image4} />
+          <Image className="" alt="picture" src={Image2} />
+          <Image className="" alt="picture" src={Image3} />
+          <Image className="" alt="picture" src={Image1} />
+          <Image className="" alt="picture" src={Image5} />
         </div>
       </section>
     </>
   );
 }
+const classInfo = [
+  {
+    title: "Sĩ số lớp thấp",
+    description:
+      "Trung bình mỗi lớp 20-25 học sinh, giúp giáo viên có thể quan tâm tới từng em, hướng dẫn các em ôn bài và làm bài tập ngay tại lớp. Nhờ đó các em tiếp thu bài học tốt hơn và không bị căng thẳng với việc học thêm. Mỗi lớp có 2 giáo viên và bảo mẫu.",
+    icon: Icon1,
+  },
+  {
+    title: "Đảm bảo vệ sinh",
+    description:
+      "Nhằm tạo điều kiện cho các em học sinh được sinh hoạt trong một môi trường sạch sẽ, hợp vệ sinh, đảm bảo an toàn cho sức khoẻ, các phòng học, nhà ăn, sân chơi, hồ bơi, nhà vệ sinh tại VAS luôn được giữ sạch và tẩy trùng theo quy trình chuẩn quốc tế.",
+    icon: Icon2,
+  },
+  {
+    title: "Dịch vụ đưa đón",
+    description:
+      "Nhà trường có dịch vụ đưa rước học sinh ở tất cả các cấp học trên địa bàn thành phố với tiêu chí an toàn và thân thiện. Học sinh được quan tâm, chăm sóc trong suốt quá trình di chuyển với đội ngũ tài xế và bảo mẫu hòa nhã, chuyên nghiệp của VAS.",
+    icon: Icon3,
+  },
+  {
+    title: "Chăm sóc thể chất",
+    description:
+      "VAS đáp ứng đầy đủ các tiện nghi, an toàn cho các hoạt động nghỉ ngủ, vệ sinh, vui chơi học tập để các em đảm bảo sức khỏe và phát triển hể chất lành mạnh nhất. Các bữa ăn có hàm lượng dinh dưỡng cao, đảm bảo tiêu chuẩn vệ sinh an toàn thực phẩm.",
+    icon: Icon4,
+  },
+  {
+    title: "Chăm sóc y tế",
+    description:
+      "Ngoài các chương trình khám sức khỏe định kỳ gồm khám tổng quát, khám nha, khám mắt, tầm soát béo phì… tất cả các cơ sở của VAS đều có đội ngũ nhân viên y tế thường trực để chăm sóc sức khỏe hằng ngày cho học sinh. Đội ngũ chuyên gia tư vấn tâm lý để cung cấp những tư vấn cơ bản nhất cho học sinh khi cần thiết.",
+    icon: Icon5,
+  },
+  {
+    title: "Liên lạc phụ huynh",
+    description:
+      "Mối liên lạc chặt chẽ với phụ huynh trong việc chăm sóc và giáo dục các em được đặc biệt coi trọng. Ngoài sổ báo bài hàng tuần, các cuộc gặp gỡ với phụ huynh ở mỗi học kỳ, giáo viên VAS sẽ liên tục cập nhật những thông tin mới nhất về tình trạng sức khỏe, học lực và tâm sinh lý của học sinh, đặc biệt là khi học sinh có những biểu hiện khác lạ.",
+    icon: Icon6,
+  },
+];
