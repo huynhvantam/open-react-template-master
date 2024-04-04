@@ -46,7 +46,7 @@ export async function generateMetadata({ params: { lng } }) {
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
-export default async function Page({ params: { lng } }) {
+export default async function Page() {
   const { t } = await useTranslation(lng, "header");
   const highlight = true;
   const links = [
@@ -373,26 +373,3 @@ export default async function Page({ params: { lng } }) {
     </>
   );
 }
-const programs = [
-  {
-    name: "MẦM NON",
-    color: "#39b44a",
-    description:
-      "Tại Giáo Dục Phượng Hoàng, trẻ được tiếp thu kiến thức mới trong môi trường học tập vui chơi lành mạnh, giúp trẻ phát triển nhận thức cá nhân, nâng cao tinh thần cộng đồng và mang đến cho trẻ sự phát triển toàn diện",
-    href: "/doi-song-hoc-duong/mam-non",
-  },
-  {
-    name: "TIỂU HỌC",
-    color: "#ff9210",
-    description:
-      "Giáo Dục Phượng Hoàng mang đến cho học sinh môi trường học tập, trải nghiệm lý tưởng, là nơi học sinh được phát huy năng lực bản thân, đón nhận sự khích lệ, thể hiện tình yêu thương và khai phá tiềm năng của mình",
-    href: "/doi-song-hoc-duong/tieu-hoc",
-  },
-  {
-    name: "TRUNG HỌC",
-    color: "#0071bb",
-    description:
-      "Giáo Dục Phượng Hoàng không chỉ trang bị cho học sinh nền tảng tri thức và ngôn ngữ vững chắc mà còn tạo điều kiện để các em phát triển năng lực tự học, tự do sáng tạo, hình thành phẩm chất của công dân toàn cầu.",
-    href: "/doi-song-hoc-duong/trung-hoc",
-  },
-];
