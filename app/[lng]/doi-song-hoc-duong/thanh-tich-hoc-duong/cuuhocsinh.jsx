@@ -11,8 +11,16 @@ import Image2 from "@/public/images/oneuse/thanhtichhocsinh/a2.png";
 import Image3 from "@/public/images/oneuse/thanhtichhocsinh/a3.png";
 import Image4 from "@/public/images/oneuse/thanhtichhocsinh/a4.png";
 import Image from "next/image";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
-export default function Tieubieu() {
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+export default function Cuuhocsinh() {
   const [currentStudentIndex, setCurrentStudentIndex] = useState(0);
   const students = [
     {
@@ -25,6 +33,7 @@ export default function Tieubieu() {
         "Huy chương Bạc Olympic Hóa học",
       ],
       image: Image1,
+      major: "Design & Fashion",
     },
     {
       name: "Trần Thị B",
@@ -35,6 +44,7 @@ export default function Tieubieu() {
         "Giải Ba Cuộc thi Toán học Quốc tế",
       ],
       image: Image2,
+      major: "Design & Fashion",
     },
     {
       name: "Phạm Văn C",
@@ -45,6 +55,7 @@ export default function Tieubieu() {
         "Giải Ba Cuộc thi Hóa học Quốc tế",
       ],
       image: Image3,
+      major: "Design & Fashion",
     },
     {
       name: "Lê Thị D",
@@ -54,37 +65,21 @@ export default function Tieubieu() {
         "Giải Nhất Cuộc thi Toán học Đông Nam Á",
       ],
       image: Image4,
+      major: "Design & Fashion",
     },
     {
       name: "Hoàng Văn E",
       schoolYear: "Niên khóa: 2025-2026",
       achievements: [
-        "Huy chương Vàng Cuộc thi Lý luận Chính trị Quốc tế",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
-        "Giải Nhất Cuộc thi Hóa học Châu Á",
+        "3 điểm 9/9 cho 3 môn IGCSE (Maths, Business, Literature)",
+        "IELTs 8.5",
+        "Top 6 thí sinh lọt vào vòng chung kết đại diện cho Việt Nam tham dự vòng chung kết Fedex Express / JA International Trade Challenge (ITC) 2019 tại Châu Á Thái Bình Dương tại Malaysia",
+        "Giải Nhì cuộc thi tranh biện Speak Out THCS (2018)",
       ],
       image: Image1,
+      major: "Design & Fashion",
     },
   ];
-
   const nextStudent = () => {
     setCurrentStudentIndex((prevIndex) =>
       prevIndex === students.length - 1 ? 0 : prevIndex + 1
@@ -99,21 +94,21 @@ export default function Tieubieu() {
 
   return (
     <>
-      <section className="max-w-6xl mx-auto px-4 sm:px-6"></section>
       <div
-        className=" pt-20 pb-20"
+        className="pt-20 pb-20 "
         style={{
           backgroundImage:
-            "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
+            "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
         }}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h3 className="font-playfair text-[40px] pb-7 text-center font-semibold leading-[60px] ">
-            Học sinh tiêu biểu
+          <h3 className="font-playfair text-[40px] pb-7 font-semibold leading-[60px] text-center">
+            Cựu học sinh toàn cầu
           </h3>
+
           <hr className="border-t-2 border-rose-500" />
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>
+          <div className="flex flex-row-reverse gap-x-4">
+            <div className="basis-1/2">
               <h2 className="text-[48px] leading-[64px] font-playfair text-rose-500 pt-7 pb-2">
                 {students[currentStudentIndex].name}
               </h2>
@@ -121,7 +116,12 @@ export default function Tieubieu() {
                 {students[currentStudentIndex].schoolYear}
               </h4>
               <hr className="border-t-2 border-rose-500" />
-              <ul className="marker:text-rose-500 h-[320px] overflow-y-auto  list-inside list-disc ml-6 pt-4 pb-7">
+              <div className="pt-4 font-medium text-gray-700 text-xl">
+                <span className="text-rose-500 ">Chuyên ngành: </span>
+                {"  "}
+                {students[currentStudentIndex].major}
+              </div>
+              <ul className="marker:text-red-500 h-[320px] overflow-y-auto list-inside list-disc ml-6 pt-2 pb-7">
                 {students[currentStudentIndex].achievements.map(
                   (achievement, index) => (
                     <li key={index}>{achievement}</li>
@@ -129,7 +129,7 @@ export default function Tieubieu() {
                 )}
               </ul>
             </div>
-            <div className="relative">
+            <div className="relative basis-1/2">
               <Image
                 onClick={nextStudent}
                 className="mx-auto cursor-pointer"

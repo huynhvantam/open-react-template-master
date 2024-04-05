@@ -10,6 +10,7 @@ import Image3 from "@/public/images/oneuse/thanhtichhocsinh/a3.png";
 import Image4 from "@/public/images/oneuse/thanhtichhocsinh/a4.png";
 import Image from "next/image";
 import Tieubieu from "./tieubieu";
+import Cuuhocsinh from "./cuuhocsinh";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("thanh-tich-hs");
@@ -79,6 +80,7 @@ export default async function Page({ params: { lng } }) {
       </section>
       {/* 2 */}
       <Tieubieu />
+      <Cuuhocsinh />
     </>
   );
 }
