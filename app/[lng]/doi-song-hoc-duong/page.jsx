@@ -46,7 +46,7 @@ export async function generateMetadata({ params: { lng } }) {
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
-export default async function Page() {
+export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const highlight = true;
   const links = [

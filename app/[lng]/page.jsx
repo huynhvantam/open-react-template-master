@@ -49,6 +49,7 @@ export default async function Page({ params: { lng } }) {
               className="btn mt-4"
               data-aos="fade-up"
               data-aos-delay="600"
+              data-aos-anchor-placement="top-bottom"
             >
               {t("dang-ky-ngay")}
             </Link>
