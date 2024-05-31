@@ -21,7 +21,7 @@ export default function Header() {
               <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/hero">HERO</Link></li>
               <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/zero">ZERO</Link></li>
               <li><Link className=" font-medium text-rose-600 hover:bg-rose-100 px-4 py-3 flex items-center transition duration-150 ease-in-out" href="/first">FIRST</Link></li>
-              <li><Link className="btn-sm text-white round bg-rose-600 hover:bg-rose-700 px-4 py-3 " href="/first">Liên hệ</Link></li>
+              <li><Link className="btn-sm text-white round bg-rose-600 hover:bg-rose-700 px-4 py-3 " href="/first">Liên hệê</Link></li>
             </ul>
             {/* <Link
               href="/mamnon"

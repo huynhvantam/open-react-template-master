@@ -56,7 +56,7 @@ export default function Footer({ lng }) {
                 <ul>
                   <li className="mb-1">
                     <Link
-                      href="/"
+                      href="/chuong-trinh-dao-tao"
                       className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out"
                     >
                       Tổng quan chương trình
@@ -64,7 +64,7 @@ export default function Footer({ lng }) {
                   </li>
                   <li className="mb-1">
                     <Link
-                      href="/"
+                      href="/chuong-trinh-dao-tao/mam-non"
                       className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out"
                     >
                       Mầm non
@@ -72,7 +72,7 @@ export default function Footer({ lng }) {
                   </li>
                   <li className="mb-1">
                     <Link
-                      href="/"
+                      href="/chuong-trinh-dao-tao/tieu-hoc"
                       className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out"
                     >
                       Tiểu học
@@ -80,7 +80,7 @@ export default function Footer({ lng }) {
                   </li>
                   <li className="mb-1">
                     <Link
-                      href="/"
+                      href="/chuong-trinh-dao-tao/trung-hoc"
                       className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out"
                     >
                       Trung học
@@ -88,7 +88,7 @@ export default function Footer({ lng }) {
                   </li>
                   <li className="mb-1">
                     <Link
-                      href="/"
+                      href="/trung-tam-anh-ngu"
                       className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out"
                     >
                       Anh ngữ Phượng Hoàng

@@ -109,7 +109,28 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
       label: t("chuong-trinh-ud"),
     },
   ];
-
+  const items5 = [
+    {
+      key: "1",
+      href: "/trung-tam-anh-ngu",
+      label: t("chuong-trinh-hoc"),
+    },
+    {
+      key: "2",
+      href: "/trung-tam-anh-ngu",
+      label: t("giao-vien"),
+    },
+    {
+      key: "3",
+      href: "/trung-tam-anh-ngu",
+      label: t("hoc-phi"),
+    },
+    {
+      key: "4",
+      href: "/trung-tam-anh-ngu",
+      label: t("chuong-trinh-ud"),
+    },
+  ];
   return (
     <header className="fixed top-0 z-50 w-full pt-0.5 pb-0.5 bg-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -148,7 +169,9 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
               <Link className="pp" href="/tuyen-dung">
                 {t("tuyen-dung")}
               </Link>
-
+              <Link className="pp" href="#thong-tin-lien-he">
+                {t("lien-he")}
+              </Link>
               {/* đổi ngôn ngữ */}
               <div className="uppercase  text-rose-500  hover:font-normal">
                 <span className="font-semibold">{lng}</span> |{" "}
@@ -166,9 +189,9 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 </span>
               </div>
             </div>
-            <nav className="hidden md:flex md:grow mt-2">
+            <nav className="hidden md:flex md:grow mt-3 ">
               {/* Desktop sign in links */}
-              <ul className="flex flex-1 justify-end items-center text-lg">
+              <ul className="flex flex-1 justify-end items-center">
                 <Navv
                   items={items}
                   buttonText={t("about")}
@@ -185,16 +208,15 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                   href={"/doi-song-hoc-duong"}
                 />
                 <Navv
+                  items={items5}
+                  buttonText={t("trung-tam-anh-ngu")}
+                  href={"/trung-tam-anh-ngu"}
+                />
+                <Navv
                   items={items4}
                   buttonText={t("tuyen-sinh")}
                   href={"/tuyen-sinh"}
                 />
-                <Link
-                  className="px-3 py-1 rounded-sm text-white round bg-rose-500"
-                  href="#thong-tin-lien-he"
-                >
-                  {t("lien-he")}
-                </Link>
               </ul>
             </nav>
           </div>
