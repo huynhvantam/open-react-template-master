@@ -6,6 +6,8 @@ import BannerImage1 from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/testimonial-01.jpg";
+import Imagegvnn from "@/public/images/phuonghoang/gvnn.jpg";
+import Image from "next/image";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("giao-vien");
@@ -237,6 +239,30 @@ export default async function Page({ params: { lng } }) {
         text2={t("giao-vien")}
       />
       <Pagedautien links={links} highlight={highlight} />
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-10 gap-4 py-20">
+          <div className="col-span-4">
+            <h4 className="text-3xl  font-playfair text-left text-rose-500">
+              Là đơn vị tiên phong triển khai mô hình trường học song ngữ tại
+              Huế
+            </h4>
+            <p className="p pt-4">
+              Là đơn vị tiên phong triển khai mô hình trường học song ngữ tại
+              Huế, Giáo dục Phượng Hoàng tự hào với nhiều năm xây dựng và phát
+              triển đội ngũ giáo viên với đầy đủ phẩm chất, năng lực chuyên môn
+              và kỹ năng phù hợp với đặc thù môi trường giáo dục song ngữ, đáp
+              ứng tốt mục tiêu và định hướng chung của nhà trường: “Kiến Tạo
+              Công Dân Toàn Cầu”.
+            </p>
+          </div>
+          <div className="col-span-6 b">
+            <Image src={Imagegvnn} className="w-full h-full" />
+          </div>
+        </div>
+      </div>
+      <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+        Gặp gỡ đội ngũ
+      </h3>
       <Listthongtin buttonData={buttonData} />
     </>
   );

@@ -14,16 +14,21 @@ const ListItem = ({
   onClick, // Added onClick prop for button handling
 }) => {
   return (
-    <li className="flex relative items-center rounded-xl p-4 bg-gradient-to-b from-amber-300 from-10% via-amber-200 via-30% to-amber-200 to-90% w-full basis-1/2">
+    <li
+      style={{
+        backgroundImage: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+      }}
+      className="flex relative items-center rounded-xl p-4  w-full basis-1/2"
+    >
       <Image
         src={imageSrc}
-        height={200}
-        width={200}
+        height={100}
+        width={100}
         alt="avatar"
         className="rounded-full"
       />
       <div className="ml-4">
-        <h5 className="h4">{title}</h5>
+        <h5 className="h44 text-rose-500">{title}</h5>
         <p className="p">{description}</p>
         {/* {text2 && <p>Bằng cấp: {text2}</p>} */}
         {/* {text3 && <p>Kinh nghiệm: {text3}</p>} */}
@@ -59,17 +64,22 @@ const Modal = ({ isOpen, onClose, listItem }) => {
       className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
       onClick={handleOutsideClick}
     >
-      <div className="max-w-6xl min-w-[700px] relative bg-white rounded-lg p-4 shadow-md max-h-screen overflow-y-auto ">
+      <div
+        className="max-w-6xl min-w-[700px] relative bg-white rounded-lg p-4 shadow-md max-h-screen overflow-y-auto "
+        style={{
+          backgroundImage: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+        }}
+      >
         <div className="flex">
           <Image
             src={listItem.imageSrc}
-            height={200}
-            width={200}
+            // height={100}
+            width={120}
             alt="avatar"
             className="rounded-full"
           />
           <div className="pl-4 h44">
-            <h2 className="h3">{listItem.title}</h2>
+            <h2 className="h3 text-gray-700">{listItem.title}</h2>
             <p className="">{listItem.description}</p>
             {listItem.text2 && <p className="">Bằng cấp: {listItem.text2}</p>}
             {listItem.text3 && <p>Kinh nghiệm: {listItem.text3}</p>}
@@ -84,10 +94,10 @@ const Modal = ({ isOpen, onClose, listItem }) => {
           {listItem.lienhe && <p>Liên hệ: {listItem.lienhe}</p>}
         </div>
         <button
-          className="absolute text-red-400 top-4 right-4 hover:text-rose-500"
+          className="absolute text-red-500 top-4 right-4 hover:text-rose-600"
           onClick={handleCloseModal}
         >
-          CLOSE
+          X
         </button>
       </div>
     </div>

@@ -51,7 +51,7 @@ export default function Chiasecongdong() {
         <div className="py-12 md:py-20 ">
 
           {/* Section header */}
-          <h2 className="max-w-3xl h3 mx-auto text-center pb-6 md:pb-10 h3 mb-4">Chia Sẻ Từ Cộng Đồng</h2>
+          <h2 className="max-w-3xl h3 mx-auto text-center pb-6 md:pb-10 h3 mb-4">Câu chuyện chia sẻ</h2>
 
           {/* Testimonials */}
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
