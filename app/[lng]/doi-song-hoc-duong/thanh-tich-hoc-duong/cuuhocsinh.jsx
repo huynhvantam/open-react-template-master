@@ -11,15 +11,7 @@ import Image2 from "@/public/images/oneuse/thanhtichhocsinh/a2.png";
 import Image3 from "@/public/images/oneuse/thanhtichhocsinh/a3.png";
 import Image4 from "@/public/images/oneuse/thanhtichhocsinh/a4.png";
 import Image from "next/image";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 export default function Cuuhocsinh() {
   const [currentStudentIndex, setCurrentStudentIndex] = useState(0);
   const students = [

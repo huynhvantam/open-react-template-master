@@ -45,7 +45,7 @@ export default async function Page({ params: { lng } }) {
               2024 - 2025
             </h1>
             <Link
-              href="/"
+              href="#tuyen-sinh"
               className="btn mt-4"
               data-aos="fade-up"
               data-aos-delay="600"

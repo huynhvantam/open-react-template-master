@@ -40,11 +40,11 @@ export default function Dangkytuvan() {
           Đội ngũ Tuyển sinh sẽ tư vấn tận tâm và đem lại trải nghiệm tuyệt vời
           nhất cho gia đình!
         </p>
-        <div className="grid grid-cols-2 gap-20 pt-10">
-          <div className="">
+        <div className="grid grid-cols-2 gap-20 pt-10" data-aos="fade-up">
+          <div className="" data-aos="fade-up" data-aos-delay="300">
             <Image className="h-fit " src={Image1} alt="Môn học" priority />
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6" data-aos="fade-up" data-aos-delay="400">
             <div className="border-b">
               <p className="p">
                 Họ và tên phụ huynh<span className="text-red-500">*</span>
