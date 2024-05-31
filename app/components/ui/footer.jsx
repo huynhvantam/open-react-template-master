@@ -9,7 +9,10 @@ export default function Footer({ lng }) {
   return (
     <footer
       id="thong-tin-lien-he"
-      className="bg-gradient-to-b from-rose-300 from-10% via-rose-200 via-30% to-rose-50 to-90% "
+      // className="bg-gradient-to-b from-rose-300 from-10% via-rose-200 via-30% to-rose-50 to-90% "
+      style={{
+        backgroundImage: "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+      }}
     >
       <div className="pt-12 md:pt-16 ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -39,7 +42,7 @@ export default function Footer({ lng }) {
                 </div>
               </div>
               <hr className="border-1 border-rose-200" />
-              <div className="text-gray-500 text-center">
+              <div className="text-gray-600 text-center">
                 Giáo Dục Phượng Hoàng là một dự án trường học nhằm mục đích cung
                 cấp nền giáo dục có chất lượng cho sự phát triển đầy đủ của mỗi
                 cá nhân.

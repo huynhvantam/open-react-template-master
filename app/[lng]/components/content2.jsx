@@ -36,15 +36,20 @@ const items = [
 
 export default function Content2() {
   return (
-    <section className="bg-gradient-to-b from-rose-300 from-10% via-rose-200 via-30% to-rose-100 to-90%  mt-40 py-36">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+    <section
+      className="mt-40 py-36"
+      style={{
+        backgroundImage: "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+      }}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative text-gray-600">
         <div className="grid grid-cols-2 gap-x-10">
           <div>
             <div className="hh4" data-aos="fade-up">
               /CHƯƠNG TRÌNH ĐÀO TẠO
             </div>
             <div
-              className="h3 mt-6 mb-5"
+              className="h3 mt-6 mb-5 text-gray-700"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -64,7 +69,7 @@ export default function Content2() {
             </p>
             <Link
               href="/chuong-trinh-dao-tao"
-              className="btn"
+              className="btn text-lg"
               data-aos="fade-up"
               data-aos-delay="400"
             >

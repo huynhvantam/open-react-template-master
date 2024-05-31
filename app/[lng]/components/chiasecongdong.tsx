@@ -42,9 +42,13 @@ export default function Chiasecongdong() {
     return content;
   };
   return (
-    <section className='bg-gradient-to-b from-rose-100 from-10% via-rose-200 via-30% to-rose-300 to-90%'>
+    <section className=''
+      style={{
+        backgroundImage:
+          "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+      }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-12 md:py-20 ">
 
           {/* Section header */}
           <h2 className="max-w-3xl h3 mx-auto text-center pb-6 md:pb-10 h3 mb-4">Chia Sẻ Từ Cộng Đồng</h2>

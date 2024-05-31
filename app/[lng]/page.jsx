@@ -46,7 +46,7 @@ export default async function Page({ params: { lng } }) {
             </h1>
             <Link
               href="#tuyen-sinh"
-              className="btn mt-4"
+              className="btn mt-4 text-lg"
               data-aos="fade-up"
               data-aos-delay="600"
               data-aos-anchor-placement="top-bottom"
@@ -62,7 +62,7 @@ export default async function Page({ params: { lng } }) {
       <Content3 />
       <Taisaonenchon />
       <Chiasecongdong />
-      <Googlemap />
+      {/* <Googlemap /> */}
     </>
   );
 }

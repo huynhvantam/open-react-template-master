@@ -6,6 +6,7 @@ import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import Footer from "../components/ui/footer";
 import Dangkytuvan from "./components/dangkytuvan";
 import DefaultLayout from "./DefaultLayout";
+import Googlemap from "./components/googlemap";
 const inter = Be_Vietnam_Pro({
   subsets: ["vietnamese"],
   variable: "--font-inter",
@@ -46,6 +47,7 @@ export default function RootLayout({ children, params: { lng } }) {
           {children}
         </div>
         <Dangkytuvan />
+        <Googlemap />
         <Footer />
       </body>
     </html>

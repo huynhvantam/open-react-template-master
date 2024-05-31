@@ -90,7 +90,7 @@ export default function Content3() {
 
             <Link
               href="/chuong-trinh-dao-tao"
-              className="btn"
+              className="btn text-lg"
               data-aos="fade-up"
             >
               Tìm hiểu chương trình đào tạo
