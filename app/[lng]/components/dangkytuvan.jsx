@@ -91,7 +91,7 @@ export default function Dangkytuvan() {
                 onChange={handleCheckboxChange}
               />
             </div>
-            <button className="btn" data-aos="fade-up" data-aos-delay="600">
+            <button className="btn" data-aos="fade-up">
               {" "}
               Gửi đăng ký{" >"}
             </button>

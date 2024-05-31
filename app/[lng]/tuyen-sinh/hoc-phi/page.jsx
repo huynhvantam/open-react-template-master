@@ -44,7 +44,12 @@ export default async function Page({ params: { lng } }) {
         text1={t("home") + " / " + t("tuyen-sinh")}
         text2={t("hoc-phi")}
       />
-      <Pagedautien links={links} highlight={highlight} />
+      <Pagedautien links={links} highlight={highlight} />{" "}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 ">
+        <div>
+          <h3 className="h3 pt-10 pb-10 text-center">ĐANG PHÁT TRIỂN</h3>
+        </div>
+      </section>
     </>
   );
 }

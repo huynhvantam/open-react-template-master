@@ -10,7 +10,7 @@ import Taisaonenchon from "./components/taisaonenchon";
 import Chiasecongdong from "./components/chiasecongdong";
 import { Header } from "./components/Header/client";
 import Hero from "../components/hero";
-
+import Googlemap from "./components/googlemap";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng);
 
@@ -62,6 +62,7 @@ export default async function Page({ params: { lng } }) {
       <Content3 />
       <Taisaonenchon />
       <Chiasecongdong />
+      <Googlemap />
     </>
   );
 }

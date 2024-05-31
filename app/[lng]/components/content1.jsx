@@ -17,11 +17,11 @@ export default function Content1() {
             <div
               className="h3 mt-6 mb-14"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="100"
             >
               Trường song ngữ <br /> tiên phong tại Huế
             </div>
-            <p className="p" data-aos="fade-up" data-aos-delay="400">
+            <p className="p" data-aos="fade-up" data-aos-delay="200">
               Giáo Dục Phượng Hoàng là hệ thống trường liên cấp từ Mầm Non đến
               Trung Học Phổ Thông tại Huế, với mục tiêu giáo dục là “Kiến Tạo
               Công Dân Toàn Cầu”. Giáo Dục Phượng Hoàng là trường song ngữ tiên
@@ -30,108 +30,72 @@ export default function Content1() {
             </p>
             <div className="grid grid-cols-2 pt-[60px]">
               <div className="">
-                <div>
-                  <p
-                    className="numberbig w-32"
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                  >
+                <div data-aos="fade-up" data-aos-delay="300">
+                  <p className="numberbig w-32">
                     <Image
                       priority="true"
                       src={Icon1}
                       alt="icon"
                       height={38}
                       width={38}
-                      data-aos="fade-up"
                       className="inline mr-2"
                     />
                     15+
                   </p>
-                  <p
-                    className="p font-bold"
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                  >
+                  <p className="p font-bold">
                     Năm kinh nghiệm đào tạo
                     <br /> song ngữ
                   </p>
                 </div>
-                <div>
-                  <p
-                    className="numberbig pt-[60px] w-32"
-                    data-aos="fade-up"
-                    data-aos-delay="800"
-                  >
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <p className="numberbig pt-[60px] w-32">
                     <Image
                       priority="true"
                       src={Icon2}
                       alt="icon"
                       height={38}
                       width={38}
-                      data-aos="fade-up"
                       className="inline mr-2"
                     />
                     23
                   </p>
-                  <p
-                    className="p font-bold"
-                    data-aos="fade-up"
-                    data-aos-delay="800"
-                  >
+                  <p className="p font-bold">
                     Sĩ số trung bình <br />
                     trong lớp học
                   </p>
                 </div>
               </div>
               <div>
-                <div>
-                  <p
-                    className="numberbig pt-[120px]"
-                    data-aos="fade-up"
-                    data-aos-delay="700"
-                  >
+                <div data-aos="fade-up" data-aos-delay="500">
+                  <p className="numberbig pt-[120px]">
                     <Image
                       priority="true"
                       src={Icon3}
                       alt="icon"
                       height={38}
                       width={38}
-                      data-aos="fade-up"
                       className="inline mr-2"
                     />
                     100%
                   </p>
-                  <p
-                    className="p font-bold"
-                    data-aos="fade-up"
-                    data-aos-delay="700"
-                  >
+                  <p className="p font-bold">
                     Học sinh tốt nghiệp THPT và ứng tuyển thành công vào các
                     trường đh trong nước và Quốc tế
                   </p>
                 </div>
-                <div>
-                  <p
-                    className="numberbig pt-[60px]"
-                    data-aos="fade-up"
-                    data-aos-delay="900"
-                  >
+                <div data-aos="fade-up" data-aos-delay="600">
+                  <p className="numberbig pt-[60px]">
                     <Image
                       priority="true"
                       src={Icon4}
                       alt="icon"
                       height={38}
                       width={38}
-                      data-aos="fade-up"
                       className="inline mr-2"
                     />
                     99%
                   </p>
-                  <p
-                    className="p font-bold"
-                    data-aos="fade-up"
-                    data-aos-delay="900"
-                  >
+                  <p className="p font-bold">
                     Phụ huynh đánh giá cao về môi trường và chất lượng dạy, học
                   </p>
                 </div>
@@ -139,22 +103,20 @@ export default function Content1() {
             </div>
           </div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <Image
               priority="true"
               src={Image1}
               alt="picture"
-              data-aos="fade-up"
               className="mt-14"
             />
             <Image
               priority="true"
               src={Image2}
               alt="picture"
-              data-aos="fade-up"
               className="mb-14"
             />
-            <p className="p" data-aos="fade-up" data-aos-delay="200">
+            <p className="p">
               Đến với Giáo Dục Phượng Hoàng, học sinh có cơ hội hòa mình vào một
               môi trường học Song Ngữ: Việt Nam và Quốc tế...
             </p>
