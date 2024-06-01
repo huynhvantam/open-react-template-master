@@ -41,7 +41,9 @@ export default async function Page({ params: { lng } }) {
       <section className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* 3rd */}
         <div>
-          <h3 className="h3 text-center pb-10 pt-10">LỘ TRÌNH HỌC TẬP</h3>
+          <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+            Lộ trình học tập
+          </h3>
           <p>
             Giáo Dục Phượng Hoàng triển khai 2 lộ trình đào tạo dành cho học
             sinh từ Mầm non đến Lớp 9, bao gồm: Chương trình Việt Nam và Chương
@@ -51,7 +53,9 @@ export default async function Page({ params: { lng } }) {
         {/* 1nd */}
         <div className="grid grid-cols-2 gap-x-10 bg-gray-100 pb-10 px-5 mt-5">
           <div>
-            <h3 className="h3 text-center py-10">Chương trình Việt Nam</h3>
+            <h3 className="h3 text-center pt-10 w-fit mx-auto pb-3 mb-4 border-b-[1px] border-rose-500">
+              Chương trình Việt Nam
+            </h3>
             <p className="p pb-4">
               Chương trình Việt Nam được xây dựng từ Chương trình Giáo dục Quốc
               gia, do Bộ Giáo dục và Đào tạo Việt Nam quy định. Chương trình
@@ -71,7 +75,9 @@ export default async function Page({ params: { lng } }) {
             </p>
           </div>
           <div>
-            <h3 className="h3 text-center py-10">Chương trình Song ngữ</h3>
+            <h3 className="h3 text-center pt-10 w-fit mx-auto pb-3 mb-4 border-b-[1px] border-rose-500">
+              Chương trình Song ngữ
+            </h3>
             <p className="p pb-4">
               Chương trình Quốc tế mang đến cho học sinh cơ hội học tập môn Ngữ
               văn Anh, Toán và Khoa học bằng tiếng Anh với 100% giáo viên quốc
