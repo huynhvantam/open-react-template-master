@@ -37,7 +37,7 @@ export default async function Page({ params: { lng } }) {
 
   return (
     <>
-      <Header lng={lng} path="/tuyen-sinh/quy-dinh-tuyen-sinh" />
+      <Header lng={lng} path="/tuyen-sinh/quy-dinh-chinh-sach" />
       <BannerImage1
         src={bannerabout}
         text1={t("home") + " / " + t("tuyen-sinh")}

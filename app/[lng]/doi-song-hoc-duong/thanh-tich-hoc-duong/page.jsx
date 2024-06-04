@@ -27,21 +27,21 @@ export default async function Page({ params: { lng } }) {
       content: t("moi-truong-ht"),
     },
     {
+      href: "/doi-song-hoc-duong/goc-hoc-sinh",
+      content: t("goc-hoc-sinh"),
+    },
+    {
+      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
+      content: t("thu-vien-ha"),
+    },
+    {
+      href: "/doi-song-hoc-duong/dich-vu-truong-hoc",
+      content: t("dich-vu-th"),
+    },
+    {
       href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
       content: t("thanh-tich-hs"),
       hightlight: true,
-    },
-    {
-      href: "/doi-song-hoc-duong/dich-vu-dua-don",
-      content: t("dich-vu-dd"),
-    },
-    {
-      href: "/doi-song-hoc-duong/cham-soc-y-te",
-      content: t("cham-soc-yt"),
-    },
-    {
-      href: "/doi-song-hoc-duong/dinh-duong-hoc-duong",
-      content: t("dinh-duong-hd"),
     },
     {
       href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",

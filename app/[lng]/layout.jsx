@@ -43,7 +43,7 @@ export default function RootLayout({ children, params: { lng } }) {
         className={`${architects_daughter.variable} ${inter.variable}
        font-inter antialiased text-[#1f253a] tracking-tight text-justify`}
       >
-        <div className="flex flex-col min-h-screen overflow-hidden font">
+        <div className="flex flex-col min-h-screen overflow-hidden">
           {children}
         </div>
         <Dangkytuvan />

@@ -62,23 +62,23 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "2",
-      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
-      label: t("thanh-tich-hs"),
+      href: "/doi-song-hoc-duong/goc-hoc-sinh",
+      label: t("goc-hoc-sinh"),
     },
     {
       key: "3",
-      href: "/doi-song-hoc-duong/dich-vu-dua-don",
-      label: t("dich-vu-dd"),
+      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
+      label: t("thu-vien-ha"),
     },
     {
       key: "4",
-      href: "/doi-song-hoc-duong/cham-soc-y-te",
-      label: t("cham-soc-yt"),
+      href: "/doi-song-hoc-duong/dich-vu-truong-hoc",
+      label: t("dich-vu-th"),
     },
     {
       key: "5",
-      href: "/doi-song-hoc-duong/dinh-duong-hoc-duong",
-      label: t("dinh-duong-hd"),
+      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
+      label: t("thanh-tich-hs"),
     },
     {
       key: "6",
