@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useTranslation } from "../../i18n";
 import Image from "next/image";
 import logo from "@/public/images/phuonghoang/logo.png";
-import { FaSquareYoutube } from "react-icons/fa6";
+import { FaSquareYoutube, FaLocationDot, FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 export default function Footer({ lng }) {
   const { t } = useTranslation(lng, "header");
   return (
@@ -100,31 +101,35 @@ export default function Footer({ lng }) {
                 </ul>
               </div>
               {/*3nd block */}
-              <div className="text-sm">
+              <div className="text-sm ">
                 <h6 className="text-gray-700 font-bold mb-1 uppercase text-lg">
                   Thông tin liên hệ
                 </h6>
-                <ul>
+                <ul className="">
                   <li className="mb-1">
-                    <p className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out">
-                      {" "}
-                      33/9 Nguyễn Hoàng, Phường Kim Long, Thành phố Huế
+                    <p className="text-gray-600  transition duration-150 ease-in-out">
+                      <FaLocationDot className="inline-block mr-2" /> 33/9
+                      Nguyễn Hoàng, Phường Kim Long, Thành phố Huế
                     </p>
                   </li>
                   <li className="mb-1">
-                    <p className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out">
+                    <p className="text-gray-600  transition duration-150 ease-in-out">
+                      <FaPhone className="inline-block mr-3" />
                       0234 3515 678
                     </p>
                   </li>
                   <li className="mb-1">
-                    <p className="text-gray-600 hover:text-rose-500 transition duration-150 ease-in-out">
+                    <p className="text-gray-600 transition duration-150 ease-in-out">
+                      <MdEmail className="inline-block mr-3" />
                       phoenixschoolvn@gmail.com
                     </p>
                   </li>
-                  <ul className="flex gap-4">
+                  {/* fb, youtube */}
+                  {/* <ul className="flex gap-4">
                     <li className="">
                       <Link
-                        href="/"
+                        target="_blank"
+                        href="https://www.facebook.com/giaoducphuonghoang"
                         className="flex justify-center items-center text-rose-500 bg-amber-200 hover:text-amber-200 hover:bg-rose-500  transition duration-150 ease-in-out"
                         aria-label="Facebook"
                       >
@@ -139,32 +144,35 @@ export default function Footer({ lng }) {
                     </li>
                     <li className="">
                       <Link
-                        href="/"
+                        target="_blank"
+                        href="https://www.youtube.com/@PhoenixEducation-mx6nl"
                         className="flex justify-center items-center text-rose-500 bg-amber-200 hover:text-amber-200 hover:bg-rose-500  transition duration-150 ease-in-out"
                         aria-label="Facebook"
                       >
                         <FaSquareYoutube className=" w-8 h-8 text-rose-500 bg-amber-200 hover:text-amber-200 hover:bg-rose-500  " />
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </ul>
               </div>
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiaoducphuonghoang&tabs=timeline&width=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="300"
+                width="340"
+                height="130"
                 style={{ border: "none", overflow: "hidden" }}
                 scrolling="no"
-                frameBorder="0"
-                allowFullScreen={true}
+                frameborder="0"
+                allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               ></iframe>
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fanhnguphuonghoang&tabs=timeline&width=300&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
-                width="300"
+                width="340"
+                height="130"
                 style={{ border: "none", overflow: "hidden" }}
                 scrolling="no"
-                frameBorder="0"
-                allowFullScreen={true}
+                frameborder="0"
+                allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               ></iframe>
             </div>
