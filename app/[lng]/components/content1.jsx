@@ -80,7 +80,7 @@ export default function Content1() {
                   </p>
                   <p className="p font-bold">
                     Học sinh tốt nghiệp THPT và ứng tuyển thành công vào các
-                    trường đh trong nước và Quốc tế
+                    trường Đại học trong nước và Quốc tế
                   </p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="600">

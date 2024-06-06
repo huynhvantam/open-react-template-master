@@ -255,7 +255,7 @@ export default async function Page({ params: { lng } }) {
               Công Dân Toàn Cầu”.
             </p>
           </div>
-          <div className="col-span-6 b">
+          <div className="col-span-6">
             <Image src={Imagegvnn} className="w-full h-full" />
           </div>
         </div>

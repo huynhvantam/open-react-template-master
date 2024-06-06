@@ -135,7 +135,6 @@ export default async function Page({ params: { lng } }) {
                   width="728"
                   height="410"
                   scrolling="no"
-                  frameborder="0"
                   allowfullscreen="true"
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   allowFullScreen="true"

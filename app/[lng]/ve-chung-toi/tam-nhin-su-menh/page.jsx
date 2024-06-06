@@ -35,24 +35,14 @@ const contentData = [
   },
   {
     heading: "SỨ MỆNH",
-    nestedContent: [
-      {
-        nestedText:
-          "Kết hợp giảng dạy hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp học sinh thông thạo cả tiếng Việt và tiếng Anh.",
-      },
-      {
-        nestedText:
-          "Gìn giữ và nâng cao ý thức về giá trị văn hóa, truyền thống Việt Nam, đảm bảo học sinh hiểu được cội nguồn, lịch sử dân tộc.",
-      },
-      {
-        nestedText:
-          "Phát huy các giá trị cốt lõi như tính chính trực, tinh thần tôn trọng, thái độ quan tâm đến cộng đồng và các vấn đề toàn cầu.",
-      },
-      {
-        nestedText:
-          " Xây dựng một tập thể xuất sắc các nhà quản lý, giáo viên và nhân viên trong nước và quốc tế - những người thực hiện một cách nhiệt huyết và hiệu quả chương trình giáo dục tiên tiến tại Giáo Dục Phượng Hoàng, cùng gánh vác sứ mệnh chung của giáo dục Việt Nam trong thời hội nhập.",
-      },
-    ],
+    paragraph:
+      "Kết hợp giảng dạy hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp học sinh thông thạo cả tiếng Việt và tiếng Anh.",
+    paragraph2:
+      "Gìn giữ và nâng cao ý thức về giá trị văn hóa, truyền thống Việt Nam, đảm bảo học sinh hiểu được cội nguồn, lịch sử dân tộc.",
+    paragraph3:
+      "Phát huy các giá trị cốt lõi như tính chính trực, tinh thần tôn trọng, thái độ quan tâm đến cộng đồng và các vấn đề toàn cầu.",
+    paragraph4:
+      "Xây dựng một tập thể xuất sắc các nhà quản lý, giáo viên và nhân viên trong nước và quốc tế - những người thực hiện một cách nhiệt huyết và hiệu quả chương trình giáo dục tiên tiến tại Giáo Dục Phượng Hoàng, cùng gánh vác sứ mệnh chung của giáo dục Việt Nam trong thời hội nhập.",
     imageSrc: Image1,
   },
   {
