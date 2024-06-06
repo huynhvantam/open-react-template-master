@@ -145,43 +145,89 @@ export default async function Page({ params: { lng } }) {
       imageSrc: Image1,
     },
     {
-      heading2: "Chú trọng đến việc chăm sóc",
-      heading3: "Tâm lý học sinh",
-      paragraph:
-        "Ở Phoenix Education, sức khỏe tâm lý gắn liền với giáo dục văn hóa, là nền tảng cho sự phát triển toàn diện của mỗi học sinh. Do vậy, chăm sóc tâm lý cho học sinh luôn được chú trọng và quan tâm đúng mức.",
+      heading2: "Thực đơn đa dạng",
+      heading3: "5 tuần không trùng lặp",
+
       nestedContent: [
         {
           nestedText:
-            "Ưu tiên phát triển sự tự tin, khả năng phục hồi, tôn trọng, cảm thông với từng học sinh.",
+            "Khẩu phần bữa ăn được xây dựng một cách khoa học, đảm bảo tỷ lệ cân đối giữa các thành phần dinh dưỡng.",
         },
         {
           nestedText:
-            "Hoạt động thể chất, thời gian hoạt động ngoài lớp học diễn ra thường xuyên, thức ăn bổ dưỡng, an toàn, chương trình học phù hợp…là các yếu tố hỗ trợ giúp học sinh cảm thấy khỏe mạnh và hạnh phúc hơn tại Giáo dục Phượng Hoàn.",
+            "Học sinh tại Phoenix Education có ba bữa ăn chính tại trường: sáng, trưa và xế chiều. Các món ăn được lựa chọn trong mỗi bữa ăn tại Phoenix Education đa dạng từ Á đến Âu, với các món khô, nước, salad, tráng miệng…",
         },
         {
           nestedText:
-            "Mỗi giáo viên của Giáo dục Phượng Hoàn đóng vai trò như một nhà tư vấn tâm lý. Dựa trên việc giảng dạy, tiếp xúc trực tiếp với học sinh, lấy học sinh làm trung tâm, thầy cô giáo có thể hỗ trợ học sinh bất kỳ lúc nào khi các em có dấu hiệu căng thẳng, lo lắng.",
+            "Ngân hàng thực đơn đã xây dựng hơn 1000 món ăn đa dạng, phong phú, hấp dẫn, cân đối dinh dưỡng theo từng lứa tuổi và cấp học.",
         },
       ],
       imageSrc: Image1,
     },
     {
-      heading2: "Bảo đảm An toàn và",
-      heading3: "Bảo vệ Trẻ em",
-      paragraph:
-        "Giáo dục Phượng Hoàng tin rằng quyền lợi của trẻ em là tối quan trọng, trẻ em chỉ có thể học hành tốt nhất khi cảm thấy an toàn. Vì vậy, Giáo dục Phượng Hoàn đã và đang:",
+      heading2: "Không gian canteen",
+      heading3: "thân thiện, hiện đại",
+
       nestedContent: [
         {
           nestedText:
-            "Duy trì môi trường giáo dục lành mạnh, không tệ nạn, nơi các em học sinh cảm thấy toàn tuyệt đối khi đến trường.",
+            "Tại canteen, học sinh chủ động xếp hàng nhận thức ăn, ngồi ăn uống và trò chuyện cùng các bạn của mình. Các thầy cô giáo và cán bộ phụ trách thường xuyên có mặt tại canteen để trợ giúp các em trong ổn định trật tự, giúp các em khó khăn trong việc ăn chậm và hướng dẫn các em tạo thói quen sắp đặt bát, đĩa, thìa, khay khi ăn xong.",
         },
         {
           nestedText:
-            "Luôn lắng nghe: Khuyến khích các em bày tỏ quan điểm, chia sẻ cảm nhận, nêu lên ý kiến và được thầy cô giáo trong trường lắng nghe khi các em có khó khăn hoặc cảm thấy lo lắng về bất kỳ điều gì đó.",
+            "Học sinh Phoenix Education được thưởng thức các bữa ăn ngon hàng ngày trong canteen với thiết kế vô cùng trẻ trung với nhiều không gian mở để học sinh thoải mái trò chuyện và thư giãn trong mỗi giờ trưa.",
+        },
+      ],
+      imageSrc: Image1,
+    },
+  ];
+  const contentData3 = [
+    {
+      heading2: "Ưu tiên công tác",
+      heading3: "An toàn",
+      nestedContent: [
+        {
+          nestedText:
+            "Hệ thống xe bus của Trường Phoenix Education được công ty chuyên cung cấp dịch vụ về xe và lái xe tư vấn thiết kế để đảm bảo an toàn khi đưa đón học sinh.",
         },
         {
           nestedText:
-            "Nâng cao nhận thức an toàn học đường: Giúp các em nâng cao nhận thức về vấn đề an toàn, lạm dụng, quấy rối, bắt nạt học đường và các thức xử lý thông qua các hoạt động học tập, hoạt động ngoại khóa.",
+            "Trường đã xem xét tất cả những yếu tố liên quan như số lượng học sinh mỗi xe, nơi cư trú của học sinh, lộ trình giao thông và thời gian di chuyển để có thể cung cấp dịch vụ xe buýt tốt nhất.",
+        },
+        {
+          nestedText:
+            "An toàn là ưu tiên hàng đầu khi trường Phoenix Education lựa chọn công ty cung cấp dịch vụ và thiết kế lộ trình xe, điểm đưa và đón học sinh. Trường Phoenix Education chỉ sử dụng phương tiện chất lượng cao 16 chỗ. Mỗi xe đi kèm một nhân viên quản lý hỗ trợ phương tiện trong khi di chuyển.",
+        },
+      ],
+      imageSrc: Image1,
+    },
+    {
+      heading2: "Thời gian chờ xe bus và",
+      heading3: "thời gian di chuyển",
+      paragraph:
+        "Xe buýt của nhà trường luôn sẵn sàng đón học sinh tại trường ngay sau khi kết thúc giờ học. Lộ trình của xe được thiết kế sao cho có thể đưa đón học sinh trong thời gian ngắn nhất nhưng vẫn đảm bảo an toàn giao thông.",
+      nestedContent: [
+        {
+          nestedText:
+            "Trường Phoenix Education cung cấp 24 lộ trình xe buýt trên nhiều địa bàn khác nhau trong thành phố Hà Nội. Trường đang xem xét, thiết kế lại các lộ trình hiện tại và bổ sung các tuyến đường mới dựa vào nhu cầu thực tế, phản hồi của phụ huynh và những thay đổi về cơ sở vật chất và giao thông của thành phố.",
+        },
+        {
+          nestedText:
+            "Học sinh, phụ huynh, giáo viên và tài xế xe buýt đều phải tuân thủ một số điều luật khi sử dụng dịch vụ xe bus của trường.",
+        },
+      ],
+      imageSrc: Image1,
+    },
+    {
+      heading2: "Danh sách các tuyến xe Bus",
+      heading3: "Năm học 2023 – 2024",
+      paragraph: "Lộ trình đưa đón",
+      nestedContent: [
+        {
+          nestedText: "Đông Anh – Võ Chí Công – Phoenix Education",
+        },
+        {
+          nestedText: "Đông Anh – Võ Chí Công – Phoenix Education",
         },
       ],
       imageSrc: Image1,
@@ -232,10 +278,16 @@ export default async function Page({ params: { lng } }) {
         </div>
 
         {/* 2 */}
-        <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+        <h3
+          className="h3  text-center py-3 mb-6  border-[2.5px] border-rose-300"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+          }}
+        >
           Y tế học đường
         </h3>
-        <p className="p pb-4 text-center">
+        <p className="p pb-4 text-center -mb-14">
           Với mục tiêu không chỉ tạo nên một thế hệ học sinh đầy bản lĩnh, tài
           năng, dám thể hiện quan điểm, cá tính riêng mà còn là những con người
           khỏe mạnh, tràn đầy năng lượng để học tập và vui chơi, Phoenix
@@ -245,10 +297,16 @@ export default async function Page({ params: { lng } }) {
         <ZiczagImage contentData={contentData} />
 
         {/* 3 */}
-        <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+        <h3
+          className="h3 mt-28 text-center py-3 mb-6  border-[2.5px] border-rose-300"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+          }}
+        >
           Dinh dưỡng học đường
         </h3>
-        <p className="p pb-4 text-center">
+        <p className="p pb-4 text-center -mb-14">
           Song song với quá trình giáo dục toàn diện thì Giáo dục Phượng Hoàng
           luôn chú trọng đến việc chăm sóc sức khỏe và dinh dưỡng cho học sinh
           để các con có đầy đủ năng lượng cho một ngày học tập và hoạt động hiệu
@@ -258,6 +316,23 @@ export default async function Page({ params: { lng } }) {
           thoải mái khi dùng bữa tại trường.
         </p>
         <ZiczagImage contentData={contentData2} />
+
+        {/* 4 */}
+        <h3
+          className="h3 mt-28 text-center py-3 mb-6  border-[2.5px] border-rose-300"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
+          }}
+        >
+          School Bus
+        </h3>
+        <p className="p -mb-14 pb-4 text-center">
+          Dịch vụ xe bus đưa đón học sinh với 24 tuyến đường an toàn và phù hợp
+          trên khắp Huees giúp bố mẹ có thể hoàn toàn yên tâm và tiết kiệm thời
+          gian trong việc đưa đón con đi học.
+        </p>
+        <ZiczagImage contentData={contentData3} />
       </div>
     </>
   );

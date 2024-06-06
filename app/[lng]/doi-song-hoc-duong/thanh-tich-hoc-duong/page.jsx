@@ -65,16 +65,16 @@ export default async function Page({ params: { lng } }) {
             Câu chuyện học sinh
           </h3>
           <p className="p pb-20">
-            Tại Hanoi Academy, mỗi học sinh đều có quyền được viết lên câu
+            Tại Phoenix Education, mỗi học sinh đều có quyền được viết lên câu
             chuyện riêng của chính mình. Đó không chỉ là chuyện về những con số,
             thành tích, học thuật mà còn là những câu chuyện thú vị về bạn bè,
             thầy cô, thể thao, âm nhạc, mỹ thuật, hoạt động ngoại khóa….Tất cả
             đều nhằm mục đích nâng cao khả năng, kiến thức, phát huy giá trị bản
             thân, đôi khi còn giúp các em tìm lại được chính bản thân mình…..Đó
             là nền tảng giúp các em trở thành công dân toàn cầu với ý chí, nghị
-            lực và quyết tâm to lớn. Quãng thời gian ở Hanoi Academy sẽ giúp các
-            em vẽ thêm một nét rõ ràng, đỏ thắm trong bức tranh cuộc đời để sau
-            này khi nhớ đến lại muốn quay về.
+            lực và quyết tâm to lớn. Quãng thời gian ở Phoenix Education sẽ giúp
+            các em vẽ thêm một nét rõ ràng, đỏ thắm trong bức tranh cuộc đời để
+            sau này khi nhớ đến lại muốn quay về.
           </p>
         </div>
       </section>
