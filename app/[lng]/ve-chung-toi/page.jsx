@@ -8,7 +8,6 @@ import ModalVideo from "../../components/modal-video";
 import PageDautien from "../components/pagedautien";
 import Image from "next/image";
 import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
-import Footer from "@/app/components/ui/footer";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("about");

@@ -1,11 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { useTranslation } from "../../../i18n";
-import { Header } from "../../components/Header/client";
-import bannerabout from "@/public/images/banner/banner-about.jpg";
-import BannerImage1 from "../../components/banner";
-import Pagedautien from "../../components/pagedautien";
 import Image1 from "@/public/images/oneuse/thanhtichhocsinh/a1.png";
 import Image2 from "@/public/images/oneuse/thanhtichhocsinh/a2.png";
 import Image3 from "@/public/images/oneuse/thanhtichhocsinh/a3.png";

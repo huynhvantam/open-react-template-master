@@ -39,7 +39,6 @@ import Csvc28 from "@/public/images/phuonghoang/csvc/csvc28.png";
 import Csvc29 from "@/public/images/phuonghoang/csvc/csvc29.png";
 import Csvc30 from "@/public/images/phuonghoang/csvc/csvc30.png";
 import Csvc31 from "@/public/images/phuonghoang/csvc/csvc31.png";
-import Footer from "@/app/components/ui/footer";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("doi-song");

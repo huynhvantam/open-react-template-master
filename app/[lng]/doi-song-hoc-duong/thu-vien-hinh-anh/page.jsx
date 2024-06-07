@@ -3,15 +3,9 @@ import { useTranslation } from "../../../i18n";
 import { Header } from "../../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage from "../../components/banner";
-import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
-import Image1 from "@/public/images/testimonial-01.jpg";
-import Listthongtin from "../../components/listthongtin";
-import Image from "next/image";
-import ImageGrid from "./ImageGrid";
-import NextJsImage from "./NextJsImage";
 import { trungthu2023, trungthu2024, trungthu2025 } from "./imageImports";
-import Listhinhanh from "./listhinhanh";
+import Listhinhanh from "../../components/listhinhanh";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("thu-vien-ha");

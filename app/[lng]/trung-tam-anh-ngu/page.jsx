@@ -3,7 +3,6 @@ import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-home.jpg";
 import BannerImage from "../components/banner";
-import Footer from "@/app/components/ui/footer";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
