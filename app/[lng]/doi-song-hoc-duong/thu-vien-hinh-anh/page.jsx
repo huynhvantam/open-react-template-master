@@ -9,6 +9,9 @@ import Image1 from "@/public/images/testimonial-01.jpg";
 import Listthongtin from "../../components/listthongtin";
 import Image from "next/image";
 import ImageGrid from "./ImageGrid";
+import NextJsImage from "./NextJsImage";
+import { trungthu2023, trungthu2024, trungthu2025 } from "./imageImports";
+import Listhinhanh from "./listhinhanh";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("thu-vien-ha");
@@ -48,102 +51,16 @@ export default async function Page({ params: { lng } }) {
   ];
   const buttonData = {
     mamnon: {
-      title: "Đội Ngũ Lãnh Đạo",
-      listItems: [
-        {
-          imageSrc: Image1,
-          title: "Cô Lê Anh Đàos",
-          description: "Giáo Viên Lớp Mẫu Giáo",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 40 năm ",
-          lienhe: "PGS-TS Ngô Minh Oanh còn ",
-          buttonText: "Xem thêm",
-        },
-        {
-          imageSrc: Image1,
-          title: "Cô Nguyễn Thị Hương",
-          description: "Giáo Viên Lớp Mẫu Giáo",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 35 năm ",
-          lienhe: "PGS-TS Nguyễn Minh Hạnh còn ",
-          buttonText: "Xem thêm",
-        },
-        {
-          imageSrc: Image1,
-          title: "Cô Trần Thị Thu Hà",
-          description: "Giáo Viên Lớp Mẫu Giáo",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 30 năm ",
-          lienhe: "PGS-TS Lê Thị Hương còn ",
-          buttonText: "Xem thêm",
-        },
-        {
-          imageSrc: Image1,
-          title: "Cô Phạm Thị Thu Hường",
-          description: "Giáo Viên Lớp Mẫu Giáo",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 25 năm ",
-          lienhe: "PGS-TS Phạm Thị Kim Anh còn ",
-          buttonText: "Xem thêm",
-        },
-      ],
+      title: "Trung thu",
+      listimage: trungthu2023,
     },
-    hoidong: {
-      title: "Hội Đồng Chuyên Môn",
-      listItems: [
-        {
-          imageSrc: Image1,
-          title: "Cô Nguyễn Thị Lan",
-          description: "Giáo Viên Tiểu Học",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 20 năm ",
-          lienhe: "PGS-TS Trần Thị Thanh còn ",
-          buttonText: "Xem thêm",
-        },
-        {
-          imageSrc: Image1,
-          title: "Cô Trần Thị Hương",
-          description: "Giáo Viên Mầm Non",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 15 năm ",
-          lienhe: "PGS-TS Lê Thị Thu còn ",
-          buttonText: "Xem thêm",
-        },
-        {
-          imageSrc: Image1,
-          title: "Thầy Nguyễn Văn Tâm",
-          description: "Giáo Viên Trung Học",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 25 năm ",
-          lienhe: "PGS-TS Nguyễn Minh Tuấn còn ",
-          buttonText: "Xem thêm",
-        },
-        {
-          imageSrc: Image1,
-          title: "Cô Phạm Thị Thu Huyền",
-          description: "Giáo Viên Tiểu Học",
-          text2: "Bằng cấp",
-          text3: "Kinh nghiệm",
-          chuyenmon: "Chuyên môn:",
-          thanhtich: "Với khoảng thời gian 30 năm ",
-          lienhe: "PGS-TS Phạm Thị Hằng còn ",
-          buttonText: "Xem thêm",
-        },
-      ],
+    a: {
+      title: "Tết 2024",
+      listimage: trungthu2024,
+    },
+    b: {
+      title: "Giáng sinh 2024",
+      listimage: trungthu2025,
     },
   };
   return (
@@ -156,11 +73,7 @@ export default async function Page({ params: { lng } }) {
       />
       <Pagedautien links={links} highlight={highlight} />{" "}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 ">
-        <div>
-          <h3 className="h3 pt-10 pb-10 text-center">ĐANG PHÁT TRIỂN</h3>
-        </div>
-        <Listthongtin buttonData={buttonData} />
-        <ImageGrid />
+        <Listhinhanh buttonData={buttonData} />
       </section>
     </>
   );

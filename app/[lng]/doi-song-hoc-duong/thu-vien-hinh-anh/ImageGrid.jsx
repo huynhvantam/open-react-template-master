@@ -1,6 +1,6 @@
 // components/ImageGrid.js
-import Image from "next/image";
 import { images } from "./imageImports";
+import { Image } from "antd";
 const ImageGrid = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
