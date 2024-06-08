@@ -21,6 +21,7 @@ const ListItem = ({
       className="flex relative items-center rounded-xl p-4  w-full basis-1/2"
     >
       <Image
+        loading="lazy"
         src={imageSrc}
         height={100}
         width={100}
@@ -72,6 +73,7 @@ const Modal = ({ isOpen, onClose, listItem }) => {
       >
         <div className="flex">
           <Image
+            loading="lazy"
             src={listItem.imageSrc}
             // height={100}
             width={120}

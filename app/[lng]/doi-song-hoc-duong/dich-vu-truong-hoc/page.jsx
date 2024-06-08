@@ -275,6 +275,7 @@ export default async function Page({ params: { lng } }) {
 
           <div className="col-span-3">
             <Image
+              loading="lazy"
               src={Image1}
               alt="image"
               className="w-full h-full object-cover"

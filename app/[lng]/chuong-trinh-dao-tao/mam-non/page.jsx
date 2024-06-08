@@ -143,7 +143,12 @@ export default async function Page({ params: { lng } }) {
                 className=" p-4 rounded-md"
               >
                 <div className="flex justify-center items-center">
-                  <Image alt="icon" className="scale-75" src={info.icon} />
+                  <Image
+                    loading="lazy"
+                    alt="icon"
+                    className="scale-75"
+                    src={info.icon}
+                  />
                   <h5 className="font-semibold text-2xl leading-7">
                     {info.title}
                   </h5>
@@ -168,11 +173,11 @@ export default async function Page({ params: { lng } }) {
             bởi Bộ Giáo dục và Kĩ năng, Vương quốc Anh. Trẻ còn được tiếp xúc
             với môn ICT để bước đầu hình thành nên tư duy công nghệ.
           </p>
-          <Image className="" alt="picture" src={Image4} />
-          <Image className="" alt="picture" src={Image2} />
-          <Image className="" alt="picture" src={Image3} />
-          <Image className="" alt="picture" src={Image1} />
-          <Image className="" alt="picture" src={Image5} />
+          <Image loading="lazy" className="" alt="picture" src={Image4} />
+          <Image loading="lazy" className="" alt="picture" src={Image2} />
+          <Image loading="lazy" className="" alt="picture" src={Image3} />
+          <Image loading="lazy" className="" alt="picture" src={Image1} />
+          <Image loading="lazy" className="" alt="picture" src={Image5} />
         </div>
       </section>
     </>

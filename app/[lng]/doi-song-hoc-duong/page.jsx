@@ -125,10 +125,10 @@ export default async function Page({ params: { lng } }) {
               {images.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -150,28 +150,28 @@ export default async function Page({ params: { lng } }) {
               <div className="">
                 <div className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={Csvc3}
                     alt="image"
-                    priority
                   />
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={Csvc4}
                     alt="image"
-                    priority
                   />
                 </div>
                 <div className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={Csvc5}
                     alt="image"
-                    priority
                   />
                 </div>
               </div>
@@ -203,10 +203,10 @@ export default async function Page({ params: { lng } }) {
               {images2.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -229,10 +229,10 @@ export default async function Page({ params: { lng } }) {
               {images3.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -256,10 +256,10 @@ export default async function Page({ params: { lng } }) {
               {images4.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -280,10 +280,10 @@ export default async function Page({ params: { lng } }) {
               {images5.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -305,10 +305,10 @@ export default async function Page({ params: { lng } }) {
               {images6.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -337,10 +337,10 @@ export default async function Page({ params: { lng } }) {
               {images7.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}
@@ -364,10 +364,10 @@ export default async function Page({ params: { lng } }) {
               {images8.map((image, index) => (
                 <div key={index} className="relative overflow-hidden">
                   <Image
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                     src={image}
                     alt="image"
-                    priority
                   />
                 </div>
               ))}

@@ -48,7 +48,7 @@ export default function Content3() {
     <section className="py-36">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className="grid grid-cols-2 gap-x-10 place-items-end">
-          <Image src={Image1} alt="picture" data-aos="fade-up" priority />
+          <Image loading="lazy" src={Image1} alt="picture" data-aos="fade-up" />
           <div>
             <div className="hh4" data-aos="fade-up">
               /CHƯƠNG TRÌNH ĐÀO TẠO

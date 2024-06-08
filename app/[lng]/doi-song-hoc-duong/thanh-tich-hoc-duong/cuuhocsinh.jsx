@@ -118,6 +118,7 @@ export default function Cuuhocsinh() {
             </div>
             <div className="relative basis-1/2">
               <Image
+                loading="lazy"
                 onClick={nextStudent}
                 className="mx-auto cursor-pointer"
                 height={500}

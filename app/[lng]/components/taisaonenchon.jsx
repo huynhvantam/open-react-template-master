@@ -38,7 +38,7 @@ export default function Taisaonenchon() {
               alt="Logo Phương Hoàng"
               width={250}
               height={250}
-              priority
+              loading="lazy"
               className="absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 opacity-10"
             />
           </div>
@@ -57,7 +57,7 @@ export default function Taisaonenchon() {
                   width={40}
                   height={40}
                   alt="Môn học"
-                  priority
+                  loading="lazy"
                   style={{ width: "auto", height: "auto" }}
                 />
                 <div className="pl-4">
@@ -78,7 +78,7 @@ export default function Taisaonenchon() {
                   width={40}
                   height={40}
                   alt="Môn học"
-                  priority
+                  loading="lazy"
                 />
                 <div className="pl-4">
                   <p className=" ">HỌC SINH / LỚP</p>
@@ -98,7 +98,7 @@ export default function Taisaonenchon() {
                   width={40}
                   height={40}
                   alt="Môn học"
-                  priority
+                  loading="lazy"
                 />
                 <div className="pl-4">
                   <p className="">
@@ -119,7 +119,7 @@ export default function Taisaonenchon() {
                   className="h-fit "
                   src={tienganh}
                   alt="Môn học"
-                  priority
+                  loading="lazy"
                   style={{ width: "auto", height: "auto" }}
                 />
                 <div className="pl-4">
@@ -134,7 +134,7 @@ export default function Taisaonenchon() {
               src={monhoc1}
               alt="pictures"
               className="rounded-lg absolute top-0 right-0 bottom-0 left-0 -z-10"
-              priority
+              loading="lazy"
             />
             <div className="bg-gradient-to-t from-rose-300 absolute bottom-0 pt-20 px-4 pb-4 rounded-lg text-gray-100">
               <span
@@ -163,7 +163,7 @@ export default function Taisaonenchon() {
                 width={40}
                 height={40}
                 alt="Môn học"
-                priority
+                loading="lazy"
               />
               <div className="pl-4">
                 <span className="p text-rose-500 font-semibold">
@@ -182,7 +182,7 @@ export default function Taisaonenchon() {
                 src={banner}
                 alt="pictures"
                 className="rounded-lg w-full h-full object-cover"
-                priority
+                loading="lazy"
               />
               <div
                 style={{ textShadow: "2px 2px #d20dbe" }}
@@ -206,7 +206,7 @@ export default function Taisaonenchon() {
                 width={40}
                 height={40}
                 alt="Môn học"
-                priority
+                loading="lazy"
               />
               <div className="pl-4">
                 <span className="p text-rose-500 font-semibold">
@@ -234,7 +234,7 @@ export default function Taisaonenchon() {
                 width={40}
                 height={40}
                 alt="Môn học"
-                priority
+                loading="lazy"
               />
               <div className="pl-4">
                 <span className="p text-rose-500 font-semibold">
@@ -261,7 +261,7 @@ export default function Taisaonenchon() {
                 width={40}
                 height={40}
                 alt="Môn học"
-                priority
+                loading="lazy"
               />
               <div className="pl-4">
                 <span className="p text-rose-500 font-semibold">
@@ -288,7 +288,7 @@ export default function Taisaonenchon() {
                 width={40}
                 height={40}
                 alt="Môn học"
-                priority
+                loading="lazy"
               />
               <div className="pl-4">
                 <span className="p text-rose-500 font-semibold">
@@ -315,7 +315,7 @@ export default function Taisaonenchon() {
                 width={40}
                 height={40}
                 alt="Môn học"
-                priority
+                loading="lazy"
               />
               <div className="pl-4">
                 <span className="p text-rose-500 font-semibold">

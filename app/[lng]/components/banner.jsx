@@ -5,7 +5,7 @@ const BannerImage = ({ src, text1, text2, text3, button, href }) => {
   return (
     <section className="relative overflow-hidden pt-[84px]">
       <div className="relative h-[600px]">
-        <Image src={src} alt="banner" priority="true" />
+        <Image loading="lazy" src={src} alt="banner" />
         <div className="absolute top-0 -left-1/4 w-full h-full bg-gradient-to-l from-transparent to-white transition-opacity" />
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

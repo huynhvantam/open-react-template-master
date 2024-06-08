@@ -33,7 +33,7 @@ export default function Content1() {
                 <div data-aos="fade-up" data-aos-delay="300">
                   <p className="numberbig w-32">
                     <Image
-                      priority="true"
+                      loading="lazy"
                       src={Icon1}
                       alt="icon"
                       height={38}
@@ -50,7 +50,7 @@ export default function Content1() {
                 <div data-aos="fade-up" data-aos-delay="400">
                   <p className="numberbig pt-[60px] w-32">
                     <Image
-                      priority="true"
+                      loading="lazy"
                       src={Icon2}
                       alt="icon"
                       height={38}
@@ -69,7 +69,7 @@ export default function Content1() {
                 <div data-aos="fade-up" data-aos-delay="500">
                   <p className="numberbig pt-[120px]">
                     <Image
-                      priority="true"
+                      loading="lazy"
                       src={Icon3}
                       alt="icon"
                       height={38}
@@ -86,7 +86,7 @@ export default function Content1() {
                 <div data-aos="fade-up" data-aos-delay="600">
                   <p className="numberbig pt-[60px]">
                     <Image
-                      priority="true"
+                      loading="lazy"
                       src={Icon4}
                       alt="icon"
                       height={38}
@@ -105,13 +105,13 @@ export default function Content1() {
 
           <div data-aos="fade-up" data-aos-delay="200">
             <Image
-              priority="true"
+              loading="lazy"
               src={Image1}
               alt="picture"
               className="mt-14"
             />
             <Image
-              priority="true"
+              loading="lazy"
               src={Image2}
               alt="picture"
               className="mb-14"

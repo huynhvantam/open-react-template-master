@@ -75,6 +75,7 @@ export default async function Page({ params: { lng } }) {
                     data-aos="fade-up"
                   >
                     <Image
+                      loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
@@ -122,6 +123,7 @@ export default async function Page({ params: { lng } }) {
                     data-aos="fade-up"
                   >
                     <Image
+                      loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
@@ -168,6 +170,7 @@ export default async function Page({ params: { lng } }) {
                     data-aos="fade-up"
                   >
                     <Image
+                      loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
@@ -222,6 +225,7 @@ export default async function Page({ params: { lng } }) {
                     data-aos="fade-up"
                   >
                     <Image
+                      loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}

@@ -90,7 +90,7 @@ export default function Content2() {
                     src={item.imageSrc}
                     alt={item.alt}
                     data-aos="fade-up"
-                    priority
+                    loading="lazy"
                   />
                   <div className="text-center pt-2" data-aos="fade-up">
                     {item.caption}

@@ -29,11 +29,11 @@ export default function Footer({ lng }) {
                   aria-label="Cruip"
                 >
                   <Image
+                    loading="lazy"
                     className="h-fit pointer-events-none"
                     src={logo}
                     width={150}
                     height={150}
-                    priority
                     alt="logo"
                   />
                 </Link>

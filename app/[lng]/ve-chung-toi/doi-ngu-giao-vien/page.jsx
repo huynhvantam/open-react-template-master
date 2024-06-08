@@ -256,7 +256,12 @@ export default async function Page({ params: { lng } }) {
             </p>
           </div>
           <div className="col-span-6">
-            <Image src={Imagegvnn} alt="giao vien" className="w-full h-full" />
+            <Image
+              loading="lazy"
+              src={Imagegvnn}
+              alt="giao vien"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </div>

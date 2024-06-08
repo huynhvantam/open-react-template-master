@@ -142,6 +142,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
             {/* <div className='h-20 w-20 bg-red-100'></div> */}
             <Link className="flex items-center " href="/">
               <Image
+                loading="lazy"
                 className="h-fit scale-75"
                 src={logo}
                 width={80}

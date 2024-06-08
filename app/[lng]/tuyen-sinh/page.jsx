@@ -77,7 +77,7 @@ export default async function Page({ params: { lng } }) {
                   className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
                   src={image}
                   alt="image"
-                  priority
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -89,7 +89,12 @@ export default async function Page({ params: { lng } }) {
           <div className="grid grid-cols-3 text-white gap-x-4">
             {programs.map((program, index) => (
               <div className="" key={index}>
-                <Image className="" src={FeatImage01} alt="image" priority />
+                <Image
+                  loading="lazy"
+                  className=""
+                  src={FeatImage01}
+                  alt="image"
+                />
                 <div className={`px-3 pb-3 bg-[${program.color}]`}>
                   <h4 className="text-center h4 py-3">{program.name}</h4>
                   <p className="font-sans pb-4">{program.description}</p>

@@ -129,6 +129,7 @@ export default function Tieubieu() {
                 onClick={nextStudent}
                 className="mx-auto cursor-pointer"
                 height={500}
+                loading="lazy"
                 src={students[currentStudentIndex].image}
                 alt="hoc sinh"
               />{" "}
