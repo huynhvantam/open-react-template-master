@@ -17,6 +17,7 @@ const CustomCheckboxGroup = ({ options, onChange }) => {
 
   return (
     <Checkbox.Group
+      name="luachon"
       options={options}
       value={checkedValues}
       onChange={handleCheckboxChange}
@@ -55,6 +56,7 @@ export default function Dangkytuvan() {
                 Họ và tên phụ huynh<span className="text-red-500">*</span>
               </p>
               <Input
+                name="phuhuynh"
                 className="rounded-md border-none "
                 placeholder="Điền tên tại đây"
               />
@@ -64,6 +66,7 @@ export default function Dangkytuvan() {
                 Số điện thoại<span className="text-red-500">*</span>
               </p>
               <Input
+                name="sdt"
                 className="rounded-md border-none"
                 placeholder="Điền số điền thoại tại đây"
               />
@@ -73,13 +76,16 @@ export default function Dangkytuvan() {
                 Email<span className="text-red-500">*</span>
               </p>
               <Input
+                name="email"
                 className="rounded-md border-none"
                 placeholder="Điền email tại đây"
+                autocomplete="email"
               />
             </div>
             <div className="border-b">
               <p className="p">Lời nhắn hoặc thắc mắc của quý phụ huynh</p>
               <Input
+                name="sms"
                 className="rounded-md border-none"
                 placeholder="Thắc mắc của quý phụ huynh"
               />

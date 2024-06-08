@@ -52,14 +52,12 @@ export default async function Page({ params: { lng } }) {
         <div>
           <h3 className="h3 text-center py-10">GIỚI THIỆU</h3>
           <p className="p pb-4">
-            Hệ thống Trường Song ngữ Quốc tế Hoàng Gia - Giáo Dục Phượng Hoàng
-            là thành viên của Hệ thống giáo dục HUTECH (HUTECH Education), đào
-            tạo liên cấp từ Mầm non, Tiểu học, Trung học cơ sở đến Trung học phổ
-            thông. Chương trình học có sự kết hợp hài hòa giữa Chương trình Giáo
-            dục Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương trình
-            Giáo dục Quốc tế Cambridge, giúp người học dễ dàng tiếp cận kiến
-            thức phù hợp và chinh phục thành công trong môi trường học tập quốc
-            tế năng động.
+            Hệ thống Trường Song ngữ Quốc tế Giáo Dục Phượng Hoàng đào tạo liên
+            cấp từ Mầm non, Tiểu học, Trung học. Chương trình học có sự kết hợp
+            hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào
+            tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp người
+            học dễ dàng tiếp cận kiến thức phù hợp và chinh phục thành công
+            trong môi trường học tập quốc tế năng động.
           </p>
           <p className="p">
             Với mô hình giáo dục hiện đại, ứng dụng các phương pháp giáo dục

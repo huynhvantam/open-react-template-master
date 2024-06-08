@@ -62,22 +62,22 @@ export default async function Page({ params: { lng } }) {
             linh hoạt giữa các lộ trình.
           </p>
           <p>
-            Tại ROYAL SCHOOL, chương trình đào tạo được ứng dụng các phương pháp
-            giáo dục tiên tiến trên thế giới đảm bảo cho mọi học sinh theo học
-            có thể dễ dàng tiếp thu và mở rộng kiến thức, đồng thời mang đến
+            Tại Phoenix Education, chương trình đào tạo được ứng dụng các phương
+            pháp giáo dục tiên tiến trên thế giới đảm bảo cho mọi học sinh theo
+            học có thể dễ dàng tiếp thu và mở rộng kiến thức, đồng thời mang đến
             không gian học tập thực sự thoải mái, lành mạnh và an toàn cho người
-            học. ROYAL SCHOOL là nơi học sinh được học tập, trải nghiệm, đón
-            nhận sự khích lệ, thể hiện tình yêu thương và phát huy hết tiềm năng
-            của mình.
+            học. Phoenix Education là nơi học sinh được học tập, trải nghiệm,
+            đón nhận sự khích lệ, thể hiện tình yêu thương và phát huy hết tiềm
+            năng của mình.
           </p>
           <p>
             Với mục tiêu đào tạo kiến thức học thuật theo hướng tiếp cận thực
             tiễn, giảng dạy phân hoá theo năng lực và nhu cầu của từng đối tượng
-            học sinh, ROYAL SCHOOL triển khai lộ trình học tập cấp Tiểu học với
-            02 hệ chương trình đào tạo: Chương trình Tiểu học Song ngữ Quốc tế
-            và Chương trình Tiểu học Hội nhập Quốc tế, giúp học sinh dễ dàng lựa
-            chọn hướng tiếp cận kiến thức phù hợp và chinh phục thành công trong
-            môi trường học tập quốc tế năng động.
+            học sinh, Phoenix Education triển khai lộ trình học tập cấp Tiểu học
+            với 02 hệ chương trình đào tạo: Chương trình Tiểu học Song ngữ Quốc
+            tế và Chương trình Tiểu học Hội nhập Quốc tế, giúp học sinh dễ dàng
+            lựa chọn hướng tiếp cận kiến thức phù hợp và chinh phục thành công
+            trong môi trường học tập quốc tế năng động.
           </p>
         </div>
         {/* 2nd */}
@@ -180,13 +180,14 @@ export default async function Page({ params: { lng } }) {
             Một ngày của học sinh Tiểu học
           </h3>
           <p>
-            Trẻ Mầm non tại VAS vui học theo Chương trình Văn hóa Quốc Gia kết
-            hợp với Chương trình tiếng Anh được giảng dạy theo Mô hình Học tập
-            Đa hoạt động (Multi-Faceted Approach to Learning for Kindergarten).
-            VAS tự hào mang đến cho học sinh Mầm non chương trình ngữ âm tiếng
-            Anh “Letters and Sounds”, được phát triển có hệ thống và phê duyệt
-            bởi Bộ Giáo dục và Kĩ năng, Vương quốc Anh. Trẻ còn được tiếp xúc
-            với môn ICT để bước đầu hình thành nên tư duy công nghệ.
+            Trẻ Mầm non tại Phoenix Education vui học theo Chương trình Văn hóa
+            Quốc Gia kết hợp với Chương trình tiếng Anh được giảng dạy theo Mô
+            hình Học tập Đa hoạt động (Multi-Faceted Approach to Learning for
+            Kindergarten). Phoenix Education tự hào mang đến cho học sinh Mầm
+            non chương trình ngữ âm tiếng Anh “Letters and Sounds”, được phát
+            triển có hệ thống và phê duyệt bởi Bộ Giáo dục và Kĩ năng, Vương
+            quốc Anh. Trẻ còn được tiếp xúc với môn ICT để bước đầu hình thành
+            nên tư duy công nghệ.
           </p>
           <Image loading="lazy" className="" alt="picture" src={Image4} />
           <Image loading="lazy" className="" alt="picture" src={Image2} />
@@ -208,31 +209,31 @@ const classInfo = [
   {
     title: "Đảm bảo vệ sinh",
     description:
-      "Nhằm tạo điều kiện cho các em học sinh được sinh hoạt trong một môi trường sạch sẽ, hợp vệ sinh, đảm bảo an toàn cho sức khoẻ, các phòng học, nhà ăn, sân chơi, hồ bơi, nhà vệ sinh tại VAS luôn được giữ sạch và tẩy trùng theo quy trình chuẩn quốc tế.",
+      "Nhằm tạo điều kiện cho các em học sinh được sinh hoạt trong một môi trường sạch sẽ, hợp vệ sinh, đảm bảo an toàn cho sức khoẻ, các phòng học, nhà ăn, sân chơi, hồ bơi, nhà vệ sinh tại Phoenix Education luôn được giữ sạch và tẩy trùng theo quy trình chuẩn quốc tế.",
     icon: Icon2,
   },
   {
     title: "Dịch vụ đưa đón",
     description:
-      "Nhà trường có dịch vụ đưa rước học sinh ở tất cả các cấp học trên địa bàn thành phố với tiêu chí an toàn và thân thiện. Học sinh được quan tâm, chăm sóc trong suốt quá trình di chuyển với đội ngũ tài xế và bảo mẫu hòa nhã, chuyên nghiệp của VAS.",
+      "Nhà trường có dịch vụ đưa rước học sinh ở tất cả các cấp học trên địa bàn thành phố với tiêu chí an toàn và thân thiện. Học sinh được quan tâm, chăm sóc trong suốt quá trình di chuyển với đội ngũ tài xế và bảo mẫu hòa nhã, chuyên nghiệp của Phoenix Education.",
     icon: Icon6,
   },
   {
     title: "Chăm sóc thể chất",
     description:
-      "VAS đáp ứng đầy đủ các tiện nghi, an toàn cho các hoạt động nghỉ ngủ, vệ sinh, vui chơi học tập để các em đảm bảo sức khỏe và phát triển hể chất lành mạnh nhất. Các bữa ăn có hàm lượng dinh dưỡng cao, đảm bảo tiêu chuẩn vệ sinh an toàn thực phẩm.",
+      "Phoenix Education đáp ứng đầy đủ các tiện nghi, an toàn cho các hoạt động nghỉ ngủ, vệ sinh, vui chơi học tập để các em đảm bảo sức khỏe và phát triển hể chất lành mạnh nhất. Các bữa ăn có hàm lượng dinh dưỡng cao, đảm bảo tiêu chuẩn vệ sinh an toàn thực phẩm.",
     icon: Icon4,
   },
   {
     title: "Chăm sóc y tế",
     description:
-      "Ngoài các chương trình khám sức khỏe định kỳ gồm khám tổng quát, khám nha, khám mắt, tầm soát béo phì… tất cả các cơ sở của VAS đều có đội ngũ nhân viên y tế thường trực để chăm sóc sức khỏe hằng ngày cho học sinh. Đội ngũ chuyên gia tư vấn tâm lý để cung cấp những tư vấn cơ bản nhất cho học sinh khi cần thiết.",
+      "Ngoài các chương trình khám sức khỏe định kỳ gồm khám tổng quát, khám nha, khám mắt, tầm soát béo phì… tất cả các cơ sở của Phoenix Education đều có đội ngũ nhân viên y tế thường trực để chăm sóc sức khỏe hằng ngày cho học sinh. Đội ngũ chuyên gia tư vấn tâm lý để cung cấp những tư vấn cơ bản nhất cho học sinh khi cần thiết.",
     icon: Icon3,
   },
   {
     title: "Liên lạc phụ huynh",
     description:
-      "Mối liên lạc chặt chẽ với phụ huynh trong việc chăm sóc và giáo dục các em được đặc biệt coi trọng. Ngoài sổ báo bài hàng tuần, các cuộc gặp gỡ với phụ huynh ở mỗi học kỳ, giáo viên VAS sẽ liên tục cập nhật những thông tin mới nhất về tình trạng sức khỏe, học lực và tâm sinh lý của học sinh, đặc biệt là khi học sinh có những biểu hiện khác lạ.",
+      "Mối liên lạc chặt chẽ với phụ huynh trong việc chăm sóc và giáo dục các em được đặc biệt coi trọng. Ngoài sổ báo bài hàng tuần, các cuộc gặp gỡ với phụ huynh ở mỗi học kỳ, giáo viên Phoenix Education sẽ liên tục cập nhật những thông tin mới nhất về tình trạng sức khỏe, học lực và tâm sinh lý của học sinh, đặc biệt là khi học sinh có những biểu hiện khác lạ.",
     icon: Icon1,
   },
 ];

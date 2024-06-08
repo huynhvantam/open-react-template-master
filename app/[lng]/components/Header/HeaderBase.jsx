@@ -183,7 +183,12 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                       return (
                         <span key={l}>
                           {index > 0 && " or "}
-                          <Link href={`/${l}${path}`}>{l}</Link>
+                          <a
+                            href={`/${l}${path}`}
+                            onClick={() => window.location.reload()}
+                          >
+                            {l}
+                          </a>
                         </span>
                       );
                     })}
@@ -222,7 +227,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
             </nav>
           </div>
 
-          <MobileMenu />
+          {/* <MobileMenu /> */}
         </div>
       </div>
     </header>

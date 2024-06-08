@@ -100,12 +100,12 @@ export default async function Page({ params: { lng } }) {
             Cơ sở vật chất
           </h3>
           <p className="p pb-4">
-            Là thành viên các trường quốc tế Cambridge, ROYAL SCHOOL nổi bật với
-            hệ thống cơ sở vật chất đạt chuẩn quốc tế, mang đến cho học sinh
-            những điều kiện tốt nhất để phát triển. ROYAL SCHOOL luôn chú trọng
-            việc mang đến một môi trường học tập an toàn, thoải mái và truyền
-            cảm hứng để học sinh được thỏa sức sáng tạo, trải nghiệm và phát huy
-            tối đa tiềm năng bản thân, sẵn sàng vươn đến thành công.
+            Phoenix Education nổi bật với hệ thống cơ sở vật chất đạt chuẩn quốc
+            tế, mang đến cho học sinh những điều kiện tốt nhất để phát triển.
+            Phoenix Education luôn chú trọng việc mang đến một môi trường học
+            tập an toàn, thoải mái và truyền cảm hứng để học sinh được thỏa sức
+            sáng tạo, trải nghiệm và phát huy tối đa tiềm năng bản thân, sẵn
+            sàng vươn đến thành công.
           </p>
           {/* 1 */}
           <div>
@@ -183,21 +183,21 @@ export default async function Page({ params: { lng } }) {
               PHÒNG ÂM NHẠC VÀ MỸ THUẬT
             </h3>
             <p className="p pb-4">
-              Đầu tư bài bản từ sân khấu đến nhạc cụ, phòng Âm nhạc ROYAL SCHOOL
-              mang đến cho học sinh điều kiện tối ưu để phát triển chỉ số cảm
-              xúc EQ, sự tự tin để thể hiện tài năng, đam mê và tỏa sáng trên
-              ánh đèn sân khấu. Với đầy đủ các nhạc cụ từ truyền thống đến hiện
-              đại như: đàn, trống, kèn, piano, organ,... Trạm Âm nhạc chính là
-              nơi mang đến sự trẻ trung, năng động và phát triển những tài năng
-              âm nhạc.
+              Đầu tư bài bản từ sân khấu đến nhạc cụ, phòng Âm nhạc Phoenix
+              Education mang đến cho học sinh điều kiện tối ưu để phát triển chỉ
+              số cảm xúc EQ, sự tự tin để thể hiện tài năng, đam mê và tỏa sáng
+              trên ánh đèn sân khấu. Với đầy đủ các nhạc cụ từ truyền thống đến
+              hiện đại như: đàn, trống, kèn, piano, organ,... Trạm Âm nhạc chính
+              là nơi mang đến sự trẻ trung, năng động và phát triển những tài
+              năng âm nhạc.
             </p>
             <p className="p pb-4">
               Được thiết kế với không gian năng động, phòng Mỹ thuật là nơi khơi
               gợi tiềm năng nghệ thuật, là không gian được sự yêu thích và mong
               đợi hằng tuần của các em học sinh. Được trang bị đầy đủ bảng vẽ,
-              họa cụ, bút vẽ chuyên dụng, sáp màu,... học sinh tại ROYAL SCHOOL
-              sẽ được thỏa sức học tập và phát triển các năng khiếu nghệ thuật,
-              hội họa ngay từ bé cho các em.
+              họa cụ, bút vẽ chuyên dụng, sáp màu,... học sinh tại Phoenix
+              Education sẽ được thỏa sức học tập và phát triển các năng khiếu
+              nghệ thuật, hội họa ngay từ bé cho các em.
             </p>
             <div className="grid grid-cols-2 gap-3 pt-10">
               {images2.map((image, index) => (
@@ -295,7 +295,7 @@ export default async function Page({ params: { lng } }) {
               KHÔNG GIAN HOẠT ĐỘNG NGOÀI TRỜI
             </h3>
             <p className="p pb-4">
-              ROYAL SCHOOL kết hợp hài hòa giữa khối công trình hiện đại và
+              Phoenix Education kết hợp hài hòa giữa khối công trình hiện đại và
               không gian thiên nhiên xanh mát là môi trường để các em học sinh
               thư giãn, dễ dàng gần gũi và khám phá thiên nhiên tươi đẹp, khơi
               gợi nguồn cảm hứng sáng tạo và kích thích sự phát triển của các
@@ -320,18 +320,19 @@ export default async function Page({ params: { lng } }) {
               NHÀ ĂN
             </h3>
             <p className="p pb-4">
-              ROYAL SCHOOL mang đến nguồn cảm hứng tích cực cho học sinh trong
-              từng bữa ăn với không gian nhà ăn rộng rãi, thoáng mát, đảm bảo an
-              toàn vệ sinh; thực đơn đa dạng, các món ăn được thay đổi liên tục
-              do chính các đầu bếp chuyên nghiệp chế biến ngay tại trường không
-              chỉ đáp ứng nhu cầu sức khoẻ mà còn tăng cường phát triển thể chất
-              cho học sinh.
+              Phoenix Education mang đến nguồn cảm hứng tích cực cho học sinh
+              trong từng bữa ăn với không gian nhà ăn rộng rãi, thoáng mát, đảm
+              bảo an toàn vệ sinh; thực đơn đa dạng, các món ăn được thay đổi
+              liên tục do chính các đầu bếp chuyên nghiệp chế biến ngay tại
+              trường không chỉ đáp ứng nhu cầu sức khoẻ mà còn tăng cường phát
+              triển thể chất cho học sinh.
             </p>
             <p className="p pb-4">
-              Tại ROYAL SCHOOL, bếp được bố trí theo nguyên tắc một chiều, không
-              khí thông thoáng và luôn luôn hợp vệ sinh. Hơn nữa, Nhà trường chú
-              trọng việc chọn lọc nghiêm ngặt nguồn thực phẩm an toàn, kiểm định
-              nguồn gốc rõ ràng để cung cấp cho mỗi bữa ăn của các em học sinh.
+              Tại Phoenix Education, bếp được bố trí theo nguyên tắc một chiều,
+              không khí thông thoáng và luôn luôn hợp vệ sinh. Hơn nữa, Nhà
+              trường chú trọng việc chọn lọc nghiêm ngặt nguồn thực phẩm an
+              toàn, kiểm định nguồn gốc rõ ràng để cung cấp cho mỗi bữa ăn của
+              các em học sinh.
             </p>
             <div className="grid grid-cols-2 gap-3 pt-10">
               {images7.map((image, index) => (
@@ -355,10 +356,10 @@ export default async function Page({ params: { lng } }) {
               Phòng Y tế được trang bị các thiết bị, dụng cụ chăm sóc sức khỏe
               thiết yếu với sự vận hành của bác sĩ chuyên khoa cùng đội ngũ nhân
               viên y tế tận tâm luôn túc trực tại trường nhằm đảm bảo tình hình
-              sức khỏe của học sinh trong điều kiện tốt nhất. Hơn thế nữa, ROYAL
-              SCHOOL còn có đội ngũ chuyên gia tư vấn tâm lý cho các em học sinh
-              để có thể cung cấp những thông tin cơ bản nhất cho học sinh khi
-              cần thiết.
+              sức khỏe của học sinh trong điều kiện tốt nhất. Hơn thế nữa,
+              Phoenix Education còn có đội ngũ chuyên gia tư vấn tâm lý cho các
+              em học sinh để có thể cung cấp những thông tin cơ bản nhất cho học
+              sinh khi cần thiết.
             </p>
             <div className="grid grid-cols-2 gap-3 pt-10">
               {images8.map((image, index) => (

@@ -150,13 +150,15 @@ export default function Listthongtin({ buttonData }) {
           />
         ))}
       </ul>
-      {/* {isOpenModal && selectedListItem && (
+
+      {/* modal, show nhan vien */}
+      {isOpenModal && selectedListItem && (
         <Modal
           isOpen={isOpenModal}
           onClose={() => setIsOpenModal(false)} // Close modal when onClose is called
           listItem={selectedListItem} // Pass selected list item to Modal
         />
-      )} */}
+      )}
     </section>
   );
 }

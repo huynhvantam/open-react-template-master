@@ -57,13 +57,14 @@ export default async function Page({ params: { lng } }) {
             Chương trình giáo dục Mầm non
           </h3>
           <p>
-            Trẻ Mầm non tại VAS vui học theo Chương trình Văn hóa Quốc Gia kết
-            hợp với Chương trình tiếng Anh được giảng dạy theo Mô hình Học tập
-            Đa hoạt động (Multi-Faceted Approach to Learning for Kindergarten).
-            VAS tự hào mang đến cho học sinh Mầm non chương trình ngữ âm tiếng
-            Anh “Letters and Sounds”, được phát triển có hệ thống và phê duyệt
-            bởi Bộ Giáo dục và Kĩ năng, Vương quốc Anh. Trẻ còn được tiếp xúc
-            với môn ICT để bước đầu hình thành nên tư duy công nghệ.
+            Trẻ Mầm non tại Phoenix Education vui học theo Chương trình Văn hóa
+            Quốc Gia kết hợp với Chương trình tiếng Anh được giảng dạy theo Mô
+            hình Học tập Đa hoạt động (Multi-Faceted Approach to Learning for
+            Kindergarten). Phoenix Education tự hào mang đến cho học sinh Mầm
+            non chương trình ngữ âm tiếng Anh “Letters and Sounds”, được phát
+            triển có hệ thống và phê duyệt bởi Bộ Giáo dục và Kĩ năng, Vương
+            quốc Anh. Trẻ còn được tiếp xúc với môn ICT để bước đầu hình thành
+            nên tư duy công nghệ.
           </p>
         </div>
         {/* 2nd */}
@@ -165,13 +166,14 @@ export default async function Page({ params: { lng } }) {
             Một ngày của học sinh Mầm non
           </h3>
           <p>
-            Trẻ Mầm non tại VAS vui học theo Chương trình Văn hóa Quốc Gia kết
-            hợp với Chương trình tiếng Anh được giảng dạy theo Mô hình Học tập
-            Đa hoạt động (Multi-Faceted Approach to Learning for Kindergarten).
-            VAS tự hào mang đến cho học sinh Mầm non chương trình ngữ âm tiếng
-            Anh “Letters and Sounds”, được phát triển có hệ thống và phê duyệt
-            bởi Bộ Giáo dục và Kĩ năng, Vương quốc Anh. Trẻ còn được tiếp xúc
-            với môn ICT để bước đầu hình thành nên tư duy công nghệ.
+            Trẻ Mầm non tại Phoenix Education vui học theo Chương trình Văn hóa
+            Quốc Gia kết hợp với Chương trình tiếng Anh được giảng dạy theo Mô
+            hình Học tập Đa hoạt động (Multi-Faceted Approach to Learning for
+            Kindergarten). Phoenix Education tự hào mang đến cho học sinh Mầm
+            non chương trình ngữ âm tiếng Anh “Letters and Sounds”, được phát
+            triển có hệ thống và phê duyệt bởi Bộ Giáo dục và Kĩ năng, Vương
+            quốc Anh. Trẻ còn được tiếp xúc với môn ICT để bước đầu hình thành
+            nên tư duy công nghệ.
           </p>
           <Image loading="lazy" className="" alt="picture" src={Image4} />
           <Image loading="lazy" className="" alt="picture" src={Image2} />
@@ -193,31 +195,31 @@ const classInfo = [
   {
     title: "Đảm bảo vệ sinh",
     description:
-      "Nhằm tạo điều kiện cho các em học sinh được sinh hoạt trong một môi trường sạch sẽ, hợp vệ sinh, đảm bảo an toàn cho sức khoẻ, các phòng học, nhà ăn, sân chơi, hồ bơi, nhà vệ sinh tại VAS luôn được giữ sạch và tẩy trùng theo quy trình chuẩn quốc tế.",
+      "Nhằm tạo điều kiện cho các em học sinh được sinh hoạt trong một môi trường sạch sẽ, hợp vệ sinh, đảm bảo an toàn cho sức khoẻ, các phòng học, nhà ăn, sân chơi, hồ bơi, nhà vệ sinh tại Phoenix Education luôn được giữ sạch và tẩy trùng theo quy trình chuẩn quốc tế.",
     icon: Icon2,
   },
   {
     title: "Dịch vụ đưa đón",
     description:
-      "Nhà trường có dịch vụ đưa rước học sinh ở tất cả các cấp học trên địa bàn thành phố với tiêu chí an toàn và thân thiện. Học sinh được quan tâm, chăm sóc trong suốt quá trình di chuyển với đội ngũ tài xế và bảo mẫu hòa nhã, chuyên nghiệp của VAS.",
+      "Nhà trường có dịch vụ đưa rước học sinh ở tất cả các cấp học trên địa bàn thành phố với tiêu chí an toàn và thân thiện. Học sinh được quan tâm, chăm sóc trong suốt quá trình di chuyển với đội ngũ tài xế và bảo mẫu hòa nhã, chuyên nghiệp của Phoenix Education.",
     icon: Icon6,
   },
   {
     title: "Chăm sóc thể chất",
     description:
-      "VAS đáp ứng đầy đủ các tiện nghi, an toàn cho các hoạt động nghỉ ngủ, vệ sinh, vui chơi học tập để các em đảm bảo sức khỏe và phát triển hể chất lành mạnh nhất. Các bữa ăn có hàm lượng dinh dưỡng cao, đảm bảo tiêu chuẩn vệ sinh an toàn thực phẩm.",
+      "Phoenix Education đáp ứng đầy đủ các tiện nghi, an toàn cho các hoạt động nghỉ ngủ, vệ sinh, vui chơi học tập để các em đảm bảo sức khỏe và phát triển hể chất lành mạnh nhất. Các bữa ăn có hàm lượng dinh dưỡng cao, đảm bảo tiêu chuẩn vệ sinh an toàn thực phẩm.",
     icon: Icon4,
   },
   {
     title: "Chăm sóc y tế",
     description:
-      "Ngoài các chương trình khám sức khỏe định kỳ gồm khám tổng quát, khám nha, khám mắt, tầm soát béo phì… tất cả các cơ sở của VAS đều có đội ngũ nhân viên y tế thường trực để chăm sóc sức khỏe hằng ngày cho học sinh. Đội ngũ chuyên gia tư vấn tâm lý để cung cấp những tư vấn cơ bản nhất cho học sinh khi cần thiết.",
+      "Ngoài các chương trình khám sức khỏe định kỳ gồm khám tổng quát, khám nha, khám mắt, tầm soát béo phì… tất cả các cơ sở của Phoenix Education đều có đội ngũ nhân viên y tế thường trực để chăm sóc sức khỏe hằng ngày cho học sinh. Đội ngũ chuyên gia tư vấn tâm lý để cung cấp những tư vấn cơ bản nhất cho học sinh khi cần thiết.",
     icon: Icon3,
   },
   {
     title: "Liên lạc phụ huynh",
     description:
-      "Mối liên lạc chặt chẽ với phụ huynh trong việc chăm sóc và giáo dục các em được đặc biệt coi trọng. Ngoài sổ báo bài hàng tuần, các cuộc gặp gỡ với phụ huynh ở mỗi học kỳ, giáo viên VAS sẽ liên tục cập nhật những thông tin mới nhất về tình trạng sức khỏe, học lực và tâm sinh lý của học sinh, đặc biệt là khi học sinh có những biểu hiện khác lạ.",
+      "Mối liên lạc chặt chẽ với phụ huynh trong việc chăm sóc và giáo dục các em được đặc biệt coi trọng. Ngoài sổ báo bài hàng tuần, các cuộc gặp gỡ với phụ huynh ở mỗi học kỳ, giáo viên Phoenix Education sẽ liên tục cập nhật những thông tin mới nhất về tình trạng sức khỏe, học lực và tâm sinh lý của học sinh, đặc biệt là khi học sinh có những biểu hiện khác lạ.",
     icon: Icon1,
   },
 ];
