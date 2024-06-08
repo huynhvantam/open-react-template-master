@@ -116,8 +116,8 @@ export default async function Page({ params: { lng } }) {
       />
       <Pagedautien links={links} highlight={highlight} />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">
-        {contentData.map((item) => (
-          <div key={item.title}>
+        {contentData.map((item, index) => (
+          <div key={index}>
             <h4 className="h44 text-rose-500 text-center uppercase pt-14">
               {item.title}
             </h4>
@@ -134,10 +134,9 @@ export default async function Page({ params: { lng } }) {
                   src={item.videoUrl}
                   width="728"
                   height="410"
-                  scrolling="no"
-                  allowfullscreen="true"
+                  frameBorder="0"
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                  allowFullScreen="true"
+                  allowFullScreen
                 ></iframe>
               </div>
               <div className="space-y-2">

@@ -25,12 +25,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/" />
       <section className="relative overflow-hidden pt-[84px]">
         <div className="relative h-[600px]">
-          <Image
-            src={FeatImage01}
-            alt="banner"
-            layout="responsive"
-            priority="true"
-          />
+          <Image src={FeatImage01} alt="banner" priority="true" />
           <div className="absolute top-0 -left-1/4 w-full h-full bg-gradient-to-l from-transparent to-white transition-opacity" />
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">

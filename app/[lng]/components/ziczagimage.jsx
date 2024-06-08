@@ -46,7 +46,7 @@ const ZiczagImage = ({ contentData }) => {
             <Image
               src={item.imageSrc}
               alt="image"
-              objectFit="contain"
+              style={{ objectFit: "cover" }}
               priority={true}
               className=""
             />

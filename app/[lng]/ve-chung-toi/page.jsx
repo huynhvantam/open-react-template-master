@@ -78,7 +78,6 @@ export default async function Page({ params: { lng } }) {
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
-                      height={405}
                       alt="Features 01"
                     />
                   </div>
@@ -126,7 +125,6 @@ export default async function Page({ params: { lng } }) {
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
-                      height={405}
                       alt="Features 02"
                     />
                   </div>
@@ -173,7 +171,6 @@ export default async function Page({ params: { lng } }) {
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
-                      height={405}
                       alt="Features 03"
                     />
                   </div>
@@ -228,7 +225,6 @@ export default async function Page({ params: { lng } }) {
                       className="max-w-full mx-auto md:max-w-none h-auto"
                       src={FeatImage01}
                       width={540}
-                      height={405}
                       alt="Features 02"
                     />
                   </div>

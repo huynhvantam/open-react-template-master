@@ -47,7 +47,7 @@ export default function RootLayout({ children, params: { lng } }) {
           {children}
         </div>
         <Dangkytuvan />
-        <Googlemap />
+        {/* <Googlemap /> */}
         <Footer />
       </body>
     </html>

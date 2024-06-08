@@ -58,6 +58,7 @@ export default function Taisaonenchon() {
                   height={40}
                   alt="Môn học"
                   priority
+                  style={{ width: "auto", height: "auto" }}
                 />
                 <div className="pl-4">
                   <p className=" ">GIÁO TRÌNH</p>
@@ -117,10 +118,9 @@ export default function Taisaonenchon() {
                 <Image
                   className="h-fit "
                   src={tienganh}
-                  width={40}
-                  height={40}
                   alt="Môn học"
                   priority
+                  style={{ width: "auto", height: "auto" }}
                 />
                 <div className="pl-4">
                   <p className="">TIẾNG ANH/ TUẦN</p>

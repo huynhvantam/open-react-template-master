@@ -155,7 +155,7 @@ export default function Footer({ lng }) {
                   </ul> */}
                 </ul>
               </div>
-              <iframe
+              {/* <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiaoducphuonghoang&tabs=timeline&width=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                 width="340"
                 height="130"
@@ -172,7 +172,7 @@ export default function Footer({ lng }) {
                 scrolling="no"
                 allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
         </div>

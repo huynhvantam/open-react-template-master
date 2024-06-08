@@ -272,8 +272,13 @@ export default async function Page({ params: { lng } }) {
               </p>
             </div>
           </div>
+
           <div className="col-span-3">
-            <Image src={Image1} className="w-full h-full" />
+            <Image
+              src={Image1}
+              alt="image"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
