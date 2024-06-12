@@ -39,68 +39,68 @@ export default async function Page({ params: { lng } }) {
       />
       <PageDautien className="" links={links} highlight={highlight} />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* 3rd */}
+        {/* 1rd */}
         <div>
-          <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+          <h3 className="h3 uppercase text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
             Lộ trình học tập
           </h3>
-          <p>
-            Giáo Dục Phượng Hoàng triển khai 2 lộ trình đào tạo dành cho học
-            sinh từ Mầm non đến Lớp 9, bao gồm: Chương trình Việt Nam và Chương
-            trình Song Ngữ
+          <p className="p">
+            Giáo Dục Phượng Hoàng đào tạo liên cấp từ Mầm non, Tiểu học, Trung
+            học cơ sở đến Trung học phổ thông. Chương trình học có sự kết hợp
+            hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào
+            tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp người
+            học dễ dàng tiếp cận kiến thức phù hợp và chinh phục thành công
+            trong môi trường học tập quốc tế năng động. Giáo Dục Phượng Hoàng
+            triển khai 2 lộ trình đào tạo dành cho học sinh từ Mầm non đến Lớp
+            9, bao gồm: Chương trình Song ngữ và Chương trình Quốc tế
           </p>
         </div>
-        {/* 1nd */}
-        <div className="grid grid-cols-2 gap-x-10 bg-gray-100 pb-10 px-5 mt-5">
-          <div>
-            <h3 className="h3 text-center pt-10 w-fit mx-auto pb-3 mb-4 border-b-[1px] border-rose-500">
-              Chương trình Việt Nam
-            </h3>
-            <p className="p pb-4">
-              Chương trình Việt Nam được xây dựng từ Chương trình Giáo dục Quốc
-              gia, do Bộ Giáo dục và Đào tạo Việt Nam quy định. Chương trình
-              phát triển theo phương pháp tích hợp nội môn và liên môn, tối ưu
-              hóa nội dung học tập và kết quả đầu ra, đồng thời vẫn bảo tồn và
-              phát huy giá trị bản sắc dân tộc trong nội dung và hình thức
-              truyền tải giáo dục.
-            </p>
-            <p className="p">
-              Chương trình Quốc tế mang đến cho học sinh cơ hội học tập môn Ngữ
-              văn Anh, Toán và Khoa học bằng tiếng Anh với 100% giáo viên quốc
-              tế. Chương trình Quốc tế còn được phát triển một cách chọn lọc để
-              có thể tích hợp với chương trình Việt Nam về nội dung, tăng cường
-              vận dụng kiến thức, hoạt động thực hành, cơ hội rèn luyện ngôn ngữ
-              tiếng Anh trong những tình huống học tập gần gũi với lứa tuổi Tiểu
-              học.
-            </p>
-          </div>
-          <div>
-            <h3 className="h3 text-center pt-10 w-fit mx-auto pb-3 mb-4 border-b-[1px] border-rose-500">
+        {/* 2nd */}
+        <div className="grid grid-cols-2 gap-x-10  pb-10 px-5 mt-5">
+          <div className="">
+            <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
               Chương trình Song ngữ
             </h3>
-            <p className="p pb-4">
-              Chương trình Quốc tế mang đến cho học sinh cơ hội học tập môn Ngữ
-              văn Anh, Toán và Khoa học bằng tiếng Anh với 100% giáo viên quốc
-              tế. Chương trình Quốc tế còn được phát triển một cách chọn lọc để
-              có thể tích hợp với chương trình Việt Nam về nội dung, tăng cường
-              vận dụng kiến thức, hoạt động thực hành, cơ hội rèn luyện ngôn ngữ
-              tiếng Anh trong những tình huống học tập gần gũi với lứa tuổi Tiểu
-              học.
-            </p>
-            <p className="p">
-              Cũng như chương trình Việt Nam, hoạt động học tập của học sinh
-              trong các môn học của chương trình Quốc tế được đánh giá trong quá
-              trình và theo định kỳ, bằng điểm số và thông qua nhận xét của giáo
-              viên. Sử dụng hệ thống kiểm tra ngoài không chỉ cung cấp thông tin
-              chi tiết về mức độ tiến bộ về năng lực học tập của học sinh mà còn
-              đảm bảo tính khách quan trong kiểm tra và đánh giá của chương
-              trình Quốc tế.
-            </p>
+            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[300px] rounded-b-2xl space-y-4 ">
+              <p className="p pb-4">
+                Chương trình Song ngữ tại Phượng Hoàng được xây dựng trên tiêu
+                chí tối ưu hóa chương trình của Bộ GD & ĐT nhằm đảm bảo được
+                chuẩn kiến thức và giúp học sinh tiếp thu kiến thức một cách nhẹ
+                nhàng, hiệu quả.
+              </p>
+              <p className="p">
+                Kết quả học tập và bằng cấp được Bộ GD & ĐT công nhận và cấp
+                phát, có giá trị ngang bằng với các trường công lập trong hệ
+                thống giáo dục quốc gia.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
+              Chương trình Quốc tế
+            </h3>
+            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[300px] rounded-b-2xl space-y-4 ">
+              <p className="p pb-4">
+                Chương trình quốc tế học theo giáo trình của Singapore và
+                Cambridge. Các môn học chính như Tiếng Anh, Toán, Khoa học và
+                Sức khỏe được dựa trên Bộ giáo trình “My Pals are Here” của nhà
+                xuất bản uy tín Marshall Cavendish, Singapore. Các môn học khác
+                như Địa lý, Lịch sử, Công nghệ thông tin, Mỹ thuật, Âm nhạc và
+                Giáo dục thể chất được biên soạn dựa theo giáo trình của
+                Cambridge.
+              </p>
+              <p className="p">
+                Vào cuối bậc tiểu học, học sinh sẽ được tham gia kì thi lấy
+                chứng chỉ tiểu học Quốc tế Cambridge Primary Checkpoint.
+              </p>
+            </div>
           </div>
         </div>
-        {/* 2nd  */}
+        {/* 3nd  */}
         <div>
-          <h3 className="h3 text-center pb-10 pt-28">CHƯƠNG TRÌNH HỌC</h3>
+          <h3 className="h3  text-center pb-3 mb-10 pt-28 border-b-[3px] border-rose-500 w-fit mx-auto">
+            CHƯƠNG TRÌNH HỌC
+          </h3>
           <div className="grid grid-cols-3 text-white gap-x-4">
             {programs.map((program, index) => (
               <div className="" key={index}>
@@ -119,6 +119,101 @@ export default async function Page({ params: { lng } }) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="">
+          <h3 className="h3  text-center pb-3 mb-10 pt-28 border-b-[3px] border-rose-500 w-fit mx-auto">
+            HOẠT ĐỘNG NGOẠI KHÓA
+          </h3>
+          <div className="grid grid-cols-2 gap-10 p">
+            <div className="">
+              <p>
+                Phoenix Education tổ chức đa dạng các chương trình hoạt động
+                ngoại khóa giúp học sinh có nhiều trải nghiệm về tư duy và thể
+                chất, phát triển các kỹ năng toàn diện. Chương trình được thiết
+                kế vô cùng sinh động theo định hướng “Học từ trải nghiệm – Học
+                từ khám phá, sáng tạo” nhằm trang bị thêm nhiều kỹ năng mới và
+                mở ra nhiều cơ hội học tập thực tế cho học sinh.
+              </p>
+
+              <ul>
+                <li className="pt-4 list-disc marker:text-red-500 ml-5">
+                  Đa dạng các cuộc thi học thuật và năng khiếu như: Hùng biện
+                  tiếng Anh, English Singing Contest, Book Report,...
+                </li>
+
+                <li className="pt-2 list-disc marker:text-red-500 ml-5">
+                  Năng động hơn với các Câu lạc bộ ngoại khóa:
+                </li>
+              </ul>
+
+              <ul className="pl-6">
+                <li className=" ml-5 ">
+                  <span className="text-rose-300">▪ </span>Các hoạt động ngoại
+                  khóa, rèn luyện thể chất, đam mê như: Võ thuật, Bóng rổ,
+                  Yoga,...
+                </li>
+                <li className=" ml-5 ">
+                  <span className="text-rose-300">▪ </span>Các CLB năng khiếu và
+                  kết nối cộng đồng như: Vẽ, Âm nhạc, Nhảy múa, CLB Thiện nguyện
+                  xã hội,...
+                </li>
+                <li className=" ml-5 ">
+                  <span className="text-rose-300">▪ </span>Các CLB học thuật,
+                  nâng cao kiến thức như: CLB tiếng Anh, CLB Sáng tạo khoa học,
+                  CLB Toán học, CLB Robotics,...
+                </li>
+              </ul>
+              <ul>
+                <li className="pt-4 list-disc marker:text-red-500 ml-5">
+                  Trải nghiệm sâu sắc từ các hoạt động dã ngoại, trải nghiệm
+                  thực tế như: Tham quan những Di tích lịch sử, bảo tàng, các
+                  nông trại xanh, khu trải nghiệm nghê nghiệp tương lai,..
+                </li>
+                <li className="pt-2 list-disc marker:text-red-500 ml-5">
+                  Nâng tầm hiểu biết các Lễ hội Văn hóa quốc tế như: Halloween,
+                  Giáng sinh, Lễ hội Mùa xuân, Summer Camp,...
+                </li>
+              </ul>
+            </div>
+            <div className="grid grid-cols-2 gap-5">
+              <Image
+                loading="lazy"
+                className=""
+                src={FeatImage01}
+                alt="image"
+              />
+              <Image
+                loading="lazy"
+                className=""
+                src={FeatImage01}
+                alt="image"
+              />
+              <Image
+                loading="lazy"
+                className=""
+                src={FeatImage01}
+                alt="image"
+              />
+              <Image
+                loading="lazy"
+                className=""
+                src={FeatImage01}
+                alt="image"
+              />
+              <Image
+                loading="lazy"
+                className=""
+                src={FeatImage01}
+                alt="image"
+              />
+              <Image
+                loading="lazy"
+                className=""
+                src={FeatImage01}
+                alt="image"
+              />
+            </div>
           </div>
         </div>
       </section>

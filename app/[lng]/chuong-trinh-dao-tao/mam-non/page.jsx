@@ -54,31 +54,33 @@ export default async function Page({ params: { lng } }) {
         {/* 1st */}
         <div>
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
-            Chương trình giáo dục Mầm non
+            Chương trình mầm non song ngữ
           </h3>
-          <p>
-            Trẻ Mầm non tại Phoenix Education vui học theo Chương trình Văn hóa
-            Quốc Gia kết hợp với Chương trình tiếng Anh được giảng dạy theo Mô
-            hình Học tập Đa hoạt động (Multi-Faceted Approach to Learning for
-            Kindergarten). Phoenix Education tự hào mang đến cho học sinh Mầm
-            non chương trình ngữ âm tiếng Anh “Letters and Sounds”, được phát
-            triển có hệ thống và phê duyệt bởi Bộ Giáo dục và Kĩ năng, Vương
-            quốc Anh. Trẻ còn được tiếp xúc với môn ICT để bước đầu hình thành
-            nên tư duy công nghệ.
+          <p className="p">
+            Chương trình mầm non của chúng tôi là sự tích hợp hài hòa giữa
+            chương trình mầm non của Bộ giáo dục và đào tạo Việt Nam và chương
+            trình mầm non tiếng Anh Singapore. Chương trình nhằm đảm bảo tính
+            khoa học, hợp lý, vừa sức, phù hợp với nhịp học của trẻ theo lứa
+            tuổi và cá nhân trẻ. Nội dung hoạt động trong một ngày phong phú, đa
+            dạng, gần gũi với cuộc sống thực nhằm đáp ứng mục tiêu phát triển
+            của trẻ. Chương trình được giảng dạy bởi các giáo viên Việt Nam và
+            nước ngoài có chuyên môn sư phạm, kinh nghiệm, tận tình, chịu khó và
+            thương yêu trẻ.
           </p>
         </div>
         {/* 2nd */}
         <div className="grid grid-cols-2 gap-x-10 pb-10  mt-5 p">
           <div>
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
-              Chương trình Văn hóa Quốc gia Mầm non
+              Chương trình tiếng Việt
             </h3>
             <div className="bg-gray-100 px-5 pb-5 pt-2 h-[410px] rounded-b-2xl">
-              <p className=" pb-4">
+              <span className="font-semibold">
                 Mô hình học tập Đa hoạt động là sự kết hợp giữa Chương trình
-                Giáo dục Mầm non của Bộ GD&ĐT với những cách tiếp cận giáo dục
-                hiện đại, tập trung vào:
-              </p>
+                Giáo dục Mầm non của Bộ GD&ĐT
+              </span>{" "}
+              với những cách tiếp cận giáo dục hiện đại, tập trung vào:
+              <p className=" pb-4"></p>
               <ul className="list-disc list-inside marker:text-rose-500 space-y-2">
                 <li>
                   <span className="font-semibold">Nhận thức cá nhân:</span> trẻ
@@ -101,17 +103,17 @@ export default async function Page({ params: { lng } }) {
           </div>
           <div>
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
-              Chương trình tiếng Anh Mầm non
+              Chương trình tiếng Anh Mầm non (ESL)
             </h3>
             <div className="bg-gray-100 px-5 pb-5 pt-2  rounded-b-2xl h-[410px]">
               <p className="pb-4">
                 <span className="font-semibold">
-                  Chương trình tiếng Anh Mầm non dựa trên khung Chương trình
-                  Phát triển Nền tảng tiền Tiểu học
+                  Chương trình tiếng Anh với tư cách là ngôn ngữ thứ hai
+                  (English as a Second Language – ESL)
                 </span>{" "}
-                (Early Years Foundation Stage) của Vương Quốc Anh giúp trẻ
-                chuyển tiếp hiệu quả khi gia nhập Chương trình Giáo dục
-                Cambridge ở bậc Tiểu học.
+                được thiết kế và xây dựng dựa trên chương trình mầm non của
+                Singapore nhằm hỗ trợ việc học tiếng Anh với đầy đủ nội dung và
+                phương pháp khoa học.
               </p>
               <p className="pb-4">
                 Các hoạt động vui chơi được thiết kế và giảng dạy bằng tiếng Anh

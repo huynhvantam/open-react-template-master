@@ -59,83 +59,83 @@ export default async function Page({ params: { lng } }) {
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
             Chương Trình Đào Tạo Trung học
           </h3>
-          <p>
-            Chương trình đào tạo bậc Trung học tại Phoenix Education không chỉ
-            trang bị cho học sinh nền tảng tri thức và ngôn ngữ vững chắc mà còn
-            tạo điều kiện để các em phát triển năng lực tự học, tự do sáng tạo,
-            hình thành phẩm chất của công dân toàn cầu, đồng thời phát hiện, bồi
-            dưỡng năng khiếu và định hướng nghề nghiệp giúp học sinh luôn sẵn
-            sàng tâm thế thích ứng với những thay đổi nhanh chóng và nhiều mặt
-            của xã hội tương lai.
+          <p className="">
+            Tại Phoenix Education, chương trình đào tạo được ứng dụng các phương
+            pháp giáo dục tiên tiến trên thế giới đảm bảo cho mọi học sinh theo
+            học có thể dễ dàng tiếp thu và mở rộng kiến thức, đồng thời mang đến
+            không gian học tập thực sự thoải mái, lành mạnh và an toàn cho người
+            học. Phoenix Education là nơi học sinh được học tập, trải nghiệm,
+            đón nhận sự khích lệ, thể hiện tình yêu thương và phát huy hết tiềm
+            năng của mình.
           </p>
           <p>
             Với mục tiêu đào tạo kiến thức học thuật theo hướng tiếp cận thực
             tiễn, giảng dạy phân hoá theo năng lực và nhu cầu của từng đối tượng
             học sinh, Phoenix Education triển khai lộ trình học tập cấp Trung
-            học với 02 hệ chương trình đào tạo song song: Chương trình Trung học
-            Song ngữ Quốc tế và Chương trình Trung học Hội nhập Quốc tế, giúp
-            người học dễ dàng lựa chọn hướng tiếp cận kiến thức phù hợp và chinh
-            phục thành công trong môi trường học tập quốc tế năng động.
+            học với 02 hệ chương trình đào tạo: Chương trình Trung học Song ngữ
+            và Chương trình Trung học Quốc tế, giúp học sinh dễ dàng lựa chọn
+            hướng tiếp cận kiến thức phù hợp và chinh phục thành công trong môi
+            trường học tập quốc tế năng động.
           </p>
         </div>
         {/* 2nd */}
         <div className="grid grid-cols-2 gap-x-10 pb-10  mt-5 p">
           <div>
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
-              Chương trình Việt Nam
+              Chương trình Trung học Song ngữ
             </h3>
-            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[500px] rounded-b-2xl space-y-4 ">
+            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[520px] rounded-b-2xl space-y-4 ">
               <p>
-                Chương trình Việt Nam Tiểu học được xây dựng từ Chương trình
-                Giáo dục Quốc gia, do Bộ Giáo dục và Đào tạo Việt Nam quy định.
-                Chương trình phát triển theo phương pháp tích hợp nội môn và
-                liên môn, tối ưu hóa nội dung học tập và kết quả đầu ra, đồng
-                thời vẫn bảo tồn và phát huy giá trị bản sắc dân tộc trong nội
-                dung và hình thức truyền tải giáo dục.
+                Trường Phượng Hoàng đã nghiên cứu, cấu trúc và phân phối chương
+                trình một cách khoa học, đảm bảo cho các em học sinh có thể tiếp
+                thu hiệu quả nhất kiến thức chuẩn của Bộ Giáo dục và Đào tạo
+                Việt Nam và chuẩn quốc tế. Mục đích của chúng tôi là mang lại
+                kiến thức và hiểu biết lâu dài cùng các kỹ năng cần thiết cho
+                các học sinh để các em theo đuổi con đường học tập dài lâu và
+                trở thành những người công dân toàn cầu thành công.
               </p>
               <p>
-                Nội dung giáo dục của các môn học chương trình Việt Nam được
-                thiết kế theo học phần, với khối lượng và thời lượng phù hợp với
-                từng lứa tuổi và đặc điểm của từng lớp học. Các chủ đề học tập
-                đảm bảo học sinh Tiểu học có thể trải nghiệm và thực hiện các
-                nhiệm vụ học tập vừa sức và nâng cao.
+                Chương trình Trung học Việt Nam tại Phượng Hoàng được xây dựng
+                trên tiêu chí tối ưu hóa chương trình của Bộ GD & ĐT nhằm đảm
+                bảo được chuẩn kiến thức và giúp học sinh tiếp thu kiến thức một
+                cách nhẹ nhàng, hiệu quả.
               </p>
               <p>
-                Thực hiện định hướng cá thể hóa, giáo viên thường xuyên quan
-                sát, đánh giá quá trình học tập và rèn luyện phẩm chất đạo đức
-                của từng học sinh, tập trung phát triển các năng lực cốt lõi và
-                khuyến khích sự tiến bộ vươn lên trong học tập. Kết quả học tập,
-                rèn luyện của học sinh không chỉ thể hiện qua điểm số mà còn
-                được các giáo viên nhận xét trên tất cả các phương diện.
+                Tại Trường Trung học Phượng Hoàng, học sinh học tiếng Anh như là
+                ngôn ngữ thứ hai theo chuẩn tiếng Anh Cambridge dành cho những
+                người nói các ngôn ngữ khác (ESOL) và chuẩn Khung chương trình
+                chung của châu Âu (CEFR)
               </p>
             </div>
           </div>
           <div>
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
-              Chương trình Quốc tế
+              Chương trình Trung học Quốc tế
             </h3>
-            <div className="bg-gray-100 px-5 pb-5 pt-2  rounded-b-2xl h-[500px] space-y-4">
+            <div className="bg-gray-100 px-5 pb-5 pt-2  rounded-b-2xl h-[520px] space-y-4">
               <p>
-                Chương trình Quốc tế Tiểu học mang đến cho học sinh cơ hội học
-                tập môn Ngữ văn Anh, Toán và Khoa học bằng tiếng Anh với 100%
-                giáo viên quốc tế. Ngoài việc kế thừa những chuẩn kiến thức và
-                kỹ năng của Khung chương trình Bang Massachusetts, bao gồm chuẩn
-                Common Core và NGSS, chương trình Quốc tế còn được phát triển
-                một cách chọn lọc để có thể tích hợp với chương trình Việt Nam
-                về nội dung, tăng cường vận dụng kiến thức, hoạt động thực hành,
-                cơ hội rèn luyện ngôn ngữ tiếng Anh trong những tình huống học
-                tập gần gũi với lứa tuổi Tiểu học.
+                Tại Giáo Dục Phượng Hoàng, học sinh chương trình quốc tế học
+                theo giáo trình của Singapore và Cambridge. Các môn học chính
+                như Tiếng Anh, Toán, Khoa học và Sức khỏe được dựa trên Bộ giáo
+                trình “My Pals are Here” của nhà xuất bản uy tín Marshall
+                Cavendish, Singapore. Các môn học khác như Địa lý, Lịch sử, Công
+                nghệ thông tin, Mỹ thuật, Âm nhạc và Giáo dục thể chất được biên
+                soạn dựa theo giáo trình của Cambridge.
+              </p>
+              <p>
+                Chương trình Quốc tế còn được phát triển một cách chọn lọc để có
+                thể tích hợp với chương trình Việt Nam về nội dung, tăng cường
+                vận dụng kiến thức, hoạt động thực hành, cơ hội rèn luyện ngôn
+                ngữ tiếng Anh trong những tình huống học tập gần gũi với lứa
+                tuổi Trung học.
               </p>
               <p>
                 Cũng như chương trình Việt Nam, hoạt động học tập của học sinh
                 trong các môn học của chương trình Quốc tế được đánh giá trong
                 quá trình và theo định kỳ, bằng điểm số và thông qua nhận xét
-                của giáo viên. Ngoài ra, chương trình Quốc tế sử dụng bài thi Đo
-                lường mức độ tăng trưởng học thuật (MAP Test) do Hiệp hội Khảo
-                thí NWEA Hoa Kỳ thiết kế. Sử dụng hệ thống kiểm tra ngoài không
-                chỉ cung cấp thông tin chi tiết về mức độ tiến bộ về năng lực
-                học tập của học sinh mà còn đảm bảo tính khách quan trong kiểm
-                tra và đánh giá của chương trình Quốc tế.
+                của giáo viên. Vào cuối bậc tiểu học, học sinh sẽ được tham gia
+                kì thi lấy chứng chỉ tiểu học Quốc tế Cambridge Primary
+                Checkpoint.
               </p>
             </div>
           </div>
@@ -173,26 +173,11 @@ export default async function Page({ params: { lng } }) {
         </div>
 
         {/* 3rd */}
-        <div>
+        {/* <div>
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
             Một ngày của học sinh Trung học
           </h3>
-          <p>
-            Trẻ Mầm non tại Phoenix Education vui học theo Chương trình Văn hóa
-            Quốc Gia kết hợp với Chương trình tiếng Anh được giảng dạy theo Mô
-            hình Học tập Đa hoạt động (Multi-Faceted Approach to Learning for
-            Kindergarten). Phoenix Education tự hào mang đến cho học sinh Mầm
-            non chương trình ngữ âm tiếng Anh “Letters and Sounds”, được phát
-            triển có hệ thống và phê duyệt bởi Bộ Giáo dục và Kĩ năng, Vương
-            quốc Anh. Trẻ còn được tiếp xúc với môn ICT để bước đầu hình thành
-            nên tư duy công nghệ.
-          </p>
-          <Image loading="lazy" className="" alt="picture" src={Image4} />
-          <Image loading="lazy" className="" alt="picture" src={Image2} />
-          <Image loading="lazy" className="" alt="picture" src={Image3} />
-          <Image loading="lazy" className="" alt="picture" src={Image1} />
-          <Image loading="lazy" className="" alt="picture" src={Image5} />
-        </div>
+        </div> */}
       </section>
     </>
   );

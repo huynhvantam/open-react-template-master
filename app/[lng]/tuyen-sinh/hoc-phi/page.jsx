@@ -6,6 +6,7 @@ import BannerImage from "../../components/banner";
 import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
 import Image1 from "@/public/images/testimonial-01.jpg";
+import FeesTable from "./FeesTable";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("hoc-phi");
@@ -49,6 +50,52 @@ export default async function Page({ params: { lng } }) {
         <div>
           <h3 className="h3 pt-10 pb-10 text-center">ĐANG PHÁT TRIỂN</h3>
         </div>
+        {/* <table className="table-auto w-full">
+          <thead>
+            <tr>
+              <th className="bg-gray-200 text-gray-800 font-bold text-sm p-2">
+                Độ tuổi
+              </th>
+              <th className="bg-gray-200 text-gray-800 font-bold text-sm p-2">
+                Học phí/năm (VND)
+              </th>
+              <th className="bg-gray-200 text-gray-800 font-bold text-sm p-2">
+                Tiền ăn/năm (VND)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border-b border-gray-200 text-gray-900 text-sm p-2">
+                Từ 18 tháng tuổi đến dưới 6 tuổi
+              </td>
+              <td className="border-b border-gray-200 text-gray-900 text-sm p-2">
+                <div className="flex flex-col">
+                  <div>26.730.000</div>
+                  <div className="text-gray-600">(Học cả ngày)</div>
+                </div>
+                <div className="flex flex-col">
+                  <div>13.365.000</div>
+                  <div className="text-gray-600">(Học nữa ngày có ăn trưa)</div>
+                </div>
+                <div className="flex flex-col">
+                  <div>13.365.000</div>
+                  <div className="text-gray-600">
+                    (Học nửa ngày không ăn trưa)
+                  </div>
+                </div>
+              </td>
+              <td className="border-b border-gray-200 text-gray-900 text-sm p-2">
+                <div className="flex flex-col">
+                  <div>7.920.000</div>
+                  <div className="text-gray-600">(Có ăn trưa)</div>
+                </div>
+                <div className="text-gray-600">1.980.000 (Không ăn trưa)</div>
+              </td>
+            </tr>
+          </tbody>
+        </table> */}
+        <FeesTable />
       </section>
     </>
   );
