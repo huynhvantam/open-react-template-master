@@ -7,7 +7,11 @@ import VideoThumb from "@/public/images/oneuse/thumpvideo.jpg";
 import ModalVideo from "../../components/modal-video";
 import PageDautien from "../components/pagedautien";
 import Image from "next/image";
-import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
+import FeatImage0 from "@/public/images/phuonghoang/hocsinh1.jpg";
+import FeatImage01 from "@/public/images/oneuse/quytrinhtuyensinh/dutuyen.png";
+import FeatImage02 from "@/public/images/oneuse/quytrinhtuyensinh/danhgiadauvao.png";
+import FeatImage03 from "@/public/images/oneuse/quytrinhtuyensinh/hoanthienhoso.png";
+import FeatImage04 from "@/public/images/oneuse/quytrinhtuyensinh/nhaphoc.png";
 import Footer from "@/app/components/ui/footer";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -37,7 +41,35 @@ export default async function Page({ params: { lng } }) {
       content: t("chuong-trinh-ud"),
     },
   ];
-  const images = [FeatImage01, FeatImage01, FeatImage01, FeatImage01];
+  const array = [
+    {
+      image: FeatImage01,
+      title: "➪ Dự tuyển  ",
+      details: ["Đăng ký dự tuyển", "Nhận lịch hẹn đánh giá năng lực"],
+    },
+    {
+      image: FeatImage02,
+      title: "➪ Đánh giá đầu vào ",
+      details: [
+        "Tham gia đánh giá đầu vào theo lịch của Nhà trường",
+        "Nhận kết quả đánh giá trong vòng 10 ngày làm việc",
+      ],
+    },
+    {
+      image: FeatImage03,
+      title: "➪ Hoàn thiện hồ sơ ",
+      details: ["Hoàn thiện hồ sơ nhập học", "Hoàn thành thủ tục tài chính"],
+    },
+    {
+      image: FeatImage04,
+      title: "➪ Nhập học chính thức",
+      details: [
+        "Học sinh đi học theo lịch của Nhà trường",
+        "Phoenix Education hân hạnh đón chào học sinh gia nhập hành trình kiến tạo công dân toàn cầu đầy thú vị",
+      ],
+    },
+  ];
+
   return (
     <>
       <Header lng={lng} path="/tuyen-sinh" />
@@ -47,71 +79,114 @@ export default async function Page({ params: { lng } }) {
         text2={t("thong-tin-ts")}
       />
       <PageDautien className="" links={links} highlight={highlight} />
-      <section className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 p">
         {/* 1st */}
         <div>
-          <h3 className="h3 text-center py-10">GIỚI THIỆU</h3>
-          <p className="p pb-4">
-            Hệ thống Trường Song ngữ Quốc tế Giáo Dục Phượng Hoàng đào tạo liên
-            cấp từ Mầm non, Tiểu học, Trung học. Chương trình học có sự kết hợp
-            hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào
-            tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp người
-            học dễ dàng tiếp cận kiến thức phù hợp và chinh phục thành công
-            trong môi trường học tập quốc tế năng động.
-          </p>
-          <p className="p">
-            Với mô hình giáo dục hiện đại, ứng dụng các phương pháp giáo dục
-            tiên tiến trên thế giới như: Học tập thông qua trải nghiệm; Giáo dục
-            cảm xúc xã hội; Tư duy độc lập; Tôn trọng ý kiến cá nhân; Tạo mọi
-            điều kiện để người học cập nhật và đổi mới tri thức, kĩ năng, phát
-            triển năng lực… Qua đó, giúp học sinh phát triển các kỹ năng mềm,
-            khai mở nguồn năng lượng tích cực và sự hứng thú trong suốt quá
-            trình học tập.
-          </p>
-          <div className="grid grid-cols-4 gap-x-3 pt-10">
-            {images.map((image, index) => (
-              <div key={index} className="relative overflow-hidden">
-                <Image
-                  className="h-full w-full object-cover transition-transform duration-300 transform hover:scale-125"
-                  src={image}
-                  alt="image"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+          <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+            Thông tin tuyển sinh
+          </h3>
+          <div className="grid grid-cols-2 gap-10">
+            <div>
+              <h4 className="h3">
+                Phoenix Education tuyển sinh năm học 2024 - 2025
+              </h4>
+              <h5 className="h4 font-playfair pt-3 pb-3 ">
+                Độ tuổi tuyển sinh
+              </h5>
+              <p className="ml-6">
+                Năm học 2024 – 2025, Phoenix Education tổ chức tuyển sinh học
+                sinh có độ tuổi tương ứng với từng cấp học như sau:
+              </p>
+              <ul className="p ml-6">
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Mầm non: Tuyển sinh lớp dành bé từ 18 tháng đến 5 tuổi
+                </li>
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Tiểu học: Tuyển sinh học sinh từ lớp 1 đến lớp 5{" "}
+                </li>
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Trung học: Tuyển sinh học sinh từ lớp 6 đến lớp 9
+                </li>
+              </ul>
+              <h5 className="h4 font-playfair pt-3 pb-3 ">
+                Chương trình tuyển sinh
+              </h5>
+              <p className="ml-6">
+                Phoenix Education cung cấp 5 chương trình học:
+              </p>
+              <ul className="p ml-6">
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Chương trình mầm non song ngữ
+                </li>
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Chương trình tiểu học song ngữ
+                </li>
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Chương trình tiểu học quốc tế
+                </li>
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Chương trình trung học song ngữ
+                </li>
+                <li className="list-disc marker:text-red-500 ml-5">
+                  Chương trình trung học quốc tế
+                </li>
+              </ul>
+              <Link
+                href="#tuyen-sinh"
+                className="btn mt-4 text-lg ml-6"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-anchor-placement="top-bottom"
+              >
+                Đăng ký nhận tư vấn
+              </Link>
+            </div>
+            <Image
+              className="h-full w-full object-cover transition-transform duration-300 transform "
+              src={FeatImage0}
+              alt="image"
+              loading="lazy"
+            />
           </div>
-        </div>
-        {/* 2nd  */}
-        <div>
-          <h3 className="h3 text-center pb-10 pt-28">CHƯƠNG TRÌNH HỌC</h3>
-          <div className="grid grid-cols-3 text-white gap-x-4">
-            {programs.map((program, index) => (
-              <div className="" key={index}>
-                <Image
-                  loading="lazy"
-                  className=""
-                  src={FeatImage01}
-                  alt="image"
-                />
-                <div className={`px-3 pb-3 bg-[${program.color}]`}>
-                  <h4 className="text-center h4 py-3">{program.name}</h4>
-                  <p className="font-sans pb-4">{program.description}</p>
-                  <Link href={program.href} className="hover:underline">
-                    Xem thêm {">>"}
-                  </Link>
+
+          <h3 className="h3  text-center pb-3  pt-32 border-b-[3px] border-rose-500 w-fit mx-auto">
+            Quy trình tuyển sinh
+          </h3>
+          <div className="grid grid-cols-4 gap-x-3 pt-10">
+            {array.map((item, index) => (
+              <div key={index} className="relative overflow-hidden">
+                <div>
+                  <Image
+                    className="rounded-t-lg"
+                    src={item.image}
+                    alt="image"
+                    loading="lazy"
+                  />
+                  <div
+                    className="p-2 h-[228px] rounded-b-lg"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(to right, #f5f7fa 0%, #f6f7fa 100%)",
+                    }}
+                  >
+                    <h4 className="text-2xl font-playfair pb-4 pt-2 font-semibold">
+                      {item.title}
+                    </h4>
+                    <ul className="p">
+                      {item.details.map((detail, idx) => (
+                        <li
+                          key={idx}
+                          className="list-disc marker:text-red-500 ml-5"
+                        >
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-        {/* 3rd */}
-        <div>
-          <h3 className="h3 text-center pb-10 pt-28">LỘ TRÌNH HỌC TẬP</h3>
-          <p>
-            WASS hiện đang triển khai 2 lộ trình đào tạo dành cho học sinh từ
-            Mầm non đến Lớp 9, bao gồm: Chương trình Việt Nam và Chương trình
-            Quốc tế
-          </p>
         </div>
       </section>
     </>

@@ -1,60 +1,84 @@
-// components/FeesTable.js
+// components/FeeTable.js
 
-const FeesTable = () => {
+const FeeTable = () => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full border-collapse border border-black">
+      <table className="min-w-full table-auto border-collapse">
         <thead>
-          <tr>
-            <th className="px-4 py-2 border border-black text-center">
-              Độ tuổi
+          <tr className="bg-gray-100">
+            <th className="px-4 py-2 border border-gray-300 text-left whitespace-nowrap">
+              Chương trình học
             </th>
-            <th className="px-4 py-2 border border-black text-center">
-              Học phí/năm (VND)
+            <th className="px-4 py-2 border border-gray-300 text-center">
+              Khối lớp
             </th>
-            <th className="px-4 py-2 border border-black text-center">
-              Tiền ăn/năm (VND)
+            <th
+              colSpan="3"
+              className="px-4 py-2 border border-gray-300 text-center bg-red-500 text-white"
+            >
+              Học phí đóng theo năm
+              <br />
+              (Giảm 10%*)
             </th>
+            <th
+              colSpan="3"
+              className="px-4 py-2 border border-gray-300 text-center bg-gray-500 text-white"
+            >
+              Học phí đóng theo kì
+            </th>
+          </tr>
+          <tr className="bg-gray-100 whitespace-nowrap">
+            <th className="px-4 py-2 border border-gray-300"></th>
+            <th className="px-4 py-2 border border-gray-300"></th>
+            <th className="px-4 py-2 border border-gray-300"></th>
+            <th className="px-4 py-2 border border-gray-300">Tổng học phí</th>
+            <th className="px-4 py-2 border border-gray-300">Tiền ăn/năm</th>
+            <th className="px-4 py-2 border border-gray-300">Học phí/tháng</th>
+            <th className="px-4 py-2 border border-gray-300">Tiền ăn/tháng</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="py-2 border border-black  text-center" colSpan="3">
-              Từ 18 tháng tuổi đến dưới 6 tuổi
+            <td className="px-4 py-2 border border-gray-300" rowSpan="3">
+              Mầm non <br />
+              song ngữ
             </td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2 border border-black text-left">
-              Học cả ngày
+            <td
+              className="px-4 py-2 border border-gray-300 whitespace-nowrap"
+              rowSpan="3"
+            >
+              Từ 18 tháng tuổi
+              <br /> đến dưới 6 tuổi
             </td>
-            <td className="px-4 py-2 border border-black text-left">
+            <td className="px-4 py-2 border border-gray-300">Học cả ngày</td>
+            <td className="px-4 py-2 border border-gray-300 text-red-500">
               26.730.000
             </td>
-            <td className="px-4 py-2 border border-black text-left">
-              9.900.000
-            </td>
+            <td className="px-4 py-2 border border-gray-300">9.900.000</td>
+            <td className="px-4 py-2 border border-gray-300">2.970.000</td>
+            <td className="px-4 py-2 border border-gray-300">1.100.000</td>
           </tr>
           <tr>
-            <td className="px-4 py-2 border border-black text-left">
+            <td className="px-4 py-2 border border-gray-300">
               Học nửa ngày có ăn trưa
             </td>
-            <td className="px-4 py-2 border border-black text-left">
+            <td className="px-4 py-2 border border-gray-300 text-red-500">
               13.365.000
             </td>
-            <td className="px-4 py-2 border border-black text-left">
-              7.920.000
-            </td>
+            <td className="px-4 py-2 border border-gray-300">7.920.000</td>
+            <td className="px-4 py-2 border border-gray-300">1.485.000</td>
+            <td className="px-4 py-2 border border-gray-300">880.000</td>
           </tr>
           <tr>
-            <td className="px-4 py-2 border border-black text-left">
+            <td className="px-4 py-2 border border-gray-300">
               Học nửa ngày không ăn trưa
             </td>
-            <td className="px-4 py-2 border border-black text-left">
+            <td className="px-4 py-2 border border-gray-300 text-red-500">
               13.365.000
             </td>
-            <td className="px-4 py-2 border border-black text-left">
-              1.980.000*
-            </td>
+            <td className="px-4 py-2 border border-gray-300">1.980.000</td>
+            <td className="px-4 py-2 border border-gray-300">1.485.000 </td>
+            <td className="px-4 py-2 border border-gray-300">220.000</td>
           </tr>
         </tbody>
       </table>
@@ -62,4 +86,4 @@ const FeesTable = () => {
   );
 };
 
-export default FeesTable;
+export default FeeTable;
