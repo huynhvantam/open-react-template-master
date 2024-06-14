@@ -13,6 +13,7 @@ import FeatImage02 from "@/public/images/oneuse/quytrinhtuyensinh/danhgiadauvao.
 import FeatImage03 from "@/public/images/oneuse/quytrinhtuyensinh/hoanthienhoso.png";
 import FeatImage04 from "@/public/images/oneuse/quytrinhtuyensinh/nhaphoc.png";
 import Footer from "@/app/components/ui/footer";
+import FeesTable from "./hoc-phi/FeesTable";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("tuyen-sinh");
@@ -78,8 +79,8 @@ export default async function Page({ params: { lng } }) {
         text1={t("home") + " / " + t("tuyen-sinh")}
         text2={t("thong-tin-ts")}
       />
-      <PageDautien className="" links={links} highlight={highlight} />
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 p">
+      {/* <PageDautien className="" links={links} highlight={highlight} /> */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 p pt-20">
         {/* 1st */}
         <div>
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
@@ -188,6 +189,7 @@ export default async function Page({ params: { lng } }) {
             ))}
           </div>
         </div>
+        <FeesTable />
       </section>
     </>
   );

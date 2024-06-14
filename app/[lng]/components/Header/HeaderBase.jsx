@@ -52,6 +52,11 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
       href: "/chuong-trinh-dao-tao/trung-hoc",
       label: t("thcs"),
     },
+    {
+      key: "5",
+      href: "/trung-tam-anh-ngu",
+      label: t("trung-tam-anh-ngu"),
+    },
   ];
 
   const items3 = [
@@ -88,26 +93,26 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
   ];
 
   const items4 = [
-    {
-      key: "1",
-      href: "/tuyen-sinh",
-      label: t("thong-tin-ts"),
-    },
-    {
-      key: "2",
-      href: "/tuyen-sinh/quy-dinh-chinh-sach",
-      label: t("quy-dinh-chinh-sach"),
-    },
-    {
-      key: "3",
-      href: "/tuyen-sinh/hoc-phi",
-      label: t("hoc-phi"),
-    },
-    {
-      key: "4",
-      href: "/tuyen-sinh/chuong-trinh-uu-dai",
-      label: t("chuong-trinh-ud"),
-    },
+    // {
+    //   key: "1",
+    //   href: "/tuyen-sinh",
+    //   label: t("thong-tin-ts"),
+    // },
+    // {
+    //   key: "2",
+    //   href: "/tuyen-sinh/quy-dinh-chinh-sach",
+    //   label: t("quy-dinh-chinh-sach"),
+    // },
+    // {
+    //   key: "3",
+    //   href: "/tuyen-sinh/hoc-phi",
+    //   label: t("hoc-phi"),
+    // },
+    // {
+    //   key: "4",
+    //   href: "/tuyen-sinh/chuong-trinh-uu-dai",
+    //   label: t("chuong-trinh-ud"),
+    // },
   ];
   const items5 = [
     {
@@ -213,11 +218,11 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                   buttonText={t("doi-song")}
                   href={"/doi-song-hoc-duong"}
                 />
-                <Navv
+                {/* <Navv
                   items={items5}
                   buttonText={t("trung-tam-anh-ngu")}
                   href={"/trung-tam-anh-ngu"}
-                />
+                /> */}
                 <Navv
                   items={items4}
                   buttonText={t("tuyen-sinh")}
