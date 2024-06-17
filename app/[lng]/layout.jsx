@@ -28,19 +28,8 @@ export async function generateMetadata({ params: { lng } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng;
   const { t } = await useTranslation(lng);
   return {
-    openGraph: {
-      title: "Giáo Dục Phượng Hoàng",
-      description: "Tuyển sinh năm học 2024 - 2025",
-      url: "https://phuong-hoang.vercel.app/vi",
-      images: [
-        {
-          url: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/429570304_947518154040866_4185484461421526268_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2bWFOUhAo6cQ7kNvgECWkA3&_nc_ht=scontent.fdad1-4.fna&oh=00_AYAA25g6wKdtzjMBlqJOjOnrh6gxkYlRJ38fsKgi7SIL6Q&oe=66754F03", // Thay đổi URL ảnh đại diện của bạn ở đây
-          width: 1200,
-          height: 630,
-          alt: "Mô tả ảnh đại diện",
-        },
-      ],
-    },
+    title: "Giáo Dục Phượng Hoàng",
+    description: "Tuyển sinh năm học 2024 - 2025",
   };
 }
 
