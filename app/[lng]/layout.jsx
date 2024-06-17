@@ -32,9 +32,6 @@ export async function generateMetadata({ params: { lng } }) {
     description:
       "A playground to explore new Next.js 13/14 app directory features such as nested layouts, instant loading states, streaming, and component level data fetching.",
     openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: "https://phuong-hoang.vercel.app/vi",
       images: [
         {
           url: "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/429570304_947518154040866_4185484461421526268_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2bWFOUhAo6cQ7kNvgECWkA3&_nc_ht=scontent.fdad1-4.fna&oh=00_AYAA25g6wKdtzjMBlqJOjOnrh6gxkYlRJ38fsKgi7SIL6Q&oe=66754F03", // Thay đổi URL ảnh đại diện của bạn ở đây
