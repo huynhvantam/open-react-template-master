@@ -350,7 +350,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
             </Link>
           </div>
           {/* PC */}
-          <div className="hidden lg:flex-1">
+          <div className=" hidden lg:block">
             {/* Desktop navigation */}
             <div className="flex gap-x-6 justify-end items-center ">
               <div className="">
