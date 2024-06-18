@@ -10,92 +10,87 @@ import logo from "@/public/images/phuonghoang/logo.png";
 import Menubar from "./Menubar";
 import { RiMenuFoldLine } from "react-icons/ri";
 export const HeaderBase = ({ t, lng, path = "" }) => {
+  // moblie
   const item1 = [
     {
       key: "sub1",
-      label: t("Giới Thiệu"),
+      label: t("gioi-thieu"),
       children: [
         {
           key: "1",
-          label: <Link href="/ve-chung-toi">{t("Giới Thiệu")}</Link>,
+          label: <Link href="/ve-chung-toi">{t("gioi-thieu")}</Link>,
         },
         {
           key: "2",
           label: (
-            <Link href="/ve-chung-toi/tam-nhin-su-menh">{t("Tầm Nhìn")}</Link>
+            <Link href="/ve-chung-toi/tam-nhin-su-menh">{t("tam-nhin")}</Link>
           ),
         },
         {
           key: "3",
           label: (
-            <Link href="/ve-chung-toi/doi-ngu-giao-vien">
-              {t("Đội Ngũ Giáo Viên")}
-            </Link>
+            <Link href="/ve-chung-toi/doi-ngu-giao-vien">{t("giao-vien")}</Link>
           ),
         },
         {
           key: "4",
           label: (
-            <Link href="/ve-chung-toi/doi-ngu-lanh-dao">
-              {t("Đội Ngũ Lãnh Đạo")}
-            </Link>
+            <Link href="/ve-chung-toi/doi-ngu-lanh-dao">{t("lanh-dao")}</Link>
           ),
         },
       ],
     },
     {
       key: "sub2",
-      label: t("Chương Trình Đào Tạo"),
+      label: t("tong-quan-chuong-trinh"),
       children: [
         {
           key: "5",
           label: (
             <Link href="/chuong-trinh-dao-tao">
-              {t("Tổng Quan Chương Trình")}
+              {t("tong-quan-chuong-trinh")}
             </Link>
           ),
         },
         {
           key: "6",
           label: (
-            <Link href="/chuong-trinh-dao-tao/mam-non">{t("Mầm Non")}</Link>
+            <Link href="/chuong-trinh-dao-tao/mam-non">{t("mam-non")}</Link>
           ),
         },
         {
           key: "7",
           label: (
-            <Link href="/chuong-trinh-dao-tao/tieu-hoc">{t("Tiểu Học")}</Link>
+            <Link href="/chuong-trinh-dao-tao/tieu-hoc">{t("tieu-hoc")}</Link>
           ),
         },
         {
           key: "8",
           label: (
-            <Link href="/chuong-trinh-dao-tao/trung-hoc">{t("Trung Học")}</Link>
+            <Link href="/chuong-trinh-dao-tao/trung-hoc">{t("thcs")}</Link>
           ),
         },
         {
           key: "9",
           label: (
-            <Link href="/trung-tam-anh-ngu">{t("Trung Tâm Anh Ngữ")}</Link>
+            <Link href="/trung-tam-anh-ngu">{t("trung-tam-anh-ngu")}</Link>
           ),
         },
       ],
     },
     {
       key: "sub3",
-      label: t("Đời Sống Học Đường"),
+      label: t("moi-truong-ht"),
       children: [
         {
           key: "10",
-          label: (
-            <Link href="/doi-song-hoc-duong">{t("Môi Trường Học Tập")}</Link>
-          ),
+          label: <Link href="/doi-song-hoc-duong">{t("moi-truong-ht")}</Link>,
         },
         {
           key: "11",
           label: (
             <Link href="/doi-song-hoc-duong/goc-hoc-sinh">
-              {t("Góc Học Sinh")}
+              {t("goc-hoc-sinh")}
             </Link>
           ),
         },
@@ -103,7 +98,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "12",
           label: (
             <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
-              {t("Thư Viện Hình Ảnh")}
+              {t("thu-vien-ha")}
             </Link>
           ),
         },
@@ -111,7 +106,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "13",
           label: (
             <Link href="/doi-song-hoc-duong/dich-vu-truong-hoc">
-              {t("Dịch Vụ Trường Học")}
+              {t("dich-vu-th")}
             </Link>
           ),
         },
@@ -119,7 +114,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "14",
           label: (
             <Link href="/doi-song-hoc-duong/thanh-tich-hoc-duong">
-              {t("Thành Tích Học Đường")}
+              {t("thanh-tich-hs")}
             </Link>
           ),
         },
@@ -127,35 +122,37 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "15",
           label: (
             <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
-              {t("Chương Trình Ngoại Khóa")}
+              {t("chuong-trinh-nk")}
             </Link>
           ),
         },
       ],
     },
+    // {
+    //   key: "sub4",
+    //   label: t("trung-tam-anh-ngu"),
+    //   children: [
+    //     {
+    //       key: "16",
+    //       label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-hoc")}</Link>,
+    //     },
+    //     {
+    //       key: "17",
+    //       label: <Link href="/trung-tam-anh-ngu">{t("giao-vien")}</Link>,
+    //     },
+    //     {
+    //       key: "18",
+    //       label: <Link href="/trung-tam-anh-ngu">{t("hoc-phi")}</Link>,
+    //     },
+    //     {
+    //       key: "19",
+    //       label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-ud")}</Link>,
+    //     },
+    //   ],
+    // },
     {
-      key: "sub4",
-      label: t("Trung Tâm Anh Ngữ"),
-      children: [
-        {
-          key: "16",
-          label: <Link href="/trung-tam-anh-ngu">{t("Chương Trình Học")}</Link>,
-        },
-        {
-          key: "17",
-          label: <Link href="/trung-tam-anh-ngu">{t("Giáo Viên")}</Link>,
-        },
-        {
-          key: "18",
-          label: <Link href="/trung-tam-anh-ngu">{t("Học Phí")}</Link>,
-        },
-        {
-          key: "19",
-          label: (
-            <Link href="/trung-tam-anh-ngu">{t("Chương Trình Ưu Đãi")}</Link>
-          ),
-        },
-      ],
+      key: "sub9",
+      label: <Link href="/tuyen-sinh">{t("tuyen-sinh")}</Link>,
     },
     {
       key: "sub5",
@@ -166,100 +163,95 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
       label: <Link href="/tin-tuc">{t("tin-tuc")}</Link>,
     },
     {
-      key: "sub5",
+      key: "sub7",
       label: <Link href="/tuyen-dung">{t("tuyen-dung")}</Link>,
     },
     {
-      key: "sub5",
+      key: "sub8",
       label: <Link href="#thong-tin-lien-he">{t("lien-he")}</Link>,
     },
   ];
+  // pc
   const item2 = [
     {
       key: "sub1",
-      label: t("Giới Thiệu"),
+      label: t("gioi-thieu"),
       children: [
         {
           key: "1",
-          label: <Link href="/ve-chung-toi">{t("Giới Thiệu")}</Link>,
+          label: <Link href="/ve-chung-toi">{t("gioi-thieu")}</Link>,
         },
         {
           key: "2",
           label: (
-            <Link href="/ve-chung-toi/tam-nhin-su-menh">{t("Tầm Nhìn")}</Link>
+            <Link href="/ve-chung-toi/tam-nhin-su-menh">{t("tam-nhin")}</Link>
           ),
         },
         {
           key: "3",
           label: (
-            <Link href="/ve-chung-toi/doi-ngu-giao-vien">
-              {t("Đội Ngũ Giáo Viên")}
-            </Link>
+            <Link href="/ve-chung-toi/doi-ngu-giao-vien">{t("giao-vien")}</Link>
           ),
         },
         {
           key: "4",
           label: (
-            <Link href="/ve-chung-toi/doi-ngu-lanh-dao">
-              {t("Đội Ngũ Lãnh Đạo")}
-            </Link>
+            <Link href="/ve-chung-toi/doi-ngu-lanh-dao">{t("lanh-dao")}</Link>
           ),
         },
       ],
     },
     {
       key: "sub2",
-      label: t("Chương Trình Đào Tạo"),
+      label: t("tong-quan-chuong-trinh"),
       children: [
         {
           key: "5",
           label: (
             <Link href="/chuong-trinh-dao-tao">
-              {t("Tổng Quan Chương Trình")}
+              {t("tong-quan-chuong-trinh")}
             </Link>
           ),
         },
         {
           key: "6",
           label: (
-            <Link href="/chuong-trinh-dao-tao/mam-non">{t("Mầm Non")}</Link>
+            <Link href="/chuong-trinh-dao-tao/mam-non">{t("mam-non")}</Link>
           ),
         },
         {
           key: "7",
           label: (
-            <Link href="/chuong-trinh-dao-tao/tieu-hoc">{t("Tiểu Học")}</Link>
+            <Link href="/chuong-trinh-dao-tao/tieu-hoc">{t("tieu-hoc")}</Link>
           ),
         },
         {
           key: "8",
           label: (
-            <Link href="/chuong-trinh-dao-tao/trung-hoc">{t("Trung Học")}</Link>
+            <Link href="/chuong-trinh-dao-tao/trung-hoc">{t("thcs")}</Link>
           ),
         },
         {
           key: "9",
           label: (
-            <Link href="/trung-tam-anh-ngu">{t("Trung Tâm Anh Ngữ")}</Link>
+            <Link href="/trung-tam-anh-ngu">{t("trung-tam-anh-ngu")}</Link>
           ),
         },
       ],
     },
     {
       key: "sub3",
-      label: t("Đời Sống Học Đường"),
+      label: t("moi-truong-ht"),
       children: [
         {
           key: "10",
-          label: (
-            <Link href="/doi-song-hoc-duong">{t("Môi Trường Học Tập")}</Link>
-          ),
+          label: <Link href="/doi-song-hoc-duong">{t("moi-truong-ht")}</Link>,
         },
         {
           key: "11",
           label: (
             <Link href="/doi-song-hoc-duong/goc-hoc-sinh">
-              {t("Góc Học Sinh")}
+              {t("goc-hoc-sinh")}
             </Link>
           ),
         },
@@ -267,7 +259,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "12",
           label: (
             <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
-              {t("Thư Viện Hình Ảnh")}
+              {t("thu-vien-ha")}
             </Link>
           ),
         },
@@ -275,7 +267,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "13",
           label: (
             <Link href="/doi-song-hoc-duong/dich-vu-truong-hoc">
-              {t("Dịch Vụ Trường Học")}
+              {t("dich-vu-th")}
             </Link>
           ),
         },
@@ -283,7 +275,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "14",
           label: (
             <Link href="/doi-song-hoc-duong/thanh-tich-hoc-duong">
-              {t("Thành Tích Học Đường")}
+              {t("thanh-tich-hs")}
             </Link>
           ),
         },
@@ -291,7 +283,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           key: "15",
           label: (
             <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
-              {t("Chương Trình Ngoại Khóa")}
+              {t("chuong-trinh-nk")}
             </Link>
           ),
         },
@@ -299,27 +291,29 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "sub4",
-      label: t("Trung Tâm Anh Ngữ"),
+      label: t("trung-tam-anh-ngu"),
       children: [
         {
           key: "16",
-          label: <Link href="/trung-tam-anh-ngu">{t("Chương Trình Học")}</Link>,
+          label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-hoc")}</Link>,
         },
         {
           key: "17",
-          label: <Link href="/trung-tam-anh-ngu">{t("Giáo Viên")}</Link>,
+          label: <Link href="/trung-tam-anh-ngu">{t("giao-vien")}</Link>,
         },
         {
           key: "18",
-          label: <Link href="/trung-tam-anh-ngu">{t("Học Phí")}</Link>,
+          label: <Link href="/trung-tam-anh-ngu">{t("hoc-phi")}</Link>,
         },
         {
           key: "19",
-          label: (
-            <Link href="/trung-tam-anh-ngu">{t("Chương Trình Ưu Đãi")}</Link>
-          ),
+          label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-ud")}</Link>,
         },
       ],
+    },
+    {
+      key: "sub5",
+      label: <Link href="/tuyen-sinh">{t("tuyen-sinh")}</Link>,
     },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Trạng thái để lưu trạng thái hiển thị của Menubar
@@ -398,7 +392,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           </div>
 
           {/* Mobile */}
-          <div className="lg:hidden flex items-center gap-10">
+          <div className="lg:hidden flex items-center gap-3">
             {/* đổi ngôn ngữ */}
             <div className="uppercase  text-rose-500  hover:font-normal">
               <span className="font-semibold">{lng}</span> |{" "}
