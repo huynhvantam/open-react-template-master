@@ -2,7 +2,9 @@ import Link from "next/link";
 import { languages, fallbackLng } from "../i18n/settings";
 import { useTranslation } from "../i18n";
 import FeatImage01 from "@/public/images/banner/banner-home.jpg";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import Image from "next/image";
+import Content0 from "./components/content0";
 import Content1 from "./components/content1";
 import Content2 from "./components/content2";
 import Content3 from "./components/content3";
@@ -23,11 +25,25 @@ export default async function Page({ params: { lng } }) {
   return (
     <>
       <Header lng={lng} path="/" />
-      <section className="relative overflow-hidden pt-[84px]">
-        <div className="relative h-[600px]">
+      {/* mobile */}
+      <div className="sm:hidden">
+        <Image
+          loading="lazy"
+          src={FeatImage02}
+          alt="banner"
+          layout="fill"
+          objectFit="cover"
+        />
+        <Content0 />
+      </div>
+
+      {/* PC */}
+      <section className="relative overflow-hidden pt-10 sm:pt-[84px] hidden sm:block">
+        <div className="relative h-[600px] ">
           <Image loading="lazy" src={FeatImage01} alt="banner" />
           <div className="absolute top-0 -left-1/4 w-full h-full bg-gradient-to-l from-transparent to-white transition-opacity" />
         </div>
+
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="absolute top-1/2 transform -translate-y-1/2">
             <h4 className="h44 pb-2" data-aos="fade-up" data-aos-delay="200">
@@ -36,7 +52,7 @@ export default async function Page({ params: { lng } }) {
             <h1 className="h1" data-aos="fade-up" data-aos-delay="400">
               {t("tuyen-sinh-nh")}
             </h1>
-            <h1 className="h1" data-aos="fade-up" data-aos-delay="400">
+            <h1 className="h1 " data-aos="fade-up" data-aos-delay="400">
               2024 - 2025
             </h1>
             <Link
@@ -51,12 +67,13 @@ export default async function Page({ params: { lng } }) {
           </div>
         </div>
       </section>
-      <Content1 />
+
+      {/* <Content1 />
       <Hero lng={lng} />
       <Content2 />
       <Content3 />
       <Taisaonenchon />
-      <Chiasecongdong />
+      <Chiasecongdong /> */}
       {/* <Googlemap /> */}
     </>
   );
