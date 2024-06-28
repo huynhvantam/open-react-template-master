@@ -9,7 +9,6 @@ const CustomCheckboxGroup = ({ options, onChange }) => {
 
   const handleCheckboxChange = (values) => {
     setCheckedValues(values);
-    // Call the parent component's onChange handler, if provided
     if (onChange) {
       onChange(values);
     }
@@ -28,7 +27,6 @@ const CustomCheckboxGroup = ({ options, onChange }) => {
 export default function Dangkytuvan() {
   const handleCheckboxChange = (checkedValues) => {
     console.log("checked = ", checkedValues);
-    // Additional handling logic here if needed
   };
 
   return (
@@ -37,17 +35,18 @@ export default function Dangkytuvan() {
         <h3 className="h3 text-left pb-4 lg:pb-0" data-aos="fade-up">
           Đăng ký nhận tư vấn
         </h3>
-        <p className="p " data-aos="fade-up" data-aos-delay="200">
+        <p className="p" data-aos="fade-up" data-aos-delay="200">
           Đội ngũ Tuyển sinh sẽ tư vấn tận tâm và đem lại trải nghiệm tuyệt vời
           nhất cho gia đình!
         </p>
         <div className="lg:grid lg:grid-cols-2 gap-20 pt-10" data-aos="fade-up">
-          <div className="" data-aos="fade-up" data-aos-delay="300">
+          <div data-aos="fade-up" data-aos-delay="300">
             <Image
               loading="lazy"
               className="h-fit pb-4 lg:pb-0"
               src={Image1}
               alt="Môn học"
+              // objectFit="cover"
             />
           </div>
           <div className="space-y-6" data-aos="fade-up" data-aos-delay="400">
@@ -57,7 +56,7 @@ export default function Dangkytuvan() {
               </p>
               <Input
                 name="phuhuynh"
-                className="rounded-md border-none "
+                className="rounded-md border-none"
                 placeholder="Điền tên tại đây"
               />
             </div>
@@ -79,7 +78,7 @@ export default function Dangkytuvan() {
                 name="email"
                 className="rounded-md border-none"
                 placeholder="Điền email tại đây"
-                autocomplete="email"
+                autoComplete="email"
               />
             </div>
             <div className="border-b">
@@ -90,7 +89,7 @@ export default function Dangkytuvan() {
                 placeholder="Thắc mắc của quý phụ huynh"
               />
             </div>
-            <div className="">
+            <div>
               <p className="p">Tìm hiểu cấp học</p>
               <CustomCheckboxGroup
                 options={[
@@ -103,8 +102,7 @@ export default function Dangkytuvan() {
               />
             </div>
             <button className="btn" data-aos="fade-up">
-              {" "}
-              Gửi đăng ký{" >"}
+              Gửi đăng ký {" >"}
             </button>
           </div>
         </div>

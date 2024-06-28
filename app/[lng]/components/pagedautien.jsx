@@ -18,7 +18,9 @@ export default function PageDautien({ className, links }) {
   };
   return (
     <section className={`pt-14 pb-6 ${className}`}>
-      <div className={`max-w-6xl mx-auto px-4 sm:px-6 flex gap-x-2 `}>
+      <div
+        className={`max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 lg:flex gap-2 `}
+      >
         {/* {numCols} */}
         {links.map((link, index) => (
           <Link

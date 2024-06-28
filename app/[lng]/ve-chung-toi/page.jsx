@@ -4,6 +4,7 @@ import { Header } from "../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-home.jpg";
 import BannerImage from "../components/banner";
 import VideoThumb from "@/public/images/oneuse/thumpvideo.jpg";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import ModalVideo from "../../components/modal-video";
 import PageDautien from "../components/pagedautien";
 import Image from "next/image";
@@ -30,11 +31,32 @@ export default async function Page({ params: { lng } }) {
   return (
     <>
       <Header lng={lng} path="/ve-chung-toi" />
-      <BannerImage
+      {/* <BannerImage
         src={bannerabout}
         text1={t("home") + " / " + t("about")}
         text2={t("gioi-thieu")}
-      />
+      /> */}
+
+      {/* mobile */}
+      <div className="lg:hidden">
+        <Image
+          loading="lazy"
+          src={FeatImage02}
+          alt="banner"
+          height={550}
+          objectFit=""
+        />
+        {/* <Image
+          loading="lazy"
+          src={FeatImage02}
+          alt="banner"
+          layout="responsive"
+          objectFit="cover"
+          height={550}
+          // className="opacity-0 -mt-[100px] sm:-mt-[200px] md:-mt-[500px]  "
+          className=""
+        /> */}
+      </div>
       <section className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <PageDautien className="" links={links} highlight={highlight} />
 

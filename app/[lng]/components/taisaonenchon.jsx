@@ -19,29 +19,29 @@ export default function Taisaonenchon() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-4 pb-20 pt-10">
-    <div className="lg:hidden"> 
-        <div className="hh4" data-aos="fade-up">
-        /CHƯƠNG TRÌNH ĐÀO TẠO
-              </div>
-              <div className="h25 mt-6 mb-5 text-center" data-aos="fade-up">
-              Tại sao chọn 
-              <br/> Phoenix Education?
-              </div>
-    </div>
-      <div className=" w-full h-32 rounded-l lg:hidden relative">
-              <Image
-                src={banner}
-                alt="pictures"
-                className="rounded-lg w-full h-full object-cover"
-                loading="lazy"
-              />
-              <div
-                style={{ textShadow: "2px 2px #d20dbe" }}
-                className="text-amber-300 h4 absolute bottom-0 pt-20 px-4 pb-4 rounded-lg "
-              >
-                Cơ sở vật chất hiện đại
-              </div>
-            </div>
+        <div className="lg:hidden">
+          <div className="hh4" data-aos="fade-up">
+            /CHƯƠNG TRÌNH ĐÀO TẠO
+          </div>
+          <div className="h25 mt-6 mb-5 text-center" data-aos="fade-up">
+            Tại sao chọn
+            <br /> Phoenix Education?
+          </div>
+        </div>
+        <div className=" w-full h-32 rounded-l lg:hidden relative">
+          <Image
+            src={banner}
+            alt="pictures"
+            className="rounded-lg w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div
+            style={{ textShadow: "2px 2px #d20dbe" }}
+            className="text-amber-300 h4 absolute bottom-0 pt-20 px-4 pb-4 rounded-lg "
+          >
+            Cơ sở vật chất hiện đại
+          </div>
+        </div>
         <div className="lg:grid lg:grid-cols-8 gap-4 ">
           <div
             // style={{
@@ -157,6 +157,7 @@ export default function Taisaonenchon() {
               src={monhoc1}
               alt="pictures"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="rounded-lg lg:absolute top-4 right-0 -bottom-0 left-0 -z-10 hidden lg:block"
               loading="lazy"
             />

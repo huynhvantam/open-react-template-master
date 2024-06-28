@@ -50,10 +50,13 @@ export default function Content3() {
         <div className="grid lg:grid-cols-2 gap-x-10 place-items-end">
           <Image
             className="hidden lg:block"
-            loading="lazy"
             src={Image1}
             alt="picture"
             data-aos="fade-up"
+            // loading="lazy"
+            // objectFit="cover"
+            priority
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div>
             <div className="hh4" data-aos="fade-up">

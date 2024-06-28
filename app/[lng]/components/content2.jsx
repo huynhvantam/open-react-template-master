@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Image1 from "@/public/images/phuonghoang/hocsinh3.jpg";
+import Image1 from "@/public/images/phuonghoang/hocsinh1.jpg";
 import Image2 from "@/public/images/phuonghoang/hocsinh1.jpg";
-import Image3 from "@/public/images/phuonghoang/hocsinh2.jpg";
-import Image4 from "@/public/images/phuonghoang/hocsinh2.jpg";
+import Image3 from "@/public/images/phuonghoang/hocsinh1.jpg";
+import Image4 from "@/public/images/phuonghoang/hocsinh1.jpg";
 // Định nghĩa mảng các đối tượng chứa dữ liệu cho mỗi phần tử
 const items = [
   {
@@ -53,7 +53,8 @@ export default function Content2() {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Các cấp học toàn diện tại  <span className="hidden lg:block"></span> Giáo Dục Phượng Hoàng
+              Các cấp học toàn diện tại{" "}
+              <span className="hidden lg:block"></span> Giáo Dục Phượng Hoàng
             </div>
             <p className="p mb-5" data-aos="fade-up" data-aos-delay="200">
               Tại Giáo Dục Phượng Hoàng, học sinh sẽ được hòa mình và trải
@@ -100,13 +101,13 @@ export default function Content2() {
             ))}
           </div>
           <Link
-              href="/chuong-trinh-dao-tao"
-              className="btn text-lg lg:hidden mt-10"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              Chương trình đào tạo{" >"}
-            </Link>
+            href="/chuong-trinh-dao-tao"
+            className="btn text-lg lg:hidden mt-10"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            Chương trình đào tạo{" >"}
+          </Link>
         </div>
       </div>
     </section>

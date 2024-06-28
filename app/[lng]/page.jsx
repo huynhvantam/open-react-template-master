@@ -27,25 +27,33 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/" />
       {/* mobile */}
       <div className="lg:hidden">
-        <Image
+        {/* <Image
           loading="lazy"
           src={FeatImage02}
           alt="banner"
-            layout="fill"
+          layout="fill"
           objectFit="cover"
-      
-        />
-        <Content0 />
-        <Image
+        /> */}
+        <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+          {/* Điều chỉnh chiều cao theo yêu cầu */}
+          <Image
+            src={FeatImage02}
+            alt="banner"
+            fill
+            style={{ objectFit: "cover" }}
+          />
+          <Content0 />
+        </div>
+        {/* <Image
           loading="lazy"
           src={FeatImage02}
           alt="banner"
             layout="responsive"
           objectFit="cover"
           className="opacity-0 -mt-[100px] sm:-mt-[200px] md:-mt-[500px]  "
-        />
+        /> */}
       </div>
-     
+
       {/* PC */}
       <section className="relative overflow-hidden pt-10 lg:pt-[84px] hidden lg:block">
         <div className="relative h-[600px] ">
