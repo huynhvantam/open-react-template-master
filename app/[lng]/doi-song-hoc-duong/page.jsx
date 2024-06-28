@@ -39,6 +39,8 @@ import Csvc28 from "@/public/images/phuonghoang/csvc/csvc28.png";
 import Csvc29 from "@/public/images/phuonghoang/csvc/csvc29.png";
 import Csvc30 from "@/public/images/phuonghoang/csvc/csvc30.png";
 import Csvc31 from "@/public/images/phuonghoang/csvc/csvc31.png";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("doi-song");
@@ -89,6 +91,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/doi-song-hoc-duong" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("doi-song")}
         text2={t("moi-truong-ht")}
       />
@@ -109,7 +112,7 @@ export default async function Page({ params: { lng } }) {
           </p>
           {/* 1 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-5 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-5 pb-4">
               HỆ THỐNG PHÒNG HỌC CHUẨN QUỐC TẾ
             </h3>
             <p className="p pb-4">
@@ -136,7 +139,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 2 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               HỆ THỐNG PHÒNG THỰC HÀNH STEM, VẬT LÝ, HÓA HỌC, SINH HỌC
             </h3>
             <p className="p pb-4">
@@ -179,7 +182,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 3 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               PHÒNG ÂM NHẠC VÀ MỸ THUẬT
             </h3>
             <p className="p pb-4">
@@ -214,7 +217,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 4 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               PHÒNG CÔNG NGHỆ THÔNG TIN (ICT)
             </h3>
             <p className="p pb-4">
@@ -241,7 +244,7 @@ export default async function Page({ params: { lng } }) {
 
           {/* 5 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               THƯ VIỆN
             </h3>
             <p className="p pb-4">
@@ -267,7 +270,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 6 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               KHÔNG GIAN HOẠT ĐỘNG THỂ THAO
             </h3>
             <p className="p pb-4">
@@ -291,7 +294,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 7 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               KHÔNG GIAN HOẠT ĐỘNG NGOÀI TRỜI
             </h3>
             <p className="p pb-4">
@@ -316,7 +319,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 8*/}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               NHÀ ĂN
             </h3>
             <p className="p pb-4">
@@ -349,7 +352,7 @@ export default async function Page({ params: { lng } }) {
           </div>
           {/* 9 */}
           <div>
-            <h3 className="h2 font-playfair text-rose-500 pt-20 pb-4">
+            <h3 className="h2 font-playfair text-left text-rose-500 pt-20 pb-4">
               PHÒNG Y TẾ
             </h3>
             <p className="p pb-4">

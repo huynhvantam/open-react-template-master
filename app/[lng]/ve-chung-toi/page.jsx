@@ -31,36 +31,17 @@ export default async function Page({ params: { lng } }) {
   return (
     <>
       <Header lng={lng} path="/ve-chung-toi" />
-      {/* <BannerImage
+      <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("about")}
         text2={t("gioi-thieu")}
-      /> */}
+      />
 
-      {/* mobile */}
-      <div className="lg:hidden">
-        <Image
-          loading="lazy"
-          src={FeatImage02}
-          alt="banner"
-          height={550}
-          objectFit=""
-        />
-        {/* <Image
-          loading="lazy"
-          src={FeatImage02}
-          alt="banner"
-          layout="responsive"
-          objectFit="cover"
-          height={550}
-          // className="opacity-0 -mt-[100px] sm:-mt-[200px] md:-mt-[500px]  "
-          className=""
-        /> */}
-      </div>
       <section className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <PageDautien className="" links={links} highlight={highlight} />
 
-        <h2 className="pt-20 h3  text-center border-b-[3px] border-b-rose-500 pb-6 w-fit mx-auto">
+        <h2 className=" pt-10 lg:pt-20 h3  text-center border-b-[3px] border-b-rose-500 pb-6 w-fit mx-auto">
           VỀ CHÚNG TÔI
         </h2>
         <p className="p py-8">
@@ -158,12 +139,10 @@ export default async function Page({ params: { lng } }) {
                     data-aos="fade-left"
                   >
                     <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                      <h4 className="font-playfair text-[40px] text-rose-500 leading-9">
-                        Chương trình giáo dục
+                      <h4 className="font-playfair text-[40px] text-rose-500 text-left ">
+                        Chương trình giáo dục song ngữ chuẩn quốc tế
                       </h4>
-                      <h4 className="font-playfair text-[40px] text-rose-500">
-                        song ngữ chuẩn quốc tế
-                      </h4>
+                      <h4 className="font-playfair text-[40px] text-rose-500"></h4>
 
                       <h5 className="text-2xl mb-3 font-playfair text-rose-500">
                         “Cái nôi” tạo ra những công dân toàn cầu
@@ -263,7 +242,7 @@ export default async function Page({ params: { lng } }) {
                       <h3 className="text-2xl font-playfair text-rose-500">
                         Hoạt động với
                       </h3>
-                      <div className="font-playfair text-[40px] text-rose-500">
+                      <div className="font-playfair text-[40px] text-rose-500 text-left">
                         Mục đích to lớn hơn
                       </div>
                       <p className="mb-4 pt-4 p ">

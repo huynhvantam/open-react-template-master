@@ -66,22 +66,22 @@ const Modal = ({ isOpen, onClose, listItem }) => {
       onClick={handleOutsideClick}
     >
       <div
-        className="max-w-6xl min-w-[700px] relative bg-white rounded-lg p-4 shadow-md max-h-screen overflow-y-auto "
+        className="lg:min-w-[700px] mx-2 relative bg-white rounded-lg p-4 shadow-md max-h-screen overflow-y-auto "
         style={{
           backgroundImage: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
         }}
       >
-        <div className="flex">
+        <div className="lg:flex text-center lg:text-left">
           <Image
             loading="lazy"
             src={listItem.imageSrc}
             // height={100}
             width={120}
             alt="avatar"
-            className="rounded-full"
+            className="rounded-full mx-auto lg:mx-0"
           />
           <div className="pl-4 h44">
-            <h2 className="h3 text-gray-700">{listItem.title}</h2>
+            <h2 className="h4 lg:h3 text-gray-700">{listItem.title}</h2>
             <p className="">{listItem.description}</p>
             {listItem.text2 && <p className="">Bằng cấp: {listItem.text2}</p>}
             {listItem.text3 && <p>Kinh nghiệm: {listItem.text3}</p>}
@@ -121,11 +121,11 @@ export default function Listthongtin({ buttonData }) {
 
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-6 w-full">
-      <div className="flex gap-x-2 ">
+      <div className="grid grid-cols-2 lg:flex gap-2 ">
         {Object.keys(buttonData).map((buttonName) => (
           <button
             key={buttonName}
-            className={`h-[100px] text-center p-4 flex items-center justify-center w-full  font-semibold text-lg ${
+            className={`h-[100px]  text-center p-4 flex items-center justify-center w-full  font-semibold lg:text-lg ${
               selectedButton === buttonName
                 ? "bg-[#070758] text-white"
                 : "hover:bg-[#070758] hover:text-white bg-gray-100 text-gray-400"
@@ -136,7 +136,7 @@ export default function Listthongtin({ buttonData }) {
           </button>
         ))}
       </div>
-      <ul className="grid grid-cols-2 gap-2 pt-10">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-2 pt-10">
         {buttonData[selectedButton]?.listItems?.map((listItem) => (
           <ListItem
             key={listItem.title} // Use a unique key for each list item

@@ -3,6 +3,7 @@ import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-tuyendung.jpg";
 import BannerImage from "../components/banner";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -19,6 +20,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/tin-tuc" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("tin-tuc")}
         text2={t("tin-tuc")}
       />

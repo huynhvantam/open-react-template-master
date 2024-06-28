@@ -94,7 +94,7 @@ export default function Cuuhocsinh() {
           </h3>
 
           <hr className="border-t-2 border-rose-500" />
-          <div className="flex flex-row-reverse gap-x-4">
+          <div className="lg:flex lg:flex-row-reverse gap-x-4">
             <div className="basis-1/2">
               <h2 className="text-[48px] leading-[64px] font-playfair text-rose-500 pt-7 pb-2">
                 {students[currentStudentIndex].name}
@@ -108,7 +108,7 @@ export default function Cuuhocsinh() {
                 {"  "}
                 {students[currentStudentIndex].major}
               </div>
-              <ul className="marker:text-red-500 h-[320px] overflow-y-auto list-inside list-disc ml-6 pt-2 pb-7">
+              <ul className="marker:text-red-500 h-[160px] lg:h-[320px] overflow-y-auto list-inside list-disc ml-6 pt-2 pb-7">
                 {students[currentStudentIndex].achievements.map(
                   (achievement, index) => (
                     <li key={index}>{achievement}</li>
@@ -118,13 +118,21 @@ export default function Cuuhocsinh() {
             </div>
             <div className="relative basis-1/2">
               <Image
-                loading="lazy"
                 onClick={nextStudent}
-                className="mx-auto cursor-pointer"
-                height={500}
+                className="mx-auto cursor-pointer lg:hidden"
+                height={300}
+                // loading="lazy"
                 src={students[currentStudentIndex].image}
                 alt="hoc sinh"
-              />{" "}
+              />
+              <Image
+                onClick={nextStudent}
+                className="mx-auto cursor-pointer hidden lg:block"
+                height={500}
+                // loading="lazy"
+                src={students[currentStudentIndex].image}
+                alt="hoc sinh"
+              />
               <button
                 onClick={prevStudent}
                 className="border border-white p-2 rounded-full bg-white hover:text-black absolute top-1/2"

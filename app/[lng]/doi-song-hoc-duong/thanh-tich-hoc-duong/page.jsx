@@ -6,6 +6,8 @@ import BannerImage1 from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
 import Tieubieu from "./tieubieu";
 import Cuuhocsinh from "./cuuhocsinh";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("thanh-tich-hs");
@@ -49,6 +51,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/doi-song-hoc-duong/thanh-tich-hoc-duong" />
       <BannerImage1
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("doi-song")}
         text2={t("thanh-tich-hs")}
       />

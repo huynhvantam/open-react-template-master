@@ -7,6 +7,8 @@ import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/testimonial-01.jpg";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("lanh-dao");
@@ -136,6 +138,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/ve-chung-toi/doi-ngu-lanh-dao" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("about")}
         text2={t("lanh-dao")}
       />

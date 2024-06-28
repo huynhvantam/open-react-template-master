@@ -6,6 +6,8 @@ import BannerImage from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
 import { trungthu2023, trungthu2024, trungthu2025 } from "./imageImports";
 import Listhinhanh from "../../components/listhinhanh";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("thu-vien-ha");
@@ -62,6 +64,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao/trung-hoc" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("doi-song")}
         text2={t("thu-vien-ha")}
       />

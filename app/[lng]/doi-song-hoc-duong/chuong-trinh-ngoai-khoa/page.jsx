@@ -4,6 +4,7 @@ import { Header } from "../../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import AutoResizeText from "../../../components/tools/AutoResizeText";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -95,6 +96,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao/trung-hoc" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("doi-song")}
         text2={t("chuong-trinh-nk")}
       />

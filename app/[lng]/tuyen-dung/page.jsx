@@ -3,6 +3,7 @@ import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-tuyendung.jpg";
 import BannerImage from "../components/banner";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -85,6 +86,7 @@ export default async function Page({ params: { lng } }) {
     <>
       <Header lng={lng} path="/tuyen-dung" />
       <BannerImage
+        srcmobile={FeatImage02}
         src={bannerabout}
         text1={t("home") + " / " + t("tuyen-dung")}
         text2={t("tuyen-dung")}

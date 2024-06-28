@@ -8,6 +8,8 @@ import Pagedautien from "../../components/pagedautien";
 import Image from "next/image";
 import Image1 from "@/public/images/phuonghoang/truonghoc.jpg";
 import ZiczagImage from "../../components/ziczagimage";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("tam-nhin");
@@ -85,6 +87,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/ve-chung-toi/tam-nhin-su-menh" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("about")}
         text2={t("tam-nhin")}
       />

@@ -9,6 +9,8 @@ import PageDautien from "../components/pagedautien";
 import Image from "next/image";
 import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
 import Footer from "@/app/components/ui/footer";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("chuong-trinh");
@@ -34,6 +36,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("chuong-trinh")}
         text2={t("tong-quan-chuong-trinh")}
       />
@@ -56,12 +59,12 @@ export default async function Page({ params: { lng } }) {
           </p>
         </div>
         {/* 2nd */}
-        <div className="grid grid-cols-2 gap-x-10  pb-10 px-5 mt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10  pb-10 lg:px-5 mt-5">
           <div className="">
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
               Chương trình Song ngữ
             </h3>
-            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[300px] rounded-b-2xl space-y-4 ">
+            <div className="bg-gray-100 px-5 pb-5 pt-2 lg:h-[300px] rounded-b-2xl space-y-4 ">
               <p className="p pb-4">
                 Chương trình Song ngữ tại Phượng Hoàng được xây dựng trên tiêu
                 chí tối ưu hóa chương trình của Bộ GD & ĐT nhằm đảm bảo được
@@ -79,7 +82,7 @@ export default async function Page({ params: { lng } }) {
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
               Chương trình Quốc tế
             </h3>
-            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[300px] rounded-b-2xl space-y-4 ">
+            <div className="bg-gray-100 px-5 pb-5 pt-2 lg:h-[300px] rounded-b-2xl space-y-4 ">
               <p className="p pb-4">
                 Chương trình quốc tế học theo giáo trình của Singapore và
                 Cambridge. Các môn học chính như Tiếng Anh, Toán, Khoa học và
@@ -98,19 +101,20 @@ export default async function Page({ params: { lng } }) {
         </div>
         {/* 3nd  */}
         <div>
-          <h3 className="h3  text-center pb-3 mb-10 pt-28 border-b-[3px] border-rose-500 w-fit mx-auto">
+          <h3 className="h3  text-center pb-3 mb-10 pt-28 border-b-[3px]  border-rose-500 w-fit mx-auto">
             CHƯƠNG TRÌNH HỌC
           </h3>
-          <div className="grid grid-cols-3 text-white gap-x-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 text-white gap-y-10 lg:gap-4 rounded-lg">
             {programs.map((program, index) => (
-              <div className="" key={index}>
+              <div className=" " key={index}>
                 <Image
-                  loading="lazy"
-                  className=""
+                  // loading="lazy"
+                  // priority
+                  className="rounded-t-3xl"
                   src={FeatImage01}
                   alt="image"
                 />
-                <div className={`px-3 pb-3 ${program.color}`}>
+                <div className={`rounded-b-3xl px-3 pb-3 ${program.color}`}>
                   <h4 className="text-center h4 py-3">{program.name}</h4>
                   <p className="font-sans pb-4">{program.description}</p>
                   <Link href={program.href} className="hover:underline">

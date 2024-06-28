@@ -8,6 +8,7 @@ import Pagedautien from "../../components/pagedautien";
 import Image1 from "@/public/images/phuonghoang/hocsinh1.jpg";
 import Image from "next/image";
 import ZiczagImage from "../../components/ziczagimage";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -238,20 +239,21 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao/trung-hoc" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("doi-song")}
         text2={t("dich-vu-th")}
       />
       <Pagedautien links={links} highlight={highlight} />{" "}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 lg:px-0">
         {/* 1 */}
-        <div className="grid grid-cols-10 gap-8 py-20">
+        <div className="lg:grid lg:grid-cols-10 gap-8 py-20 ">
           <div className="col-span-7">
             <h4 className="text-3xl  font-playfair text-left ">
               <span className="text-rose-500 text-4xl">
                 Sức khỏe và An toàn
               </span>{" "}
               của học sinh
-              <br /> là trách nhiệm{" "}
+              <span className="hidden lg:block"></span> là trách nhiệm{" "}
               <span className="text-rose-500 text-4xl">HÀNG ĐẦU</span> của
               Phoenix Education
             </h4>
@@ -273,19 +275,17 @@ export default async function Page({ params: { lng } }) {
             </div>
           </div>
 
-          <div className="col-span-3">
-            <Image
-              loading="lazy"
-              src={Image1}
-              alt="image"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <Image
+            loading="lazy"
+            src={Image1}
+            alt="image"
+            className="w-full h-full object-cover col-span-3 pt-10 lg:pt-0"
+          />
         </div>
 
         {/* 2 */}
         <h3
-          className="h3  text-center py-3 mb-6  border-[2.5px] border-rose-300"
+          className="h3  text-center py-3 mb-6  border-[2.5px]  border-rose-300"
           style={{
             backgroundImage:
               "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
@@ -293,7 +293,7 @@ export default async function Page({ params: { lng } }) {
         >
           Y tế học đường
         </h3>
-        <p className="p pb-4 text-center -mb-14">
+        <p className="p pb-4 lg:text-center -mb-14 ">
           Với mục tiêu không chỉ tạo nên một thế hệ học sinh đầy bản lĩnh, tài
           năng, dám thể hiện quan điểm, cá tính riêng mà còn là những con người
           khỏe mạnh, tràn đầy năng lượng để học tập và vui chơi, Phoenix
@@ -312,7 +312,7 @@ export default async function Page({ params: { lng } }) {
         >
           Dinh dưỡng học đường
         </h3>
-        <p className="p pb-4 text-center -mb-14">
+        <p className="p pb-4 lg:text-center -mb-14">
           Song song với quá trình giáo dục toàn diện thì Giáo dục Phượng Hoàng
           luôn chú trọng đến việc chăm sóc sức khỏe và dinh dưỡng cho học sinh
           để các con có đầy đủ năng lượng cho một ngày học tập và hoạt động hiệu
@@ -325,7 +325,7 @@ export default async function Page({ params: { lng } }) {
 
         {/* 4 */}
         <h3
-          className="h3 mt-28 text-center py-3 mb-6  border-[2.5px] border-rose-300"
+          className="h3 mt-28 text-center py-3 mb-6  border-[2.5px] mx-4 border-rose-300"
           style={{
             backgroundImage:
               "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
@@ -333,7 +333,7 @@ export default async function Page({ params: { lng } }) {
         >
           School Bus
         </h3>
-        <p className="p -mb-14 pb-4 text-center">
+        <p className="p -mb-14 pb-4 lg:text-center">
           Dịch vụ xe bus đưa đón học sinh với 24 tuyến đường an toàn và phù hợp
           trên khắp Huees giúp bố mẹ có thể hoàn toàn yên tâm và tiết kiệm thời
           gian trong việc đưa đón con đi học.

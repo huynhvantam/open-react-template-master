@@ -44,14 +44,6 @@ export default async function Page({ params: { lng } }) {
           />
           <Content0 />
         </div>
-        {/* <Image
-          loading="lazy"
-          src={FeatImage02}
-          alt="banner"
-            layout="responsive"
-          objectFit="cover"
-          className="opacity-0 -mt-[100px] sm:-mt-[200px] md:-mt-[500px]  "
-        /> */}
       </div>
 
       {/* PC */}

@@ -5,7 +5,7 @@ const ZiczagImage = ({ contentData }) => {
   return (
     <ul className="space-y-14 pt-20">
       {contentData.map((item, index) => (
-        <li key={index} className="even:flex-row-reverse flex gap-x-10 ">
+        <li key={index} className="lg:even:flex-row-reverse lg:flex gap-x-10 ">
           <div className="basis-1/2 ">
             {item.heading && (
               <div>
@@ -16,7 +16,7 @@ const ZiczagImage = ({ contentData }) => {
             )}
             {item.heading2 && (
               <div>
-                <h2 className="h3 pb-3 w-fit ">
+                <h2 className="h3 pb-3 w-fit text-left">
                   {item.heading2} <br />
                   <span className="text-rose-500"> {item.heading3}</span>
                 </h2>
@@ -42,7 +42,7 @@ const ZiczagImage = ({ contentData }) => {
               )}
             </div>
           </div>
-          <div className="basis-1/2 ">
+          <div className="basis-1/2 pt-6 lg:pt-0">
             <Image
               src={item.imageSrc}
               alt="image"

@@ -17,6 +17,8 @@ import Icon4 from "@/public/images/oneuse/icon-mamnon/Sport.svg";
 import Icon5 from "@/public/images/oneuse/icon-mamnon/Text.svg";
 import Icon6 from "@/public/images/oneuse/icon-mamnon/Vehicles.svg";
 import Image from "next/image";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("thcs");
@@ -49,6 +51,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/chuong-trinh-dao-tao/trung-hoc" />
       <BannerImage
         src={bannerabout}
+        srcmobile={FeatImage02}
         text1={t("home") + " / " + t("chuong-trinh")}
         text2={t("thcs")}
       />
@@ -79,12 +82,12 @@ export default async function Page({ params: { lng } }) {
           </p>
         </div>
         {/* 2nd */}
-        <div className="grid grid-cols-2 gap-x-10 pb-10  mt-5 p">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10  mt-5 p">
           <div>
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
               Chương trình Trung học Song ngữ
             </h3>
-            <div className="bg-gray-100 px-5 pb-5 pt-2 h-[520px] rounded-b-2xl space-y-4 ">
+            <div className="bg-gray-100 px-5 pb-5 pt-2 lg:h-[520px] rounded-b-2xl space-y-4 ">
               <p>
                 Trường Phượng Hoàng đã nghiên cứu, cấu trúc và phân phối chương
                 trình một cách khoa học, đảm bảo cho các em học sinh có thể tiếp
@@ -112,7 +115,7 @@ export default async function Page({ params: { lng } }) {
             <h3 className="h4 text-center py-6 bg-rose-500 rounded-t-2xl text-white">
               Chương trình Trung học Quốc tế
             </h3>
-            <div className="bg-gray-100 px-5 pb-5 pt-2  rounded-b-2xl h-[520px] space-y-4">
+            <div className="bg-gray-100 px-5 pb-5 pt-2  rounded-b-2xl lg:h-[520px] space-y-4">
               <p>
                 Tại Giáo Dục Phượng Hoàng, học sinh chương trình quốc tế học
                 theo giáo trình của Singapore và Cambridge. Các môn học chính
@@ -146,7 +149,7 @@ export default async function Page({ params: { lng } }) {
             Chăm sóc học sinh
           </h3>
 
-          <div className="grid grid-cols-2 gap-6 pb-10 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-10 ">
             {classInfo.map((info, index) => (
               <div
                 key={index}
