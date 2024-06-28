@@ -26,25 +26,34 @@ export default async function Page({ params: { lng } }) {
     <>
       <Header lng={lng} path="/" />
       {/* mobile */}
-      <div className="sm:hidden">
+      <div className="lg:hidden">
         <Image
           loading="lazy"
           src={FeatImage02}
           alt="banner"
-          layout="fill"
+            layout="fill"
           objectFit="cover"
+      
         />
         <Content0 />
+        <Image
+          loading="lazy"
+          src={FeatImage02}
+          alt="banner"
+            layout="responsive"
+          objectFit="cover"
+          className="opacity-0 -mt-[100px] sm:-mt-[200px] md:-mt-[500px]  "
+        />
       </div>
-
+     
       {/* PC */}
-      <section className="relative overflow-hidden pt-10 sm:pt-[84px] hidden sm:block">
+      <section className="relative overflow-hidden pt-10 lg:pt-[84px] hidden lg:block">
         <div className="relative h-[600px] ">
           <Image loading="lazy" src={FeatImage01} alt="banner" />
           <div className="absolute top-0 -left-1/4 w-full h-full bg-gradient-to-l from-transparent to-white transition-opacity" />
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto px-4 lg:px-6">
           <div className="absolute top-1/2 transform -translate-y-1/2">
             <h4 className="h44 pb-2" data-aos="fade-up" data-aos-delay="200">
               {t("giao-duc-ph")}

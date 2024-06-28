@@ -346,8 +346,8 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           {/* PC */}
           <div className=" hidden lg:block">
             {/* Desktop navigation */}
-            <div className="flex gap-x-6 justify-end items-center ">
-              <div className="">
+            <div className="flex gap-x-3 mr-4 justify-end items-center ">
+           
                 <Link
                   className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 "
                   href="#tuyen-sinh"
@@ -363,9 +363,9 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                 <Link className="pp" href="#thong-tin-lien-he">
                   {t("lien-he")}
                 </Link>
-              </div>
+            
               {/* đổi ngôn ngữ */}
-              <div className="uppercase  text-rose-500  hover:font-normal">
+              {/* <div className="uppercase  text-rose-500  hover:font-normal">
                 <span className="font-semibold">{lng}</span> |{" "}
                 <span className="hover:font-bold">
                   {languages
@@ -384,7 +384,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                       );
                     })}
                 </span>
-              </div>
+              </div> */}
             </div>
             <div className="text-end">
               <Menubar lng={lng} mode="horizontal" items={item2} />
@@ -394,7 +394,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           {/* Mobile */}
           <div className="lg:hidden flex items-center gap-3">
             {/* đổi ngôn ngữ */}
-            <div className="uppercase  text-rose-500  hover:font-normal">
+            {/* <div className="uppercase  text-rose-500  hover:font-normal">
               <span className="font-semibold">{lng}</span> |{" "}
               <span className="hover:font-bold">
                 {languages
@@ -413,7 +413,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
                     );
                   })}
               </span>
-            </div>
+            </div> */}
             <button
               onClick={toggleMenu}
               className="p-2 rounded focus:outline-none"
