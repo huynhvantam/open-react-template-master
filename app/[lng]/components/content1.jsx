@@ -9,7 +9,7 @@ export default function Content1() {
   return (
     <section className="pt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        <div className="grid grid-cols-2 gap-x-20">
+        <div className="grid lg:grid-cols-2 gap-x-20">
           <div>
             <h4 className="hh4" data-aos="fade-up">
               /VỀ CHÚNG TÔI
@@ -28,7 +28,7 @@ export default function Content1() {
               phong trên địa bàn thành phố Huế và đã đi vào hoạt động từ năm
               2009.
             </p>
-            <div className="grid grid-cols-2 pt-[60px]">
+            <div className="grid lg:grid-cols-2 pt-[60px]">
               <div className="">
                 <div data-aos="fade-up" data-aos-delay="300">
                   <p className="numberbig w-32">
@@ -44,7 +44,7 @@ export default function Content1() {
                   </p>
                   <p className="p font-bold">
                     Năm kinh nghiệm đào tạo
-                    <br /> song ngữ
+                    <span className="hidden lg:block"></span> song ngữ
                   </p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="400">
@@ -67,7 +67,7 @@ export default function Content1() {
               </div>
               <div>
                 <div data-aos="fade-up" data-aos-delay="500">
-                  <p className="numberbig pt-[120px]">
+                  <p className="numberbig pt-[60px] lg:pt-[120px]">
                     <Image
                       loading="lazy"
                       src={Icon3}

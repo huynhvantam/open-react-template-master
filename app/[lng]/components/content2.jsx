@@ -37,23 +37,23 @@ const items = [
 export default function Content2() {
   return (
     <section
-      className="mt-40 py-36"
+      className="mt-20 lg:mt-40 py-20 lg:py-36"
       style={{
         backgroundImage: "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
       }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative text-gray-600">
-        <div className="grid grid-cols-2 gap-x-10">
+        <div className="grid lg:grid-cols-2 gap-x-10">
           <div>
             <div className="hh4" data-aos="fade-up">
               /CHƯƠNG TRÌNH ĐÀO TẠO
             </div>
             <div
-              className="h3 mt-6 mb-5 text-gray-700"
+              className="h3 mt-6 mb-5 text-gray-700 text-left"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Các cấp học toàn diện tại <br /> Giáo Dục Phượng Hoàng
+              Các cấp học toàn diện tại  <span className="hidden lg:block"></span> Giáo Dục Phượng Hoàng
             </div>
             <p className="p mb-5" data-aos="fade-up" data-aos-delay="200">
               Tại Giáo Dục Phượng Hoàng, học sinh sẽ được hòa mình và trải
@@ -69,7 +69,7 @@ export default function Content2() {
             </p>
             <Link
               href="/chuong-trinh-dao-tao"
-              className="btn text-lg"
+              className="btn text-lg hidden lg:block"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -99,6 +99,14 @@ export default function Content2() {
               </Link>
             ))}
           </div>
+          <Link
+              href="/chuong-trinh-dao-tao"
+              className="btn text-lg lg:hidden mt-10"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              Chương trình đào tạo{" >"}
+            </Link>
         </div>
       </div>
     </section>

@@ -19,13 +19,36 @@ export default function Taisaonenchon() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-4 pb-20 pt-10">
-        <div className="grid grid-cols-8 gap-4 ">
+    <div className="lg:hidden"> 
+        <div className="hh4" data-aos="fade-up">
+        /CHƯƠNG TRÌNH ĐÀO TẠO
+              </div>
+              <div className="h25 mt-6 mb-5 text-center" data-aos="fade-up">
+              Tại sao chọn 
+              <br/> Phoenix Education?
+              </div>
+    </div>
+      <div className=" w-full h-32 rounded-l lg:hidden relative">
+              <Image
+                src={banner}
+                alt="pictures"
+                className="rounded-lg w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div
+                style={{ textShadow: "2px 2px #d20dbe" }}
+                className="text-amber-300 h4 absolute bottom-0 pt-20 px-4 pb-4 rounded-lg "
+              >
+                Cơ sở vật chất hiện đại
+              </div>
+            </div>
+        <div className="lg:grid lg:grid-cols-8 gap-4 ">
           <div
             // style={{
             //   backgroundImage:
             //     "linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)",
             // }}
-            className="col-start-1 col-end-3 h3  w-full h-full rounded-lg p-5 relative "
+            className="col-start-1 col-end-3 h3  w-full h-full rounded-lg p-5 hidden lg:block relative "
           >
             <p
               style={{ textShadow: "2px 2px #FDEE98" }}
@@ -43,7 +66,7 @@ export default function Taisaonenchon() {
             />
           </div>
           <div className="col-start-3 col-end-7">
-            <div className="grid grid-cols-2 gap-4 rounded-lg">
+            <div className="grid lg:grid-cols-2 gap-4 rounded-lg">
               <div
                 style={{
                   backgroundImage:
@@ -129,26 +152,26 @@ export default function Taisaonenchon() {
               </div>
             </div>
           </div>
-          <div className="col-start-7 col-end-9  w-full h-full rounded-lg relative">
+          <div className="col-start-7 col-end-9  w-full h-full relative">
             <Image
               src={monhoc1}
               alt="pictures"
-              className="rounded-lg absolute top-0 right-0 bottom-0 left-0 -z-10"
+              fill
+              className="rounded-lg lg:absolute top-4 right-0 -bottom-0 left-0 -z-10 hidden lg:block"
               loading="lazy"
             />
-            <div className="bg-gradient-to-t from-rose-300 absolute bottom-0 pt-20 px-4 pb-4 rounded-lg text-gray-100">
+            <div className="bg-gradient-to-t from-rose-300 lg:absolute bottom-0 pt-20 px-4 pb-4 rounded-lg text-gray-100">
               <span
                 style={{ textShadow: "2px 2px #D22C31" }}
                 className="text-white h4"
               >
-                {" "}
                 5 chương trình học
               </span>{" "}
               đa dạng, hệ thống đánh giá và tiêu chuẩn đầu ra rõ ràng
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-8 gap-4 ">
+        <div className="lg:grid lg:grid-cols-8 gap-4 space-y-4 lg:space-y-0">
           <div className="col-start-1 col-end-3 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg">
             <div
               style={{
@@ -177,7 +200,7 @@ export default function Taisaonenchon() {
             </div>
           </div>
           <div className="col-start-3 col-end-7">
-            <div className=" w-full h-32 rounded-l relative">
+            <div className=" w-full h-32 rounded-l hidden lg:block relative">
               <Image
                 src={banner}
                 alt="pictures"
@@ -219,7 +242,7 @@ export default function Taisaonenchon() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-8 gap-4 ">
+        <div className="lg:grid lg:grid-cols-8 gap-4 space-y-4 lg:space-y-0">
           <div className="col-start-1 col-end-3 bg-gradient-to-b from-rose-100  to-rose-200 w-full h-full rounded-lg">
             <div
               style={{

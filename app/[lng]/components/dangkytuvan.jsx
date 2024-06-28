@@ -34,18 +34,18 @@ export default function Dangkytuvan() {
   return (
     <section id="tuyen-sinh">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative py-20">
-        <h3 className="h3" data-aos="fade-up">
+        <h3 className="h3 text-left pb-4 lg:pb-0" data-aos="fade-up">
           Đăng ký nhận tư vấn
         </h3>
-        <p className="p" data-aos="fade-up" data-aos-delay="200">
+        <p className="p " data-aos="fade-up" data-aos-delay="200">
           Đội ngũ Tuyển sinh sẽ tư vấn tận tâm và đem lại trải nghiệm tuyệt vời
           nhất cho gia đình!
         </p>
-        <div className="grid grid-cols-2 gap-20 pt-10" data-aos="fade-up">
+        <div className="lg:grid lg:grid-cols-2 gap-20 pt-10" data-aos="fade-up">
           <div className="" data-aos="fade-up" data-aos-delay="300">
             <Image
               loading="lazy"
-              className="h-fit "
+              className="h-fit pb-4 lg:pb-0"
               src={Image1}
               alt="Môn học"
             />

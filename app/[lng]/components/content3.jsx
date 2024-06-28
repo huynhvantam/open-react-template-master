@@ -45,18 +45,25 @@ export default function Content3() {
     setVisibleIndex(visibleIndex === "" ? null : index);
   };
   return (
-    <section className="py-36">
+    <section className=" py-20 lg:py-36">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        <div className="grid grid-cols-2 gap-x-10 place-items-end">
-          <Image loading="lazy" src={Image1} alt="picture" data-aos="fade-up" />
+        <div className="grid lg:grid-cols-2 gap-x-10 place-items-end">
+          <Image
+            className="hidden lg:block"
+            loading="lazy"
+            src={Image1}
+            alt="picture"
+            data-aos="fade-up"
+          />
           <div>
             <div className="hh4" data-aos="fade-up">
               /CHƯƠNG TRÌNH ĐÀO TẠO
             </div>
-            <div className="h25 mt-6 mb-5" data-aos="fade-up">
-              Điểm nổi bật của Chương trình <br /> Song ngữ Anh - Việt
+            <div className="h25 mt-6 mb-5 text-left" data-aos="fade-up">
+              Điểm nổi bật của Chương trình{" "}
+              <span className="hidden lg:block"></span> Song ngữ Anh - Việt
             </div>
-            <div className="h-[400px] pt-4">
+            <div className="lg:h-[400px] pt-4">
               {items.map((item, index) => (
                 <div key={index}>
                   <h5
