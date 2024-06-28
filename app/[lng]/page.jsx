@@ -68,12 +68,12 @@ export default async function Page({ params: { lng } }) {
         </div>
       </section>
 
-      {/* <Content1 />
+      <Content1 />
       <Hero lng={lng} />
       <Content2 />
       <Content3 />
       <Taisaonenchon />
-      <Chiasecongdong /> */}
+      <Chiasecongdong />
       {/* <Googlemap /> */}
     </>
   );
