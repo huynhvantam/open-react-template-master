@@ -13,7 +13,7 @@ import FeatImage02 from "@/public/images/oneuse/quytrinhtuyensinh/danhgiadauvao.
 import FeatImage03 from "@/public/images/oneuse/quytrinhtuyensinh/hoanthienhoso.png";
 import FeatImage04 from "@/public/images/oneuse/quytrinhtuyensinh/nhaphoc.png";
 import Footer from "@/app/components/ui/footer";
-import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import FeatImage022 from "@/public/images/banner/banner-mobile.png";
 import FeesTable from "./hoc-phi/FeesTable";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -77,7 +77,7 @@ export default async function Page({ params: { lng } }) {
       <Header lng={lng} path="/tuyen-sinh" />
       <BannerImage
         src={bannerabout}
-        srcmobile={FeatImage02}
+        srcmobile={FeatImage022}
         text1={t("home") + " / " + t("tuyen-sinh")}
         text2={t("thong-tin-ts")}
       />
