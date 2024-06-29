@@ -107,25 +107,54 @@ export default async function Page({ params: { lng } }) {
             <h4 className="h44 text-rose-500 text-center uppercase pt-14">
               {item.title}
             </h4>
+            <h3 className="lg:hidden h4 mt-1.5 font-playfair font-semibold capitalize py-1 mb-2 border-[2.5px] bg-rose-100 border-rose-200 text-center">
+              {item.content}
+            </h3>
             <AutoResizeText
               text={item.content}
               defaultFontSize="34px"
-              className="font-playfair font-semibold  capitalize py-1 mb-2 border-[2.5px] bg-rose-100 border-rose-200 text-center"
+              className="hidden mt-1.5 lg:block font-playfair font-semibold  capitalize py-1 mb-2 border-[2.5px] bg-rose-100 border-rose-200 text-center"
             />
             <h4 className="h4 text-center ">{item.student}</h4>
-            <h5 className="p text-center">Ngày đăng: {item.date}</h5>
-            <div className="flex gap-4">
-              <div className="grow-0">
+            <h5 className="text-xs lg:text-base p text-center">
+              Ngày đăng: {item.date}
+            </h5>
+            <div className="lg:flex gap-4">
+              <div
+                className="lg:hidden"
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  paddingBottom: "56.25%", // 16:9 aspect ratio
+                  height: "0",
+                  overflow: "hidden",
+                }}
+              >
                 <iframe
                   src={item.videoUrl}
-                  width="728"
-                  height="410"
-                  frameBorder="0"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    width: "100%",
+                    height: "100%",
+                    border: "0",
+                  }}
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="space-y-2">
+              <div className="hidden lg:block grow-0">
+                <iframe
+                  src={item.videoUrl}
+                  width="728"
+                  height="410"
+                  // frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="space-y-2 pt-2 lg:pt-0">
                 <h4 className="h44">{item.content}</h4>
                 {item.paragraphs.map((paragraph) => (
                   <p key={paragraph.content}>{paragraph.content}</p>
