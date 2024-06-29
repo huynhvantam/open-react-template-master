@@ -88,9 +88,9 @@ export default async function Page({ params: { lng } }) {
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
             Thông tin tuyển sinh
           </h3>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div>
-              <h4 className="h3">
+              <h4 className="text-3xl leading-tight font-bold font-playfair lg:h3 text-left">
                 Phoenix Education tuyển sinh năm học 2024 - 2025
               </h4>
               <h5 className="h4 font-playfair pt-3 pb-3 ">
@@ -155,7 +155,7 @@ export default async function Page({ params: { lng } }) {
           <h3 className="h3  text-center pb-3  pt-32 border-b-[3px] border-rose-500 w-fit mx-auto">
             Quy trình tuyển sinh
           </h3>
-          <div className="grid grid-cols-4 gap-x-3 pt-10">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-5 gap-x-3 pt-10">
             {array.map((item, index) => (
               <div key={index} className="relative overflow-hidden">
                 <div>
@@ -166,7 +166,7 @@ export default async function Page({ params: { lng } }) {
                     loading="lazy"
                   />
                   <div
-                    className="p-2 h-[228px] rounded-b-lg"
+                    className="p-2 lg:h-[228px] rounded-b-lg"
                     style={{
                       backgroundImage:
                         "linear-gradient(to right, #f5f7fa 0%, #f6f7fa 100%)",
@@ -191,8 +191,12 @@ export default async function Page({ params: { lng } }) {
             ))}
           </div>
         </div>
-        <FeesTable />
       </section>
+
+      <div className="mx-4 lg:mx-auto lg:max-w-6xl">
+        {" "}
+        <FeesTable />
+      </div>
     </>
   );
 }

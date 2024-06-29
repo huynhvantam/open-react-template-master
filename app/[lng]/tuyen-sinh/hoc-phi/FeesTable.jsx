@@ -9,8 +9,8 @@ const FeeTable = () => {
       </h3>
       <div>
         <h5 className="h4 font-playfair pt-3 pb-3 ">I/ Khối mầm non</h5>
-        <div className="overflow-x-auto">
-          <table className="min-w-full table-auto border-collapse">
+        <div className="overflow-x-auto ">
+          <table className="min-w-full border-collapse">
             <thead>
               <tr className="bg-gray-100">
                 <th
@@ -218,14 +218,14 @@ const FeeTable = () => {
         Áp dụng cho toàn bộ chương trình học
       </h5>
       <div className=" ">
-        <div className="overflow-x-auto p">
-          <table className="min-w-full border-collapse border border-gray-300">
+        <div className="overflow-x-auto  p">
+          <table className="table-auto  min-w-full border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-100">
-                <th className="px-4 py-2 border border-gray-300 text-left">
+                <th className="px-4 py-2 border border-gray-300 text-left min-w-[500px]">
                   Khoản Phí
                 </th>
-                <th className="px-4 py-2 border border-gray-300 text-left">
+                <th className="px-4 py-2 border border-gray-300 text-left  min-w-[500px]">
                   Chi Tiết
                 </th>
               </tr>
@@ -314,10 +314,10 @@ const FeeTable = () => {
         <table className="min-w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
-              <th className="px-4 py-2 border border-gray-300 text-left">
+              <th className="px-4 py-2 border border-gray-300 text-left min-w-[300px]">
                 Chính Sách
               </th>
-              <th className="px-4 py-2 border border-gray-300 text-left">
+              <th className="px-4 py-2 border border-gray-300 text-left min-w-[500px]">
                 Chi Tiết
               </th>
             </tr>
