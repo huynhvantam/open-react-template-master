@@ -19,31 +19,13 @@ export default async function Page({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const highlight = true; // Đặt giá trị highlight ở đây
   const links = [
+    { href: "/goc-hoc-sinh/", content: t("cau-chuyen-hs") },
     {
-      href: "/doi-song-hoc-duong",
-      content: t("moi-truong-ht"),
-    },
-    {
-      href: "/doi-song-hoc-duong/goc-hoc-sinh",
-      content: t("goc-hoc-sinh"),
-    },
-    {
-      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
-      content: t("thu-vien-ha"),
-    },
-    {
-      href: "/doi-song-hoc-duong/dich-vu-truong-hoc",
-      content: t("dich-vu-th"),
-    },
-    {
-      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
+      href: "/goc-hoc-sinh/thanh-tich-hoc-duong",
       content: t("thanh-tich-hs"),
       hightlight: true,
     },
-    {
-      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
-      content: t("chuong-trinh-nk"),
-    },
+    { href: "/goc-hoc-sinh/cuu-hoc-sinh", content: t("cuu-hoc-sinh") },
   ];
 
   return (

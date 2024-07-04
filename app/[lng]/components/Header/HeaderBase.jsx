@@ -14,7 +14,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
   const item1 = [
     {
       key: "sub1",
-      label: t("gioi-thieu"),
+      label: t("about"),
       children: [
         {
           key: "1",
@@ -42,7 +42,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "sub2",
-      label: t("tong-quan-chuong-trinh"),
+      label: t("chuong-trinh"),
       children: [
         {
           key: "5",
@@ -80,7 +80,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "sub3",
-      label: t("moi-truong-ht"),
+      label: t("doi-song"),
       children: [
         {
           key: "10",
@@ -89,19 +89,20 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         {
           key: "11",
           label: (
-            <Link href="/doi-song-hoc-duong/goc-hoc-sinh">
-              {t("goc-hoc-sinh")}
+            <Link href="/doi-song-hoc-duong/hoat-dong-clb">
+              {t("hoat-dong-clb")}
             </Link>
           ),
         },
         {
           key: "12",
           label: (
-            <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
-              {t("thu-vien-ha")}
+            <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
+              {t("chuong-trinh-nk")}
             </Link>
           ),
         },
+
         {
           key: "13",
           label: (
@@ -113,55 +114,46 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         {
           key: "14",
           label: (
-            <Link href="/doi-song-hoc-duong/thanh-tich-hoc-duong">
-              {t("thanh-tich-hs")}
-            </Link>
-          ),
-        },
-        {
-          key: "15",
-          label: (
-            <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
-              {t("chuong-trinh-nk")}
+            <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
+              {t("thu-vien-ha")}
             </Link>
           ),
         },
       ],
     },
-    // {
-    //   key: "sub4",
-    //   label: t("trung-tam-anh-ngu"),
-    //   children: [
-    //     {
-    //       key: "16",
-    //       label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-hoc")}</Link>,
-    //     },
-    //     {
-    //       key: "17",
-    //       label: <Link href="/trung-tam-anh-ngu">{t("giao-vien")}</Link>,
-    //     },
-    //     {
-    //       key: "18",
-    //       label: <Link href="/trung-tam-anh-ngu">{t("hoc-phi")}</Link>,
-    //     },
-    //     {
-    //       key: "19",
-    //       label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-ud")}</Link>,
-    //     },
-    //   ],
-    // },
+    {
+      key: "sub4",
+      label: t("goc-hoc-sinh"),
+      children: [
+        {
+          key: "15",
+          label: <Link href="/goc-hoc-sinh">{t("cau-chuyen-hs")}</Link>,
+        },
+        {
+          key: "16",
+          label: (
+            <Link href="/goc-hoc-sinh/thanh-tich-hoc-duong">
+              {t("thanh-tich-hs")}
+            </Link>
+          ),
+        },
+        {
+          key: "17",
+          label: (
+            <Link href="/goc-hoc-sinh/cuu-hoc-sinh">{t("cuu-hoc-sinh")}</Link>
+          ),
+        },
+      ],
+    },
     {
       key: "sub9",
       label: <Link href="/tuyen-sinh">{t("tuyen-sinh")}</Link>,
     },
-    {
-      key: "sub5",
-      label: <Link href="#tuyen-sinh">{t("dang-ky-tv")}</Link>,
-    },
-    {
-      key: "sub6",
-      label: <Link href="/tin-tuc">{t("tin-tuc")}</Link>,
-    },
+
+    // {
+    //   key: "sub6",
+    //   label: <Link href="/tin-tuc">{t("tin-tuc")}</Link>,
+    // },
     {
       key: "sub7",
       label: <Link href="/tuyen-dung">{t("tuyen-dung")}</Link>,
@@ -170,12 +162,16 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
       key: "sub8",
       label: <Link href="#thong-tin-lien-he">{t("lien-he")}</Link>,
     },
+    {
+      key: "sub5",
+      label: <Link href="#tuyen-sinh">{t("dang-ky-tv")}</Link>,
+    },
   ];
   // pc
   const item2 = [
     {
       key: "sub1",
-      label: t("gioi-thieu"),
+      label: <Link href="/ve-chung-toi">{t("about")}</Link>,
       children: [
         {
           key: "1",
@@ -203,7 +199,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "sub2",
-      label: t("tong-quan-chuong-trinh"),
+      label: <Link href="/chuong-trinh-dao-tao">{t("chuong-trinh")}</Link>,
       children: [
         {
           key: "5",
@@ -241,7 +237,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "sub3",
-      label: t("moi-truong-ht"),
+      label: <Link href="/doi-song-hoc-duong">{t("doi-song")}</Link>,
       children: [
         {
           key: "10",
@@ -250,19 +246,20 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         {
           key: "11",
           label: (
-            <Link href="/doi-song-hoc-duong/goc-hoc-sinh">
-              {t("goc-hoc-sinh")}
+            <Link href="/doi-song-hoc-duong/hoat-dong-clb">
+              {t("hoat-dong-clb")}
             </Link>
           ),
         },
         {
           key: "12",
           label: (
-            <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
-              {t("thu-vien-ha")}
+            <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
+              {t("chuong-trinh-nk")}
             </Link>
           ),
         },
+
         {
           key: "13",
           label: (
@@ -274,16 +271,8 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         {
           key: "14",
           label: (
-            <Link href="/doi-song-hoc-duong/thanh-tich-hoc-duong">
-              {t("thanh-tich-hs")}
-            </Link>
-          ),
-        },
-        {
-          key: "15",
-          label: (
-            <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
-              {t("chuong-trinh-nk")}
+            <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
+              {t("thu-vien-ha")}
             </Link>
           ),
         },
@@ -291,23 +280,25 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
     },
     {
       key: "sub4",
-      label: t("trung-tam-anh-ngu"),
+      label: <Link href="/goc-hoc-sinh/">{t("goc-hoc-sinh")}</Link>,
       children: [
         {
+          key: "15",
+          label: <Link href="/goc-hoc-sinh">{t("cau-chuyen-hs")}</Link>,
+        },
+        {
           key: "16",
-          label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-hoc")}</Link>,
+          label: (
+            <Link href="/goc-hoc-sinh/thanh-tich-hoc-duong">
+              {t("thanh-tich-hs")}
+            </Link>
+          ),
         },
         {
           key: "17",
-          label: <Link href="/trung-tam-anh-ngu">{t("giao-vien")}</Link>,
-        },
-        {
-          key: "18",
-          label: <Link href="/trung-tam-anh-ngu">{t("hoc-phi")}</Link>,
-        },
-        {
-          key: "19",
-          label: <Link href="/trung-tam-anh-ngu">{t("chuong-trinh-ud")}</Link>,
+          label: (
+            <Link href="/goc-hoc-sinh/cuu-hoc-sinh">{t("cuu-hoc-sinh")}</Link>
+          ),
         },
       ],
     },
@@ -347,23 +338,22 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
           <div className=" hidden lg:block">
             {/* Desktop navigation */}
             <div className="flex gap-x-3 mr-4 justify-end items-center ">
-           
-                <Link
-                  className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 "
-                  href="#tuyen-sinh"
-                >
-                  {t("dang-ky-tv")}
-                </Link>
-                <Link className="pp" href="/tin-tuc">
-                  {t("tin-tuc")}
-                </Link>
-                <Link className="pp" href="/tuyen-dung">
-                  {t("tuyen-dung")}
-                </Link>
-                <Link className="pp" href="#thong-tin-lien-he">
-                  {t("lien-he")}
-                </Link>
-            
+              <Link
+                className="px-1.5 py-2 rounded-sm text-xs leading-4 text-white bg-rose-500 "
+                href="#tuyen-sinh"
+              >
+                {t("dang-ky-tv")}
+              </Link>
+              {/* <Link className="pp" href="/tin-tuc">
+                {t("tin-tuc")}
+              </Link> */}
+              <Link className="pp" href="/tuyen-dung">
+                {t("tuyen-dung")}
+              </Link>
+              <Link className="pp" href="#thong-tin-lien-he">
+                {t("lien-he")}
+              </Link>
+
               {/* đổi ngôn ngữ */}
               {/* <div className="uppercase  text-rose-500  hover:font-normal">
                 <span className="font-semibold">{lng}</span> |{" "}

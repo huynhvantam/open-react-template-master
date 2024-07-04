@@ -26,12 +26,12 @@ export default async function Page({ params: { lng } }) {
       content: t("moi-truong-ht"),
     },
     {
-      href: "/doi-song-hoc-duong/goc-hoc-sinh",
-      content: t("goc-hoc-sinh"),
+      href: "/doi-song-hoc-duong/hoat-dong-clb",
+      content: t("hoat-dong-clb"),
     },
     {
-      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
-      content: t("thu-vien-ha"),
+      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
+      content: t("chuong-trinh-nk"),
     },
     {
       href: "/doi-song-hoc-duong/dich-vu-truong-hoc",
@@ -39,12 +39,8 @@ export default async function Page({ params: { lng } }) {
       hightlight: true,
     },
     {
-      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
-      content: t("thanh-tich-hs"),
-    },
-    {
-      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
-      content: t("chuong-trinh-nk"),
+      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
+      content: t("thu-vien-ha"),
     },
   ];
   const contentData = [

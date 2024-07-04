@@ -8,7 +8,7 @@ import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import AutoResizeText from "../../../components/tools/AutoResizeText";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
-  const title1 = t("goc-hoc-sinh");
+  const title1 = t("hoat-dong-clb");
   const title2 = t("giao-duc-ph");
   return { title: `${title1} - ${title2}` };
 }
@@ -23,25 +23,21 @@ export default async function Page({ params: { lng } }) {
       content: t("moi-truong-ht"),
     },
     {
-      href: "/doi-song-hoc-duong/goc-hoc-sinh",
-      content: t("goc-hoc-sinh"),
+      href: "/doi-song-hoc-duong/hoat-dong-clb",
+      content: t("hoat-dong-clb"),
       hightlight: true,
     },
     {
-      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
-      content: t("thu-vien-ha"),
+      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
+      content: t("chuong-trinh-nk"),
     },
     {
       href: "/doi-song-hoc-duong/dich-vu-truong-hoc",
       content: t("dich-vu-th"),
     },
     {
-      href: "/doi-song-hoc-duong/thanh-tich-hoc-duong",
-      content: t("thanh-tich-hs"),
-    },
-    {
-      href: "/doi-song-hoc-duong/chuong-trinh-ngoai-khoa",
-      content: t("chuong-trinh-nk"),
+      href: "/doi-song-hoc-duong/thu-vien-hinh-anh",
+      content: t("thu-vien-ha"),
     },
   ];
   const contentData = [
@@ -114,7 +110,7 @@ export default async function Page({ params: { lng } }) {
         src={bannerabout}
         srcmobile={FeatImage02}
         text1={t("home") + " / " + t("doi-song")}
-        text2={t("goc-hoc-sinh")}
+        text2={t("hoat-dong-clb")}
       />
       <Pagedautien links={links} highlight={highlight} />
       <section className="max-w-6xl mx-auto px-4 sm:px-6">

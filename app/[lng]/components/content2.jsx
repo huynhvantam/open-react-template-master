@@ -70,7 +70,7 @@ export default function Content2() {
             </p>
             <Link
               href="/chuong-trinh-dao-tao"
-              className="btn text-lg hidden lg:block"
+              className="btn text-lg collapse lg:visible"
               data-aos="fade-up"
               data-aos-delay="400"
             >
