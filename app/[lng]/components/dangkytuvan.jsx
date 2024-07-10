@@ -1,34 +1,53 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Image1 from "@/public/images/phuonghoang/hocsinh2.jpg";
 import { Button, Checkbox, Input } from "antd";
 
-const CustomCheckboxGroup = ({ options, onChange }) => {
-  const [checkedValues, setCheckedValues] = useState([]);
+export default function Dangkytuvan() {
+  const handleCheckboxChange = (e) => {
+    const { value, checked } = e.target;
+    setClassLevel((prevClassLevel) =>
+      checked
+        ? [...prevClassLevel, value]
+        : prevClassLevel.filter((classValue) => classValue !== value)
+    );
+  };
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [answer, setAnswer] = useState("");
+  const [classLevel, setClassLevel] = useState([]);
 
-  const handleCheckboxChange = (values) => {
-    setCheckedValues(values);
-    if (onChange) {
-      onChange(values);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formId = "1FAIpQLScLq9PYH4wrUsW-x8Th49wHEvdxc7ZUsI9HC54lxGS5AA2dxQ"; // FORM_ID của bạn
+    const data = new URLSearchParams({
+      "entry.53428729": name, // Entry ID của trường "Họ và tên"
+      "entry.1891195606": phone, // Entry ID của trường "Số điện thoại"
+      "entry.384779362": email, // Entry ID của trường "Email"
+      "entry.1275452875": answer, // Entry ID của trường "Câu trả lời"
+      "entry.1571879777": classLevel, // Entry ID của trường "Lớp"
+    });
+
+    const response = await fetch(
+      `https://docs.google.com/forms/d/e/${formId}/formResponse`,
+      {
+        method: "POST",
+        body: data,
+      }
+    );
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } else {
+      alert("Failed to send message.");
     }
   };
-
-  return (
-    <Checkbox.Group
-      name="luachon"
-      options={options}
-      value={checkedValues}
-      onChange={handleCheckboxChange}
-    />
-  );
-};
-
-export default function Dangkytuvan() {
-  const handleCheckboxChange = (checkedValues) => {
-    console.log("checked = ", checkedValues);
-  };
-
   return (
     <section id="tuyen-sinh">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative py-20">
@@ -49,12 +68,21 @@ export default function Dangkytuvan() {
               // objectFit="cover"
             />
           </div>
-          <div className="space-y-6" data-aos="fade-up" data-aos-delay="400">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="border-b">
               <p className="p">
                 Họ và tên phụ huynh<span className="text-red-500">*</span>
               </p>
+
               <Input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 name="phuhuynh"
                 className="rounded-md border-none"
                 placeholder="Điền tên tại đây"
@@ -65,6 +93,9 @@ export default function Dangkytuvan() {
                 Số điện thoại<span className="text-red-500">*</span>
               </p>
               <Input
+                type="text"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 name="sdt"
                 className="rounded-md border-none"
                 placeholder="Điền số điền thoại tại đây"
@@ -74,7 +105,11 @@ export default function Dangkytuvan() {
               <p className="p">
                 Email<span className="text-red-500">*</span>
               </p>
+
               <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 name="email"
                 className="rounded-md border-none"
                 placeholder="Điền email tại đây"
@@ -84,6 +119,8 @@ export default function Dangkytuvan() {
             <div className="border-b">
               <p className="p">Lời nhắn hoặc thắc mắc của quý phụ huynh</p>
               <Input
+                value={answer}
+                onChange={(e) => setAnswer(e.target.value)}
                 name="sms"
                 className="rounded-md border-none"
                 placeholder="Thắc mắc của quý phụ huynh"
@@ -91,20 +128,61 @@ export default function Dangkytuvan() {
             </div>
             <div>
               <p className="p">Tìm hiểu cấp học</p>
-              <CustomCheckboxGroup
-                options={[
-                  { label: "Mầm non", value: "mamnon" },
-                  { label: "Tiểu học", value: "tieuhoc" },
-                  { label: "Trung học", value: "trunghoc" },
-                  { label: "Trung tâm anh ngữ", value: "anhngu" },
-                ]}
-                onChange={handleCheckboxChange}
-              />
+              <div className="flex gap-4">
+                <div className="">
+                  <label className="flex items-center">
+                    <input
+                      className="mr-2"
+                      type="checkbox"
+                      value="Mầm non"
+                      checked={classLevel.includes("Mầm non")}
+                      onChange={handleCheckboxChange}
+                    />
+                    Mầm non
+                  </label>
+                </div>
+                <div>
+                  <label className="flex items-center">
+                    <input
+                      className="mr-2"
+                      type="checkbox"
+                      value="Tiểu học"
+                      checked={classLevel.includes("Tiểu học")}
+                      onChange={handleCheckboxChange}
+                    />
+                    Tiểu học
+                  </label>
+                </div>
+                <div>
+                  <label className="flex items-center">
+                    <input
+                      className="mr-2"
+                      type="checkbox"
+                      value="Trung học"
+                      checked={classLevel.includes("Trung học")}
+                      onChange={handleCheckboxChange}
+                    />
+                    Trung học
+                  </label>
+                </div>
+                <div>
+                  <label className="flex items-center">
+                    <input
+                      className="mr-2"
+                      type="checkbox"
+                      value="Trung tâm anh ngữ"
+                      checked={classLevel.includes("Trung tâm anh ngữ")}
+                      onChange={handleCheckboxChange}
+                    />
+                    Trung tâm anh ngữ
+                  </label>
+                </div>
+              </div>
             </div>
-            <button className="btn" data-aos="fade-up">
+            <button type="submit" data-aos="fade-up">
               Gửi đăng ký {" >"}
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
