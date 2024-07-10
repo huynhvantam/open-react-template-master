@@ -1,8 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+
+import { useState } from "react";
 import Image from "next/image";
 import Image1 from "@/public/images/phuonghoang/hocsinh2.jpg";
-import { Button, Checkbox, Input } from "antd";
+import { Input } from "antd";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Dangkytuvan() {
   const handleCheckboxChange = (e) => {
@@ -19,9 +22,23 @@ export default function Dangkytuvan() {
   const [email, setEmail] = useState("");
   const [answer, setAnswer] = useState("");
   const [classLevel, setClassLevel] = useState([]);
+  const [phoneError, setPhoneError] = useState("");
+
+  const validatePhoneNumber = (phone) => {
+    const regex =
+      /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
+    return regex.test(phone);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validatePhoneNumber(phone)) {
+      setPhoneError(
+        "Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam hợp lệ."
+      );
+      return;
+    }
 
     const formId = "1FAIpQLScLq9PYH4wrUsW-x8Th49wHEvdxc7ZUsI9HC54lxGS5AA2dxQ"; // FORM_ID của bạn
     const data = new URLSearchParams({
@@ -43,8 +60,7 @@ export default function Dangkytuvan() {
       }
     );
 
-    // Note: You won't be able to check response.ok due to no-cors mode.
-    alert(
+    toast.success(
       "Đăng ký nhận tư vấn thành công. Chúng tôi sẽ liên lạc với quý phụ huynh trong thời gian sớm nhất."
     );
 
@@ -53,6 +69,7 @@ export default function Dangkytuvan() {
     setEmail("");
     setAnswer("");
     setClassLevel([]);
+    setPhoneError("");
   };
 
   return (
@@ -72,7 +89,6 @@ export default function Dangkytuvan() {
               className="h-fit pb-4 lg:pb-0"
               src={Image1}
               alt="Môn học"
-              // objectFit="cover"
             />
           </div>
           <form
@@ -102,19 +118,24 @@ export default function Dangkytuvan() {
               </p>
               <Input
                 required
-                type="number"
+                type="text"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                  if (validatePhoneNumber(e.target.value)) {
+                    setPhoneError("");
+                  } else {
+                    setPhoneError("Số điện thoại không hợp lệ.");
+                  }
+                }}
                 name="sdt"
                 className="rounded-md border-none"
-                placeholder="Điền số điền thoại tại đây"
+                placeholder="Điền số điện thoại tại đây"
               />
+              {phoneError && <p className="text-red-500">{phoneError}</p>}
             </div>
             <div className="border-b">
-              <p className="p">
-                Email
-                {/* <span className="text-red-500">*</span> */}
-              </p>
+              <p className="p">Email</p>
               <Input
                 type="email"
                 value={email}
@@ -194,6 +215,7 @@ export default function Dangkytuvan() {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 }
