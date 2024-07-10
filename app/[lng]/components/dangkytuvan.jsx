@@ -102,7 +102,7 @@ export default function Dangkytuvan() {
               </p>
               <Input
                 required
-                type="text"
+                type="number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 name="sdt"
@@ -137,7 +137,7 @@ export default function Dangkytuvan() {
             </div>
             <div>
               <p className="p">Tìm hiểu cấp học</p>
-              <div className="flex gap-4">
+              <div className="lg:flex gap-4 p">
                 <div className="">
                   <label className="flex items-center">
                     <input
