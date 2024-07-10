@@ -13,6 +13,7 @@ export default function Dangkytuvan() {
         : prevClassLevel.filter((classValue) => classValue !== value)
     );
   };
+
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -28,26 +29,32 @@ export default function Dangkytuvan() {
       "entry.1891195606": phone, // Entry ID của trường "Số điện thoại"
       "entry.384779362": email, // Entry ID của trường "Email"
       "entry.1275452875": answer, // Entry ID của trường "Câu trả lời"
-      "entry.1571879777": classLevel, // Entry ID của trường "Lớp"
+      "entry.1835956141": classLevel.join(","), // Entry ID của trường "Lớp" (concatenate selected values)
     });
+
+    console.log(Object.fromEntries(data.entries())); // Log the data to the console
 
     const response = await fetch(
       `https://docs.google.com/forms/d/e/${formId}/formResponse`,
       {
         method: "POST",
+        mode: "no-cors", // Bypass CORS
         body: data,
       }
     );
 
-    if (response.ok) {
-      alert("Message sent successfully!");
-      setName("");
-      setEmail("");
-      setMessage("");
-    } else {
-      alert("Failed to send message.");
-    }
+    // Note: You won't be able to check response.ok due to no-cors mode.
+    alert(
+      "Đăng ký nhận tư vấn thành công. Chúng tôi sẽ liên lạc với quý phụ huynh trong thời gian sớm nhất."
+    );
+
+    setName("");
+    setPhone("");
+    setEmail("");
+    setAnswer("");
+    setClassLevel([]);
   };
+
   return (
     <section id="tuyen-sinh">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative py-20">
@@ -78,8 +85,8 @@ export default function Dangkytuvan() {
               <p className="p">
                 Họ và tên phụ huynh<span className="text-red-500">*</span>
               </p>
-
               <Input
+                required
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -90,9 +97,11 @@ export default function Dangkytuvan() {
             </div>
             <div className="border-b">
               <p className="p">
-                Số điện thoại<span className="text-red-500">*</span>
+                Số điện thoại
+                <span className="text-red-500">*</span>
               </p>
               <Input
+                required
                 type="text"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
@@ -103,9 +112,9 @@ export default function Dangkytuvan() {
             </div>
             <div className="border-b">
               <p className="p">
-                Email<span className="text-red-500">*</span>
+                Email
+                {/* <span className="text-red-500">*</span> */}
               </p>
-
               <Input
                 type="email"
                 value={email}
@@ -179,7 +188,7 @@ export default function Dangkytuvan() {
                 </div>
               </div>
             </div>
-            <button type="submit" data-aos="fade-up">
+            <button type="submit" className="btn" data-aos="fade-up">
               Gửi đăng ký {" >"}
             </button>
           </form>
