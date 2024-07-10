@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { languages } from "../../../i18n/settings";
 import MobileMenu from "./mobile-menu";
@@ -10,6 +12,8 @@ import logo from "@/public/images/phuonghoang/logo.png";
 import Menubar from "./Menubar";
 import { RiMenuFoldLine } from "react-icons/ri";
 export const HeaderBase = ({ t, lng, path = "" }) => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   // moblie
   const item1 = [
     {
@@ -312,9 +316,31 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Đảo ngược trạng thái hiển thị của Menubar
   };
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
 
+    if (currentScrollY > lastScrollY) {
+      setIsVisible(false); // Vuốt xuống
+    } else {
+      setIsVisible(true); // Vuốt lên
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
   return (
-    <header className="fixed top-0 z-50 w-full pt-0.5 pb-0.5 bg-white shadow-md">
+    <header
+      className={`fixed z-50 top-0 left-0 right-0 py-0.5 bg-white shadow-md transition-all duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-20"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="flex items-center justify-between h-16 lg:h-20 ">
           <div className="shrink-0 mr-4">
