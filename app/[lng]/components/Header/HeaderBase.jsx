@@ -337,9 +337,7 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
   }, [lastScrollY]);
   return (
     <header
-      className={`fixed z-50 top-0 left-0 right-0 py-0.5 bg-white shadow-md transition-all duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-20"
-      }`}
+      className={`fixed z-50 top-0 left-0 right-0 py-0.5 bg-white shadow-md transition-all duration-300 `}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="flex items-center justify-between h-16 lg:h-20 ">
