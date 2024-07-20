@@ -49,13 +49,13 @@ export default async function Page({ params: { lng } }) {
           </h3>
           <p className="p">
             Giáo Dục Phượng Hoàng đào tạo liên cấp từ Mầm non, Tiểu học, Trung
-            học cơ sở đến Trung học phổ thông. Chương trình học có sự kết hợp
-            hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào
-            tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp người
-            học dễ dàng tiếp cận kiến thức phù hợp và chinh phục thành công
-            trong môi trường học tập quốc tế năng động. Giáo Dục Phượng Hoàng
-            triển khai 2 lộ trình đào tạo dành cho học sinh từ Mầm non đến Lớp
-            9, bao gồm: Chương trình Song ngữ và Chương trình Quốc tế
+            học cơ sở. Chương trình học có sự kết hợp hài hòa giữa Chương trình
+            Giáo dục Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương
+            trình Giáo dục Quốc tế Cambridge, giúp người học dễ dàng tiếp cận
+            kiến thức phù hợp và chinh phục thành công trong môi trường học tập
+            quốc tế năng động. Giáo Dục Phượng Hoàng triển khai 2 lộ trình đào
+            tạo dành cho học sinh từ Mầm non đến Lớp 9, bao gồm: Chương trình
+            Song ngữ và Chương trình Quốc tế
           </p>
         </div>
         {/* 2nd */}
@@ -92,10 +92,10 @@ export default async function Page({ params: { lng } }) {
                 Giáo dục thể chất được biên soạn dựa theo giáo trình của
                 Cambridge.
               </p>
-              <p className="p">
+              {/* <p className="p">
                 Vào cuối bậc tiểu học, học sinh sẽ được tham gia kì thi lấy
                 chứng chỉ tiểu học Quốc tế Cambridge Primary Checkpoint.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default async function Page({ params: { lng } }) {
           <h3 className="h3  text-center pb-3 mb-10 pt-28 border-b-[3px] border-rose-500 w-fit mx-auto">
             HOẠT ĐỘNG NGOẠI KHÓA
           </h3>
-          <div className="grid grid-cols-2 gap-10 p">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p">
             <div className="">
               <p>
                 Phoenix Education tổ chức đa dạng các chương trình hoạt động
@@ -154,25 +154,24 @@ export default async function Page({ params: { lng } }) {
               <ul className="pl-6">
                 <li className=" ml-5 ">
                   <span className="text-rose-300">▪ </span>Các hoạt động ngoại
-                  khóa, rèn luyện thể chất, đam mê như: Võ thuật, Bóng rổ,
-                  Yoga,...
+                  khóa, rèn luyện thể chất, đam mê như: Võ thuật, Bóng rổ, Cầu
+                  lông,...
                 </li>
                 <li className=" ml-5 ">
                   <span className="text-rose-300">▪ </span>Các CLB năng khiếu và
-                  kết nối cộng đồng như: Vẽ, Âm nhạc, Nhảy múa, CLB Thiện nguyện
-                  xã hội,...
+                  kết nối cộng đồng như: Vẽ, Âm nhạc, Nhảy múa,...
                 </li>
                 <li className=" ml-5 ">
                   <span className="text-rose-300">▪ </span>Các CLB học thuật,
-                  nâng cao kiến thức như: CLB tiếng Anh, CLB Sáng tạo khoa học,
-                  CLB Toán học, CLB Robotics,...
+                  nâng cao kiến thức như: CLB tiếng Anh, CLB Sáng tạo khoa
+                  học,...
                 </li>
               </ul>
               <ul>
                 <li className="pt-4 list-disc marker:text-red-500 ml-5">
                   Trải nghiệm sâu sắc từ các hoạt động dã ngoại, trải nghiệm
                   thực tế như: Tham quan những Di tích lịch sử, bảo tàng, các
-                  nông trại xanh, khu trải nghiệm nghê nghiệp tương lai,..
+                  nông trại xanh, khu trải nghiệm nghê nghiệp tương lai,...
                 </li>
                 <li className="pt-2 list-disc marker:text-red-500 ml-5">
                   Nâng tầm hiểu biết các Lễ hội Văn hóa quốc tế như: Halloween,

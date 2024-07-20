@@ -320,7 +320,7 @@ export default function Taisaonenchon() {
                 </span>
                 <span className="p">
                   {" "}
-                  với 30+ CLB ngoại khóa, nghệ thuật, thể thao
+                  với 10+ CLB ngoại khóa, nghệ thuật, thể thao
                 </span>
               </div>
             </div>

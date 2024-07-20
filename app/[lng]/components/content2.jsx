@@ -65,8 +65,9 @@ export default function Content2() {
             </p>
             <p className="p mb-5" data-aos="fade-up" data-aos-delay="300">
               Giáo Dục Phượng Hoàng hân hạnh mang trong mình sứ mệnh tiên phong,
-              đem đến cho học sinh một chương trình học tập toàn diện với 3 cấp
-              học bao gồm:
+              đem đến cho học sinh một chương trình học tập toàn diện bao gồm:
+              Mầm non, Tiểu học, Trung học cơ sơ và Trung tâm anh ngữ Phượng
+              Hoàng.
             </p>
             <Link
               href="/chuong-trinh-dao-tao"

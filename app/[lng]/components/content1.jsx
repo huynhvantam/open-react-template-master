@@ -23,10 +23,9 @@ export default function Content1() {
             </div>
             <p className="p" data-aos="fade-up" data-aos-delay="200">
               Giáo Dục Phượng Hoàng là hệ thống trường liên cấp từ Mầm Non đến
-              Trung Học Phổ Thông tại Huế, với mục tiêu giáo dục là “Kiến Tạo
-              Công Dân Toàn Cầu”. Giáo Dục Phượng Hoàng là trường song ngữ tiên
-              phong trên địa bàn thành phố Huế và đã đi vào hoạt động từ năm
-              2009.
+              Trung Học Cơ Sở tại Huế, với mục tiêu giáo dục là “Kiến Tạo Công
+              Dân Toàn Cầu”. Giáo Dục Phượng Hoàng là trường song ngữ tiên phong
+              trên địa bàn thành phố Huế và đã đi vào hoạt động từ năm 2011.
             </p>
             <div className="grid lg:grid-cols-2 pt-[60px]">
               <div className="">
@@ -40,7 +39,7 @@ export default function Content1() {
                       width={38}
                       className="inline mr-2"
                     />
-                    15+
+                    13+
                   </p>
                   <p className="p font-bold">
                     Năm kinh nghiệm đào tạo
@@ -57,7 +56,7 @@ export default function Content1() {
                       width={38}
                       className="inline mr-2"
                     />
-                    23
+                    20
                   </p>
                   <p className="p font-bold">
                     Sĩ số trung bình <br />

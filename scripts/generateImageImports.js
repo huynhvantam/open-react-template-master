@@ -1,12 +1,8 @@
-// scripts/generateImageImports.js
 const fs = require("fs");
 const path = require("path");
 
-const baseDir = path.join(__dirname, "@/public/images/phuonghoang");
-const outputFilePath = path.join(
-  __dirname,
-  "../app/[lng]/doi-song-hoc-duong/thu-vien-hinh-anh/imageImports.js"
-);
+const baseDir = path.join(__dirname, "../public/images/giaovien");
+const outputFilePath = path.join(__dirname, "../scripts/imageImports.js");
 
 // Hàm đệ quy để duyệt qua các thư mục con
 const getImages = (dir, folderName = "") => {

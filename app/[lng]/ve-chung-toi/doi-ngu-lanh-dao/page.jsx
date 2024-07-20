@@ -8,6 +8,7 @@ import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/testimonial-01.jpg";
 import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import Image from "next/image";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
@@ -86,7 +87,7 @@ const buttonData = {
         text2: "Bằng cấp",
         text3: "Kinh nghiệm",
         chuyenmon: "Chuyên môn:",
-        thanhtich: "Với khoảng thời gian 15 năm ",
+        thanhtich: "Với khoảng thời gian 13 năm ",
         lienhe: "PGS-TS Lê Thị Thu còn ",
         buttonText: "Xem thêm",
       },
@@ -143,7 +144,123 @@ export default async function Page({ params: { lng } }) {
         text2={t("lanh-dao")}
       />
       <Pagedautien links={links} highlight={highlight} />
-      <Listthongtin buttonData={buttonData} />
+
+      <div className="max-w-6xl mx-auto">
+        {/* 1 */}
+        <div>
+          <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+            Thông điệp từ Ban Lãnh Đạo
+          </h3>
+          <div className="lg:grid lg:grid-cols-10 gap-4  px-4 lg:px-0">
+            <div className="col-span-6 space-y-4 p">
+              <p className="">
+                Câu chuyện của Giáo dục Phượng Hoàng bắt đầu từ năm 2011, khi
+                Trường Quốc tế Singapore – một ngôi trường quốc tế duy nhất ở
+                Huế, bất ngờ đóng cửa vì không có lợi nhuận. Khi đó, chúng tôi
+                quyết định nếu chúng tôi có thể giáo dục ba người con của mình
+                thì chúng tôi cũng có thể giáo dục các con của các ông bố bà mẹ
+                khác. Thay vì giáo dục tại nhà cho các con trai mình, chúng tôi
+                quyết định chia sẻ ước mơ của mình với những phụ huynh có cùng
+                suy nghĩ và quan tâm. Mặc dù chúng tôi biết đây sẽ là một hành
+                trình đầy cam go, nhưng việc giáo dục con cái là một trong những
+                điều quan trọng nhất trong cuộc sống của chúng tôi, và vì thế
+                Giáo dục Phượng Hoàng đã được thành lập.
+              </p>
+              <p className="">
+                Câu chuyện của Giáo dục Phượng Hoàng bắt đầu từ năm 2011, khi
+                Trường Quốc tế Singapore – một ngôi trường quốc tế duy nhất ở
+                Huế, bất ngờ đóng cửa vì không có lợi nhuận. Khi đó, chúng tôi
+                quyết định nếu chúng tôi có thể giáo dục ba người con của mình
+                thì chúng tôi cũng có thể giáo dục các con của các ông bố bà mẹ
+                khác. Thay vì giáo dục tại nhà cho các con trai mình, chúng tôi
+                quyết định chia sẻ ước mơ của mình với những phụ huynh có cùng
+                suy nghĩ và quan tâm. Mặc dù chúng tôi biết đây sẽ là một hành
+                trình đầy cam go, nhưng việc giáo dục con cái là một trong những
+                điều quan trọng nhất trong cuộc sống của chúng tôi, và vì thế
+                Giáo dục Phượng Hoàng đã được thành lập.
+              </p>
+            </div>
+            <div className="col-span-4">
+              <Image
+                loading="lazy"
+                src={Image1}
+                alt="giao vien"
+                className="w-full "
+              />
+            </div>
+          </div>
+          <div className="lg:grid lg:grid-cols-10 gap-4 px-4 lg:px-0 mt-8 ">
+            <div className="col-span-6 space-y-4 p order-last">
+              <p className="">
+                Chúng tôi chọn tên Phượng Hoàng vì theo định nghĩa, Phượng Hoàng
+                là một linh vật huyền thoại có hình dáng của một con chim hùng
+                vĩ, đa sắc màu, tượng trưng cho sự trẻ trung, mới mẻ để sống qua
+                một chu kỳ khác. Tinh thần Phượng Hoàng - biểu tượng của sự hy
+                vọng, tái sinh, trường thọ, sự thuần khiết, đổi mới và may mắn
+                với sự khích lệ để giữ vững tinh thần. Đó là những điều mà chúng
+                tôi luôn ghi nhớ khi phát triển Trường Phượng Hoàng. Trên thực
+                tế, trong lời bài hát Phượng Hoàng ca, có câu:
+              </p>
+              <p className="italic">
+                “Chúng ta là những con Chim Phượng Hoàng, với những bộ lông màu
+                sắc khác nhau, nhưng học và làm việc cùng nhau, dang rộng đôi
+                cánh, vươn lên cao, học hỏi mỗi ngày, chúng ta hướng tới bầu
+                trời!”{" "}
+              </p>
+              <p>
+                Cách đây 13 năm, bắt đầu chỉ có 12 học sinh, 4 giáo viên và một
+                tòa nhà nhỏ gồm 3 phòng học, Trường Phượng Hoàng đã phát triển
+                và trưởng thành với số lượng hiện tại hơn 450 học sinh đang theo
+                học các chương trình giáo dục khác nhau trong một khuôn viên có
+                kiến trúc đặc biệt phản ảnh nét đặc trưng văn hoá trong một môi
+                trường xanh tự nhiên. Những năm qua, nhiều học sinh từ Huế và
+                nước ngoài đã được giáo dục và phát triển kỹ năng sống tại Giáo
+                dục Phượng Hoàng, các em đã tiếp tục học lên cao hơn và đã tham
+                gia vào môi trường làm việc chuyên nghiệp ở Việt Nam và trên
+                phạm vi toàn cầu.
+              </p>
+            </div>
+            <div className="col-span-4 order-first">
+              <Image
+                loading="lazy"
+                src={Image1}
+                alt="giao vien"
+                className="w-full "
+              />
+            </div>
+          </div>
+          <div className=" gap-4  px-4 lg:px-0 mt-8">
+            <div className="col-span-6 space-y-4 p">
+              <p className="">
+                Nhìn lại hành trình đã qua, chúng tôi không khỏi tự hào về những
+                bước tiến lớn mà Phượng Hoàng đã đạt được. Mỗi học sinh tại
+                trường Phượng Hoàng không chỉ được trang bị kiến thức vững chắc
+                mà còn được rèn luyện kỹ năng sống và phát triển nhân cách toàn
+                diện, giúp các em tự tin bước vào những chặng đường mới trong
+                cuộc sống.
+              </p>
+              <p className="">
+                Điều này có được là nhờ vào sự nỗ lực và cống hiến của nhiều
+                người trong suốt những năm qua. Chính toàn thể Đội ngũ Quản lý,
+                Giáo viên và Nhân viên Phượng Hoàng - những người đã làm việc
+                trước đây và hiện tại, đã tận tâm truyền đạt những bài học quý
+                giá và những trải nghiệm học tập phong phú cho học sinh. Chúng
+                tôi muốn ghi nhận và chia sẻ lòng biết ơn của mình đến đội ngũ
+                này cũng như tất cả Phụ huynh Trường Phượng Hoàng. Các sự kiện
+                của năm học vừa qua được ghi lại trong những trang đầy màu sắc,
+                khó quên trong cuốn Kỷ yếu Trường Phượng Hoàng và chúng tôi hy
+                vọng rằng khi mở từng trang kỷ yếu này, bạn sẽ cảm nhận được
+                niềm tự hào và tình yêu mà chúng tôi dành cho từng học sinh.
+              </p>
+              <p>Ms. Nguyễn Thị Linh Phượng & Mr. John Troha (JT)</p>
+            </div>
+          </div>
+        </div>
+        {/* 2 */}
+        {/* <h3 className="h3   text-center pb-3 mb-10 pt-36 border-b-[3px] border-rose-500 w-fit mx-auto">
+          Đội ngũ lãnh đạo
+        </h3> */}
+      </div>
     </>
   );
 }

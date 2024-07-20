@@ -136,9 +136,7 @@ export default async function Page({ params: { lng } }) {
                 Cũng như chương trình Việt Nam, hoạt động học tập của học sinh
                 trong các môn học của chương trình Quốc tế được đánh giá trong
                 quá trình và theo định kỳ, bằng điểm số và thông qua nhận xét
-                của giáo viên. Vào cuối bậc tiểu học, học sinh sẽ được tham gia
-                kì thi lấy chứng chỉ tiểu học Quốc tế Cambridge Primary
-                Checkpoint.
+                của giáo viên.
               </p>
             </div>
           </div>
