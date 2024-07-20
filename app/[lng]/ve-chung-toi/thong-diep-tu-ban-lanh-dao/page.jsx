@@ -6,7 +6,9 @@ import BannerImage from "../../components/banner";
 import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
-import Image1 from "@/public/images/testimonial-01.jpg";
+import Image1 from "@/public/images/vechungtoi/thongdieptubaolanhdao/01.jpg";
+import Image2 from "@/public/images/vechungtoi/thongdieptubaolanhdao/02.jpg";
+import Image3 from "@/public/images/vechungtoi/thongdieptubaolanhdao/03.jpg";
 import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import Image from "next/image";
 
@@ -124,7 +126,7 @@ export default async function Page({ params: { lng } }) {
     { href: "/ve-chung-toi/tam-nhin-su-menh", content: t("tam-nhin") },
     { href: "/ve-chung-toi/doi-ngu-giao-vien", content: t("giao-vien") },
     {
-      href: "/ve-chung-toi/doi-ngu-lanh-dao",
+      href: "/ve-chung-toi/thong-diep-tu-ban-lanh-dao",
       content: t("lanh-dao"),
       hightlight: true,
     },
@@ -136,7 +138,7 @@ export default async function Page({ params: { lng } }) {
 
   return (
     <>
-      <Header lng={lng} path="/ve-chung-toi/doi-ngu-lanh-dao" />
+      <Header lng={lng} path="/ve-chung-toi/thong-diep-tu-ban-lanh-dao" />
       <BannerImage
         src={bannerabout}
         srcmobile={FeatImage02}
@@ -183,13 +185,13 @@ export default async function Page({ params: { lng } }) {
             <div className="col-span-4">
               <Image
                 loading="lazy"
-                src={Image1}
+                src={Image2}
                 alt="giao vien"
                 className="w-full "
               />
             </div>
           </div>
-          <div className="lg:grid lg:grid-cols-10 gap-4 px-4 lg:px-0 mt-8 ">
+          <div className="lg:grid lg:grid-cols-10 gap-4 px-4 lg:px-0 lg:pt-20 ">
             <div className="col-span-6 space-y-4 p order-last">
               <p className="">
                 Chúng tôi chọn tên Phượng Hoàng vì theo định nghĩa, Phượng Hoàng
@@ -223,36 +225,47 @@ export default async function Page({ params: { lng } }) {
             <div className="col-span-4 order-first">
               <Image
                 loading="lazy"
-                src={Image1}
+                src={Image3}
                 alt="giao vien"
                 className="w-full "
               />
             </div>
           </div>
-          <div className=" gap-4  px-4 lg:px-0 mt-8">
-            <div className="col-span-6 space-y-4 p">
-              <p className="">
-                Nhìn lại hành trình đã qua, chúng tôi không khỏi tự hào về những
-                bước tiến lớn mà Phượng Hoàng đã đạt được. Mỗi học sinh tại
-                trường Phượng Hoàng không chỉ được trang bị kiến thức vững chắc
-                mà còn được rèn luyện kỹ năng sống và phát triển nhân cách toàn
-                diện, giúp các em tự tin bước vào những chặng đường mới trong
-                cuộc sống.
-              </p>
-              <p className="">
-                Điều này có được là nhờ vào sự nỗ lực và cống hiến của nhiều
-                người trong suốt những năm qua. Chính toàn thể Đội ngũ Quản lý,
-                Giáo viên và Nhân viên Phượng Hoàng - những người đã làm việc
-                trước đây và hiện tại, đã tận tâm truyền đạt những bài học quý
-                giá và những trải nghiệm học tập phong phú cho học sinh. Chúng
-                tôi muốn ghi nhận và chia sẻ lòng biết ơn của mình đến đội ngũ
-                này cũng như tất cả Phụ huynh Trường Phượng Hoàng. Các sự kiện
-                của năm học vừa qua được ghi lại trong những trang đầy màu sắc,
-                khó quên trong cuốn Kỷ yếu Trường Phượng Hoàng và chúng tôi hy
-                vọng rằng khi mở từng trang kỷ yếu này, bạn sẽ cảm nhận được
-                niềm tự hào và tình yêu mà chúng tôi dành cho từng học sinh.
-              </p>
-              <p>Ms. Nguyễn Thị Linh Phượng & Mr. John Troha (JT)</p>
+          <div className="grid lg:grid-cols-10 gap-4 lg:pt-20">
+            <div className="col-span-4 order-last">
+              <Image
+                loading="lazy"
+                src={Image1}
+                alt="giao vien"
+                className="w-full hidden lg:block"
+              />
+            </div>
+            <div className="col-span-6  order-1 px-4 lg:px-0 mt-8">
+              <div className="col-span-6 space-y-4 p">
+                <p className="">
+                  Nhìn lại hành trình đã qua, chúng tôi không khỏi tự hào về
+                  những bước tiến lớn mà Phượng Hoàng đã đạt được. Mỗi học sinh
+                  tại trường Phượng Hoàng không chỉ được trang bị kiến thức vững
+                  chắc mà còn được rèn luyện kỹ năng sống và phát triển nhân
+                  cách toàn diện, giúp các em tự tin bước vào những chặng đường
+                  mới trong cuộc sống.
+                </p>
+                <p className="">
+                  Điều này có được là nhờ vào sự nỗ lực và cống hiến của nhiều
+                  người trong suốt những năm qua. Chính toàn thể Đội ngũ Quản
+                  lý, Giáo viên và Nhân viên Phượng Hoàng - những người đã làm
+                  việc trước đây và hiện tại, đã tận tâm truyền đạt những bài
+                  học quý giá và những trải nghiệm học tập phong phú cho học
+                  sinh. Chúng tôi muốn ghi nhận và chia sẻ lòng biết ơn của mình
+                  đến đội ngũ này cũng như tất cả Phụ huynh Trường Phượng Hoàng.
+                  Các sự kiện của năm học vừa qua được ghi lại trong những trang
+                  đầy màu sắc, khó quên trong cuốn Kỷ yếu Trường Phượng Hoàng và
+                  chúng tôi hy vọng rằng khi mở từng trang kỷ yếu này, bạn sẽ
+                  cảm nhận được niềm tự hào và tình yêu mà chúng tôi dành cho
+                  từng học sinh.
+                </p>
+                <p>Ms. Nguyễn Thị Linh Phượng & Mr. John Troha (JT)</p>
+              </div>
             </div>
           </div>
         </div>

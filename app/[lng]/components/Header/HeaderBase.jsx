@@ -39,7 +39,9 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         {
           key: "4",
           label: (
-            <Link href="/ve-chung-toi/doi-ngu-lanh-dao">{t("lanh-dao")}</Link>
+            <Link href="/ve-chung-toi/thong-diep-tu-ban-lanh-dao">
+              {t("lanh-dao")}
+            </Link>
           ),
         },
       ],
@@ -196,7 +198,9 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         {
           key: "4",
           label: (
-            <Link href="/ve-chung-toi/doi-ngu-lanh-dao">{t("lanh-dao")}</Link>
+            <Link href="/ve-chung-toi/thong-diep-tu-ban-lanh-dao">
+              {t("lanh-dao")}
+            </Link>
           ),
         },
       ],

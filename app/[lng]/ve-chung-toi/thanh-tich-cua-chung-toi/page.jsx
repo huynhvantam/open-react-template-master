@@ -20,7 +20,10 @@ export default async function Page({ params: { lng } }) {
     { href: "/ve-chung-toi/", content: t("gioi-thieu") },
     { href: "/ve-chung-toi/tam-nhin-su-menh", content: t("tam-nhin") },
     { href: "/ve-chung-toi/doi-ngu-giao-vien", content: t("giao-vien") },
-    { href: "/ve-chung-toi/doi-ngu-lanh-dao", content: t("lanh-dao") },
+    {
+      href: "/ve-chung-toi/thong-diep-tu-ban-lanh-dao",
+      content: t("lanh-dao"),
+    },
     {
       href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
       content: t("thanh-tich"),

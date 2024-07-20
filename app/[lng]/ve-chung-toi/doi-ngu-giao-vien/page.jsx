@@ -44,6 +44,76 @@ const buttonData = {
     title: "Giáo Viên Việt Nam",
     listItems: [
       {
+        imageSrc: Image11,
+        HoTen: "Nguyễn Trường Vũ",
+        LopKhoi: "Giáo viên THCS",
+        BangCap: "Cử nhân Vật lý tiên tiên, ĐHSP Huế",
+        KinhNghiem:
+          "Hơn 10 năm kinh nghiệm dạy các môn khoa học Lý, Hoá, Sinh bằng tiếng Anh, dạy Vật lý và Khoa học tự nhiên cấp 2.",
+        ThanhTich:
+          "Cuộc thi Thi thức trẻ vì giáo dục: Giải nhất năm 2017, thuộc top 15 vào vòng chung kết năm 2020. Hội thi Khoa học kĩ thuật tỉnh Thừa Thiên Huế: 2 giải 3, 2 giải khuyến khích.",
+        LienHe: "vuphoenixedu@gmail.com",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image13,
+        HoTen: "Hồ Thị Phương Châu",
+        LopKhoi: "Giáo viên THCS",
+        BangCap:
+          "Cử nhân Sư phạm Toán - chương trình Toán tiếng Anh (TRIG) trường Đại học Sư phạm Huế",
+        KinhNghiem:
+          "Hơn 8 năm kinh nghiệm giảng dạy chương trình Toán Song ngữ và Quốc tế tại trường Quốc tế Phượng Hoàng - Huế. Kinh nghiệm bồi dưỡng học sinh tham gia các kỳ thi Toán Quốc tế như SEAMO, ASMO; kỳ thi đánh giá năng lực SAT.",
+        ThanhTich:
+          "Giải Nhì cấp Tỉnh môn Sinh học năm học 2018-2019. Đạt Giải thưởng “Sao tháng giêng” năm học 2014-2015 dành cho sinh viên đạt thành tích tốt trong học tập, rèn luyện, công tác Đoàn và phong trào thanh niên. Được công nhận là Đảng viên chính thức ngày 30 tháng 7 năm 2017.",
+        LienHe: "Đang cập nhật",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image17,
+        HoTen: "Đặng Nhật Khánh Hằng",
+        LopKhoi: "Giáo viên THCS",
+        BangCap: "Cử nhân Toán-tin ứng dụng Trường ĐHKH Huế",
+        KinhNghiem: "Đang cập nhật",
+        LienHe: "Đang cập nhật",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image12,
+        HoTen: "Trần Thị Loan",
+        LopKhoi: "Giáo viên Tiểu học",
+        BangCap: "Đang cập nhật",
+        KinhNghiem: "Đang cập nhật",
+        LienHe: "Đang cập nhật",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image14,
+        HoTen: "Lê Thị Trang",
+        LopKhoi: "Giáo viên Tiểu học",
+        BangCap: "Đại học sư phạm Giáo dục Tiểu học",
+        KinhNghiem: "Đang cập nhật",
+        LienHe: "Trag123phoenixedu@gmail.com",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image19,
+        HoTen: "Nguyễn Thị Thảo Ngọc",
+        LopKhoi: "Giáo viên Tiểu học",
+        BangCap: "Đang cập nhật",
+        KinhNghiem: "Đang cập nhật",
+        LienHe: "ngocntt@phoenixeducation.asia",
+        buttonText: "Xem thêm",
+      },
+      {
+        imageSrc: Image24,
+        HoTen: "Lê Thị Định",
+        LopKhoi: "Giáo viên Tiểu học",
+        BangCap: "Đang cập nhật",
+        KinhNghiem: "Đang cập nhật",
+        LienHe: "Đang cập nhật",
+        buttonText: "Xem thêm",
+      },
+      {
         imageSrc: Image02,
         HoTen: "Nguyễn Thị Hồng Thái",
         LopKhoi: "Giáo viên mầm non",
@@ -89,7 +159,6 @@ const buttonData = {
         LopKhoi: "Giáo viên mầm non",
         BangCap: "Cao đẳng",
         KinhNghiem: "Đang cập nhật",
-
         LienHe: "Thanhhang1phoenixedu@gmail.com",
         buttonText: "Xem thêm",
       },
@@ -99,7 +168,6 @@ const buttonData = {
         LopKhoi: "Giáo viên mầm non",
         BangCap: "Cao đẳng Mầm non",
         KinhNghiem: "5 năm",
-
         LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
       },
@@ -109,7 +177,6 @@ const buttonData = {
         LopKhoi: "Giáo viên mầm non",
         BangCap: "Đại học",
         KinhNghiem: "9 năm",
-
         LienHe: "Hangbuiphoenixedu@gmail.com",
         buttonText: "Xem thêm",
       },
@@ -119,7 +186,6 @@ const buttonData = {
         LopKhoi: "Giáo viên mầm non",
         BangCap: "Cao đẳng mầm non",
         KinhNghiem: "5 năm",
-
         LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
       },
@@ -129,53 +195,7 @@ const buttonData = {
         LopKhoi: "Giáo viên mầm non",
         BangCap: "Đại học",
         KinhNghiem: "12 năm",
-
         LienHe: "Đang cập nhật",
-        buttonText: "Xem thêm",
-      },
-      {
-        imageSrc: Image11,
-        HoTen: "Nguyễn Trường Vũ",
-        LopKhoi: "Giáo viên THCS",
-        BangCap: "Cử nhân Vật lý tiên tiên, ĐHSP Huế",
-        KinhNghiem:
-          "Hơn 10 năm kinh nghiệm dạy các môn khoa học Lý, Hoá, Sinh bằng tiếng Anh, dạy Vật lý và Khoa học tự nhiên cấp 2.",
-        ThanhTich:
-          "Cuộc thi Thi thức trẻ vì giáo dục: Giải nhất năm 2017, thuộc top 15 vào vòng chung kết năm 2020. Hội thi Khoa học kĩ thuật tỉnh Thừa Thiên Huế: 2 giải 3, 2 giải khuyến khích.",
-        LienHe: "vuphoenixedu@gmail.com",
-        buttonText: "Xem thêm",
-      },
-      {
-        imageSrc: Image12,
-        HoTen: "Trần Thị Loan",
-        LopKhoi: "Giáo viên Tiểu học",
-        BangCap: "Đang cập nhật",
-        KinhNghiem: "Đang cập nhật",
-
-        LienHe: "Đang cập nhật",
-        buttonText: "Xem thêm",
-      },
-      {
-        imageSrc: Image13,
-        HoTen: "Hồ Thị Phương Châu",
-        LopKhoi: "Giáo viên THCS",
-        BangCap:
-          "Cử nhân Sư phạm Toán - chương trình Toán tiếng Anh (TRIG) trường Đại học Sư phạm Huế",
-        KinhNghiem:
-          "Hơn 8 năm kinh nghiệm giảng dạy chương trình Toán Song ngữ và Quốc tế tại trường Quốc tế Phượng Hoàng - Huế. Kinh nghiệm bồi dưỡng học sinh tham gia các kỳ thi Toán Quốc tế như SEAMO, ASMO; kỳ thi đánh giá năng lực SAT.",
-        ThanhTich:
-          "Giải Nhì cấp Tỉnh môn Sinh học năm học 2018-2019. Đạt Giải thưởng “Sao tháng giêng” năm học 2014-2015 dành cho sinh viên đạt thành tích tốt trong học tập, rèn luyện, công tác Đoàn và phong trào thanh niên. Được công nhận là Đảng viên chính thức ngày 30 tháng 7 năm 2017.",
-        LienHe: "Đang cập nhật",
-        buttonText: "Xem thêm",
-      },
-      {
-        imageSrc: Image14,
-        HoTen: "Lê Thị Trang",
-        LopKhoi: "Giáo viên Tiểu học",
-        BangCap: "Đại học sư phạm Giáo dục Tiểu học",
-        KinhNghiem: "Đang cập nhật",
-
-        LienHe: "Trag123phoenixedu@gmail.com",
         buttonText: "Xem thêm",
       },
       {
@@ -199,16 +219,6 @@ const buttonData = {
         buttonText: "Xem thêm",
       },
       {
-        imageSrc: Image17,
-        HoTen: "Đặng Nhật Khánh Hằng",
-        LopKhoi: "Giáo viên THCS",
-        BangCap: "Cử nhân Toán-tin ứng dụng Trường ĐHKH Huế",
-        KinhNghiem: "Đang cập nhật",
-
-        LienHe: "Đang cập nhật",
-        buttonText: "Xem thêm",
-      },
-      {
         imageSrc: Image18,
         HoTen: "Nguyễn Thị Thuận",
         LopKhoi: "Giáo viên mầm non",
@@ -219,22 +229,11 @@ const buttonData = {
         buttonText: "Xem thêm",
       },
       {
-        imageSrc: Image19,
-        HoTen: "Nguyễn Thị Thảo Ngọc",
-        LopKhoi: "Giáo viên Tiểu học",
-        BangCap: "Đang cập nhật",
-        KinhNghiem: "Đang cập nhật",
-
-        LienHe: "ngocntt@phoenixeducation.asia",
-        buttonText: "Xem thêm",
-      },
-      {
         imageSrc: Image20,
         HoTen: "Nguyễn Thị Thảo Tiên",
-        LopKhoi: "Giáo viên mần non",
+        LopKhoi: "Giáo viên mầm non",
         BangCap: "Đại học sư phạm",
         KinhNghiem: "Đang cập nhật",
-
         LienHe: "thaotienphoenixedu@gmail.com",
         buttonText: "Xem thêm",
       },
@@ -244,7 +243,6 @@ const buttonData = {
         LopKhoi: "Giáo viên thể dục",
         BangCap: "Đại học",
         KinhNghiem: "Từng giảng dạy tại Tp. Hồ Chí Minh, Đà Nẵng.",
-
         LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
       },
@@ -266,16 +264,6 @@ const buttonData = {
         KinhNghiem: "10 năm kinh nghiệm giáo viên mầm non",
         ThanhTich: "Lao động tiên tiến",
         LienHe: "khanhlinh1phoenixedu@gmail.com",
-        buttonText: "Xem thêm",
-      },
-      {
-        imageSrc: Image24,
-        HoTen: "Lê Thị Định",
-        LopKhoi: "Giáo viên Tiểu học",
-        BangCap: "Đang cập nhật",
-        KinhNghiem: "Đang cập nhật",
-
-        LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
       },
     ],
@@ -393,7 +381,10 @@ export default async function Page({ params: { lng } }) {
       content: t("giao-vien"),
       hightlight: true,
     },
-    { href: "/ve-chung-toi/doi-ngu-lanh-dao", content: t("lanh-dao") },
+    {
+      href: "/ve-chung-toi/thong-diep-tu-ban-lanh-dao",
+      content: t("lanh-dao"),
+    },
     // {
     //   href: "/ve-chung-toi/thanh-tich-cua-chung-toi",
     //   content: t("thanh-tich"),

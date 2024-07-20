@@ -74,7 +74,7 @@ export default async function Page({ params: { lng } }) {
     },
     { href: "/ve-chung-toi/doi-ngu-giao-vien", content: t("giao-vien") },
     {
-      href: "/ve-chung-toi/doi-ngu-lanh-dao",
+      href: "/ve-chung-toi/thong-diep-tu-ban-lanh-dao",
       content: t("lanh-dao"),
     },
     // {
