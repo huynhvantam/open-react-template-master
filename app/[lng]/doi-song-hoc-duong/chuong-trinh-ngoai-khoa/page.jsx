@@ -4,7 +4,7 @@ import { Header } from "../../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
-import FeatImage02 from "@/public/images/home/background-mobile.png";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import AutoResizeText from "../../../components/tools/AutoResizeText";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");

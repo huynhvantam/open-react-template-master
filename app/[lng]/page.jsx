@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { languages, fallbackLng } from "../i18n/settings";
 import { useTranslation } from "../i18n";
-import FeatImage01 from "@/public/images/home/background.png";
-import FeatImage02 from "@/public/images/home/background-mobile.png";
+import FeatImage01 from "@/public/images/banner/banner-home.jpg";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import Image from "next/image";
 import Content0 from "./components/content0";
 import Content1 from "./components/content1";

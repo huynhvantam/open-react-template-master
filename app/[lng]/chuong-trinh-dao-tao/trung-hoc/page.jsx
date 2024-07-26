@@ -17,7 +17,7 @@ import Icon4 from "@/public/images/oneuse/icon-mamnon/Sport.svg";
 import Icon5 from "@/public/images/oneuse/icon-mamnon/Text.svg";
 import Icon6 from "@/public/images/oneuse/icon-mamnon/Vehicles.svg";
 import Image from "next/image";
-import FeatImage02 from "@/public/images/home/background-mobile.png";
+import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");

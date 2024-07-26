@@ -5,11 +5,11 @@ export default function Content0() {
     <section className="pt-20">
       <div className="max-w-6xl text- mx-auto px-4 sm:px-6 relative">
         <div className="text-center">
-          <h3 className="h44 pt-10 text-black lg:text-gray-500">
+          <h3 className="h44 pt-10 text-gray-500">
             TRƯỜNG TIỂU HỌC & TRUNG HỌC CƠ SƠ <br />
             PHƯỢNG HOÀNG
           </h3>
-          <h2 className="text-3xl font-playfair font-bold text-white lg:text-black">
+          <h2 className="text-3xl font-playfair font-bold">
             Tuyển sinh năm học <br />
             2024 - 2025
           </h2>
