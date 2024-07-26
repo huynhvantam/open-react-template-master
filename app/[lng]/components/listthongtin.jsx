@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Image1 from "@/public/images/testimonial-01.jpg";
+import Image1 from "@/public/images/oneuse/anh1.jpg";
 
 const ListItem = ({
   imageSrc,

@@ -5,7 +5,7 @@ import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage1 from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
-import Image1 from "@/public/images/testimonial-01.jpg";
+import Image1 from "@/public/images/oneuse/anh1.jpg";
 import Imagegvnn from "@/public/images/phuonghoang/gvnn.jpg";
 import FeatImage02 from "@/public/images/home/background-mobile.png";
 import Image02 from "@/public/images/giaovien/02.jpeg";

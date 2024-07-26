@@ -5,7 +5,7 @@ import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage from "../../components/banner";
 import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
-import Image1 from "@/public/images/testimonial-01.jpg";
+import Image1 from "@/public/images/oneuse/anh1.jpg";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("chuong-trinh-ud");
