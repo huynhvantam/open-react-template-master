@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header/client";
-import bannerabout from "@/public/images/banner/banner-home.jpg";
+import bannerabout from "@/public/images/home/background.png";
 import BannerImage from "../components/banner";
 import VideoThumb from "@/public/images/oneuse/thumpvideo.jpg";
 import ModalVideo from "../../components/modal-video";
@@ -39,7 +39,7 @@ import Csvc28 from "@/public/images/phuonghoang/csvc/csvc28.png";
 import Csvc29 from "@/public/images/phuonghoang/csvc/csvc29.png";
 import Csvc30 from "@/public/images/phuonghoang/csvc/csvc30.png";
 import Csvc31 from "@/public/images/phuonghoang/csvc/csvc31.png";
-import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import FeatImage02 from "@/public/images/home/background-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");

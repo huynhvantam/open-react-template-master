@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header/client";
-import bannerabout from "@/public/images/banner/banner-home.jpg";
+import bannerabout from "@/public/images/home/background.png";
 import BannerImage from "../components/banner";
 
 export async function generateMetadata({ params: { lng } }) {

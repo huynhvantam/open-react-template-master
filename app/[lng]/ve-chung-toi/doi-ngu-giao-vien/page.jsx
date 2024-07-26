@@ -7,7 +7,7 @@ import Pagedautien from "../../components/pagedautien";
 import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/testimonial-01.jpg";
 import Imagegvnn from "@/public/images/phuonghoang/gvnn.jpg";
-import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import FeatImage02 from "@/public/images/home/background-mobile.png";
 import Image02 from "@/public/images/giaovien/02.jpeg";
 import Image03 from "@/public/images/giaovien/03.jpeg";
 import Image04 from "@/public/images/giaovien/04.jpeg";

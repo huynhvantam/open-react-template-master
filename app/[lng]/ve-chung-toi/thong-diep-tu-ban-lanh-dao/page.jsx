@@ -9,7 +9,7 @@ import Listthongtin from "../../components/listthongtin";
 import Image1 from "@/public/images/vechungtoi/thongdieptubaolanhdao/01.jpg";
 import Image2 from "@/public/images/vechungtoi/thongdieptubaolanhdao/02.jpg";
 import Image3 from "@/public/images/vechungtoi/thongdieptubaolanhdao/03.jpg";
-import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import FeatImage02 from "@/public/images/home/background-mobile.png";
 import Image from "next/image";
 
 export async function generateMetadata({ params: { lng } }) {

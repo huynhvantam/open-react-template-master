@@ -6,7 +6,7 @@ import BannerImage from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
 import { trungthu2023, trungthu2024, trungthu2025 } from "./imageImports";
 import Listhinhanh from "../../components/listhinhanh";
-import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import FeatImage02 from "@/public/images/home/background-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");

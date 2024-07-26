@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "../../i18n";
 import { Header } from "../components/Header/client";
-import bannerabout from "@/public/images/banner/banner-home.jpg";
+import bannerabout from "@/public/images/home/background.png";
 import BannerImage from "../components/banner";
 import VideoThumb from "@/public/images/oneuse/thumpvideo.jpg";
 import ModalVideo from "../../components/modal-video";
@@ -13,7 +13,7 @@ import FeatImage02 from "@/public/images/oneuse/quytrinhtuyensinh/danhgiadauvao.
 import FeatImage03 from "@/public/images/oneuse/quytrinhtuyensinh/hoanthienhoso.png";
 import FeatImage04 from "@/public/images/oneuse/quytrinhtuyensinh/nhaphoc.png";
 import Footer from "@/app/components/ui/footer";
-import FeatImage022 from "@/public/images/banner/banner-mobile.png";
+import FeatImage022 from "@/public/images/home/background-mobile.png";
 import FeesTable from "./hoc-phi/FeesTable";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");

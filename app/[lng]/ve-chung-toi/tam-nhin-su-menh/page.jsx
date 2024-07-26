@@ -8,7 +8,7 @@ import Pagedautien from "../../components/pagedautien";
 import Image from "next/image";
 import Image1 from "@/public/images/phuonghoang/truonghoc.jpg";
 import ZiczagImage from "../../components/ziczagimage";
-import FeatImage02 from "@/public/images/banner/banner-mobile.png";
+import FeatImage02 from "@/public/images/home/background-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
