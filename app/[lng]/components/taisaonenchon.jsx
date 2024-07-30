@@ -1,19 +1,19 @@
-import monhoc from "@/public/images/taisaochon/monhoc.png";
-import canhanhoa from "@/public/images/taisaochon/canhanhoa.png";
-import duhoc from "@/public/images/taisaochon/duhoc.png";
-import khoahoc from "@/public/images/taisaochon/khoahoc.png";
-import moitruongquocte from "@/public/images/taisaochon/moitruongquocte.png";
-import phattriennangkhieu from "@/public/images/taisaochon/phatriennangkhieu.png";
-import renluyenkhanang from "@/public/images/taisaochon/renluyenkhanang.png";
-import tienphong from "@/public/images/taisaochon/tienphong.png";
+import monhoc from "@/public/images/homepage/taisaochon/monhoc.png";
+import canhanhoa from "@/public/images/homepage/taisaochon/canhanhoa.png";
+import duhoc from "@/public/images/homepage/taisaochon/duhoc.png";
+import khoahoc from "@/public/images/homepage/taisaochon/khoahoc.png";
+import moitruongquocte from "@/public/images/homepage/taisaochon/moitruongquocte.png";
+import phattriennangkhieu from "@/public/images/homepage/taisaochon/phatriennangkhieu.png";
+import renluyenkhanang from "@/public/images/homepage/taisaochon/renluyenkhanang.png";
+import tienphong from "@/public/images/homepage/taisaochon/tienphong.png";
 import logophuonghoang from "@/public/images/phuonghoang/logo.png";
-import tyle from "@/public/images/taisaochon/tyle.png";
-import toida from "@/public/images/taisaochon/toida.png";
-import songngu from "@/public/images/taisaochon/songngu.png";
-import tienganh from "@/public/images/taisaochon/tienganh.png";
-import giaotrinh from "@/public/images/taisaochon/giaotrinh.png";
-import monhoc1 from "@/public/images/phuonghoang/hocsinh5.jpg";
-import banner from "@/public/images/oneuse/anh1.jpg";
+import tyle from "@/public/images/homepage/taisaochon/tyle.png";
+import toida from "@/public/images/homepage/taisaochon/toida.png";
+import songngu from "@/public/images/homepage/taisaochon/songngu.png";
+import tienganh from "@/public/images/homepage/taisaochon/tienganh.png";
+import giaotrinh from "@/public/images/homepage/taisaochon/giaotrinh.png";
+import monhoc1 from "@/public/images/homepage/taisao.jpg";
+import banner from "@/public/images/homepage/beboi.jpg";
 import Image from "next/image";
 export default function Taisaonenchon() {
   return (
@@ -156,7 +156,6 @@ export default function Taisaonenchon() {
             <Image
               src={monhoc1}
               alt="pictures"
-              fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="rounded-lg lg:absolute top-4 right-0 -bottom-0 left-0 -z-10 hidden lg:block"
               loading="lazy"

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Image1 from "@/public/images/phuonghoang/hocsinh2.jpg";
+import Image1 from "@/public/images/phuonghoang/dangky tuyensinh.jpg";
 import { Input } from "antd";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

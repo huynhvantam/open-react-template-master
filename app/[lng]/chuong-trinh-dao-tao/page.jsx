@@ -7,8 +7,18 @@ import VideoThumb from "@/public/images/oneuse/thumpvideo.jpg";
 import ModalVideo from "../../components/modal-video";
 import PageDautien from "../components/pagedautien";
 import Image from "next/image";
-import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
+import image1 from "@/public/images/chuongtrinh/tongquan/mamnon.jpg";
+import image2 from "@/public/images/chuongtrinh/tongquan/tieu hoc.jpg";
+import image3 from "@/public/images/chuongtrinh/tongquan/trunghoc.jpg";
+import imagengoaikhoa1 from "@/public/images/chuongtrinh/tongquan/ngoaikhoa1.jpg";
+import imagengoaikhoa2 from "@/public/images/chuongtrinh/tongquan/ngoaikhoa2.jpg";
+import imagengoaikhoa3 from "@/public/images/chuongtrinh/tongquan/ngoaikhoa3.jpg";
+import imagengoaikhoa4 from "@/public/images/chuongtrinh/tongquan/ngoaikhoa4.jpg";
+import imagengoaikhoa5 from "@/public/images/chuongtrinh/tongquan/ngoaikhoa5.jpg";
+import imagengoaikhoa6 from "@/public/images/chuongtrinh/tongquan/ngoaikhoa6.jpg";
+
 import Footer from "@/app/components/ui/footer";
+import FeatImage01 from "@/public/images/banner/banner-mobile.png";
 import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 
 export async function generateMetadata({ params: { lng } }) {
@@ -30,7 +40,7 @@ export default async function Page({ params: { lng } }) {
     { href: "/chuong-trinh-dao-tao/tieu-hoc", content: t("tieu-hoc") },
     { href: "/chuong-trinh-dao-tao/trung-hoc", content: t("thcs") },
   ];
-  const images = [FeatImage01, FeatImage01, FeatImage01, FeatImage01];
+  // const images = [FeatImage01, FeatImage01, FeatImage01, FeatImage01];
   return (
     <>
       <Header lng={lng} path="/chuong-trinh-dao-tao" />
@@ -111,7 +121,7 @@ export default async function Page({ params: { lng } }) {
                   // loading="lazy"
                   // priority
                   className="rounded-t-3xl"
-                  src={FeatImage01}
+                  src={program.img}
                   alt="image"
                 />
                 <div className={`rounded-b-3xl px-3 pb-3 ${program.color}`}>
@@ -183,37 +193,37 @@ export default async function Page({ params: { lng } }) {
               <Image
                 loading="lazy"
                 className=""
-                src={FeatImage01}
+                src={imagengoaikhoa1}
                 alt="image"
               />
               <Image
                 loading="lazy"
                 className=""
-                src={FeatImage01}
+                src={imagengoaikhoa2}
                 alt="image"
               />
               <Image
                 loading="lazy"
                 className=""
-                src={FeatImage01}
+                src={imagengoaikhoa3}
                 alt="image"
               />
               <Image
                 loading="lazy"
                 className=""
-                src={FeatImage01}
+                src={imagengoaikhoa4}
                 alt="image"
               />
               <Image
                 loading="lazy"
                 className=""
-                src={FeatImage01}
+                src={imagengoaikhoa5}
                 alt="image"
               />
               <Image
                 loading="lazy"
                 className=""
-                src={FeatImage01}
+                src={imagengoaikhoa6}
                 alt="image"
               />
             </div>
@@ -230,6 +240,7 @@ const programs = [
     description:
       "Tại Giáo Dục Phượng Hoàng, trẻ được tiếp thu kiến thức mới trong môi trường học tập vui chơi lành mạnh, giúp trẻ phát triển nhận thức cá nhân, nâng cao tinh thần cộng đồng và mang đến cho trẻ sự phát triển toàn diện",
     href: "/chuong-trinh-dao-tao/mam-non",
+    img: image1,
   },
   {
     name: "TIỂU HỌC",
@@ -237,6 +248,7 @@ const programs = [
     description:
       "Giáo Dục Phượng Hoàng mang đến cho học sinh môi trường học tập, trải nghiệm lý tưởng, là nơi học sinh được phát huy năng lực bản thân, đón nhận sự khích lệ, thể hiện tình yêu thương và khai phá tiềm năng của mình",
     href: "/chuong-trinh-dao-tao/tieu-hoc",
+    img: image2,
   },
   {
     name: "TRUNG HỌC",
@@ -244,5 +256,6 @@ const programs = [
     description:
       "Giáo Dục Phượng Hoàng không chỉ trang bị cho học sinh nền tảng tri thức và ngôn ngữ vững chắc mà còn tạo điều kiện để các em phát triển năng lực tự học, tự do sáng tạo, hình thành phẩm chất của công dân toàn cầu.",
     href: "/chuong-trinh-dao-tao/trung-hoc",
+    img: image3,
   },
 ];

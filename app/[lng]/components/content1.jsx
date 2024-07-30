@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Image1 from "@/public/images/phuonghoang/truonghoc.jpg";
 import Image2 from "@/public/images/phuonghoang/hocsinh3.jpg";
-import Icon1 from "@/public/images/icon/Frame-6.png";
-import Icon2 from "@/public/images/icon/Frame-5.png";
-import Icon3 from "@/public/images/icon/Frame-2.png";
-import Icon4 from "@/public/images/icon/Frame-3.png";
+import Icon1 from "@/public/images/homepage/icon/Frame-6.png";
+import Icon2 from "@/public/images/homepage/icon/Frame-5.png";
+import Icon3 from "@/public/images/homepage/icon/Frame-2.png";
+import Icon4 from "@/public/images/homepage/icon/Frame-3.png";
 export default function Content1() {
   return (
     <section className="pt-20">
@@ -109,13 +109,13 @@ export default function Content1() {
               alt="picture"
               className="mt-14"
             />
-            <Image
+            {/* <Image
               loading="lazy"
               src={Image2}
               alt="picture"
               className="mb-14"
-            />
-            <p className="p">
+            /> */}
+            <p className="p pt-4">
               Đến với Giáo Dục Phượng Hoàng, học sinh có cơ hội hòa mình vào một
               môi trường học Song Ngữ: Việt Nam và Quốc tế...
             </p>

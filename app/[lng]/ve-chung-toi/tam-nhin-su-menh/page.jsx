@@ -7,6 +7,10 @@ import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
 import Image from "next/image";
 import Image1 from "@/public/images/phuonghoang/truonghoc.jpg";
+import Image2 from "@/public/images/vechungtoi/tamnhin/tamnhin1.jpg";
+import Image3 from "@/public/images/vechungtoi/tamnhin/tamnhin2.jpg";
+import Image4 from "@/public/images/vechungtoi/tamnhin/tamnhin3.png";
+import Image5 from "@/public/images/vechungtoi/tamnhin/tamnhin4.jpg";
 import ZiczagImage from "../../components/ziczagimage";
 import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 
@@ -33,7 +37,7 @@ const contentData = [
     heading: "TẦM NHÌN",
     paragraph:
       "Giáo Dục Phượng Hoàng mang lại một nền giáo dục đẳng cấp Quốc tế với mô hình áp dụng song song hai ngôn ngữ tiếng Anh và tiếng Việt. Học sinh của Giáo Dục Phượng Hoàng là những người có suy nghĩ độc lập, sẵn sàng đương đầu với thách thức, luôn nuôi dưỡng mục tiêu vươn đến thành công bằng cách không ngừng tìm tòi, sáng tạo và phát huy tính kiên trì để trở thành những tài năng trẻ góp sức vào sự nghiệp chung của cộng đồng xã hội và thế giới trong tương lai.",
-    imageSrc: Image1,
+    imageSrc: Image2,
   },
   {
     heading: "SỨ MỆNH",
@@ -45,7 +49,7 @@ const contentData = [
       "Phát huy các giá trị cốt lõi như tính chính trực, tinh thần tôn trọng, thái độ quan tâm đến cộng đồng và các vấn đề toàn cầu.",
     paragraph4:
       "Xây dựng một tập thể xuất sắc các nhà quản lý, giáo viên và nhân viên trong nước và quốc tế - những người thực hiện một cách nhiệt huyết và hiệu quả chương trình giáo dục tiên tiến tại Giáo Dục Phượng Hoàng, cùng gánh vác sứ mệnh chung của giáo dục Việt Nam trong thời hội nhập.",
-    imageSrc: Image1,
+    imageSrc: Image3,
   },
   {
     heading: "TRIẾT LÝ",
@@ -53,13 +57,13 @@ const contentData = [
       "Giáo Dục Phượng Hoàng với mô hình tiên phong áp dụng những phương pháp giáo dục toàn diện “Truyền cảm hứng để phát triển - Inspired to grow”, đồng thời bồi dưỡng và phát huy tiềm năng riêng của từng cá nhân song song với việc hoàn thiện những nhân tố tích cực nhất để trở thành những “công dân toàn cầu”.",
     paragraph2:
       "Giáo Dục Phượng Hoàng mang đến cho học sinh môi trường học tập lý tưởng để hình thành và phát triển các năng lực, kỹ năng và cách tư duy mới. Mỗi ngày đến trường, học sinh sẽ bồi đắp cho mình kiến thức nền tảng, phát triển năng lực sáng tạo và tư duy phản biện, bồi dưỡng cảm xúc, đồng thời rèn luyện đa dạng kỹ năng sống và làm việc tích cực.",
-    imageSrc: Image1,
+    imageSrc: Image4,
   },
   {
     heading: "ĐỊNH HƯỚNG",
     paragraph:
       "Giáo Dục Phượng Hoàng tiên phong áp dụng những phương pháp giáo dục toàn diện, bồi dưỡng và phát huy tiềm năng riêng của từng cá nhân song song với việc hoàn thiện nhân cách và bồi dưỡng phẩm chất tốt đẹp để mỗi học sinh đều trở thành một “công dân toàn cầu” hội đủ những nhân tố tích cực nhất về: Nuôi dưỡng đam mê; Khả năng sáng tạo; Tự tin - Trách nhiệm; Tinh thần hợp tác.",
-    imageSrc: Image1,
+    imageSrc: Image5,
   },
 ];
 export default async function Page({ params: { lng } }) {

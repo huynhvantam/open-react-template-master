@@ -8,7 +8,10 @@ import FeatImage02 from "@/public/images/banner/banner-mobile.png";
 import ModalVideo from "../../components/modal-video";
 import PageDautien from "../components/pagedautien";
 import Image from "next/image";
-import FeatImage01 from "@/public/images/phuonghoang/hocsinh1.jpg";
+import FeatImage1 from "@/public/images/vechungtoi/hocsinh1.jpg";
+import FeatImage2 from "@/public/images/vechungtoi/hocsinh2.jpg";
+import FeatImage3 from "@/public/images/vechungtoi/hocsinh3.jpg";
+import FeatImage4 from "@/public/images/vechungtoi/hocsinh4.jpg";
 export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng, "header");
   const title1 = t("about");
@@ -83,7 +86,7 @@ export default async function Page({ params: { lng } }) {
                     <Image
                       loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
-                      src={FeatImage01}
+                      src={FeatImage1}
                       width={540}
                       alt="Features 01"
                     />
@@ -130,7 +133,7 @@ export default async function Page({ params: { lng } }) {
                     <Image
                       loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
-                      src={FeatImage01}
+                      src={FeatImage2}
                       width={540}
                       alt="Features 02"
                     />
@@ -175,7 +178,7 @@ export default async function Page({ params: { lng } }) {
                     <Image
                       loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
-                      src={FeatImage01}
+                      src={FeatImage3}
                       width={540}
                       alt="Features 03"
                     />
@@ -230,7 +233,7 @@ export default async function Page({ params: { lng } }) {
                     <Image
                       loading="lazy"
                       className="max-w-full mx-auto md:max-w-none h-auto"
-                      src={FeatImage01}
+                      src={FeatImage4}
                       width={540}
                       alt="Features 02"
                     />

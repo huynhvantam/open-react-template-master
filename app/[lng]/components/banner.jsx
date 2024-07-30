@@ -44,9 +44,19 @@ const BannerImage = ({ src, srcmobile, text1, text2, text3, button, href }) => {
           />
 
           <div className="pt-40 px-4 relative text-left">
-            <h4 className="h4 font-playfair pb-2">{text1}</h4>
-            <h1 className="h3">{text2}</h1>
-            <h1 className="h3">{text3}</h1>
+            <h4
+              className="h4 font-playfair pb-2 text-gray-300"
+              style={{ textShadow: "1px 1px #555" }}
+            >
+              {text1}
+            </h4>
+            <h1
+              className="h3 text-gray-100 "
+              style={{ textShadow: "2px 1px #333" }}
+            >
+              {text2}
+            </h1>
+            <h1 className="h3 text-white">{text3}</h1>
             {button && href ? (
               <Link
                 href={href}

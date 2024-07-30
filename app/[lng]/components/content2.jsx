@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Image1 from "@/public/images/phuonghoang/hocsinh1.jpg";
-import Image2 from "@/public/images/phuonghoang/hocsinh1.jpg";
-import Image3 from "@/public/images/phuonghoang/hocsinh1.jpg";
-import Image4 from "@/public/images/phuonghoang/hocsinh1.jpg";
+import Image1 from "@/public/images/homepage/mannon.jpg";
+import Image2 from "@/public/images/homepage/tieu hoc.jpg";
+import Image3 from "@/public/images/homepage/trunghoc.jpg";
+import Image4 from "@/public/images/homepage/anhngu.jpg";
 // Định nghĩa mảng các đối tượng chứa dữ liệu cho mỗi phần tử
 const items = [
   {
@@ -79,7 +79,7 @@ export default function Content2() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 ">
             {/* Lặp qua mảng items để render các phần tử */}
             {items.map((item, index) => (
               <Link
@@ -93,6 +93,7 @@ export default function Content2() {
                     alt={item.alt}
                     data-aos="fade-up"
                     loading="lazy"
+                    className="lg:h-[190px]"
                   />
                   <div className="text-center pt-2" data-aos="fade-up">
                     {item.caption}
