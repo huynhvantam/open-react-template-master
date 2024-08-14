@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Image1 from "@/public/images/homepage/mannon.jpg";
+import Image1 from "@/public/images/homepage/q.jpg";
 import Image2 from "@/public/images/homepage/tieu hoc.jpg";
 import Image3 from "@/public/images/homepage/trunghoc.jpg";
 import Image4 from "@/public/images/homepage/anhngu.jpg";

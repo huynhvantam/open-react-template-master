@@ -4,11 +4,17 @@ import { Header } from "../../components/Header/client";
 import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage1 from "../../components/banner";
 import Pagedautien from "../../components/pagedautien";
-import Image1 from "@/public/images/oneuse/thoikhoabieu/KINDER-A-4-5T.jpg";
-import Image2 from "@/public/images/oneuse/thoikhoabieu/NUR-24-36th.jpg";
-import Image3 from "@/public/images/oneuse/thoikhoabieu/PREKINDER-3-4.jpg";
-import Image4 from "@/public/images/oneuse/thoikhoabieu/PRENUR18-24th.jpg";
-import Image5 from "@/public/images/oneuse/thoikhoabieu/PREP-B.jpg";
+import Image1 from "@/public/images/oneuse/icon-mot-ngay/1.svg";
+import Image2 from "@/public/images/oneuse/icon-mot-ngay/2.svg";
+import Image3 from "@/public/images/oneuse/icon-mot-ngay/3.svg";
+import Image4 from "@/public/images/oneuse/icon-mot-ngay/4.svg";
+import Image5 from "@/public/images/oneuse/icon-mot-ngay/5.svg";
+import Image6 from "@/public/images/oneuse/icon-mot-ngay/6.svg";
+import Image7 from "@/public/images/oneuse/icon-mot-ngay/7.svg";
+import Image8 from "@/public/images/oneuse/icon-mot-ngay/8.svg";
+import Image9 from "@/public/images/oneuse/icon-mot-ngay/9.svg";
+import Image10 from "@/public/images/oneuse/icon-mot-ngay/10.svg";
+
 import Icon1 from "@/public/images/oneuse/icon-mamnon/Communication.svg";
 import Icon2 from "@/public/images/oneuse/icon-mamnon/Health.svg";
 import Icon3 from "@/public/images/oneuse/icon-mamnon/Health2.svg";
@@ -169,31 +175,79 @@ export default async function Page({ params: { lng } }) {
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
             Một ngày của học sinh Mầm non
           </h3>
-          <p>
-            Trẻ Mầm non tại Phoenix Education vui học theo Chương trình Văn hóa
-            Quốc Gia kết hợp với Chương trình tiếng Anh được giảng dạy theo Mô
-            hình Học tập Đa hoạt động (Multi-Faceted Approach to Learning for
-            Kindergarten). Phoenix Education tự hào mang đến cho học sinh Mầm
-            non chương trình ngữ âm tiếng Anh “Letters and Sounds”, được phát
-            triển có hệ thống và phê duyệt bởi Bộ Giáo dục và Kĩ năng, Vương
-            quốc Anh. Trẻ còn được tiếp xúc với môn ICT để bước đầu hình thành
-            nên tư duy công nghệ.
-          </p>
-          <Image loading="lazy" className="" alt="picture" src={Image4} />
-          <Image loading="lazy" className="" alt="picture" src={Image2} />
-          <Image loading="lazy" className="" alt="picture" src={Image3} />
-          <Image loading="lazy" className="" alt="picture" src={Image1} />
-          <Image loading="lazy" className="" alt="picture" src={Image5} />
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 lg:gap-x-10 gap-y-10 ">
+            {scheduleItems.map((item, index) => (
+              <div key={index} className="flex items-center flex-col ">
+                <Image
+                  height={90}
+                  loading="lazy"
+                  alt="icon"
+                  className=""
+                  src={item.imageSrc}
+                />
+                <div className="w-full mt-2 text-center">
+                  <h4 className="h44 w-full bg-gray-100  p-2">{item.time}</h4>
+                  <p className="p  p-2 ">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
   );
 }
+
+const scheduleItems = [
+  {
+    time: "7h00 - 8h00",
+    description: "Đón trẻ",
+    imageSrc: Image1,
+  },
+  {
+    time: "8h00 - 8h30",
+    description: "Tập thể dục, ăn sáng",
+    imageSrc: Image2,
+  },
+  {
+    time: "8h30 - 11h00",
+    description:
+      "Hoạt động học tập, phát triển kỹ năng, sinh hoạt ngoài trời, học Tiếng Anh",
+    imageSrc: Image8,
+  },
+  {
+    time: "11h00 - 14h00",
+    description: "Vệ sinh, ăn trưa, ngủ trưa",
+    imageSrc: Image5,
+  },
+  {
+    time: "14h00 - 15h00",
+    description: "Hoạt động ngoại khóa, lớp học tự quản",
+    imageSrc: Image6,
+  },
+  {
+    time: "14h00 - 15h00",
+    description: "Vệ sinh, vận động nhẹ, ăn xế",
+    imageSrc: Image7,
+  },
+  {
+    time: "15h00 - 16h00",
+    description: "Học năng khiếu, học tiếng Anh, sinh hoạt chiều",
+    imageSrc: Image9,
+  },
+  {
+    time: "16h00 - 17h00",
+    description: "Trả trẻ",
+    imageSrc: Image10,
+  },
+];
+
 const classInfo = [
   {
     title: "Sĩ số lớp thấp",
     description:
-      "Trung bình mỗi lớp 20-25 học sinh, giúp giáo viên có thể quan tâm tới từng em, hướng dẫn các em ôn bài và làm bài tập ngay tại lớp. Nhờ đó các em tiếp thu bài học tốt hơn và không bị căng thẳng với việc học thêm. Mỗi lớp có 2 giáo viên và bảo mẫu.",
+      "Trung bình mỗi lớp 18 học sinh, giúp giáo viên có thể quan tâm tới từng em, hướng dẫn các em ôn bài và làm bài tập ngay tại lớp. Nhờ đó các em tiếp thu bài học tốt hơn và không bị căng thẳng với việc học thêm. Mỗi lớp có 2 giáo viên và bảo mẫu.",
     icon: Icon5,
   },
   {

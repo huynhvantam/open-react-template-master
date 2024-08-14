@@ -5,11 +5,16 @@ import bannerabout from "@/public/images/banner/banner-about.jpg";
 import BannerImage from "../../components/banner";
 import Content1 from "../../components/content1";
 import Pagedautien from "../../components/pagedautien";
-import Image1 from "@/public/images/oneuse/thoikhoabieu/KINDER-A-4-5T.jpg";
-import Image2 from "@/public/images/oneuse/thoikhoabieu/NUR-24-36th.jpg";
-import Image3 from "@/public/images/oneuse/thoikhoabieu/PREKINDER-3-4.jpg";
-import Image4 from "@/public/images/oneuse/thoikhoabieu/PRENUR18-24th.jpg";
-import Image5 from "@/public/images/oneuse/thoikhoabieu/PREP-B.jpg";
+import Image1 from "@/public/images/oneuse/icon-mot-ngay/1.svg";
+import Image2 from "@/public/images/oneuse/icon-mot-ngay/2.svg";
+import Image3 from "@/public/images/oneuse/icon-mot-ngay/3.svg";
+import Image4 from "@/public/images/oneuse/icon-mot-ngay/4.svg";
+import Image5 from "@/public/images/oneuse/icon-mot-ngay/5.svg";
+import Image6 from "@/public/images/oneuse/icon-mot-ngay/6.svg";
+import Image7 from "@/public/images/oneuse/icon-mot-ngay/7.svg";
+import Image8 from "@/public/images/oneuse/icon-mot-ngay/8.svg";
+import Image9 from "@/public/images/oneuse/icon-mot-ngay/9.svg";
+import Image10 from "@/public/images/oneuse/icon-mot-ngay/10.svg";
 import Icon1 from "@/public/images/oneuse/icon-mamnon/Communication.svg";
 import Icon2 from "@/public/images/oneuse/icon-mamnon/Health.svg";
 import Icon3 from "@/public/images/oneuse/icon-mamnon/Health2.svg";
@@ -174,20 +179,80 @@ export default async function Page({ params: { lng } }) {
         </div>
 
         {/* 3rd */}
-        {/* <div>
+        <div>
           <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
             Một ngày của học sinh Trung học
           </h3>
-        </div> */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 lg:gap-x-10 gap-y-10">
+            {scheduleItems.map((item, index) => (
+              <div key={index} className="flex items-center flex-col">
+                <Image
+                  height={90}
+                  loading="lazy"
+                  alt="icon"
+                  className=""
+                  src={item.imageSrc}
+                />
+                <div className=" mt-2 text-center w-full">
+                  <h4 className="h44 bg-gray-100 w-full  p-2">{item.time}</h4>
+                  <p className="p  p-2 ">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );
 }
+const scheduleItems = [
+  {
+    time: "7h45 - 8h00",
+    description: "Vào lớp",
+    imageSrc: Image1,
+  },
+  {
+    time: "8h00 - 11h30",
+    description: "Học tập theo thời khóa biểu",
+    imageSrc: Image8,
+  },
+
+  {
+    time: "9h20 - 9h30",
+    description: "Ra chơi",
+    imageSrc: Image3,
+  },
+  {
+    time: "11h30 - 13h00",
+    description: "Ăn trưa, ngủ trưa",
+    imageSrc: Image5,
+  },
+  {
+    time: "13h00 - 16h00",
+    description: "Học tập theo thời khóa biểu",
+    imageSrc: Image9,
+  },
+  {
+    time: "14h20 - 14h30",
+    description: "Ăn xế",
+    imageSrc: Image7,
+  },
+  {
+    time: "16h00 - 17h00",
+    description: "Hoạt động CLB",
+    imageSrc: Image4,
+  },
+  {
+    time: "16h00 - 17h00",
+    description: "Trả học sinh",
+    imageSrc: Image10,
+  },
+];
 const classInfo = [
   {
     title: "Sĩ số lớp thấp",
     description:
-      "Trung bình mỗi lớp 20-25 học sinh, giúp giáo viên có thể quan tâm tới từng em, hướng dẫn các em ôn bài và làm bài tập ngay tại lớp. Nhờ đó các em tiếp thu bài học tốt hơn và không bị căng thẳng với việc học thêm. Mỗi lớp có 2 giáo viên và bảo mẫu.",
+      "Trung bình mỗi lớp 18 học sinh, giúp giáo viên có thể quan tâm tới từng em, hướng dẫn các em ôn bài và làm bài tập ngay tại lớp. Nhờ đó các em tiếp thu bài học tốt hơn và không bị căng thẳng với việc học thêm. Mỗi lớp có 2 giáo viên và bảo mẫu.",
     icon: Icon5,
   },
   {
