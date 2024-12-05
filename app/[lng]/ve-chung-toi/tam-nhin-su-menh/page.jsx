@@ -22,18 +22,6 @@ export async function generateMetadata({ params: { lng } }) {
 }
 const contentData = [
   {
-    heading: "THÔNG ĐIỆP",
-    paragraph:
-      "Giáo Dục Phượng Hoàng chú trọng xây dựng môi trường giáo dục thực sự thoải mái, lành mạnh và an toàn cho người học. Mỗi không gian học tại Giáo Dục Phượng Hoàng đều là nơi để các em học sinh có những trải nghiệm thú vị, cảm nhận về thế giới xung quanh đa chiều, phát triển tối đa kỹ năng xã hội, tình cảm, trí tuệ và năng khiếu của mình. Đồng thời, đây cũng là “vườn ươm lý tưởng” để các em thể hiện tài năng, vun bồi tình yêu thương trong niềm khích lệ và sự tôn trọng một cách trọn vẹn nhất.",
-    paragraph2:
-      "Để đạt được những điều trên, Giáo Dục Phượng Hoàng đã và đang xây dựng đội ngũ giáo viên trong nước và quốc tế có trình độ chuyên môn cao, giàu kinh nghiệm và nhiệt huyết để cùng Nhà trường mang đến cho các em học sinh môi trường học tập quốc tế ưu việt. Ngoài ra, việc kết nối thường xuyên và chặt chẽ giữa Phụ huynh với Nhà trường cũng là yếu tố quan trọng, tạo nên cầu nối và điểm tựa vững chắc để các em phát huy tối đa năng lực, phát triển toàn diện kỹ năng xã hội, tình cảm và trí tuệ.",
-    paragraph3:
-      "CHÚNG TÔI MUỐN lan toả nền giáo dục tiên tiến, nhân văn đến thế hệ hôm nay.",
-    paragraph4:
-      "CHÚNG TÔI TIN mỗi em học sinh đều là những tài năng trong tương lai..",
-    imageSrc: Image1,
-  },
-  {
     heading: "TẦM NHÌN",
     paragraph:
       "Giáo Dục Phượng Hoàng mang lại một nền giáo dục đẳng cấp Quốc tế với mô hình áp dụng song song hai ngôn ngữ tiếng Anh và tiếng Việt. Học sinh của Giáo Dục Phượng Hoàng là những người có suy nghĩ độc lập, sẵn sàng đương đầu với thách thức, luôn nuôi dưỡng mục tiêu vươn đến thành công bằng cách không ngừng tìm tòi, sáng tạo và phát huy tính kiên trì để trở thành những tài năng trẻ góp sức vào sự nghiệp chung của cộng đồng xã hội và thế giới trong tương lai.",
@@ -42,28 +30,20 @@ const contentData = [
   {
     heading: "SỨ MỆNH",
     paragraph:
-      "Kết hợp giảng dạy hài hòa giữa Chương trình Giáo dục Quốc gia của Bộ Giáo dục và Đào tạo Việt Nam với Chương trình Giáo dục Quốc tế Cambridge, giúp học sinh thông thạo cả tiếng Việt và tiếng Anh.",
+      "Mục tiêu của Giáo dục Phượng Hoàng nhằm cung cấp nền giáo dục có chất lượng thông qua ngôn ngữ tiếng Anh, hướng tới chuẩn được quốc tế công nhận nhằm phát triển những cá nhân tư duy tự tin, sáng tạo và giúp cho sự trưởng thành của những công dân tốt, sống hòa thuận. Thông qua sử dụng giáo trình của Bộ Giáo dục và Đào tạo Việt Nam, tham khảo giáo trình của nước Anh kết hợp với khung giáo trình của Singapore và mời các giáo viên nói tiếng Anh bản ngữ giảng dạy, Giáo dục Phượng Hoàng sẽ trở thành điểm đến số 1 tại Huế cho các học sinh quốc tế và Việt Nam và mở ra triển vọng về trao đổi giáo dục tới tất cả các thành phần của thế giới nói tiếng Anh.",
     paragraph2:
-      "Gìn giữ và nâng cao ý thức về giá trị văn hóa, truyền thống Việt Nam, đảm bảo học sinh hiểu được cội nguồn, lịch sử dân tộc.",
-    paragraph3:
-      "Phát huy các giá trị cốt lõi như tính chính trực, tinh thần tôn trọng, thái độ quan tâm đến cộng đồng và các vấn đề toàn cầu.",
-    paragraph4:
-      "Xây dựng một tập thể xuất sắc các nhà quản lý, giáo viên và nhân viên trong nước và quốc tế - những người thực hiện một cách nhiệt huyết và hiệu quả chương trình giáo dục tiên tiến tại Giáo Dục Phượng Hoàng, cùng gánh vác sứ mệnh chung của giáo dục Việt Nam trong thời hội nhập.",
-    imageSrc: Image3,
-  },
-  {
-    heading: "TRIẾT LÝ",
-    paragraph:
-      "Giáo Dục Phượng Hoàng với mô hình tiên phong áp dụng những phương pháp giáo dục toàn diện “Truyền cảm hứng để phát triển - Inspired to grow”, đồng thời bồi dưỡng và phát huy tiềm năng riêng của từng cá nhân song song với việc hoàn thiện những nhân tố tích cực nhất để trở thành những “công dân toàn cầu”.",
-    paragraph2:
-      "Giáo Dục Phượng Hoàng mang đến cho học sinh môi trường học tập lý tưởng để hình thành và phát triển các năng lực, kỹ năng và cách tư duy mới. Mỗi ngày đến trường, học sinh sẽ bồi đắp cho mình kiến thức nền tảng, phát triển năng lực sáng tạo và tư duy phản biện, bồi dưỡng cảm xúc, đồng thời rèn luyện đa dạng kỹ năng sống và làm việc tích cực.",
-    imageSrc: Image4,
-  },
-  {
-    heading: "ĐỊNH HƯỚNG",
-    paragraph:
-      "Giáo Dục Phượng Hoàng tiên phong áp dụng những phương pháp giáo dục toàn diện, bồi dưỡng và phát huy tiềm năng riêng của từng cá nhân song song với việc hoàn thiện nhân cách và bồi dưỡng phẩm chất tốt đẹp để mỗi học sinh đều trở thành một “công dân toàn cầu” hội đủ những nhân tố tích cực nhất về: Nuôi dưỡng đam mê; Khả năng sáng tạo; Tự tin - Trách nhiệm; Tinh thần hợp tác.",
+      "Giáo dục Phượng Hoàng thừa nhận sự tương trợ và phụ thuộc lẫn nhau giữa các quốc gia, dân tộc trong cộng đồng thế giới và cam kết đối với sự phát triển của học sinh nhằm đáp ứng những thử thách của thế kỷ 21 thông qua tôn vinh các giá trị truyền thống đồng thời gìn giữ các giá trị quốc tế cao nhất.",
     imageSrc: Image5,
+  },
+
+  {
+    heading: "GIÁ TRỊ",
+    paragraph:
+      "Điều quan trọng, sự hiểu biết sâu sắc và chắc chắn văn hóa và ngôn ngữ Việt Nam sẽ được duy trì, cùng với các chương trình hoạt động ngoại khóa đa dạng. Những điều này, cùng với việc thiết lập các môn học cốt lõi hiện đại, sẽ phát triển các cá nhân toàn diện trở thành các nhà lãnh đạo tương lai. Giáo dục Phượng Hoàng cũng thiết lập Quỹ Giáo Dục Phượng Hoàng nhằm mục tiêu cung cấp học bổng cho học sinh địa phương và hỗ trợ phát triển nguồn vốn tương lai. ",
+    paragraph2:
+      "Giáo dục Phượng Hoàng cam kết nuôi dưỡng tư duy phân tích, tính kỷ luật và khao khát kiến thức trong mỗi học sinh. Phương pháp sử dụng đó là thông qua môi trường đa văn hóa truyền dẫn sự tự tin và đem lại thành công. Người ta tin rằng tương lai của trẻ em là trách nhiệm của mọi người và giáo dục chính là chìa khóa để mở ra các cơ hội cho trẻ, không phân biệt giới tính, quốc tịch hay dân tộc, nền tảng xã hội hay nền tảng kinh tế. ",
+
+    imageSrc: Image4,
   },
 ];
 export default async function Page({ params: { lng } }) {
