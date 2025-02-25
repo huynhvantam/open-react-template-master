@@ -46,7 +46,7 @@ const buttonData = {
       {
         imageSrc: Image11,
         HoTen: "Nguyễn Trường Vũ",
-        LopKhoi: "Giáo viên THCS",
+        LopKhoi: "Hiệu trưởng",
         BangCap: "Cử nhân Vật lý tiên tiên, ĐHSP Huế",
         KinhNghiem:
           "Hơn 10 năm kinh nghiệm dạy các môn khoa học Lý, Hoá, Sinh bằng tiếng Anh, dạy Vật lý và Khoa học tự nhiên cấp 2.",
@@ -58,7 +58,7 @@ const buttonData = {
       {
         imageSrc: Image13,
         HoTen: "Hồ Thị Phương Châu",
-        LopKhoi: "Giáo viên THCS",
+        LopKhoi: "Phó hiệu trưởng",
         BangCap:
           "Cử nhân Sư phạm Toán - chương trình Toán tiếng Anh (TRIG) trường Đại học Sư phạm Huế",
         KinhNghiem:
@@ -68,20 +68,21 @@ const buttonData = {
         LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
       },
+
       {
-        imageSrc: Image17,
-        HoTen: "Đặng Nhật Khánh Hằng",
-        LopKhoi: "Giáo viên THCS",
-        BangCap: "Cử nhân Toán-tin ứng dụng Trường ĐHKH Huế",
+        imageSrc: Image12,
+        HoTen: "Trần Thị Loan",
+        LopKhoi: "Phó hiệu trưởng",
+        BangCap: "Đang cập nhật",
         KinhNghiem: "Đang cập nhật",
         LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
       },
       {
-        imageSrc: Image12,
-        HoTen: "Trần Thị Loan",
-        LopKhoi: "Giáo viên Tiểu học",
-        BangCap: "Đang cập nhật",
+        imageSrc: Image17,
+        HoTen: "Đặng Nhật Khánh Hằng",
+        LopKhoi: "Giáo viên THCS",
+        BangCap: "Cử nhân Toán-tin ứng dụng Trường ĐHKH Huế",
         KinhNghiem: "Đang cập nhật",
         LienHe: "Đang cập nhật",
         buttonText: "Xem thêm",
@@ -412,9 +413,7 @@ export default async function Page({ params: { lng } }) {
               Là đơn vị tiên phong triển khai mô hình trường học song ngữ tại
               Huế, Giáo dục Phượng Hoàng tự hào với nhiều năm xây dựng và phát
               triển đội ngũ giáo viên với đầy đủ phẩm chất, năng lực chuyên môn
-              và kỹ năng phù hợp với đặc thù môi trường giáo dục song ngữ, đáp
-              ứng tốt mục tiêu và định hướng chung của nhà trường: “Kiến Tạo
-              Công Dân Toàn Cầu”.
+              và kỹ năng phù hợp với đặc thù môi trường giáo dục song ngữ.
             </p>
           </div>
           <div className="col-span-6">
@@ -427,10 +426,10 @@ export default async function Page({ params: { lng } }) {
           </div>
         </div>
       </div>
-      <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
+      {/* <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
         Khung tiêu chí tuyển chọn giáo viên
-      </h3>
-      <div className="max-w-6xl mx-4 lg:mx-auto overflow-x-auto p">
+      </h3> */}
+      {/* <div className="max-w-6xl mx-4 lg:mx-auto overflow-x-auto p">
         <table className="min-w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
@@ -519,7 +518,7 @@ export default async function Page({ params: { lng } }) {
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> */}
       <h3 className="h3  text-center pb-3 mb-10 pt-10 border-b-[3px] border-rose-500 w-fit mx-auto">
         Gặp gỡ đội ngũ
       </h3>

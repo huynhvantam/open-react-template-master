@@ -29,7 +29,7 @@ export async function generateMetadata({ params: { lng } }) {
   const { t } = await useTranslation(lng);
   return {
     title: "Giáo Dục Phượng Hoàng",
-    description: "Tuyển sinh năm học 2024 - 2025",
+    description: "Tuyển sinh năm học 2025 - 2026",
   };
 }
 

@@ -62,7 +62,7 @@ export default async function Page({ params: { lng } }) {
               {t("tuyen-sinh-nh")}
             </h1>
             <h1 className="h1 " data-aos="fade-up" data-aos-delay="400">
-              2024 - 2025
+              2025 - 2026
             </h1>
             <Link
               href="#tuyen-sinh"

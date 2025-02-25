@@ -91,7 +91,7 @@ export default async function Page({ params: { lng } }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div>
               <h4 className="text-3xl leading-tight font-bold font-playfair lg:h3 text-left">
-                Phoenix Education tuyển sinh năm học 2024 - 2025
+                Phoenix Education tuyển sinh năm học 2025 - 2026
               </h4>
               <h5 className="h4 font-playfair pt-3 pb-3 ">
                 Độ tuổi tuyển sinh

@@ -51,12 +51,10 @@ export default async function Page({ params: { lng } }) {
           VỀ CHÚNG TÔI
         </h2>
         <p className="p py-8">
-          Được thành lập từ năm 2011, Giáo Dục Phượng Hoàng được xem là đơn vị
-          tiên phong trong lĩnh vực giáo dục song ngữ quốc tế tại Huế. Với triết
-          lý giáo dục “Kiến tạo công dân toàn cầu", Giáo Dục Phượng Hoàng đã và
-          đang nỗ lực để trở thành một ngôi trường Việt Nam mang tầm đẳng cấp
-          quốc tế, trở thành cái nôi phát triển của học sinh, đồng thời là địa
-          chỉ uy tín để các bậc phụ huynh tin tưởng, lựa chọn.
+          Giáo dục Phượng Hoàng được thành lập vào mùa hè năm 2011 trong niềm
+          tin về nhu cầu thực tế đối với một ngôi trường tại Huế có thể đem lại
+          cho các học sinh nền giáo dục có chất lượng giúp các em tạo dựng nền
+          tảng vững chắc mở cánh cửa tương lai tươi sáng.
         </p>
         <ModalVideo
           className="pb-20"
@@ -104,20 +102,17 @@ export default async function Page({ params: { lng } }) {
                         hình thành và phát triển…
                       </h3>
                       <p className="mb-4 pt-4 p ">
-                        Tính đến nay, Giáo Dục Phượng Hoàng đã có gần 13 năm
-                        hình thành và phát triển. Tự hào hơn nữa, 100% học sinh
-                        tốt nghiệp THPT Quốc Gia, 100% học sinh ứng tuyển thành
-                        công vào các trường đại học trong và ngoài nước. Để có
-                        được những kết quả đó, trong suốt 13 năm qua, Giáo Dục
-                        Phượng Hoàng luôn nỗ lực duy trì và đảm bảo dịch vụ
-                        thông qua quy trình quản lý chất lượng dạy, học, vận
-                        hành nghiêm ngặt, chặt chẽ theo tiêu chuẩn Quốc tế với
-                        kinh nghiệm và sự nhiệt thành của các nhà giáo dục và
-                        quản lý Việt Nam, Quốc tế. Với tôn chỉ hoạt động: “Lấy
-                        học sinh làm trung tâm”, thầy cô và cán bộ nhà trường
-                        luôn thực hành đúng các chuẩn mực đạo đức nghề nghiệp:
-                        Tôn trọng, yêu thương, lắng nghe chia sẻ, tâm nguyện của
-                        mọi học sinh.
+                        Giáo dục Phượng Hoàng cam kết mang lại một hệ thống giáo
+                        dục bền vững tại Việt Nam và được thế giới công nhận.
+                        Mục đích của chúng tôi đó là tất cả các học sinh theo
+                        học tại Giáo Dục Phượng Hoàng đều có thể tham gia vào
+                        các môi trường giáo dục trên thế giới mà không gặp bất
+                        kỳ rào cản nào. Mỗi học sinh được thôi thúc để trở thành
+                        những người công dân toàn cầu biết tìm kiếm tạo ra một
+                        thế giới hòa bình, tốt đẹp hơn thông qua tương trợ và
+                        chấp nhận lẫn nhau. Lòng tôn trọng và sự tha thứ luôn
+                        luôn được chúng tôi khuyến khích ở các em, giúp các em
+                        hình thành cái nhìn công bằng trong cộng đồng.
                       </p>
                     </div>
                   </div>
@@ -207,17 +202,14 @@ export default async function Page({ params: { lng } }) {
                       </h4>
 
                       <p className="mb-4 pt-4 p">
-                        Không chỉ được tích luỹ, tiếp cận kiến thức từ các môn
-                        mà học sinh còn được định hướng bài bản giúp tăng cường
-                        kỹ năng sống, bồi dưỡng thể lực, ý thức kỷ luật, phẩm
-                        chất và tâm thế của công dân thế hệ mới, sẵn sàng dấn
-                        thân, hội nhập, thành công hơn trong thời đại số hoá và
-                        toàn cầu hoá hiện nay. Tại Giáo Dục Phượng Hoàng, sự an
-                        toàn, niềm vui tới trường hàng ngày và sự phát triển
-                        tích cực của học sinh đóng vai trò nòng cốt, là mục
-                        tiêu, đích đến là cũng là động lực để nhà trường không
-                        ngừng thay đổi, học hỏi và cải thiện các hoạt động liên
-                        quan.
+                        Để đạt được mục tiêu này, Giáo Dục Phượng Hoàng sẽ mời
+                        các giáo viên có kinh nghiệm và có trình độ chuyên môn
+                        của Việt Nam và các quốc gia khác tham gia cố vấn, giảng
+                        dạy tại đây. Chúng tôi lựa chọn giáo trình nhấn mạnh vào
+                        khuyến khích và nuôi dưỡng thành tựu trong mỗi học sinh.
+                        Các em là tương lai và Giáo Dục Phượng Hoàng sẽ đem lại
+                        cho các em cơ hội để xây dựng tương lai với những khả
+                        năng mới.
                       </p>
                     </div>
                   </div>
@@ -251,14 +243,12 @@ export default async function Page({ params: { lng } }) {
                         Mục đích to lớn hơn
                       </div>
                       <p className="mb-4 pt-4 p ">
-                        Lợi nhuận không phải là mục đích cuối cùng của Giáo Dục
-                        Phượng Hoàng. Chúng tôi tin rằng, Giáo Dục Phượng Hoàng
-                        sẽ là nơi lý tưởng để mọi học sinh phát triển được tối
-                        đa tài năng của mình. Qua quá trình học tập, phát triển
-                        toàn diện về thái độ, kỹ năng, kiến thức, rèn luyện cả
-                        trí và lực, các thế hệ học sinh khi ra trường sẽ trở
-                        thành người có ích, mang lại của cải, tri thức cho xã
-                        hội và làm chủ tương lai của đất nước.
+                        Giáo dục Phượng Hoàng thừa nhận sự tương trợ lẫn nhau
+                        giữa các quốc gia và dân tộc trong cộng đồng toàn cầu và
+                        cam kết cho sự phát triển của học sinh nhằm đáp ứng các
+                        thách thức của thế kỷ 21 thông qua giữ gìn và tôn vinh
+                        các giá trị truyền thống của Việt Nam đồng thời hướng
+                        tới các tiêu chuẩn quốc tế cao nhất.
                       </p>
                     </div>
                   </div>

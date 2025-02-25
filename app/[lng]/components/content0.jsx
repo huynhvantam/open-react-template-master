@@ -11,7 +11,7 @@ export default function Content0() {
           </h3>
           <h2 className="text-3xl font-playfair font-bold text-white lg:text-gray-700">
             Tuyển sinh năm học <br />
-            2024 - 2025
+            2025 - 2026
           </h2>
           <Link
             href="#tuyen-sinh"
