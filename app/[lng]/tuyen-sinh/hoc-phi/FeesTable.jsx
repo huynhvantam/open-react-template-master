@@ -5,7 +5,7 @@ const FeeTable = () => {
     <section>
       {/* 1 */}
       <h3 className="h3  text-center pb-3 mb-10 pt-32 border-b-[3px] border-rose-500 w-fit mx-auto">
-        Chính sách phí năm học 2024-2025
+        Chính sách phí năm học 2025-2026
       </h3>
       <div>
         <h5 className="h4 font-playfair pt-3 pb-3 ">I/ Khối mầm non</h5>
@@ -73,10 +73,10 @@ const FeeTable = () => {
                   Học cả ngày
                 </td>
                 <td className="px-4 py-2 border border-gray-300 text-red-500">
-                  26.730.000
+                  29.700.000
                 </td>
-                <td className="px-4 py-2 border border-gray-300">9.900.000</td>
-                <td className="px-4 py-2 border border-gray-300">2.970.000</td>
+                <td className="px-4 py-2 border border-gray-300">9.000.000</td>
+                <td className="px-4 py-2 border border-gray-300">3.300.000</td>
                 <td className="px-4 py-2 border border-gray-300">1.100.000</td>
               </tr>
               <tr>
@@ -84,10 +84,10 @@ const FeeTable = () => {
                   Học nửa ngày có ăn trưa
                 </td>
                 <td className="px-4 py-2 border border-gray-300 text-red-500">
-                  13.365.000
+                  14.850.000
                 </td>
-                <td className="px-4 py-2 border border-gray-300">7.920.000</td>
-                <td className="px-4 py-2 border border-gray-300">1.485.000</td>
+                <td className="px-4 py-2 border border-gray-300">7.200.000</td>
+                <td className="px-4 py-2 border border-gray-300">1.650.000</td>
                 <td className="px-4 py-2 border border-gray-300">880.000</td>
               </tr>
               <tr>
@@ -95,10 +95,10 @@ const FeeTable = () => {
                   Học nửa ngày không ăn trưa
                 </td>
                 <td className="px-4 py-2 border border-gray-300 text-red-500">
-                  13.365.000
+                  14.850.000
                 </td>
-                <td className="px-4 py-2 border border-gray-300">1.980.000</td>
-                <td className="px-4 py-2 border border-gray-300">1.485.000 </td>
+                <td className="px-4 py-2 border border-gray-300">1.800.000</td>
+                <td className="px-4 py-2 border border-gray-300">1.650.000 </td>
                 <td className="px-4 py-2 border border-gray-300">220.000</td>
               </tr>
             </tbody>
@@ -165,12 +165,12 @@ const FeeTable = () => {
                 </td>
                 <td className="px-4 py-2 border border-gray-300">Song ngữ</td>
                 <td className="px-4 py-2 border border-gray-300 text-red-500">
-                  39.600.000
+                  43.560.000
                 </td>
-                <td className="px-4 py-2 border border-gray-300">9.900.000</td>
-                <td className="px-4 py-2 border border-gray-300">9.900.000</td>
-                <td className="px-4 py-2 border border-gray-300">9.900.000</td>
-                <td className="px-4 py-2 border border-gray-300">9.900.000</td>
+                <td className="px-4 py-2 border border-gray-300">10.890.000</td>
+                <td className="px-4 py-2 border border-gray-300">10.890.000</td>
+                <td className="px-4 py-2 border border-gray-300">10.890.000</td>
+                <td className="px-4 py-2 border border-gray-300">10.890.000</td>
               </tr>
               <tr>
                 <td className="px-4 py-2 border border-gray-300">Quốc tế</td>
@@ -295,10 +295,10 @@ const FeeTable = () => {
               </tr>
               <tr>
                 <td className="px-4 py-2 border border-gray-300">
-                  Phí ăn sáng tại trường
+                  Tiền ăn (bao gồm ăn trưa và 02 bữa ăn nhẹ)
                 </td>
                 <td className="px-4 py-2 border border-gray-300">
-                  15.000 VND/ngày
+                  55.000 VND/ngày
                 </td>
               </tr>
             </tbody>
@@ -374,14 +374,7 @@ const FeeTable = () => {
                       <li>Giải Ba: Giảm 5%</li>
                     </ul>
                   </li>
-                  <li>
-                    <b>Các kỳ thi cấp tỉnh:</b>
-                    <ul className="list-disc list-inside ml-6">
-                      <li>Giải Nhất: Giảm 15%</li>
-                      <li>Giải Nhì: Giảm 10%</li>
-                      <li>Giải Ba: Giảm 5%</li>
-                    </ul>
-                  </li>
+
                   <li>
                     <b>
                       Học sinh dành các giải thưởng trong các kỳ thi cấp quốc

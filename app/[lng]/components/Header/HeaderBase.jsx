@@ -84,73 +84,73 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         },
       ],
     },
-    {
-      key: "sub3",
-      label: t("doi-song"),
-      children: [
-        {
-          key: "10",
-          label: <Link href="/doi-song-hoc-duong">{t("moi-truong-ht")}</Link>,
-        },
-        {
-          key: "11",
-          label: (
-            <Link href="/doi-song-hoc-duong/hoat-dong-clb">
-              {t("hoat-dong-clb")}
-            </Link>
-          ),
-        },
-        {
-          key: "12",
-          label: (
-            <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
-              {t("chuong-trinh-nk")}
-            </Link>
-          ),
-        },
+    // {
+    //   key: "sub3",
+    //   label: t("doi-song"),
+    //   children: [
+    //     {
+    //       key: "10",
+    //       label: <Link href="/doi-song-hoc-duong">{t("moi-truong-ht")}</Link>,
+    //     },
+    //     {
+    //       key: "11",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/hoat-dong-clb">
+    //           {t("hoat-dong-clb")}
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: "12",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
+    //           {t("chuong-trinh-nk")}
+    //         </Link>
+    //       ),
+    //     },
 
-        {
-          key: "13",
-          label: (
-            <Link href="/doi-song-hoc-duong/dich-vu-truong-hoc">
-              {t("dich-vu-th")}
-            </Link>
-          ),
-        },
-        {
-          key: "14",
-          label: (
-            <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
-              {t("thu-vien-ha")}
-            </Link>
-          ),
-        },
-      ],
-    },
-    {
-      key: "sub4",
-      label: t("goc-hoc-sinh"),
-      children: [
-        {
-          key: "15",
-          label: <Link href="/goc-hoc-sinh">{t("cau-chuyen-hs")}</Link>,
-        },
-        {
-          key: "16",
-          label: (
-            <Link href="/goc-hoc-sinh/thanh-tich-hoc-duong">
-              {t("thanh-tich-hs")}
-            </Link>
-          ),
-        },
-        {
-          key: "17",
-          label: (
-            <Link href="/goc-hoc-sinh/cuu-hoc-sinh">{t("cuu-hoc-sinh")}</Link>
-          ),
-        },
-      ],
-    },
+    //     {
+    //       key: "13",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/dich-vu-truong-hoc">
+    //           {t("dich-vu-th")}
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: "14",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
+    //           {t("thu-vien-ha")}
+    //         </Link>
+    //       ),
+    //     },
+    //   ],
+    // },
+    // {
+    //   key: "sub4",
+    //   label: t("goc-hoc-sinh"),
+    //   children: [
+    //     {
+    //       key: "15",
+    //       label: <Link href="/goc-hoc-sinh">{t("cau-chuyen-hs")}</Link>,
+    //     },
+    //     {
+    //       key: "16",
+    //       label: (
+    //         <Link href="/goc-hoc-sinh/thanh-tich-hoc-duong">
+    //           {t("thanh-tich-hs")}
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: "17",
+    //       label: (
+    //         <Link href="/goc-hoc-sinh/cuu-hoc-sinh">{t("cuu-hoc-sinh")}</Link>
+    //       ),
+    //     },
+    //   ],
+    // },
     {
       key: "sub9",
       label: <Link href="/tuyen-sinh">{t("tuyen-sinh")}</Link>,
@@ -243,73 +243,73 @@ export const HeaderBase = ({ t, lng, path = "" }) => {
         },
       ],
     },
-    {
-      key: "sub3",
-      label: <Link href="/doi-song-hoc-duong">{t("doi-song")}</Link>,
-      children: [
-        {
-          key: "10",
-          label: <Link href="/doi-song-hoc-duong">{t("moi-truong-ht")}</Link>,
-        },
-        {
-          key: "11",
-          label: (
-            <Link href="/doi-song-hoc-duong/hoat-dong-clb">
-              {t("hoat-dong-clb")}
-            </Link>
-          ),
-        },
-        {
-          key: "12",
-          label: (
-            <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
-              {t("chuong-trinh-nk")}
-            </Link>
-          ),
-        },
+    // {
+    //   key: "sub3",
+    //   label: <Link href="/doi-song-hoc-duong">{t("doi-song")}</Link>,
+    //   children: [
+    //     {
+    //       key: "10",
+    //       label: <Link href="/doi-song-hoc-duong">{t("moi-truong-ht")}</Link>,
+    //     },
+    //     {
+    //       key: "11",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/hoat-dong-clb">
+    //           {t("hoat-dong-clb")}
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: "12",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/chuong-trinh-ngoai-khoa">
+    //           {t("chuong-trinh-nk")}
+    //         </Link>
+    //       ),
+    //     },
 
-        {
-          key: "13",
-          label: (
-            <Link href="/doi-song-hoc-duong/dich-vu-truong-hoc">
-              {t("dich-vu-th")}
-            </Link>
-          ),
-        },
-        {
-          key: "14",
-          label: (
-            <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
-              {t("thu-vien-ha")}
-            </Link>
-          ),
-        },
-      ],
-    },
-    {
-      key: "sub4",
-      label: <Link href="/goc-hoc-sinh/">{t("goc-hoc-sinh")}</Link>,
-      children: [
-        {
-          key: "15",
-          label: <Link href="/goc-hoc-sinh">{t("cau-chuyen-hs")}</Link>,
-        },
-        {
-          key: "16",
-          label: (
-            <Link href="/goc-hoc-sinh/thanh-tich-hoc-duong">
-              {t("thanh-tich-hs")}
-            </Link>
-          ),
-        },
-        {
-          key: "17",
-          label: (
-            <Link href="/goc-hoc-sinh/cuu-hoc-sinh">{t("cuu-hoc-sinh")}</Link>
-          ),
-        },
-      ],
-    },
+    //     {
+    //       key: "13",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/dich-vu-truong-hoc">
+    //           {t("dich-vu-th")}
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: "14",
+    //       label: (
+    //         <Link href="/doi-song-hoc-duong/thu-vien-hinh-anh">
+    //           {t("thu-vien-ha")}
+    //         </Link>
+    //       ),
+    //     },
+    //   ],
+    // },
+    // {
+    //   key: "sub4",
+    //   label: <Link href="/goc-hoc-sinh/">{t("goc-hoc-sinh")}</Link>,
+    //   children: [
+    //     {
+    //       key: "15",
+    //       label: <Link href="/goc-hoc-sinh">{t("cau-chuyen-hs")}</Link>,
+    //     },
+    //     {
+    //       key: "16",
+    //       label: (
+    //         <Link href="/goc-hoc-sinh/thanh-tich-hoc-duong">
+    //           {t("thanh-tich-hs")}
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: "17",
+    //       label: (
+    //         <Link href="/goc-hoc-sinh/cuu-hoc-sinh">{t("cuu-hoc-sinh")}</Link>
+    //       ),
+    //     },
+    //   ],
+    // },
     {
       key: "sub5",
       label: <Link href="/tuyen-sinh">{t("tuyen-sinh")}</Link>,

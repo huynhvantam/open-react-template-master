@@ -97,7 +97,7 @@ export default async function Page({ params: { lng } }) {
                 Độ tuổi tuyển sinh
               </h5>
               <p className="ml-6">
-                Năm học 2024 – 2025, Phoenix Education tổ chức tuyển sinh học
+                Năm học 2025 – 2026, Phoenix Education tổ chức tuyển sinh học
                 sinh có độ tuổi tương ứng với từng cấp học như sau:
               </p>
               <ul className="p ml-6">
